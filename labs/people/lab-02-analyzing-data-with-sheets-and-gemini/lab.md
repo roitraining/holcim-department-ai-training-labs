@@ -35,7 +35,7 @@ Holcim’s People team received an anonymized workforce extract for training. Th
 
 In this task, you create a spreadsheet and load the shared Holcim workforce CSV from Google Drive.
 
-1. Open [Google Sheets](https://sheets.google.com/) and sign in with the Google account your instructor provides.
+1. Open [Google Sheets](https://sheets.google.com/) and sign in with your account.
 
 2. Click **Blank spreadsheet**.
 
