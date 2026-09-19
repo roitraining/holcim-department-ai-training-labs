@@ -10,7 +10,7 @@ Approximate size: ~100,000 rows, 25 columns. Treat as anonymized training data.
 
 ## Apps Script
 
-Copy these into the Apps Script project for the spreadsheet:
+Minimal demo files for Task 3:
 
-- `apps-script/Code.gs`
-- `apps-script/Sidebar.html` (file name in the editor must be `Sidebar`)
+- `apps-script/Code.gs` — menu, read sheet, write summary, insert chart
+- `apps-script/Sidebar.html` — one region dropdown (file name in the editor must be `Sidebar`)

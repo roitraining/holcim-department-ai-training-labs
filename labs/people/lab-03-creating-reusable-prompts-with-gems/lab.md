@@ -15,6 +15,8 @@ In this lab, you will turn the Lab 1 job-posting and resume-reviewer prompt patt
 
 ## Scenario
 
+![Holcim Logo](./images/holcim-logo.png)
+
 In Lab 1, you improved prompts turn by turn. That works once—but People partners should not retype Role, Task, Steps, Examples, and Markdown schemas every time they write a posting or screen a CV. Gems store those instructions so anyone on the team can start a chat that already behaves like your best Lab 1 prompt.
 
 > [!NOTE]
@@ -260,3 +262,5 @@ In this lab, you have:
 - Opened Gemini Gems from the sidebar and created a new custom Gem.
 - Packaged the Lab 1 job-posting Role, Task, Steps, and Examples pattern into a reusable Gem.
 - Packaged the Lab 1 resume-reviewer schema into a second Gem and tested it with Drive resumes.
+
+![ROI Training](./images/roi-logo-with-name.png)

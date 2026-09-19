@@ -3,156 +3,56 @@
   <head>
     <base target="_top" />
     <style>
-      body {
-        font-family: Arial, sans-serif;
-        font-size: 13px;
-        margin: 12px;
-        color: #202124;
-      }
-      label {
-        display: block;
-        margin-top: 10px;
-        font-weight: 600;
-      }
-      select,
-      button {
-        width: 100%;
-        margin-top: 4px;
-        padding: 8px;
-        box-sizing: border-box;
-      }
-      button {
-        margin-top: 16px;
-        background: #0b3d2e;
-        color: #fff;
-        border: 0;
-        cursor: pointer;
-        font-weight: 600;
-      }
-      button:disabled {
-        opacity: 0.6;
-        cursor: default;
-      }
-      #status {
-        margin-top: 12px;
-        color: #5f6368;
-      }
-      .error {
-        color: #b3261e;
-      }
+      body { font-family: Arial, sans-serif; font-size: 13px; margin: 12px; color: #202124; }
+      select, button { width: 100%; margin-top: 6px; padding: 8px; box-sizing: border-box; }
+      button { background: #0b3d2e; color: #fff; border: 0; font-weight: 600; cursor: pointer; }
+      #msg { margin-top: 12px; color: #5f6368; }
+      .error { color: #b3261e; }
     </style>
   </head>
   <body>
-    <h3>Workforce explorer</h3>
-    <p>Filter and sort <code>LabWorkingSet</code>, then build a chart on <code>ExplorerResults</code>.</p>
-
-    <label for="status">Employment Status</label>
-    <select id="status"></select>
+    <p>Pick a <strong>Management Region</strong> from <code>LabWorkingSet</code>. Apps Script will write a summary and pie chart to <code>RegionSummary</code>.</p>
 
     <label for="region">Management Region</label>
     <select id="region"></select>
-
-    <label for="gender">Gender</label>
-    <select id="gender"></select>
-
-    <label for="jobLevel">Job Level</label>
-    <select id="jobLevel"></select>
-
-    <label for="sortColumn">Sort column</label>
-    <select id="sortColumn"></select>
-
-    <label for="sortDirection">Sort direction</label>
-    <select id="sortDirection">
-      <option value="ASC">Ascending</option>
-      <option value="DESC">Descending</option>
-    </select>
-
-    <label for="chartGroupBy">Chart group-by</label>
-    <select id="chartGroupBy">
-      <option>Management Region</option>
-      <option>Employment Status</option>
-      <option>Gender</option>
-      <option>Job Level</option>
-      <option>Division</option>
-    </select>
-
-    <label for="chartType">Chart type</label>
-    <select id="chartType">
-      <option value="COLUMN">Column</option>
-      <option value="BAR">Bar</option>
-      <option value="PIE">Pie</option>
-    </select>
-
-    <button id="runBtn" onclick="runExplorer()">Apply filters and build chart</button>
-    <div id="status">Loading filter options…</div>
+    <button onclick="buildChart()">Build chart</button>
+    <div id="msg">Loading regions…</div>
 
     <script>
-      function fillSelect(id, values, includeAll) {
-        var el = document.getElementById(id);
-        el.innerHTML = '';
-        if (includeAll) {
-          var all = document.createElement('option');
-          all.value = '(All)';
-          all.textContent = '(All)';
-          el.appendChild(all);
-        }
-        values.forEach(function (v) {
-          var opt = document.createElement('option');
-          opt.value = v;
-          opt.textContent = v;
-          el.appendChild(opt);
-        });
+      function setMsg(text, isError) {
+        var el = document.getElementById('msg');
+        el.className = isError ? 'error' : '';
+        el.textContent = text;
       }
 
-      function loadOptions() {
-        google.script.run
-          .withSuccessHandler(function (opts) {
-            fillSelect('status', opts.statuses, true);
-            fillSelect('region', opts.regions, true);
-            fillSelect('gender', opts.genders, true);
-            fillSelect('jobLevel', opts.jobLevels, true);
-            fillSelect('sortColumn', opts.headers, false);
-            document.getElementById('status').textContent = 'Ready.';
-          })
-          .withFailureHandler(function (err) {
-            document.getElementById('status').className = 'error';
-            document.getElementById('status').textContent = err.message || String(err);
-          })
-          .getFilterOptions();
-      }
+      google.script.run
+        .withSuccessHandler(function (regions) {
+          var select = document.getElementById('region');
+          regions.forEach(function (region) {
+            var option = document.createElement('option');
+            option.value = region;
+            option.textContent = region;
+            select.appendChild(option);
+          });
+          setMsg('Ready.');
+        })
+        .withFailureHandler(function (err) {
+          setMsg(err.message || String(err), true);
+        })
+        .getRegions();
 
-      function runExplorer() {
-        var btn = document.getElementById('runBtn');
-        btn.disabled = true;
-        document.getElementById('status').className = '';
-        document.getElementById('status').textContent = 'Running…';
-
-        var criteria = {
-          status: document.getElementById('status').value,
-          region: document.getElementById('region').value,
-          gender: document.getElementById('gender').value,
-          jobLevel: document.getElementById('jobLevel').value,
-          sortColumn: document.getElementById('sortColumn').value,
-          sortDirection: document.getElementById('sortDirection').value,
-          chartGroupBy: document.getElementById('chartGroupBy').value,
-          chartType: document.getElementById('chartType').value
-        };
-
+      function buildChart() {
+        var region = document.getElementById('region').value;
+        setMsg('Building chart for ' + region + '…');
         google.script.run
           .withSuccessHandler(function (result) {
-            btn.disabled = false;
-            document.getElementById('status').textContent =
-              'Done. Wrote ' + result.rowCount + ' rows to ' + result.resultsSheet + '.';
+            setMsg('Done. Open the RegionSummary sheet for ' + result.region + '.');
           })
           .withFailureHandler(function (err) {
-            btn.disabled = false;
-            document.getElementById('status').className = 'error';
-            document.getElementById('status').textContent = err.message || String(err);
+            setMsg(err.message || String(err), true);
           })
-          .runExplorer(criteria);
+          .buildRegionChart(region);
       }
-
-      loadOptions();
     </script>
   </body>
 </html>

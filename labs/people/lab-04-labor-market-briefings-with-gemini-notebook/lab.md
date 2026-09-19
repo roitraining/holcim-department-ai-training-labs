@@ -16,6 +16,8 @@ In this lab, you will build a Gemini Notebook (NotebookLM) research pack for a H
 
 ## Scenario
 
+![Holcim Logo](./images/holcim-logo.png)
+
 You are a Holcim People Business Partner preparing a 30-minute management meeting on **labor availability** across Europe and South America priority markets. Leaders want to know where vacancies are hurting operations, what the external labor market looks like, and what decisions they must make this quarter.
 
 You have two internal synthetic packs (HR staffing guidelines and a labor availability snapshot). You will combine them with public web research in Gemini Notebook, stress-test your narrative in chat, then produce meeting-ready Studio outputs.
@@ -291,3 +293,5 @@ In this lab, you have:
 - Researched EMEA and South America labor markets using web sources.
 - Asked grounded questions to prepare talking points and anticipate tough meeting questions.
 - Generated a Studio infographic executive summary and a management slide deck.
+
+![ROI Training](./images/roi-logo-with-name.png)

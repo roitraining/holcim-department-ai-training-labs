@@ -1,73 +1,51 @@
 /**
- * Holcim People Lab 02 — Workforce Explorer sidebar
- * Paste into Apps Script (Code.gs). Pair with Sidebar.html.
+ * Holcim People Lab 02 — simple Apps Script demo
+ * Custom menu + HTML sidebar + sheet read/write + chart
  */
 
 var SOURCE_SHEET = 'LabWorkingSet';
-var RESULTS_SHEET = 'ExplorerResults';
+var OUTPUT_SHEET = 'RegionSummary';
 
 function onOpen() {
   SpreadsheetApp.getUi()
     .createMenu('Holcim Labs')
-    .addItem('Open workforce explorer', 'showExplorerSidebar')
+    .addItem('Open region chart builder', 'showSidebar')
     .addToUi();
 }
 
-function showExplorerSidebar() {
+function showSidebar() {
   var html = HtmlService.createHtmlOutputFromFile('Sidebar')
-    .setTitle('Workforce explorer')
-    .setWidth(320);
+    .setTitle('Region chart builder')
+    .setWidth(280);
   SpreadsheetApp.getUi().showSidebar(html);
 }
 
-/** Returns distinct values for sidebar dropdowns. */
-function getFilterOptions() {
+/** Return sorted unique Management Region values from LabWorkingSet. */
+function getRegions() {
   var sheet = SpreadsheetApp.getActive().getSheetByName(SOURCE_SHEET);
   if (!sheet) {
-    throw new Error('Missing sheet: ' + SOURCE_SHEET + '. Complete the earlier lab tasks first.');
+    throw new Error('Missing sheet: ' + SOURCE_SHEET);
   }
-  var values = sheet.getDataRange().getDisplayValues();
-  if (values.length < 2) {
-    throw new Error(SOURCE_SHEET + ' has no data rows.');
+  var data = sheet.getDataRange().getDisplayValues();
+  var regionCol = data[0].indexOf('Management Region');
+  if (regionCol < 0) {
+    throw new Error('Management Region column not found.');
   }
-  var headers = values[0];
-  var idx = {
-    status: headers.indexOf('Employment Status'),
-    region: headers.indexOf('Management Region'),
-    gender: headers.indexOf('Gender'),
-    jobLevel: headers.indexOf('Job Level')
-  };
-  Object.keys(idx).forEach(function (key) {
-    if (idx[key] < 0) {
-      throw new Error('Required column missing for ' + key);
-    }
-  });
-
-  return {
-    headers: headers,
-    statuses: uniqueSorted(values, idx.status),
-    regions: uniqueSorted(values, idx.region),
-    genders: uniqueSorted(values, idx.gender),
-    jobLevels: uniqueSorted(values, idx.jobLevel)
-  };
-}
-
-function uniqueSorted(values, colIndex) {
   var seen = {};
-  for (var r = 1; r < values.length; r++) {
-    var v = String(values[r][colIndex] || '').trim();
-    if (v) {
-      seen[v] = true;
+  for (var i = 1; i < data.length; i++) {
+    var value = String(data[i][regionCol] || '').trim();
+    if (value) {
+      seen[value] = true;
     }
   }
   return Object.keys(seen).sort();
 }
 
 /**
- * Filters LabWorkingSet, writes ExplorerResults, builds a chart.
- * @param {Object} criteria
+ * Filter LabWorkingSet to one region, write FTE by Employment Status,
+ * and insert a pie chart on RegionSummary.
  */
-function runExplorer(criteria) {
+function buildRegionChart(region) {
   var ss = SpreadsheetApp.getActive();
   var source = ss.getSheetByName(SOURCE_SHEET);
   if (!source) {
@@ -76,109 +54,51 @@ function runExplorer(criteria) {
 
   var data = source.getDataRange().getDisplayValues();
   var headers = data[0];
-  var col = {
-    status: headers.indexOf('Employment Status'),
-    region: headers.indexOf('Management Region'),
-    gender: headers.indexOf('Gender'),
-    jobLevel: headers.indexOf('Job Level'),
-    fte: headers.indexOf('FTE')
-  };
+  var regionCol = headers.indexOf('Management Region');
+  var statusCol = headers.indexOf('Employment Status');
+  var fteCol = headers.indexOf('FTE');
 
-  var filtered = data.slice(1).filter(function (row) {
-    if (criteria.status && criteria.status !== '(All)' && row[col.status] !== criteria.status) {
-      return false;
+  var totals = {};
+  for (var i = 1; i < data.length; i++) {
+    if (String(data[i][regionCol] || '').trim() !== region) {
+      continue;
     }
-    if (criteria.region && criteria.region !== '(All)' && row[col.region] !== criteria.region) {
-      return false;
+    var status = String(data[i][statusCol] || 'Unknown').trim() || 'Unknown';
+    var fte = Number(data[i][fteCol]);
+    if (isNaN(fte)) {
+      fte = 1;
     }
-    if (criteria.gender && criteria.gender !== '(All)' && row[col.gender] !== criteria.gender) {
-      return false;
-    }
-    if (criteria.jobLevel && criteria.jobLevel !== '(All)' && row[col.jobLevel] !== criteria.jobLevel) {
-      return false;
-    }
-    return true;
-  });
-
-  var sortCol = headers.indexOf(criteria.sortColumn || 'User ID');
-  if (sortCol < 0) {
-    sortCol = 0;
+    totals[status] = (totals[status] || 0) + fte;
   }
-  var ascending = criteria.sortDirection !== 'DESC';
-  filtered.sort(function (a, b) {
-    var av = a[sortCol] || '';
-    var bv = b[sortCol] || '';
-    if (av < bv) {
-      return ascending ? -1 : 1;
-    }
-    if (av > bv) {
-      return ascending ? 1 : -1;
-    }
-    return 0;
-  });
 
-  var out = ss.getSheetByName(RESULTS_SHEET);
+  var out = ss.getSheetByName(OUTPUT_SHEET);
   if (!out) {
-    out = ss.insertSheet(RESULTS_SHEET);
+    out = ss.insertSheet(OUTPUT_SHEET);
   }
   out.clear();
   out.getCharts().forEach(function (chart) {
     out.removeChart(chart);
   });
 
-  var output = [headers].concat(filtered);
-  out.getRange(1, 1, output.length, headers.length).setValues(output);
-  out.getRange(1, 1, 1, headers.length).setFontWeight('bold');
-  out.setFrozenRows(1);
-  if (output.length > 1) {
-    out.getRange(1, 1, output.length, headers.length).createFilter();
-  }
-
-  var groupColName = criteria.chartGroupBy || 'Management Region';
-  var groupCol = headers.indexOf(groupColName);
-  if (groupCol < 0) {
-    groupCol = col.region;
-    groupColName = 'Management Region';
-  }
-
-  var counts = {};
-  filtered.forEach(function (row) {
-    var key = String(row[groupCol] || 'Unknown').trim() || 'Unknown';
-    var fte = parseFloat(row[col.fte]);
-    if (isNaN(fte)) {
-      fte = 1;
-    }
-    counts[key] = (counts[key] || 0) + fte;
+  var rows = [['Employment Status', 'FTE']];
+  Object.keys(totals).sort().forEach(function (status) {
+    rows.push([status, totals[status]]);
   });
+  out.getRange(1, 1, rows.length, 2).setValues(rows);
+  out.getRange(1, 1, 1, 2).setFontWeight('bold');
 
-  var summaryStartCol = headers.length + 3;
-  out.getRange(1, summaryStartCol, 1, 2).setValues([[groupColName, 'FTE total']]);
-  var keys = Object.keys(counts).sort();
-  var summaryRows = keys.map(function (k) {
-    return [k, counts[k]];
-  });
-  if (summaryRows.length) {
-    out.getRange(2, summaryStartCol, summaryRows.length, 2).setValues(summaryRows);
+  if (rows.length > 1) {
+    var chart = out.newChart()
+      .setChartType(Charts.ChartType.PIE)
+      .addRange(out.getRange(1, 1, rows.length, 2))
+      .setOption('title', 'FTE by Employment Status — ' + region)
+      .setPosition(2, 4, 0, 0)
+      .build();
+    out.insertChart(chart);
   }
-
-  var chartType = (criteria.chartType || 'COLUMN').toUpperCase();
-  var chartBuilder = out.newChart()
-    .addRange(out.getRange(1, summaryStartCol, Math.max(summaryRows.length, 1) + 1, 2))
-    .setOption('title', 'FTE by ' + groupColName)
-    .setPosition(2, summaryStartCol + 3, 0, 0);
-
-  if (chartType === 'PIE') {
-    chartBuilder.setChartType(Charts.ChartType.PIE);
-  } else if (chartType === 'BAR') {
-    chartBuilder.setChartType(Charts.ChartType.BAR);
-  } else {
-    chartBuilder.setChartType(Charts.ChartType.COLUMN);
-  }
-
-  out.insertChart(chartBuilder.build());
 
   return {
-    rowCount: filtered.length,
-    resultsSheet: RESULTS_SHEET
+    region: region,
+    categories: rows.length - 1
   };
 }

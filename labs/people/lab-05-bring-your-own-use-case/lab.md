@@ -15,6 +15,8 @@ In this lab, you will pick one real People-team task from your work and apply te
 
 ## Scenario
 
+![Holcim Logo](./images/holcim-logo.png)
+
 Training only sticks when it hits Monday morning work. You already practiced prompt engineering, Sheets with Gemini, Gems, and Gemini Notebook briefings. Now you apply those skills to **your** Holcim People priority—hiring, screening, workforce insights, manager briefings, or learning content—without waiting for a perfect scripted scenario.
 
 ## Lab Instructions
@@ -121,3 +123,5 @@ In this lab, you have:
 - Selected a real Holcim People use case that fits the skills from Labs 1–4.
 - Applied at least two prior-lab techniques to produce a useful work artifact.
 - Captured a simple reuse plan so the approach sticks after training.
+
+![ROI Training](./images/roi-logo-with-name.png)
