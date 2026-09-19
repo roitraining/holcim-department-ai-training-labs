@@ -36,40 +36,36 @@ Holcim’s People team received an anonymized workforce extract for training. Th
 In this task, you create a spreadsheet and load the shared Holcim workforce CSV from Google Drive.
 
 1. Open [Google Sheets](https://sheets.google.com/) and sign in with your account.
-
 2. Click **Blank spreadsheet**.
-
 3. Rename the spreadsheet to `Holcim People Lab 02 Workforce Analysis`.
-
 4. Rename the first tab from `Sheet1` to `WorkforceRaw`.
 
 ![Create a new Google Sheet](images/create-google-sheet.png)
 
-5. Open the shared CSV in Drive (confirm you can view it):
+1. Open the shared CSV in Drive (confirm you can view it):
 
 [https://drive.google.com/file/d/1ezcvB3UZD9calB087_P-HKNKsWgVeYpj/view](https://drive.google.com/file/d/1ezcvB3UZD9calB087_P-HKNKsWgVeYpj/view)
 
-6. Return to your Sheet. Choose **File** | **Import**, and paste the Drive file link into the search box. Select the file and choose **Insert**. In the Import dialog set the following and click **Import data**.
+1. Return to your Sheet. Choose **File** | **Import**, and paste the Drive file link into the search box. Select the file and choose **Insert**. In the Import dialog set the following and click **Import data**.
   - Import location: **Replace current sheet**.
   - Separator type: **Detect automatically** (or **Comma**).
   - Convert text to numbers, dates, and formulas: **Checked**.
-
-7. Confirm row 1 contains these headers (25 columns):
+2. Confirm row 1 contains these headers (25 columns):
 
 `User ID`, `Gender`, `Job Level`, `Date Of Birth`, `Division`, `Sub Division`, `Employment Type`, `Home Designation`, `Job Classification`, `Job Function`, `Employment Status`, `Date1`, `Date2`, `GRU Name`, `Management Region`, `Date3`, `Date4`, `Date5`, `Code1`, `Code2`, `Code3`, `Code4`, `Code5`, `Code6`, `FTE`
 
-8. Freeze the header row: select row 1, then **View** | **Freeze** | **1 row**.
+1. Freeze the header row: select row 1, then **View** | **Freeze** | **1 row**.
 
 > [!IMPORTANT]
 > Expect on the order of **~100,000 data rows**. Do not ask Gemini to rewrite or reformat the entire `WorkforceRaw` sheet in one prompt. Use the working subset in the next task.
 
-9. To create a manageable analysis sheet, click **+** to add a sheet and rename it `LabWorkingSet`. In `LabWorkingSet!A1`, enter the following formula, and press Enter:
+1. To create a manageable analysis sheet, click **+** to add a sheet and rename it `LabWorkingSet`. In `LabWorkingSet!A1`, enter the following formula, and press Enter:
 
 ```text
 ={WorkforceRaw!A1:Y1; SORTN(FILTER(WorkforceRaw!A2:Y, WorkforceRaw!A2:A<>""), 500, 0, RANDARRAY(COUNTA(WorkforceRaw!A2:A)), TRUE)}
 ```
 
-10. After the sample loads, select the entire `LabWorkingSet` data sheet with the button in the upper-left corner. Copy it, then **Paste special** → **Values only** into `A1`. This freezes the random sample so it does not reshuffle when the sheet recalculates.
+1. After the sample loads, select the entire `LabWorkingSet` data sheet with the button in the upper-left corner. Copy it, then **Paste special** → **Values only** into `A1`. This freezes the random sample so it does not reshuffle when the sheet recalculates.
 
 > [!NOTE]
 > The formula keeps the header row, then randomly samples **500** data rows from `WorkforceRaw`.
@@ -86,12 +82,11 @@ In this task, you create a spreadsheet and load the shared Holcim workforce CSV 
 In this task, you use **Ask Gemini** in Sheets to turn `LabWorkingSet` into a clearer People analytics table with filters, conditional formatting, and a chart.
 
 1. Open the `LabWorkingSet` sheet and select any cell inside the data.
-
 2. At the top right, click **Ask Gemini** to open the side panel.
 
 ![Ask Gemini panel in Google Sheets](images/gemini-in-sheets-panel.png)
 
-3. Ask Gemini to format the table. Paste:
+1. Ask Gemini to format the table. Paste:
 
 ```text
 On LabWorkingSet, format the data as a clean table:
@@ -101,17 +96,15 @@ On LabWorkingSet, format the data as a clean table:
 Do not delete rows.
 ```
 
-4. Review Gemini’s proposal. Apply or insert the suggested formatting when it looks correct.
-
-5. Add header filters with Gemini:
+1. Review Gemini’s proposal. Apply or insert the suggested formatting when it looks correct.
+2. Add header filters with Gemini:
 
 ```text
 On LabWorkingSet, turn on filters for the header row so I can filter Employment Status, Management Region, Gender, Job Level, and Division.
 ```
 
-6. Manually verify filters: click a header filter arrow and confirm you can filter **Management Region** values such as `EU`, `LATAM`, and `AMEA`.
-
-7. Add conditional formatting for employment status:
+1. Manually verify filters: click a header filter arrow and confirm you can filter **Management Region** values such as `EU`, `LATAM`, and `AMEA`.
+2. Add conditional formatting for employment status:
 
 ```text
 On LabWorkingSet, apply conditional formatting to the rows based on the Employment Status column:
@@ -119,7 +112,7 @@ On LabWorkingSet, apply conditional formatting to the rows based on the Employme
 - Terminated = light red fill
 ```
 
-8. Create a chart with Gemini:
+1. Create a chart with Gemini:
 
 ```text
 Using LabWorkingSet, create an editable column chart that shows total FTE by Management Region.
@@ -127,7 +120,7 @@ Title the chart "FTE by Management Region".
 Insert it into a new sheet.
 ```
 
-9. Click **Insert** when Gemini previews the chart. Open the new chart sheet if Gemini creates one and confirm the chart is editable.
+1. Click **Insert** when Gemini previews the chart. Open the new chart sheet if Gemini creates one and confirm the chart is editable.
 
 ![Formatted filtered table with conditional formatting](images/formatted-filtered-table.png)
 
@@ -149,9 +142,7 @@ Insert it into a new sheet.
 In this task, you add a small Apps Script project that shows the core pattern: a custom menu, an HTML sidebar, a server function that reads the sheet, and a chart written back to Sheets.
 
 1. In your spreadsheet, open **Extensions** → **Apps Script**.
-
 2. Rename the project to `Holcim Region Chart Builder`.
-
 3. Replace any default `Code.gs` content with:
 
 ```javascript
@@ -261,7 +252,7 @@ function buildRegionChart(region) {
 }
 ```
 
-4. In Apps Script, click **+** next to **Files** → **HTML**. Name the file `Sidebar` (Apps Script adds `.html`). Replace the default contents with:
+1. In Apps Script, click **+** next to **Files** → **HTML**. Name the file `Sidebar` (Apps Script adds `.html`). Replace the default contents with:
 
 ```html
 <!DOCTYPE html>
@@ -324,20 +315,16 @@ function buildRegionChart(region) {
 </html>
 ```
 
-5. Save the project (**Ctrl/Cmd + S**).
+1. Save the project (**Ctrl/Cmd + S**).
+2. Return to the spreadsheet and reload the browser tab.
+3. Choose **Holcim Labs** → **Open region chart builder**.
 
-6. Return to the spreadsheet and reload the browser tab.
-
-7. Choose **Holcim Labs** → **Open region chart builder**.
-
-> [!NOTE]
-> The first run asks you to authorize the script. Review the permissions, choose your lab Google account, and allow access to the spreadsheet.
+> [!NOTE] The first run asRks you to authorize the script. Review the permissions, choose your lab Google account, and allow access to the spreadsheet.
 
 ![Apps Script region chart builder sidebar](images/apps-script-sidebar.png)
 
-8. In the sidebar, choose the Management Region `AMEA`, and then click **Build chart**. Open the `RegionSummary` sheet and confirm a status table and pie chart appear.
-
-9. Run it again with a different region, and confirm `RegionSummary` refreshes.
+1. In the sidebar, choose the Management Region `AMEA`, and then click **Build chart**. Open the `RegionSummary` sheet and confirm a status table and pie chart appear.
+2. Run it again with a different region, and confirm `RegionSummary` refreshes.
 
 > [!IMPORTANT]
 > Use `LabWorkingSet`, not `WorkforceRaw`. The demo is meant to stay fast on the smaller sample.
@@ -360,21 +347,27 @@ function buildRegionChart(region) {
 
 
 
-### Bonus Task 4: Ask Gemini for People insights on your explorer output
+### Bonus Task 4: Extend the Apps Script sidebar with Gemini
 
-With fewer step-by-step hints, use Gemini on `RegionSummary` or your earlier region chart sheet.
+Use Gemini to turn your simple region chart builder into a richer People analytics sidebar.
 
-1. Ask Gemini a People-team question grounded in the sheet, for example:
+1. With the help of Gemini, try to upgrade the sidebar so it can filter on more columns and build more than one chart type. Try things like:
 
 ```text
-Using RegionSummary, summarize what this region chart implies for People planning.
-Give 3 short talking points a People Business Partner could share.
-Do not invent columns that are not in the sheet.
+Upgrade this Apps Script sidebar and Code.gs for a Holcim People workforce sheet named LabWorkingSet.
+Add dropdowns for Management Region, Employment Status, and Job Level.
+When I click Build, filter LabWorkingSet with those choices, write the matching rows to a sheet named ExplorerResults, and create a column chart of total FTE by Division.
+Keep the code short and commented. Return complete Code.gs and Sidebar.html files I can paste.
 ```
 
-2. Optional: ask Gemini to create a pivot table of FTE by Management Region and Job Level from `LabWorkingSet`.
+```text
+Using the same Apps Script project, add a Chart type dropdown with Pie and Column options.
+Also add a Group by dropdown with Division, Job Level, and Gender.
+Build the selected chart type from FTE totals for the selected group-by field after applying the region and status filters.
+Return the full updated Code.gs and Sidebar.html.
+```
 
-3. Optional stretch: add an Employment Status dropdown to `Sidebar.html` and filter on it inside `buildRegionChart` in `Code.gs`.
+3. Paste Gemini’s updated files into Apps Script, save, reload the Sheet, and test the new sidebar. Fix any errors by pasting the error message back into Gemini and asking for a corrected version.
 
 
 
