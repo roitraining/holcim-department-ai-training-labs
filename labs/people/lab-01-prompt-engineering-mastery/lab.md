@@ -1,3 +1,5 @@
+![ROI Training](./images/roi-logo-with-name.png)
+
 # Prompt Engineering Mastery with Gemini for Holcim People Teams
 
 ## Time Required
