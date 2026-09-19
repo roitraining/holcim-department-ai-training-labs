@@ -1,5 +1,3 @@
-![ROI Training](./images/roi-logo-with-name.png)
-
 # Prompt Engineering Mastery with Gemini for Holcim People Teams
 
 ## Time Required
@@ -327,3 +325,5 @@ In this lab, you have:
 - Built job-posting prompts step by step with role, task, steps, and examples.
 - Designed multi-turn resume-screening prompts that return structured Markdown from candidate PDFs.
 - Improved Gemini image prompts with brand assets, style detail, and meta-prompting.
+
+![ROI Training](./images/roi-logo-with-name.png)
