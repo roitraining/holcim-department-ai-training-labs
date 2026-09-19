@@ -2,11 +2,11 @@
 
 ## Time Required
 
-45 minutes
+30 minutes
 
 ## Overview
 
-In this lab, you will practice structured prompt engineering in the Gemini browser app. Using Holcim People (HR) scenarios, you progressively improve prompts for job postings, resume screening, and event flyer image generation so outputs become more accurate, consistent, and useful.
+In this lab, you will practice structured prompt engineering in Gemini. Using Holcim People (HR) scenarios, you progressively improve prompts for job postings, resume screening, and event flyer image generation so outputs become more accurate, consistent, and useful.
 
 ### You learn how to:
 - Build job-posting prompts step by step with role, task, steps, and examples.
@@ -15,10 +15,10 @@ In this lab, you will practice structured prompt engineering in the Gemini brows
 
 ## Scenario
 
-You support Holcim’s People team. Hiring managers need clearer job posts, faster first-pass resume reviews, and a polished flyer for the annual **Holcim Training Days** event. Gemini can help—but only if your prompts are structured. You will treat prompting as a craft: start simple, then add role context, process steps, examples, and feedback loops until the output matches what Holcim colleagues can use.
+![Holcim Logo](./images/holcim-logo.png)
 
-> [!NOTE]
-> Holcim’s current operating regions for this lab are **Europe**, **Latin America**, and **Asia, Middle East and Africa (AMEA)**. Use those region names in resume outputs.
+You support Holcim’s People team. Hiring managers need clearer job posts, faster first-pass resume reviews, and a polished flyer for the annual **Holcim Training Days** event. Gemini can help, but only if your prompts are structured. You will treat prompting as a craft: start simple, then add role context, process steps, examples, and feedback loops until the output matches what Holcim colleagues can use.
+
 
 ## Lab Instructions
 
@@ -26,7 +26,7 @@ You support Holcim’s People team. Hiring managers need clearer job posts, fast
 
 In this task, you open the Gemini app in your browser and improve a job-posting prompt in four stages: simple request, then Role, Task, Steps, and Examples.
 
-1. Open [https://gemini.google.com/](https://gemini.google.com/) in Chrome (or your preferred browser) and sign in with the Google account your instructor provides.
+1. Open [https://gemini.google.com/](https://gemini.google.com/) in Chrome (or your preferred browser) and sign in with your Google account.
 
 2. Start a **new chat** so this exercise has a clean history.
 
@@ -127,18 +127,29 @@ In this task, you add synthetic candidate PDFs from Google Drive into Gemini and
 
 3. Start a **new Gemini chat** for resume screening.
 
-4. Begin with a weak prompt (no structure). Add **two** PDFs from Drive (for example `03-sofia-ramos.pdf` and `08-chen-wei.pdf`) using Gemini’s **Add from Drive** option:
+4. In the Gemini prompt box, click **+** button, and choose **Add from Drive**. 
 
-   1. In the Gemini prompt box, click **Upload and tools** (the **+** button).
-   2. Choose **Drive** (also labeled **Add from Drive**)—do not use local **Files** upload for this task.
-   3. In the **Select files** picker, the resumes may not appear under **Recent**. Use the search icon and search for a filename (for example `sofia` or `03-sofia`), or browse to the shared **lab-resources** / **resumes** folder.
-   4. Select the two PDFs, confirm them, and check that they appear as attachments on the prompt, then send:
+   In the **Select files** picker, paste the following URL in the search box and hit Enter.
+
+```
+https://drive.google.com/drive/folders/11tGFsykadg-e4RJGGw-6ZG5R_wujCvrF?usp=drive_link
+```   
+
+
+5. Select two PDFs and insert them. Confirm that they appear as attachments on the prompt. 
+
+    Send the following prompt. 
 
 ```text
 Look at these resumes and tell me what you think.
 ```
 
-5. Observe how unstructured the answer is. Then send a **Role + Task** upgrade in the same chat (keep the Drive files attached, or use **Add from Drive** again if needed):
+![Adding resume PDFs from Google Drive in Gemini](images/resume-upload-gemini.png)
+
+
+6. Read the answer. It is good, but let's be more specific about what we want. 
+
+    Add a **Role** and  **Task** upgrade in the same chat (keep the Drive files attached, or use **Add from Drive** again if needed):
 
 ```text
 You are a Holcim Talent Acquisition specialist doing a first-pass screen for People and Operations roles.
@@ -146,7 +157,7 @@ You are a Holcim Talent Acquisition specialist doing a first-pass screen for Peo
 Task: Review each attached resume and return ONLY valid Markdown. No preamble.
 ```
 
-6. Add the required **output schema**, Holcim roles, regions, and ranking labels. Send:
+7. Add the required **output schema**, Holcim roles, regions, and ranking labels. Send:
 
 ```text
 For each candidate, output a Markdown block in exactly this shape:
@@ -168,7 +179,7 @@ Rules:
 - If a field is missing in the PDF, write `Not found` rather than inventing it.
 ```
 
-7. Add **Steps** and an **example** so Gemini stays consistent. Send:
+8. Add **Steps** and an **example** so Gemini stays consistent. Send:
 
 ```text
 Process each resume with these steps:
@@ -190,16 +201,14 @@ Example of good formatting:
 Re-run the review for the currently attached resumes using this format only.
 ```
 
-<!-- TODO IMAGE: Screenshot of Gemini Add from Drive selecting resume PDFs from the shared folder -->
-![Adding resume PDFs from Google Drive in Gemini](images/resume-upload-gemini.png)
 
-8. Use **Add from Drive** again to attach **three more** resumes (mix of senior and junior profiles) and send:
+9. Use **Add from Drive** again to attach **three more** resumes (mix of senior and junior profiles) and send:
 
 ```text
 Review the newly attached resumes with the same schema and rules. Append new candidate blocks only.
 ```
 
-9. Optional stretch inside this task: use **Add from Drive** to attach the remaining resumes and ask Gemini to also produce a **summary table** after all individual blocks:
+10. Optional stretch inside this task: use **Add from Drive** to attach the remaining resumes and ask Gemini to also produce a **summary table** after all individual blocks:
 
 ```text
 After all candidate blocks, add a Markdown summary table with columns:
@@ -207,14 +216,11 @@ Candidate name | Email | Ideal job role | Region | Rank
 Sort the table by Rank in this order: Exceptional, Experienced, Entry-Level.
 ```
 
-<!-- TODO IMAGE: Screenshot of Gemini structured Markdown candidate output -->
 ![Structured Markdown resume screening output](images/resume-structured-output.png)
 
 > [!NOTE]
 > If Gemini summarizes instead of using your schema, reply: `Reformat using the exact Markdown schema. Do not add extra sections.`
 
-> [!IMPORTANT]
-> Prefer **Add from Drive** for every resume in this task so everyone works from the same public [lab-resources Drive folder](https://drive.google.com/drive/folders/1DjfQAg4Q7WhfPQOC7YiJLvtxcKTyZuAC).
 
 **Success criteria**
 
@@ -226,7 +232,7 @@ Sort the table by Rank in this order: Exceptional, Experienced, Entry-Level.
 
 In this task, you use Gemini’s image generation to create a flyer for **Holcim Training Days**, starting simple, then adding the Holcim logo, style direction, and a meta-prompt to refine the image prompt itself.
 
-1. Start a **new Gemini chat**.
+1. In Gemini, start a **new chat**. Then, select the **create image** tool from the tools menu. 
 
 2. Send a **simple** image request:
 
@@ -234,17 +240,16 @@ In this task, you use Gemini’s image generation to create a flyer for **Holcim
 Create an image of a flyer for Holcim Training Days.
 ```
 
-3. Note what is vague (layout, brand, date, audience, style).
+> [!Note]
+> it will create something, and it might look good. However, it just made everything up. Let's be more specific.
 
-4. Attach the Holcim logo from this lab folder:
+3. Create a new chat, and select the create image tool again. 
 
-```text
-labs/people/lab-01-prompt-engineering-mastery/assets/holcim-logo-upload.png
-```
+4. Copy the Holcim logo below to the clipboard, and past it in the prompt box.  
 
-(You may also use `assets/holcim-logo.png` or `assets/holcim-logo.svg` if your Gemini upload accepts that format.)
+![Holcim Logo](./images/holcim-logo.png)
 
-5. Send a stronger prompt that references the logo:
+5. Send a stronger prompt that references the logo, and provides event details. 
 
 ```text
 Create a vertical event flyer image for "Holcim Training Days".
@@ -266,6 +271,8 @@ Visual direction:
 - Suggest growth, learning, and sustainable construction without literal unsafe worksite imagery
 ```
 
+![Flyer One](./images/flyer-1.png)
+
 6. Add **style details** in a follow-up to refine (or regenerate) the flyer:
 
 ```text
@@ -280,6 +287,8 @@ Regenerate the flyer with these style constraints:
 - Aspect: portrait flyer (roughly A4 / letter proportions)
 - No fake QR codes, no fake URLs, no extra logos
 ```
+![Flyer Two](./images/flyer-2.png)
+
 
 7. Practice **meta-prompting for image generation**. Ask Gemini to improve the prompt before making the next image:
 
@@ -289,11 +298,12 @@ You are an expert prompt engineer for image generation.
 Meta-task:
 1. Critique my previous flyer prompt for ambiguity, missing art direction, and text-rendering risks.
 2. Write an improved single image prompt (under 180 words) that is more specific about composition, lighting, camera/layout language, and negative constraints.
-3. Then generate a new flyer image using ONLY your improved prompt, still using the attached Holcim logo.
 ```
 
-<!-- TODO IMAGE: Screenshot of a strong Holcim Training Days flyer result in Gemini -->
-![Holcim Training Days flyer image generation](images/flyer-image-generation.png)
+7. Copy the improved prompt to the clipboard, create a new chat, and re-run the image generation using it. Don't forget to attach the logo, and select the create image tool. 
+
+
+![Flyer Two](./images/flyer-3.png)
 
 > [!TIP]
 > If text on the image is misspelled, ask Gemini to regenerate with: `Keep all flyer text exactly as specified; prioritize correct spelling of Holcim Training Days.`
