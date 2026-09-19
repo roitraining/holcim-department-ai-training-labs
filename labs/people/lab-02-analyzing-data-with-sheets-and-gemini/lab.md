@@ -70,13 +70,6 @@ In this task, you create a spreadsheet and load the shared Holcim workforce CSV 
 > [!NOTE]
 > The formula keeps the header row, then randomly samples **500** data rows from `WorkforceRaw`.
 
-**Success criteria**
-
-- `WorkforceRaw` contains the imported CSV with header row frozen.
-- `LabWorkingSet` shows about 500 randomly sampled rows with the same header names (including mixed Employment Status values).
-
-
-
 ### Task 2: Format, filter, and chart with Gemini in Sheets
 
 In this task, you use **Ask Gemini** in Sheets to turn `LabWorkingSet` into a clearer People analytics table with filters, conditional formatting, and a chart.
@@ -128,14 +121,6 @@ Insert it into a new sheet.
 
 > [!TIP]
 > If Gemini cannot act on the full working set, select a smaller visible range first, or ask: `Summarize FTE by Management Region in a new sheet named RegionSummary, then chart that summary.`
-
-**Success criteria**
-
-- `LabWorkingSet` has working column filters.
-- Conditional formatting is visible on **Employment Status** for both Active and Terminated.
-- You have at least one chart showing FTE by Management Region.
-
-
 
 ### Task 3: Build a simple Apps Script region chart builder
 
@@ -338,13 +323,6 @@ function buildRegionChart(region) {
 | `Sidebar.html`      | Simple HTML UI in a sidebar                         |
 | `google.script.run` | Lets the sidebar call functions in `Code.gs`        |
 | `buildRegionChart`  | Reads sheet data, writes a summary, inserts a chart |
-
-
-**Success criteria**
-
-- The **Holcim Labs** menu opens the sidebar.
-- Choosing a region builds or refreshes `RegionSummary` with a pie chart.
-
 
 
 ### Bonus Task 4: Extend the Apps Script sidebar with Gemini

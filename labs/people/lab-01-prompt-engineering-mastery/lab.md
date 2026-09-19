@@ -94,11 +94,6 @@ Now regenerate only the "What you will do" section with 6 strong bullets in that
 > [!IMPORTANT]
 > Keep this as **one multi-turn chat**. The value is watching quality improve as you add Role, Task, Steps, and Examples—not starting over each time.
 
-**Success criteria**
-
-- You have a Holcim-flavored HR Business Partner posting with a clear structure.
-- You can explain how each prompt layer (Role, Task, Steps, Examples) changed the output.
-
 ### Task 2: Screen synthetic resumes with a structured Markdown prompt
 
 In this task, you add synthetic candidate PDFs from Google Drive into Gemini and build a screening prompt that returns consistent Markdown fields Holcim recruiters can scan quickly.
@@ -222,12 +217,6 @@ Sort the table by Rank in this order: Exceptional, Experienced, Entry-Level.
 > If Gemini summarizes instead of using your schema, reply: `Reformat using the exact Markdown schema. Do not add extra sections.`
 
 
-**Success criteria**
-
-- Each reviewed candidate has name, email, ideal job role, Holcim region, and rank.
-- Ranks use only `Exceptional`, `Experienced`, or `Entry-Level`.
-- You can point to at least one place where Steps or Examples improved consistency.
-
 ### Task 3: Generate a Holcim Training Days flyer with progressive image prompts
 
 In this task, you use Gemini’s image generation to create a flyer for **Holcim Training Days**, starting simple, then adding the Holcim logo, style direction, and a meta-prompt to refine the image prompt itself.
@@ -307,12 +296,6 @@ Meta-task:
 
 > [!TIP]
 > If text on the image is misspelled, ask Gemini to regenerate with: `Keep all flyer text exactly as specified; prioritize correct spelling of Holcim Training Days.`
-
-**Success criteria**
-
-- You produced at least two flyer iterations (simple vs structured).
-- The stronger version includes the Holcim logo and clearer style direction.
-- You used meta-prompting once to rewrite the image prompt, then regenerated.
 
 ### Bonus Task 4: Package a reusable Holcim prompt playbook snippet
 

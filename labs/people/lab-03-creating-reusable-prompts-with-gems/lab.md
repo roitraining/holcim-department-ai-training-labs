@@ -6,38 +6,35 @@
 
 ## Overview
 
-In this lab, you will turn the Lab 1 job-posting and resume-reviewer prompt patterns into two reusable **Gemini Gems**. You open Gemini, expand the sidebar, open Gems, create each Gem with durable instructions, preview it, save it, and run a short real request so Holcim People teammates can reuse the same quality without rebuilding prompts from scratch.
+In this lab, you will create two reusable **Gemini Gems** for Holcim People work: a job-posting writer and a resume reviewer. You open Gemini, expand the sidebar, open Gems, paste durable instructions, preview each Gem, save it, and run short requests so teammates can reuse the same quality without rebuilding prompts from scratch.
 
 ### You learn how to:
 - Open Gemini Gems from the sidebar and create a new custom Gem.
-- Package the Lab 1 job-posting Role, Task, Steps, and Examples pattern into a reusable Gem.
-- Package the Lab 1 resume-reviewer schema into a second Gem and test it with Drive resumes.
+- Package a structured job-posting prompt (role, task, steps, and examples) into a reusable Gem.
+- Package a structured resume-reviewer schema into a second Gem and test it with Drive resumes.
 
 ## Scenario
 
 ![Holcim Logo](./images/holcim-logo.png)
 
-In Lab 1, you improved prompts turn by turn. That works once—but People partners should not retype Role, Task, Steps, Examples, and Markdown schemas every time they write a posting or screen a CV. Gems store those instructions so anyone on the team can start a chat that already behaves like your best Lab 1 prompt.
-
-> [!NOTE]
-> This lab builds on [Lab 1: Prompt Engineering Mastery](../lab-01-prompt-engineering-mastery/lab.md). If you skipped Lab 1, you can still complete this lab by pasting the Gem instructions provided here.
+Holcim People partners often rewrite the same kinds of prompts: job postings for plant and office roles, and first-pass resume screens with a consistent Markdown schema. Doing that from scratch every time wastes time and produces uneven quality. Gems store the instructions once so anyone on the team can start a chat that already follows your Holcim People standards.
 
 ## Lab Instructions
 
 ### Task 1: Open Gemini Gems and create the Job Posting Gem
 
-In this task, you open the Gems manager and create **Holcim Job Posting Writer**, using the Lab 1 job-posting prompt pattern as Gem instructions.
+In this task, you open the Gems manager and create **Holcim Job Posting Writer** using a complete set of instructions provided below.
 
-1. Open [https://gemini.google.com/](https://gemini.google.com/) and sign in with the Google account your instructor provides.
+1. Open [https://gemini.google.com/](https://gemini.google.com/).
 
-2. Expand the left sidebar if it is collapsed (menu / **Open sidebar**).
+2. Expand the left sidebar if it is collapsed.
 
-3. In the sidebar, select **Gems** (you may also see **Gem manager** or **Explore Gems**, depending on your account UI).
-
-<!-- TODO IMAGE: Gemini left sidebar with Gems / Gem manager selected -->
-![Gemini sidebar showing Gems](images/gemini-sidebar-gems.png)
+3. In the sidebar, select **Gems**.
 
 4. Click **New Gem**.
+
+![Gemini sidebar showing Gems](images/gemini-sidebar-gems.png)
+
 
 5. Set the Gem **Name** to:
 
@@ -45,7 +42,7 @@ In this task, you open the Gems manager and create **Holcim Job Posting Writer**
 Holcim Job Posting Writer
 ```
 
-6. In **Instructions**, paste the following (this consolidates Lab 1 Role, Task, Steps, and Examples into one reusable Gem):
+6. In **Instructions**, paste the following:
 
 ```text
 Persona:
@@ -83,10 +80,9 @@ Writing quality example for "What you will do" bullets:
 Write strong, specific bullets in the good style.
 ```
 
-<!-- TODO IMAGE: New Gem editor with name and instructions filled -->
 ![New Gem editor with instructions](images/new-gem-editor.png)
 
-7. Optional: click **Use Gemini to re-write instructions** (wand / rewrite control) if you want a polished expansion, then edit anything that drifts from Holcim People needs.
+7. Optional: click **Use Gemini to re-write instructions** (_the wand icon_) if you want a polished expansion, then edit anything that drifts from Holcim People needs.
 
 8. In the **Preview** panel on the right, test with:
 
@@ -104,14 +100,10 @@ Create a job posting for HR Business Partner — Plant Support (Europe). Audienc
 > [!IMPORTANT]
 > Previewing does not save the Gem. Click **Save** after you are happy with the preview.
 
-**Success criteria**
-
-- **Holcim Job Posting Writer** appears in your Gems list.
-- A preview run produces Holcim-flavored structure without invented salaries.
 
 ### Task 2: Create the Resume Reviewer Gem and test it with Drive resumes
 
-In this task, you create **Holcim Resume Reviewer** from the Lab 1 screening schema, then chat with the Gem using synthetic resumes from Drive.
+In this task, you create **Holcim Resume Reviewer** with a fixed Markdown output schema, then chat with the Gem using synthetic resumes from Drive.
 
 1. From the Gems area, click **New Gem** again.
 
@@ -170,42 +162,22 @@ Candidate name | Email | Ideal job role | Region | Rank
 Sort by Rank in this order: Exceptional, Experienced, Entry-Level.
 ```
 
-4. Optional Knowledge: under **Knowledge** / **Add files**, you may add 1–2 synthetic resumes from Drive as reference examples. This is optional; testers can still attach resumes in the chat.
+4. Click **Save**.
 
-5. Preview with a short text-only check first:
+5. Start a chat with **Holcim Resume Reviewer** from your Gems list (select the Gem, then open a new chat with it).
 
-```text
-I will attach resumes next. Confirm you will use only the required Markdown schema and Holcim regions.
+6. Add a few resumes from the following Google Drive folder:
+
+```
+https://drive.google.com/drive/folders/11tGFsykadg-e4RJGGw-6ZG5R_wujCvrF?usp=drive_link
 ```
 
-6. Click **Save**.
+7. All the instructions are in the Gem. Just click the **Submit** button. 
 
-7. Start a chat with **Holcim Resume Reviewer** from your Gems list (select the Gem, then open a new chat with it).
+8. Confirm each candidate block includes name, email, ideal job role, Holcim region, and rank (`Exceptional`, `Experienced`, or `Entry-Level` only).
 
-8. Add two synthetic resumes with **Upload and tools** → **Drive** (**Add from Drive**) from the public lab folder:
-
-[https://drive.google.com/drive/folders/1DjfQAg4Q7WhfPQOC7YiJLvtxcKTyZuAC](https://drive.google.com/drive/folders/1DjfQAg4Q7WhfPQOC7YiJLvtxcKTyZuAC)
-
-Use for example `03-sofia-ramos.pdf` and `08-chen-wei.pdf`. If they do not appear under **Recent**, search for `sofia` or `chen`.
-
-9. Send:
-
-```text
-Review the attached resumes using your standard schema.
-```
-
-10. Confirm each candidate block includes name, email, ideal job role, Holcim region, and rank (`Exceptional`, `Experienced`, or `Entry-Level` only).
-
-<!-- TODO IMAGE: Resume Reviewer Gem chat with Drive resumes and Markdown output -->
 ![Resume Reviewer Gem preview with Drive files](images/resume-reviewer-gem-preview.png)
 
-> [!WARNING]
-> Use only the synthetic lab resumes. Do not add confidential Holcim employee or applicant files to a Gem or chat during class.
-
-**Success criteria**
-
-- **Holcim Resume Reviewer** is saved.
-- A Gem chat returns the structured Markdown schema for at least two Drive resumes.
 
 ### Task 3: Reuse both Gems from the sidebar like a teammate would
 
@@ -218,8 +190,6 @@ In this task, you confirm both Gems are easy to find and run a second request on
    - `Holcim Job Posting Writer`
    - `Holcim Resume Reviewer`
 
-<!-- TODO IMAGE: Sidebar list showing both saved Holcim Gems -->
-![Saved Gems list in Gemini sidebar](images/saved-gems-list.png)
 
 3. Open **Holcim Job Posting Writer** and send a new request (do not rebuild instructions):
 
@@ -235,32 +205,21 @@ Review this resume with your standard schema only.
 
 5. Briefly compare: notice you did not re-enter Role, Task, Steps, Examples, or the Markdown schema—the Gem carried them.
 
-**Success criteria**
+### Bonus Task 4: Create a Gem for Holcim event flyers
 
-- Both Gems are visible in the sidebar Gems list.
-- Each Gem produces on-brand output from a short user request only.
+Build a reusable **Gem** that creates Holcim event flyers with Gemini’s image generation.
 
-### Bonus Task 4: Improve one Gem with Knowledge or tighter instructions
+1. In Gemini, create a new Gem aimed at Holcim event flyers (for example Training Days, plant open houses, or People town halls).
 
-With fewer step-by-step hints, harden one Gem for team handoff.
+2. When you define the Gem, enable the **Create image** tool so the Gem can generate flyer visuals, not only text.
 
-1. Edit either Gem and add a short **Do / Do not** section (for example: do not invent benefits; do not use regions outside Holcim’s three regions).
-
-2. Optional: add a one-page style note or sample posting to **Knowledge** for the Job Posting Gem.
-
-3. Optional: ask the Job Posting Gem:
-
-```text
-After the posting, also give me 5 interview questions aligned to the must-have qualifications.
-```
-
-   If the answer is useful, decide whether that behavior should become part of the saved Gem instructions.
+3. Ask Gemini for advice on how to write strong Gem instructions for this use case (what to put in Instructions, how to steer layout and brand tone, and how teammates should request a flyer). Use that advice, then save and test the Gem with one short flyer request.
 
 ## Congratulations!
 
 In this lab, you have:
 - Opened Gemini Gems from the sidebar and created a new custom Gem.
-- Packaged the Lab 1 job-posting Role, Task, Steps, and Examples pattern into a reusable Gem.
-- Packaged the Lab 1 resume-reviewer schema into a second Gem and tested it with Drive resumes.
+- Packaged a structured job-posting prompt (role, task, steps, and examples) into a reusable Gem.
+- Packaged a structured resume-reviewer schema into a second Gem and tested it with Drive resumes.
 
 ![ROI Training](./images/roi-logo-with-name.png)

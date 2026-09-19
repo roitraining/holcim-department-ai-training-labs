@@ -54,12 +54,6 @@ I need to draft a plant supervisor job posting for Europe by next Thursday.
 <!-- TODO IMAGE: Optional photo of learners choosing use cases -->
 ![Choose your People use case](images/choose-use-case.png)
 
-**Success criteria**
-
-- You have one clear outcome sentence.
-- You named at least two techniques from Labs 1–4.
-- Your inputs are safe for classroom use.
-
 ### Task 2: Build a useful artifact in 15 minutes
 
 In this task, you execute your plan and produce something a colleague could review.
@@ -82,11 +76,6 @@ Critique your own output: What is still generic? What Holcim context is missing?
 4. Make one improvement based on that critique.
 
 5. Save or export the artifact where you will find it after class (Drive, Gem, Notebook, or Sheet).
-
-**Success criteria**
-
-- You have a saved artifact tied to your use case.
-- You can point to at least one improvement you made after the critique pass.
 
 ### Task 3: Write a 3-line reuse plan and share out
 

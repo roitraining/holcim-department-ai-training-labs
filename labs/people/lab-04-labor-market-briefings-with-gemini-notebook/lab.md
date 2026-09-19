@@ -83,11 +83,6 @@ labs/people/lab-04-labor-market-briefings-with-gemini-notebook/assets/holcim-lab
 > [!NOTE]
 > Gemini indexes each source before chat quality improves. Keep both internal sources selected (checked) for the rest of the lab unless a step says otherwise.
 
-**Success criteria**
-
-- Notebook title is set.
-- Two synthetic Holcim People sources are listed and ready.
-
 ### Task 2: Research EMEA and South America labor markets with web sources
 
 In this task, you add public web sources so the notebook can compare Holcim’s internal snapshot with external labor market signals for EMEA and South America.
@@ -131,11 +126,6 @@ Do not invent Holcim statistics that are not in the synthetic snapshot.
 
 > [!IMPORTANT]
 > Keep the synthetic Holcim snapshot as the source of truth for Holcim numbers. Use web sources for external context only.
-
-**Success criteria**
-
-- At least four web sources are in the notebook (two Europe/EMEA, two South America/LATAM-focused).
-- A cited chat answer compares external signals to Holcim’s synthetic pressures.
 
 ### Task 3: Prepare for the management meeting in chat
 
@@ -188,11 +178,6 @@ Rewrite my recommendation as a 60-second verbal opener for the meeting, with no 
 
 > [!TIP]
 > If an answer drifts into generic HR advice, reply: `Stay grounded in the notebook sources. If a detail is missing, say what is missing.`
-
-**Success criteria**
-
-- You have spoken-ready talking points covering situation, market, risks, and asks.
-- You have a gotcha list with source-aware answers.
 
 ### Task 4: Create a one-page executive summary infographic and a slide deck in Studio
 
@@ -261,15 +246,9 @@ Use only notebook sources. Do not invent Holcim metrics.
 
 6. Optional: download the deck (PDF or PowerPoint) and the infographic for your meeting pack using the Studio overflow menu.
 
-**Success criteria**
-
-- Infographic reads as a one-page executive summary with Europe vs South America contrast.
-- Slide deck covers snapshot, market context, risks, asks, and next steps.
-- Spot-checks show no invented Holcim statistics.
-
 ### Bonus Task 5: Rehearse the meeting with Studio and chat together
 
-With fewer step-by-step hints, harden your meeting prep.
+Harden your meeting prep.
 
 1. Ask chat:
 
