@@ -74,11 +74,6 @@
 - Every exercise uses synthetic or anonymized data: safe to explore
 - By the end, you leave with techniques and artifacts you can reuse Monday
 
-<!-- TODO IMAGE (Antigravity): Diverse Holcim People Team members collaborating around a laptop showing a friendly Gemini chat, mix of plant and office context.
-Generate with an image-generation tool (e.g. Antigravity's built-in image generation, Gemini "Create image", or Nano Banana / Imagen) using this prompt:
-"Photorealistic image of a diverse group of four professionals collaborating around a laptop in a bright, modern office, with a hint of an industrial cement-plant setting visible through a window in the background. One person points at a laptop screen showing a friendly, abstract chat interface. Clean corporate style, natural lighting, deep forest green and warm sand accent colors in clothing or decor, no visible logos, no readable UI text, no fake QR codes or URLs."
-Style: clean corporate, deep forest green (#0b3d2e) and warm sand (#e8dcc3) accents, plenty of whitespace, landscape orientation, high resolution.
-Save as: images/five-skills-hero.png (roughly 1600x900) and keep the Markdown reference below pointed at this path. -->
 ![Holcim People Team collaborating with Gemini](images/five-skills-hero.png)
 
 ---
@@ -303,11 +298,6 @@ Save as: images/five-skills-hero.png (roughly 1600x900) and keep the Markdown re
 - Apply at least two techniques from the last four sections
 - Leave with something a colleague could actually review
 
-<!-- TODO IMAGE (Antigravity): One Holcim People Team professional applying an AI-drafted artifact (job posting, chart, or briefing) to real work at their desk.
-Generate with an image-generation tool (e.g. Antigravity's built-in image generation, Gemini "Create image", or Nano Banana / Imagen) using this prompt:
-"Photorealistic image of one professional at a desk reviewing a printed or on-screen document, pen in hand, confident and focused expression, bright modern office, subtle branding cues in muted forest green and sand tones, no readable logos, no legible on-screen text, no fake QR codes or URLs."
-Style: clean corporate, deep forest green (#0b3d2e) and warm sand (#e8dcc3) accents, natural light, roughly square crop for a side-by-side slide layout.
-Save as: images/bring-it-to-work.png (roughly 1000x1000) and keep the Markdown reference below pointed at this path. -->
 ![Applying an AI-drafted artifact to real People Team work](images/bring-it-to-work.png)
 
 ---
