@@ -107,9 +107,6 @@ Save as: images/five-skills-hero.png (roughly 1600x900) and keep the Markdown re
 # The Role - Task - Steps - Examples Framework
 
 - Four layers turn a vague ask into a usable draft
-- Role sets the voice; Task sets the deliverable and constraints
-- Steps force the model to reason before it writes
-- Examples lock in what "good" looks like, bullet by bullet
 
 ![Prompt engineering framework: Role, Task, Steps, Examples](images/prompt-framework.svg)
 
@@ -174,9 +171,6 @@ Save as: images/five-skills-hero.png (roughly 1600x900) and keep the Markdown re
 # From Data to Decisions
 
 - One pipeline, four stages: raw data to a self-serve chart
-- A random working set keeps every Gemini prompt fast and reliable
-- Gemini in Sheets handles the one-off formatting and charting
-- Apps Script packages the repeatable part into a menu a teammate can click
 
 ![Workforce data pipeline: WorkforceRaw to LabWorkingSet to Gemini in Sheets to Apps Script](images/data-pipeline.svg)
 
@@ -212,9 +206,7 @@ Save as: images/five-skills-hero.png (roughly 1600x900) and keep the Markdown re
 # What's a Gem
 
 - A Gem is a saved Gemini assistant: instructions live in the Gem, not in your head
-- Built from the same five ingredients: Persona, Task, Constraints, Process, Examples
 - Preview before you save; edit anytime the standard changes
-- Anyone on the People Team can open it and just ask
 
 ![Anatomy of a Gem: Persona, Task, Constraints, Process, Examples](images/gem-anatomy.svg)
 
@@ -265,9 +257,6 @@ Save as: images/five-skills-hero.png (roughly 1600x900) and keep the Markdown re
 # Sources In, Insights Out
 
 - Three stages, one grounded narrative
-- Internal Drive sources plus targeted web research build the source set
-- Chat turns sources into talking points and anticipated tough questions
-- Studio turns saved notes into an infographic and a slide deck
 
 ![Gemini Notebook flow: sources to chat to Studio outputs](images/notebook-flow.svg)
 
