@@ -1,21 +1,68 @@
-<!-- course-title: Holcim People: AI in Action -->
+<!-- course-title: AI for the Holcim People Team -->
 
 <!-- layout: title -->
 ![ROI Logo](images/roi-logo-with-name.png)
 
-Holcim People: AI in Action
+# AI for the Holcim People Team
 
-# Chapter 1: Holcim People AI Labs
+## Practical Skills for Everyday HR Work
 
 ---
 
-# Chapter 1: Objectives
+# Welcome!
 
-- Engineer structured Gemini prompts using Role, Task, Steps, and Examples
-- Use Gemini in Sheets to format, filter, and chart Holcim People data
-- Package a reusable prompt into a Gemini Gem
-- Build a Gemini Notebook briefing grounded in real and synthetic sources
-- Apply these techniques to a Holcim People use case of your own
+- ROI leads the industry in designing and delivering customized technology and management training solutions
+- Meet your instructor
+  - Name
+  - Background
+  - Contact info
+- Let's get started!
+
+![Welcome](images/welcome.png)
+
+---
+
+# Course Objectives
+
+- **Apply Gemini across everyday Holcim People Team workflows** — prompting, spreadsheets, reusable assistants, and grounded research
+- Engineer structured prompts that produce Holcim-ready job postings, resume screens, and event flyers
+- Use Gemini in Sheets to format, filter, and chart People Team workforce data
+- Package reusable prompts into Gemini Gems for repeatable People Team workflows
+- Build a Gemini Notebook research pack for a grounded People Team briefing
+- Apply what you learned to a real People Team use case you bring to work
+
+---
+
+# Agenda
+
+- Prompt Engineering
+- Analyzing Data in Sheets with Gemini
+- Build Reusable Prompts
+- Gemini Notebook
+- Bring Your Own Use Case
+
+![Agenda](images/agenda.png)
+
+---
+
+# Who Should Attend
+
+- Holcim People Team business partners and generalists
+- Talent acquisition and recruiting specialists
+- People analytics, reporting, and workforce planning staff
+- People Team leaders who want practical, everyday Gemini skills
+
+![Who Should Attend](images/who-should-attend.png)
+
+---
+
+# Prerequisites
+
+- A Google account with access to Gemini, Sheets, and Gemini Notebook (NotebookLM)
+- Basic familiarity with Google Sheets and Google Drive
+- No prior AI or scripting experience required
+
+![Prerequisites](images/prerequisites.png)
 
 ---
 
@@ -23,21 +70,21 @@ Holcim People: AI in Action
 # Five Skills, One Afternoon
 
 - **Five short sections, each pairs a concept with a hands-on lab**
-- Same Holcim People scenarios throughout: hiring, workforce data, meeting prep
+- Same Holcim People Team scenarios throughout: hiring, workforce data, meeting prep
 - Every exercise uses synthetic or anonymized data — safe to explore
 - By the end, you leave with techniques and artifacts you can reuse Monday
 
-<!-- TODO IMAGE (Antigravity): Diverse Holcim People team collaborating around a laptop showing a friendly Gemini chat, mix of plant and office context.
+<!-- TODO IMAGE (Antigravity): Diverse Holcim People Team members collaborating around a laptop showing a friendly Gemini chat, mix of plant and office context.
 Generate with an image-generation tool (e.g. Antigravity's built-in image generation, Gemini "Create image", or Nano Banana / Imagen) using this prompt:
 "Photorealistic image of a diverse group of four professionals collaborating around a laptop in a bright, modern office, with a hint of an industrial cement-plant setting visible through a window in the background. One person points at a laptop screen showing a friendly, abstract chat interface. Clean corporate style, natural lighting, deep forest green and warm sand accent colors in clothing or decor, no visible logos, no readable UI text, no fake QR codes or URLs."
 Style: clean corporate, deep forest green (#0b3d2e) and warm sand (#e8dcc3) accents, plenty of whitespace, landscape orientation, high resolution.
 Save as: images/five-skills-hero.png (roughly 1600x900) and keep the Markdown reference below pointed at this path. -->
-![Holcim People team collaborating with Gemini](images/five-skills-hero.png)
+![Holcim People Team collaborating with Gemini](images/five-skills-hero.png)
 
 ---
 
 <!-- layout: navigation -->
-# Chapter 1
+# Today's Sections
 
 - **Prompt Engineering**
 - Analyzing Data in Sheets with Gemini
@@ -92,7 +139,7 @@ Save as: images/five-skills-hero.png (roughly 1600x900) and keep the Markdown re
 ---
 
 <!-- layout: navigation -->
-# Chapter 1
+# Today's Sections
 
 - Prompt Engineering
 - **Analyzing Data in Sheets with Gemini**
@@ -107,7 +154,7 @@ Save as: images/five-skills-hero.png (roughly 1600x900) and keep the Markdown re
 - **Ask Gemini in Sheets for what you want, in plain language** — no formulas required
 - Format tables, add header filters, apply conditional formatting, insert charts
 - Gemini proposes the change; you review and apply it
-- Great for People analysts who know the data but not every Sheets function
+- Great for People Team analysts who know the data but not every Sheets function
 
 ---
 
@@ -142,7 +189,7 @@ Save as: images/five-skills-hero.png (roughly 1600x900) and keep the Markdown re
 ---
 
 <!-- layout: navigation -->
-# Chapter 1
+# Today's Sections
 
 - Prompt Engineering
 - Analyzing Data in Sheets with Gemini
@@ -167,7 +214,7 @@ Save as: images/five-skills-hero.png (roughly 1600x900) and keep the Markdown re
 - **A Gem is a saved Gemini assistant** — instructions live in the Gem, not in your head
 - Built from the same five ingredients: Persona, Task, Constraints, Process, Examples
 - Preview before you save; edit anytime the standard changes
-- Anyone on the People team can open it and just ask
+- Anyone on the People Team can open it and just ask
 
 ![Anatomy of a Gem: Persona, Task, Constraints, Process, Examples](images/gem-anatomy.svg)
 
@@ -177,7 +224,7 @@ Save as: images/five-skills-hero.png (roughly 1600x900) and keep the Markdown re
 # Gems Your Team Can Reuse
 
 ### Holcim Job Posting Writer
-- Persona: Holcim People comms partner
+- Persona: Holcim People Team comms partner
 - Always covers safety, development, mission
 - Outputs the same five-section structure every time
 
@@ -195,7 +242,7 @@ Save as: images/five-skills-hero.png (roughly 1600x900) and keep the Markdown re
 ---
 
 <!-- layout: navigation -->
-# Chapter 1
+# Today's Sections
 
 - Prompt Engineering
 - Analyzing Data in Sheets with Gemini
@@ -242,7 +289,7 @@ Save as: images/five-skills-hero.png (roughly 1600x900) and keep the Markdown re
 ---
 
 <!-- layout: navigation -->
-# Chapter 1
+# Today's Sections
 
 - Prompt Engineering
 - Analyzing Data in Sheets with Gemini
@@ -255,23 +302,23 @@ Save as: images/five-skills-hero.png (roughly 1600x900) and keep the Markdown re
 # Make It Stick
 
 - **Training sticks when it hits Monday morning work** — not a scripted scenario
-- Pick one real People task: hiring, screening, workforce insight, or a briefing
+- Pick one real People Team task: hiring, screening, workforce insight, or a briefing
 - Apply at least two techniques from the last four sections
 - Leave with something a colleague could actually review
 
-<!-- TODO IMAGE (Antigravity): One Holcim People professional applying an AI-drafted artifact (job posting, chart, or briefing) to real work at their desk.
+<!-- TODO IMAGE (Antigravity): One Holcim People Team professional applying an AI-drafted artifact (job posting, chart, or briefing) to real work at their desk.
 Generate with an image-generation tool (e.g. Antigravity's built-in image generation, Gemini "Create image", or Nano Banana / Imagen) using this prompt:
 "Photorealistic image of one professional at a desk reviewing a printed or on-screen document, pen in hand, confident and focused expression, bright modern office, subtle branding cues in muted forest green and sand tones, no readable logos, no legible on-screen text, no fake QR codes or URLs."
 Style: clean corporate, deep forest green (#0b3d2e) and warm sand (#e8dcc3) accents, natural light, roughly square crop for a side-by-side slide layout.
 Save as: images/bring-it-to-work.png (roughly 1000x1000) and keep the Markdown reference below pointed at this path. -->
-![Applying an AI-drafted artifact to real People work](images/bring-it-to-work.png)
+![Applying an AI-drafted artifact to real People Team work](images/bring-it-to-work.png)
 
 ---
 
 <!-- layout: stacked -->
 # Four Tools, One Toolkit
 
-- **You now have four ways to bring Gemini into People work**
+- **You now have four ways to bring Gemini into People Team work**
 - Structured prompting for any one-off request
 - Sheets and Gemini for data you'd normally fight with formulas
 - Gems for anything you do the same way, again and again
@@ -302,27 +349,27 @@ Save as: images/bring-it-to-work.png (roughly 1000x1000) and keep the Markdown r
 # What You Learned
 
 - Engineered structured Gemini prompts using Role, Task, Steps, and Examples
-- Used Gemini in Sheets to format, filter, and chart Holcim People data
+- Used Gemini in Sheets to format, filter, and chart Holcim People Team data
 - Packaged a reusable prompt into a Gemini Gem
 - Built a Gemini Notebook briefing grounded in real and synthetic sources
-- Applied these techniques to a Holcim People use case of your own
+- Applied these techniques to a Holcim People Team use case of your own
 
 ---
 
 # Quiz 1 of 3
 
-**Why is a Gemini Gem more useful than retyping your prompt every time for the Holcim People team?**
+**Why is a Gemini Gem more useful than retyping your prompt every time for the Holcim People Team?**
 
 - A. It runs faster than a normal Gemini chat
 - B. It saves the Role, Task, Steps, and Examples once so anyone on the team gets the same quality without rebuilding the prompt
-- C. It automatically emails the output to HR leadership
+- C. It automatically emails the output to People Team leadership
 - D. It removes the need to review AI output before using it
 
 ---
 
 # Quiz 1 — Answer
 
-**Why is a Gemini Gem more useful than retyping your prompt every time for the Holcim People team?**
+**Why is a Gemini Gem more useful than retyping your prompt every time for the Holcim People Team?**
 
 **Correct: B.** It saves the Role, Task, Steps, and Examples once so anyone on the team gets the same quality without rebuilding the prompt
 
@@ -361,7 +408,7 @@ Save as: images/bring-it-to-work.png (roughly 1000x1000) and keep the Markdown r
 # Quiz 3 of 3 — Discussion
 
 ### Prompt
-You have one real People task you handle every week or month — hiring, screening, a workforce report, or a leadership briefing.
+You have one real People Team task you handle every week or month — hiring, screening, a workforce report, or a leadership briefing.
 
 ### Discuss
 - Which tool from today fits that task best, and why?
@@ -373,7 +420,7 @@ You have one real People task you handle every week or month — hiring, screeni
 <!-- layout: 2-column -->
 # Quiz 3 — Discussion Points
 
-**Which tool fits your recurring People task, and who else would reuse it?**
+**Which tool fits your recurring People Team task, and who else would reuse it?**
 
 ### Strong Answers Mention
 - A specific, recurring task — not a vague "AI will help somewhere"

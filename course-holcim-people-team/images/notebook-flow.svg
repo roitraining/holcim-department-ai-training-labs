@@ -5,7 +5,7 @@
   <g>
     <rect x="40" y="60" width="260" height="110" rx="12" fill="#f4efe2" stroke="#cdb98a" stroke-width="2"/>
     <text x="170" y="95" text-anchor="middle" fill="#0b3d2e" font-size="16" font-weight="bold">Holcim Drive Sources</text>
-    <text x="170" y="120" text-anchor="middle" fill="#4a4a3f" font-size="13">HR staffing guidelines</text>
+    <text x="170" y="120" text-anchor="middle" fill="#4a4a3f" font-size="13">People staffing guidelines</text>
     <text x="170" y="140" text-anchor="middle" fill="#4a4a3f" font-size="13">Labor availability snapshot</text>
 
     <rect x="40" y="200" width="260" height="110" rx="12" fill="#f4efe2" stroke="#cdb98a" stroke-width="2"/>
