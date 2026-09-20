@@ -101,8 +101,6 @@
 <!-- layout: stacked -->
 # The "Role-Task-Steps-Examples" Framework
 
-- Turn a vague ask into a usable draft
-
 ![Prompt engineering framework: Role, Task, Steps, Examples](images/prompt-framework.svg)
 
 ---
@@ -150,6 +148,8 @@
 - Gemini proposes the change; you review and apply it
 - Great for People Team analysts who know the data but not every Sheets function
 
+![Chat with AI in Sheets](images/sheets-1.png)
+
 ---
 
 # Big Data, Small Working Set
@@ -167,7 +167,6 @@
 <!-- layout: stacked -->
 # From Data to Decisions
 
-- One pipeline, four stages: raw data to a self-serve chart
 
 ![Workforce data pipeline: WorkforceRaw to LabWorkingSet to Gemini in Sheets to Apps Script](images/data-pipeline.svg)
 
@@ -245,6 +244,12 @@
 
 ---
 
+# Gemini Notebook
+
+![Gemini Notebook](images/notebook.png)
+
+---
+
 # From Chat to Grounded Research
 
 - A regular chat can drift or invent details - a Notebook cannot leave its sources
@@ -271,6 +276,21 @@
 - Save the strongest answers as notes; convert them into Studio sources
 
 ---
+
+# Gemini Notebook Studio
+
+- Save chat respnses as notes
+- Create polished assets
+  - Slide presentations
+  - Infographics
+  - Audio summaries
+  - Reports
+  - and more...
+
+![Gemini Notebook Studio](images/notebook-studio.png)
+
+---
+
 
 # Lab 4: Labor Market Briefings with Gemini Notebook
 
