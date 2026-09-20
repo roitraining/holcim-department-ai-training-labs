@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 460" font-family="Arial, Helvetica, sans-serif">
+  <rect x="0" y="0" width="1200" height="460" fill="#ffffff"/>
+
+  <!-- connecting arrows -->
+  <g stroke="#0b3d2e" stroke-width="4" fill="none">
+    <line x1="266" y1="260" x2="330" y2="260"/>
+    <line x1="566" y1="260" x2="630" y2="260"/>
+    <line x1="866" y1="260" x2="930" y2="260"/>
+  </g>
+  <g fill="#0b3d2e">
+    <polygon points="330,260 314,251 314,269"/>
+    <polygon points="630,260 614,251 614,269"/>
+    <polygon points="930,260 914,251 914,269"/>
+  </g>
+
+  <!-- Card 1: ROLE -->
+  <g>
+    <rect x="40" y="100" width="226" height="320" rx="16" fill="#0b3d2e"/>
+    <rect x="40" y="100" width="226" height="72" rx="16" fill="#0b3d2e"/>
+    <text x="153" y="146" text-anchor="middle" fill="#e8dcc3" font-size="30" font-weight="bold">ROLE</text>
+    <text x="153" y="200" text-anchor="middle" fill="#ffffff" font-size="16" font-style="italic">Who is the AI?</text>
+    <text x="65" y="244" fill="#e8dcc3" font-size="14">
+      <tspan x="65" dy="0">"You are a Holcim</tspan>
+      <tspan x="65" dy="20">People communications</tspan>
+      <tspan x="65" dy="20">partner who writes clear,</tspan>
+      <tspan x="65" dy="20">inclusive job postings</tspan>
+      <tspan x="65" dy="20">for industrial and</tspan>
+      <tspan x="65" dy="20">corporate roles."</tspan>
+    </text>
+  </g>
+
+  <!-- Card 2: TASK -->
+  <g>
+    <rect x="340" y="100" width="226" height="320" rx="16" fill="#145c45"/>
+    <rect x="340" y="100" width="226" height="72" rx="16" fill="#145c45"/>
+    <text x="453" y="146" text-anchor="middle" fill="#e8dcc3" font-size="30" font-weight="bold">TASK</text>
+    <text x="453" y="200" text-anchor="middle" fill="#ffffff" font-size="16" font-style="italic">What's the job?</text>
+    <text x="365" y="244" fill="#e8dcc3" font-size="14">
+      <tspan x="365" dy="0">"Produce a complete</tspan>
+      <tspan x="365" dy="20">job posting for HR</tspan>
+      <tspan x="365" dy="20">Business Partner —</tspan>
+      <tspan x="365" dy="20">Plant Support (Europe),</tspan>
+      <tspan x="365" dy="20">400-500 words,</tspan>
+      <tspan x="365" dy="20">professional tone."</tspan>
+    </text>
+  </g>
+
+  <!-- Card 3: STEPS -->
+  <g>
+    <rect x="640" y="100" width="226" height="320" rx="16" fill="#1f6f54"/>
+    <rect x="640" y="100" width="226" height="72" rx="16" fill="#1f6f54"/>
+    <text x="753" y="146" text-anchor="middle" fill="#e8dcc3" font-size="30" font-weight="bold">STEPS</text>
+    <text x="753" y="200" text-anchor="middle" fill="#ffffff" font-size="16" font-style="italic">What's the process?</text>
+    <text x="665" y="244" fill="#e8dcc3" font-size="14">
+      <tspan x="665" dy="0">"1. List top outcomes.</tspan>
+      <tspan x="665" dy="20">2. List must-have vs</tspan>
+      <tspan x="665" dy="20">nice-to-have skills.</tspan>
+      <tspan x="665" dy="20">3. Only then write the</tspan>
+      <tspan x="665" dy="20">full posting using this</tspan>
+      <tspan x="665" dy="20">structure..."</tspan>
+    </text>
+  </g>
+
+  <!-- Card 4: EXAMPLES -->
+  <g>
+    <rect x="940" y="100" width="226" height="320" rx="16" fill="#c96f34"/>
+    <rect x="940" y="100" width="226" height="72" rx="16" fill="#c96f34"/>
+    <text x="1053" y="146" text-anchor="middle" fill="#fff6ea" font-size="28" font-weight="bold">EXAMPLES</text>
+    <text x="1053" y="200" text-anchor="middle" fill="#ffffff" font-size="16" font-style="italic">What's "good"?</text>
+    <text x="965" y="244" fill="#fff6ea" font-size="14">
+      <tspan x="965" dy="0">Good: "Partner with</tspan>
+      <tspan x="965" dy="20">the Plant Director to</tspan>
+      <tspan x="965" dy="20">run quarterly talent</tspan>
+      <tspan x="965" dy="20">reviews..."</tspan>
+      <tspan x="965" dy="20">Weak: "Responsible</tspan>
+      <tspan x="965" dy="20">for various HR duties."</tspan>
+    </text>
+  </g>
+</svg>

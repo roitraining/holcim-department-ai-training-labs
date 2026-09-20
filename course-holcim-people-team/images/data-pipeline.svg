@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 420" font-family="Arial, Helvetica, sans-serif">
+  <rect x="0" y="0" width="1200" height="420" fill="#ffffff"/>
+
+  <!-- connectors -->
+  <g stroke="#cdb98a" stroke-width="4" fill="none">
+    <line x1="280" y1="210" x2="320" y2="210"/>
+    <line x1="580" y1="210" x2="620" y2="210"/>
+    <line x1="880" y1="210" x2="920" y2="210"/>
+  </g>
+  <g fill="#0b3d2e">
+    <polygon points="320,210 304,201 304,219"/>
+    <polygon points="620,210 604,201 604,219"/>
+    <polygon points="920,210 904,201 904,219"/>
+  </g>
+
+  <!-- Stage 1: WorkforceRaw -->
+  <g>
+    <rect x="20" y="100" width="260" height="220" rx="14" fill="#f4efe2" stroke="#cdb98a" stroke-width="2"/>
+    <text x="150" y="140" text-anchor="middle" fill="#0b3d2e" font-size="19" font-weight="bold">WorkforceRaw</text>
+    <text x="150" y="170" text-anchor="middle" fill="#4a4a3f" font-size="14">~100,000 rows</text>
+    <text x="150" y="192" text-anchor="middle" fill="#4a4a3f" font-size="14">25 columns</text>
+    <text x="150" y="250" text-anchor="middle" fill="#8a7f5f" font-size="12" font-style="italic">Too big for Gemini</text>
+    <text x="150" y="268" text-anchor="middle" fill="#8a7f5f" font-size="12" font-style="italic">to act on directly</text>
+  </g>
+
+  <!-- Stage 2: LabWorkingSet -->
+  <g>
+    <rect x="320" y="100" width="260" height="220" rx="14" fill="#0b3d2e"/>
+    <text x="450" y="140" text-anchor="middle" fill="#ffffff" font-size="19" font-weight="bold">LabWorkingSet</text>
+    <text x="450" y="170" text-anchor="middle" fill="#e8dcc3" font-size="14">500-row random</text>
+    <text x="450" y="192" text-anchor="middle" fill="#e8dcc3" font-size="14">sample, frozen</text>
+    <text x="450" y="250" text-anchor="middle" fill="#cdb98a" font-size="12" font-style="italic">Small, clean,</text>
+    <text x="450" y="268" text-anchor="middle" fill="#cdb98a" font-size="12" font-style="italic">Gemini-ready</text>
+  </g>
+
+  <!-- Stage 3: Gemini in Sheets -->
+  <g>
+    <rect x="620" y="100" width="260" height="220" rx="14" fill="#1f6f54"/>
+    <text x="750" y="140" text-anchor="middle" fill="#ffffff" font-size="18" font-weight="bold">Gemini in Sheets</text>
+    <text x="750" y="172" text-anchor="middle" fill="#e8dcc3" font-size="13">Format · Filter</text>
+    <text x="750" y="194" text-anchor="middle" fill="#e8dcc3" font-size="13">Conditional format</text>
+    <text x="750" y="216" text-anchor="middle" fill="#e8dcc3" font-size="13">Chart by region</text>
+    <text x="750" y="256" text-anchor="middle" fill="#cdb98a" font-size="12" font-style="italic">Plain-language asks</text>
+  </g>
+
+  <!-- Stage 4: Apps Script -->
+  <g>
+    <rect x="920" y="100" width="260" height="220" rx="14" fill="#c96f34"/>
+    <text x="1050" y="140" text-anchor="middle" fill="#fff6ea" font-size="18" font-weight="bold">Apps Script</text>
+    <text x="1050" y="172" text-anchor="middle" fill="#fff6ea" font-size="13">Custom menu</text>
+    <text x="1050" y="194" text-anchor="middle" fill="#fff6ea" font-size="13">Sidebar picker</text>
+    <text x="1050" y="216" text-anchor="middle" fill="#fff6ea" font-size="13">One-click region chart</text>
+    <text x="1050" y="256" text-anchor="middle" fill="#ffe6cf" font-size="12" font-style="italic">Self-serve for teammates</text>
+  </g>
+
+  <text x="600" y="380" text-anchor="middle" fill="#0b3d2e" font-size="16" font-weight="bold">Big data in, a self-serve region chart out</text>
+</svg>

@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 460" font-family="Arial, Helvetica, sans-serif">
+  <rect x="0" y="0" width="1200" height="460" fill="#ffffff"/>
+
+  <!-- Column 1: Sources (two stacked boxes) -->
+  <g>
+    <rect x="40" y="60" width="260" height="110" rx="12" fill="#f4efe2" stroke="#cdb98a" stroke-width="2"/>
+    <text x="170" y="95" text-anchor="middle" fill="#0b3d2e" font-size="16" font-weight="bold">Holcim Drive Sources</text>
+    <text x="170" y="120" text-anchor="middle" fill="#4a4a3f" font-size="13">HR staffing guidelines</text>
+    <text x="170" y="140" text-anchor="middle" fill="#4a4a3f" font-size="13">Labor availability snapshot</text>
+
+    <rect x="40" y="200" width="260" height="110" rx="12" fill="#f4efe2" stroke="#cdb98a" stroke-width="2"/>
+    <text x="170" y="235" text-anchor="middle" fill="#0b3d2e" font-size="16" font-weight="bold">Web Sources</text>
+    <text x="170" y="260" text-anchor="middle" fill="#4a4a3f" font-size="13">EMEA labor market</text>
+    <text x="170" y="280" text-anchor="middle" fill="#4a4a3f" font-size="13">South America labor market</text>
+  </g>
+
+  <!-- arrow into notebook -->
+  <g stroke="#cdb98a" stroke-width="4" fill="none">
+    <line x1="300" y1="115" x2="420" y2="200"/>
+    <line x1="300" y1="255" x2="420" y2="220"/>
+  </g>
+  <g fill="#0b3d2e">
+    <polygon points="420,200 402,197 411,215"/>
+    <polygon points="420,220 402,224 407,206"/>
+  </g>
+
+  <!-- Column 2: Notebook chat -->
+  <g>
+    <rect x="440" y="120" width="300" height="220" rx="14" fill="#0b3d2e"/>
+    <text x="590" y="160" text-anchor="middle" fill="#ffffff" font-size="19" font-weight="bold">Gemini Notebook</text>
+    <text x="590" y="185" text-anchor="middle" fill="#e8dcc3" font-size="14">Grounded chat</text>
+    <text x="590" y="220" text-anchor="middle" fill="#e8dcc3" font-size="13">Talking points</text>
+    <text x="590" y="245" text-anchor="middle" fill="#e8dcc3" font-size="13">Gotcha questions</text>
+    <text x="590" y="270" text-anchor="middle" fill="#e8dcc3" font-size="13">Funding recommendation</text>
+    <text x="590" y="305" text-anchor="middle" fill="#cdb98a" font-size="12" font-style="italic">Every answer cites a source</text>
+  </g>
+
+  <!-- arrow into studio -->
+  <g stroke="#cdb98a" stroke-width="4" fill="none">
+    <line x1="740" y1="230" x2="800" y2="230"/>
+  </g>
+  <g fill="#0b3d2e">
+    <polygon points="800,230 784,221 784,239"/>
+  </g>
+
+  <!-- Column 3: Studio outputs -->
+  <g>
+    <rect x="820" y="60" width="340" height="110" rx="12" fill="#c96f34"/>
+    <text x="990" y="100" text-anchor="middle" fill="#fff6ea" font-size="17" font-weight="bold">Studio: Infographic</text>
+    <text x="990" y="125" text-anchor="middle" fill="#fff6ea" font-size="13">One-page executive summary</text>
+    <text x="990" y="145" text-anchor="middle" fill="#fff6ea" font-size="13">Ready to print or paste in a deck</text>
+
+    <rect x="820" y="200" width="340" height="110" rx="12" fill="#1f6f54"/>
+    <text x="990" y="240" text-anchor="middle" fill="#ffffff" font-size="17" font-weight="bold">Studio: Slide Deck</text>
+    <text x="990" y="265" text-anchor="middle" fill="#e8dcc3" font-size="13">Presenter slides for the meeting</text>
+    <text x="990" y="285" text-anchor="middle" fill="#e8dcc3" font-size="13">Built only from notebook sources</text>
+  </g>
+
+  <text x="600" y="410" text-anchor="middle" fill="#0b3d2e" font-size="16" font-weight="bold">Sources in, meeting-ready outputs out — nothing invented</text>
+</svg>
