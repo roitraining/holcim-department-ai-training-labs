@@ -1,5 +1,9 @@
 # Holcim Department AI Training Labs
 
+## People Team Course
+
+[AI for the Holcim People Team](https://slidesv.roitraining.com/?course=https%3A%2F%2Fgithub.com%2Froitraining%2Fholcim-department-ai-training-labs%2Fblob%2Fmain%2Fcourse-holcim-people-team%2Fcourse.md#slide-1)
+
 ## People team labs
 
 | Lab | Description |

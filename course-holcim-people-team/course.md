@@ -133,6 +133,8 @@ Save as: images/five-skills-hero.png (roughly 1600x900) and keep the Markdown re
 
 **Time:** 30 minutes
 
+[Open Lab 1](https://labv.roitraining.com/?lab=https%3A%2F%2Fgithub.com%2Froitraining%2Fholcim-department-ai-training-labs%2Fblob%2Fmain%2Flabs%2Fpeople%2Flab-01-prompt-engineering-mastery%2Flab.md)
+
 ---
 
 <!-- layout: navigation -->
@@ -179,6 +181,8 @@ Save as: images/five-skills-hero.png (roughly 1600x900) and keep the Markdown re
 # Lab 2: Analyzing Data with Sheets and Gemini
 
 **Time:** 30 minutes
+
+[Open Lab 2](https://labv.roitraining.com/?lab=https%3A%2F%2Fgithub.com%2Froitraining%2Fholcim-department-ai-training-labs%2Fblob%2Fmain%2Flabs%2Fpeople%2Flab-02-analyzing-data-with-sheets-and-gemini%2Flab.md)
 
 ---
 
@@ -231,6 +235,8 @@ Save as: images/five-skills-hero.png (roughly 1600x900) and keep the Markdown re
 
 **Time:** 30 minutes
 
+[Open Lab 3](https://labv.roitraining.com/?lab=https%3A%2F%2Fgithub.com%2Froitraining%2Fholcim-department-ai-training-labs%2Fblob%2Fmain%2Flabs%2Fpeople%2Flab-03-creating-reusable-prompts-with-gems%2Flab.md)
+
 ---
 
 <!-- layout: navigation -->
@@ -274,6 +280,8 @@ Save as: images/five-skills-hero.png (roughly 1600x900) and keep the Markdown re
 # Lab 4: Labor Market Briefings with Gemini Notebook
 
 **Time:** 30 minutes
+
+[Open Lab 4](https://labv.roitraining.com/?lab=https%3A%2F%2Fgithub.com%2Froitraining%2Fholcim-department-ai-training-labs%2Fblob%2Fmain%2Flabs%2Fpeople%2Flab-04-labor-market-briefings-with-gemini-notebook%2Flab.md)
 
 ---
 
@@ -332,6 +340,8 @@ Save as: images/bring-it-to-work.png (roughly 1000x1000) and keep the Markdown r
 # Lab 5: Bring Your Own Use Case
 
 **Time:** 20 minutes
+
+[Open Lab 5](https://labv.roitraining.com/?lab=https%3A%2F%2Fgithub.com%2Froitraining%2Fholcim-department-ai-training-labs%2Fblob%2Fmain%2Flabs%2Fpeople%2Flab-05-bring-your-own-use-case%2Flab.md)
 
 ---
 

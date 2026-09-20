@@ -1,23 +1,21 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 480" font-family="'Helvetica Neue', Arial, Helvetica, sans-serif">
-  <rect x="0" y="0" width="1200" height="480" fill="#ffffff"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 450" font-family="'Helvetica Neue', Arial, Helvetica, sans-serif">
+  <rect x="0" y="0" width="1200" height="450" fill="#ffffff"/>
 
-  <!-- Gem outline, left side -->
+  <!-- Gem: table (crown top), crown facet, left + right pavilion facets -->
   <g>
-    <polygon points="230,60 340,160 300,410 160,410 120,160" fill="#041739"/>
-    <polygon points="230,60 340,160 230,200 120,160" fill="#0C98CC"/>
-    <polygon points="230,60 120,160 160,410 230,200" fill="#117DAF"/>
-    <text x="230" y="140" text-anchor="middle" fill="#bfe3ff" font-size="24" font-weight="bold">GEM</text>
-    <text x="230" y="330" text-anchor="middle" fill="#dff6ff" font-size="17" font-weight="bold">Holcim Job</text>
-    <text x="230" y="352" text-anchor="middle" fill="#dff6ff" font-size="17" font-weight="bold">Posting Writer</text>
+    <polygon points="200,60 260,60 360,170 100,170" fill="#04BBF1"/>
+    <polygon points="100,170 230,170 230,420" fill="#041739"/>
+    <polygon points="230,170 360,170 230,420" fill="#117DAF"/>
+    <text x="230" y="140" text-anchor="middle" fill="#052033" font-size="22" font-weight="bold">GEM</text>
   </g>
 
   <!-- 5 labeled layers on the right, connected to the gem -->
   <g stroke="#9aa5b1" stroke-width="2" fill="none">
-    <line x1="300" y1="95" x2="430" y2="75"/>
-    <line x1="330" y1="165" x2="430" y2="155"/>
-    <line x1="300" y1="245" x2="430" y2="235"/>
-    <line x1="260" y1="325" x2="430" y2="315"/>
-    <line x1="200" y1="390" x2="430" y2="400"/>
+    <line x1="295" y1="73" x2="430" y2="73"/>
+    <line x1="365" y1="153" x2="430" y2="153"/>
+    <line x1="348" y1="233" x2="430" y2="233"/>
+    <line x1="306" y1="313" x2="430" y2="313"/>
+    <line x1="265" y1="393" x2="430" y2="393"/>
   </g>
 
   <g>
@@ -49,6 +47,4 @@
     <text x="452" y="388" fill="#ffffff" font-size="18" font-weight="bold">Examples</text>
     <text x="452" y="410" fill="#f0ffe3" font-size="15">Good vs weak bullets: locks in the quality bar every time</text>
   </g>
-
-  <text x="815" y="458" text-anchor="middle" fill="#041739" font-size="16" font-style="italic">Saved once. Reused by the whole People Team, every chat.</text>
 </svg>
