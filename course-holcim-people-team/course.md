@@ -328,12 +328,6 @@
 <!-- layout: stacked -->
 # Four Tools, One Toolkit
 
-- You now have four ways to bring Gemini into People Team work
-- Structured prompting for any one-off request
-- Sheets and Gemini for data you'd normally fight with formulas
-- Gems for anything you do the same way, again and again
-- Gemini Notebook for research you need to defend in a meeting
-
 ![Four tools converging on your use case: Prompt Engineering, Sheets and Gemini, Gems, Gemini Notebook](images/toolkit-recap.svg)
 
 ---
