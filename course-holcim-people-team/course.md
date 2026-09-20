@@ -96,8 +96,9 @@
 - Each layer narrows what "good" means before the model writes anything
 - The payoff: output a recruiter or hiring manager can actually use
 
----
+![Prompting is a skill](images/prompting.png)
 
+---
 <!-- layout: stacked -->
 # The "Role-Task-Steps-Examples" Framework
 
@@ -197,6 +198,8 @@
 - Different teammates end up with different quality and different formats
 - A resume screen should look the same whether you or a colleague ran it
 - Gems save the instructions once, so everyone starts from the same standard
+
+![Stop rewriting the same prompt](images/prompt-frustration.png)
 
 ---
 
