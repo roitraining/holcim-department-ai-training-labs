@@ -51,8 +51,6 @@ I need to draft a plant supervisor job posting for Europe by next Thursday.
 > [!WARNING]
 > Do not paste confidential employee data, applicant PII, medical information, performance ratings, or non-public Holcim documents into public AI tools. When in doubt, anonymize or use synthetic samples.
 
-<!-- TODO IMAGE: Optional photo of learners choosing use cases -->
-![Choose your People use case](images/choose-use-case.png)
 
 ### Task 2: Build a useful artifact in 15 minutes
 
@@ -89,22 +87,6 @@ I will reuse this when: ...
 Next improvement after class: ...
 ```
 
-2. In 60 seconds or less, share with a partner or the room:
-
-   - Your use case sentence
-   - Which two techniques you used
-   - What you will do differently next week
-
-<!-- TODO IMAGE: Optional photo of share-out or completed reuse plan notes -->
-![Share out and reuse plan](images/share-out.png)
-
-### Bonus Task 4: Package it for a teammate
-
-If you finish early, turn your approach into something handoff-ready.
-
-1. Convert your best prompt into a Gem **or** paste your briefing sources into a Gemini Notebook your teammate could copy.
-
-2. Add a 5-bullet “How to run this” note at the top of the artifact or in a sibling Doc.
 
 ## Congratulations!
 
