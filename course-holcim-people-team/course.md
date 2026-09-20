@@ -24,7 +24,7 @@
 
 # Course Objectives
 
-- **Apply Gemini across everyday Holcim People Team workflows** — prompting, spreadsheets, reusable assistants, and grounded research
+- Apply Gemini across everyday Holcim People Team workflows: prompting, spreadsheets, reusable assistants, and grounded research
 - Engineer structured prompts that produce Holcim-ready job postings, resume screens, and event flyers
 - Use Gemini in Sheets to format, filter, and chart People Team workforce data
 - Package reusable prompts into Gemini Gems for repeatable People Team workflows
@@ -69,9 +69,9 @@
 <!-- layout: stacked -->
 # Five Skills, One Afternoon
 
-- **Five short sections, each pairs a concept with a hands-on lab**
+- Five short sections, each pairs a concept with a hands-on lab
 - Same Holcim People Team scenarios throughout: hiring, workforce data, meeting prep
-- Every exercise uses synthetic or anonymized data — safe to explore
+- Every exercise uses synthetic or anonymized data: safe to explore
 - By the end, you leave with techniques and artifacts you can reuse Monday
 
 <!-- TODO IMAGE (Antigravity): Diverse Holcim People Team members collaborating around a laptop showing a friendly Gemini chat, mix of plant and office context.
@@ -96,7 +96,7 @@ Save as: images/five-skills-hero.png (roughly 1600x900) and keep the Markdown re
 
 # Why Prompting Is a Skill
 
-- **A vague ask gets a vague answer** — "write a job posting" returns something generic and un-Holcim
+- A vague ask gets a vague answer: "write a job posting" returns something generic and un-Holcim
 - Prompting is a craft you build in layers, not one perfect sentence
 - Each layer narrows what "good" means before the model writes anything
 - The payoff: output a recruiter or hiring manager can actually use
@@ -106,7 +106,7 @@ Save as: images/five-skills-hero.png (roughly 1600x900) and keep the Markdown re
 <!-- layout: stacked -->
 # The Role - Task - Steps - Examples Framework
 
-- **Four layers turn a vague ask into a usable draft**
+- Four layers turn a vague ask into a usable draft
 - Role sets the voice; Task sets the deliverable and constraints
 - Steps force the model to reason before it writes
 - Examples lock in what "good" looks like, bullet by bullet
@@ -151,7 +151,7 @@ Save as: images/five-skills-hero.png (roughly 1600x900) and keep the Markdown re
 
 # AI Meets Your Spreadsheets
 
-- **Ask Gemini in Sheets for what you want, in plain language** — no formulas required
+- Ask Gemini in Sheets for what you want, in plain language: no formulas required
 - Format tables, add header filters, apply conditional formatting, insert charts
 - Gemini proposes the change; you review and apply it
 - Great for People Team analysts who know the data but not every Sheets function
@@ -160,7 +160,7 @@ Save as: images/five-skills-hero.png (roughly 1600x900) and keep the Markdown re
 
 # Big Data, Small Working Set
 
-- Holcim's workforce extract runs about **100,000 rows** across 25 columns
+- Holcim's workforce extract runs about 100,000 rows across 25 columns
 - Gemini in Sheets performs best on smaller, clean tables
 - The lab samples **500 rows** into a `LabWorkingSet` and freezes it with Paste Special
 - `WorkforceRaw` stays untouched as the full source of record
@@ -173,7 +173,7 @@ Save as: images/five-skills-hero.png (roughly 1600x900) and keep the Markdown re
 <!-- layout: stacked -->
 # From Data to Decisions
 
-- **One pipeline, four stages** — raw data to a self-serve chart
+- One pipeline, four stages: raw data to a self-serve chart
 - A random working set keeps every Gemini prompt fast and reliable
 - Gemini in Sheets handles the one-off formatting and charting
 - Apps Script packages the repeatable part into a menu a teammate can click
@@ -201,7 +201,7 @@ Save as: images/five-skills-hero.png (roughly 1600x900) and keep the Markdown re
 
 # Stop Rewriting the Same Prompt
 
-- **Great prompts don't survive the next new chat** — Role, Task, Steps, and Examples get retyped from memory
+- Great prompts don't survive the next new chat: Role, Task, Steps, and Examples get retyped from memory
 - Different teammates end up with different quality and different formats
 - A resume screen should look the same whether you or a colleague ran it
 - Gems save the instructions once, so everyone starts from the same standard
@@ -211,7 +211,7 @@ Save as: images/five-skills-hero.png (roughly 1600x900) and keep the Markdown re
 <!-- layout: stacked -->
 # What's a Gem
 
-- **A Gem is a saved Gemini assistant** — instructions live in the Gem, not in your head
+- A Gem is a saved Gemini assistant: instructions live in the Gem, not in your head
 - Built from the same five ingredients: Persona, Task, Constraints, Process, Examples
 - Preview before you save; edit anytime the standard changes
 - Anyone on the People Team can open it and just ask
@@ -231,7 +231,7 @@ Save as: images/five-skills-hero.png (roughly 1600x900) and keep the Markdown re
 ### Holcim Resume Reviewer
 - Persona: Talent Acquisition specialist
 - Fixed Markdown schema: role, region, rank, rationale
-- Never invents a missing fact — writes "Not found"
+- Never invents a missing fact: writes "Not found"
 
 ---
 
@@ -254,7 +254,7 @@ Save as: images/five-skills-hero.png (roughly 1600x900) and keep the Markdown re
 
 # From Chat to Grounded Research
 
-- **A regular chat can drift or invent details** — a Notebook cannot leave its sources
+- A regular chat can drift or invent details - a Notebook cannot leave its sources
 - You choose what goes in: internal guidelines, snapshots, and web research
 - Every answer traces back to a source you selected
 - Built for a briefing you have to defend in the room
@@ -264,7 +264,7 @@ Save as: images/five-skills-hero.png (roughly 1600x900) and keep the Markdown re
 <!-- layout: stacked -->
 # Sources In, Insights Out
 
-- **Three stages, one grounded narrative**
+- Three stages, one grounded narrative
 - Internal Drive sources plus targeted web research build the source set
 - Chat turns sources into talking points and anticipated tough questions
 - Studio turns saved notes into an infographic and a slide deck
@@ -275,9 +275,9 @@ Save as: images/five-skills-hero.png (roughly 1600x900) and keep the Markdown re
 
 # Ask Sharper Questions
 
-- Ask for **talking points** structured the way you'll speak them: situation, context, risk, ask
+- Ask for talking points structured the way you'll speak them: situation, context, risk, ask
 - Ask for **gotcha questions** leadership might raise, with a source-grounded answer for each
-- If sources don't fully answer a question, the Notebook says so — it does not invent data
+- If sources don't fully answer a question, the Notebook says so: it does not invent data
 - Save the strongest answers as notes; convert them into Studio sources
 
 ---
@@ -301,7 +301,7 @@ Save as: images/five-skills-hero.png (roughly 1600x900) and keep the Markdown re
 
 # Make It Stick
 
-- **Training sticks when it hits Monday morning work** — not a scripted scenario
+- Training sticks when it hits Monday morning work: not a scripted scenario
 - Pick one real People Team task: hiring, screening, workforce insight, or a briefing
 - Apply at least two techniques from the last four sections
 - Leave with something a colleague could actually review
@@ -318,7 +318,7 @@ Save as: images/bring-it-to-work.png (roughly 1000x1000) and keep the Markdown r
 <!-- layout: stacked -->
 # Four Tools, One Toolkit
 
-- **You now have four ways to bring Gemini into People Team work**
+- You now have four ways to bring Gemini into People Team work
 - Structured prompting for any one-off request
 - Sheets and Gemini for data you'd normally fight with formulas
 - Gems for anything you do the same way, again and again
@@ -330,7 +330,7 @@ Save as: images/bring-it-to-work.png (roughly 1000x1000) and keep the Markdown r
 
 # Keep Data Safe
 
-- Every exercise today used **synthetic or anonymized data** — carry that habit forward
+- Every exercise today used synthetic or anonymized data: carry that habit forward
 - Do not paste confidential employee data, applicant PII, medical information, or performance ratings into public AI tools
 - When the ideal input is confidential, substitute a sanitized or synthetic version
 - When in doubt, ask before you paste
@@ -367,7 +367,7 @@ Save as: images/bring-it-to-work.png (roughly 1000x1000) and keep the Markdown r
 
 ---
 
-# Quiz 1 — Answer
+# Quiz 1 - Answer
 
 **Why is a Gemini Gem more useful than retyping your prompt every time for the Holcim People Team?**
 
@@ -375,7 +375,7 @@ Save as: images/bring-it-to-work.png (roughly 1000x1000) and keep the Markdown r
 
 - Gems store durable instructions, not just a one-off message
 - Teammates get consistent quality without knowing the underlying prompt craft
-- You still preview and review output — a Gem does not remove that step
+- You still preview and review output - a Gem does not remove that step
 - Speed is a side effect, not the main reason to build one
 
 ---
@@ -391,7 +391,7 @@ Save as: images/bring-it-to-work.png (roughly 1000x1000) and keep the Markdown r
 
 ---
 
-# Quiz 2 — Answer
+# Quiz 2 - Answer
 
 **In Lab 2, why does the course have you build a 500-row `LabWorkingSet` instead of asking Gemini to act on the full ~100,000-row `WorkforceRaw` sheet?**
 
@@ -405,10 +405,10 @@ Save as: images/bring-it-to-work.png (roughly 1000x1000) and keep the Markdown r
 ---
 
 <!-- layout: 2-column -->
-# Quiz 3 of 3 — Discussion
+# Quiz 3 of 3 - Discussion
 
 ### Prompt
-You have one real People Team task you handle every week or month — hiring, screening, a workforce report, or a leadership briefing.
+You have one real People Team task you handle every week or month: hiring, screening, a workforce report, or a leadership briefing.
 
 ### Discuss
 - Which tool from today fits that task best, and why?
@@ -418,12 +418,12 @@ You have one real People Team task you handle every week or month — hiring, sc
 ---
 
 <!-- layout: 2-column -->
-# Quiz 3 — Discussion Points
+# Quiz 3 - Discussion Points
 
 **Which tool fits your recurring People Team task, and who else would reuse it?**
 
 ### Strong Answers Mention
-- A specific, recurring task — not a vague "AI will help somewhere"
+- A specific, recurring task - not a vague "AI will help somewhere"
 - A tool matched to the task's shape (one-off vs. repeatable vs. data-heavy vs. research-heavy)
 - A concrete plan to keep any real employee or applicant data safe
 
