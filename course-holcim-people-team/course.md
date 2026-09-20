@@ -265,8 +265,6 @@
 <!-- layout: stacked -->
 # Sources In, Insights Out
 
-- Three stages, one grounded narrative
-
 ![Gemini Notebook flow: sources to chat to Studio outputs](images/notebook-flow.svg)
 
 ---
