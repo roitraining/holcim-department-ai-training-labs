@@ -104,9 +104,9 @@ Save as: images/five-skills-hero.png (roughly 1600x900) and keep the Markdown re
 ---
 
 <!-- layout: stacked -->
-# The Role - Task - Steps - Examples Framework
+# The "Role-Task-Steps-Examples" Framework
 
-- Four layers turn a vague ask into a usable draft
+- Turn a vague ask into a usable draft
 
 ![Prompt engineering framework: Role, Task, Steps, Examples](images/prompt-framework.svg)
 
