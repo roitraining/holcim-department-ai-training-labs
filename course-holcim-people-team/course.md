@@ -276,6 +276,8 @@
 - If sources don't fully answer a question, the Notebook says so: it does not invent data
 - Save the strongest answers as notes; convert them into Studio sources
 
+![Using Gemini Notebook](./images/using-notebook.png)
+
 ---
 
 # Gemini Notebook Studio
