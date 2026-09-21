@@ -96,8 +96,7 @@
 - Each layer narrows what "good" means before the model writes anything
 - The payoff: output a Sustainability partner or customer-facing colleague can actually use
 
-<!-- TODO IMAGE: illustration of a layered prompt building up to a usable ECOPact factsheet -->
-<!-- IMAGE-GEN PROMPT: "A clean, modern infographic in flat corporate illustration style. Four stacked layered cards rising from bottom to top, each slightly offset like a staircase. Bottom card, plain white, labeled 'VAGUE START' with faint text '[ write about ECOPact ]'. Second card, light green, labeled 'LAYER 1: ADD CONTEXT' with small icon and caption '(e.g., \"Audience is architects and contractors\")'. Third card, yellow, labeled 'LAYER 2: DEFINE FACTS' with small icon and caption '(e.g., \"Use only these approved ECOPact facts\")'. Fourth card, red, labeled 'LAYER 3: SPECIFY STRUCTURE' with small icon and caption '(e.g., \"Benefits, how it works, availability\")'. Top: a glowing green-and-blue card labeled 'THE USABLE OUTPUT' with a checkmark, showing a mockup of a clean ECOPact factsheet document with the Holcim logo and a small icon row. To the right of the stack, a small 'User Persona' icon of a Sustainability professional with an arrow pointing up into the layers. White background, soft drop shadows, professional deep forest green and sand color palette. No readable body text beyond the labels shown." -->
+
 ![Prompting is a skill](images/prompting.png)
 
 ---
@@ -196,8 +195,6 @@
 - A year-end clarification answer should look the same, and cite the same source, whether you or a colleague ran it
 - Gems save the instructions, and the reference files, once, so everyone starts from the same standard
 
-<!-- TODO IMAGE: illustration of a Sustainability teammate frustrated at retyping a long prompt -->
-<!-- IMAGE-GEN PROMPT: "A flat corporate cartoon illustration of an office. A sign reads 'SUSTAINABILITY' above a desk area with colleagues working at laptops in the background, a plant-themed wall poster with a small leaf icon visible. In the foreground, a Sustainability professional sits at a laptop looking frustrated, a speech bubble above them reads 'Typing this long HARP prompt again is taking forever!'. A second monitor beside them shows a mockup labeled 'NEW YEAR-END ANSWER PROMPT:' with several lines of placeholder text and a button labeled 'GENERATE ANSWER'. A coffee mug on the desk reads 'SD HERO'. Bright, clean office with large windows, potted plants, deep forest green and sand color accents. No readable long paragraphs of text, only the short labels described." -->
 ![Stop rewriting the same prompt](images/prompt-frustration.png)
 
 ---
@@ -247,7 +244,7 @@
 
 # Gemini Notebook
 
-<!-- TODO IMAGE: real screenshot of your Holcim Sustainability ESG Questionnaire Hub notebook home view (Sources, Chat, Studio columns) -->
+
 ![Gemini Notebook](images/notebook.png)
 
 ---
@@ -275,8 +272,7 @@
 - If sources don't fully answer a question, the Notebook says so: it does not invent a figure
 - Save the strongest answers as notes; convert them into Studio sources
 
-<!-- TODO IMAGE: illustration of a Sustainability teammate at a laptop with Gemini Notebook open -->
-<!-- IMAGE-GEN PROMPT: "A flat corporate cartoon illustration. A Sustainability professional sits at a laptop in a bright meeting room, a window showing a cement plant silhouette in the distance. A speech bubble reads 'Gemini Notebook is a lifesaver! Every answer to this ESG questionnaire is cited.' Two floating mockup windows beside the laptop: one labeled 'GEMINI NOTEBOOK' with bullet lines reading 'Environment: cited', 'Labor and Human Rights: cited', 'Ethics: needs SD input', and one labeled 'STUDIO OUTPUTS READY' with three small icons for Report, Infographic, and Slide Deck. Deep forest green and sand color accents, clean professional style, no readable long paragraphs." -->
+
 ![Using Gemini Notebook](./images/using-notebook.png)
 
 ---
@@ -291,7 +287,7 @@
   - Slide presentations
   - and more...
 
-<!-- TODO IMAGE: real screenshot of the Studio panel in your ESG Questionnaire Hub notebook, showing Report, Infographic, and Slide Deck cards -->
+
 ![Gemini Notebook Studio](images/notebook-studio.png)
 
 ---
