@@ -44,7 +44,9 @@ Holcim Sustainability — ESG Questionnaire Hub
 
 4. Click **Add sources**, and choose **Drive**. Enter the following URL in the Search box, drill into the folder, and add all five files.
 
-[https://drive.google.com/drive/u/1/folders/1VlwKZ8-UPqC119fZ8dNu64mLTO7nArzq](https://drive.google.com/drive/u/1/folders/1VlwKZ8-UPqC119fZ8dNu64mLTO7nArzq)
+```
+https://drive.google.com/drive/u/1/folders/1VlwKZ8-UPqC119fZ8dNu64mLTO7nArzq
+```
 
 You should see:
    - `holcim-harp-chapter-14-sustainability-disclosures-synthetic.md`
