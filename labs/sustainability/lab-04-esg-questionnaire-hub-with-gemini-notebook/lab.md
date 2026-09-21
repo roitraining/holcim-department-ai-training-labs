@@ -169,9 +169,10 @@ Keep it concise and suitable for a 5-minute update.
 
 6. Below, is sample output.
 
-(Slide Deck)[https://drive.google.com/file/d/1i8AsX0mRrZV67EQFiX0KazkU1hu7YKN-/view?usp=drive_link]
+[Slide Deck](https://drive.google.com/file/d/1i8AsX0mRrZV67EQFiX0KazkU1hu7YKN-/view?usp=drive_link)
 
-![Infographic Example](/images/infographic.png)
+
+![Infographic Example](./images/infographic.png)
 
 
 
