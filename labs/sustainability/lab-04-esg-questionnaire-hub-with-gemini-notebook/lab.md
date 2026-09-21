@@ -41,30 +41,21 @@ In this task, you create the notebook and load the internal sources plus the cus
 Holcim Sustainability — ESG Questionnaire Hub
 ```
 
-4. Click **Add sources**, and choose **Drive**. Enter the following URL in the Search box, drill into the folder, and add all four files.
+4. Click **Add sources**, and choose **Drive**. Enter the following URL in the Search box, drill into the folder, and add all five files.
 
-[https://drive.google.com/drive/folders/19sR6xrg_Fq3z4RwNyn88MT9rh4ExSHTK?usp=sharing](https://drive.google.com/drive/folders/19sR6xrg_Fq3z4RwNyn88MT9rh4ExSHTK?usp=sharing)
+[https://drive.google.com/drive/u/1/folders/1VlwKZ8-UPqC119fZ8dNu64mLTO7nArzq](https://drive.google.com/drive/u/1/folders/1VlwKZ8-UPqC119fZ8dNu64mLTO7nArzq)
 
 You should see:
    - `holcim-harp-chapter-14-sustainability-disclosures-synthetic.md`
    - `holcim-sd-definitions-glossary-synthetic.md`
    - `holcim-annual-report-fy2024-sustainability-excerpt-synthetic.md`
    - `holcim-group-esg-response-pack-synthetic.md`
+   - `holcim-customer-esg-questionnaire-synthetic` (the customer's original questionnaire)
 
-<!-- TODO IMAGE: Screenshot of the Add sources dialog with the Drive folder link pasted and all four files visible -->
-![Adding the four internal sources from Drive](images/add-drive-sources.png)
+<!-- TODO IMAGE: Screenshot of the Add sources dialog with the Drive folder link pasted and all five files visible -->
+![Adding the five internal sources from Drive](images/add-drive-sources.png)
 
-5. Click **Add sources** again, choose **Drive**, and add the customer's original questionnaire:
-
-`YOUR_DRIVE_QUESTIONNAIRE_LINK_HERE`
-
-> [!IMPORTANT]
-> **Human TODO:** Turn `assets/holcim-customer-esg-questionnaire-synthetic.md` into a Google Doc, share it so participants can view and copy it, and replace `YOUR_DRIVE_QUESTIONNAIRE_LINK_HERE` above with the real link.
-
-<!-- TODO IMAGE: Screenshot of the Add sources dialog with the customer questionnaire Google Doc selected -->
-![Adding the customer questionnaire as a source](images/add-questionnaire-source.png)
-
-6. Wait until all five sources appear as ready in the **Sources** panel.
+5. Wait until all five sources appear as ready in the **Sources** panel.
 
 > [!WARNING]
 > Every source in this lab, including the "Nordvale Construction Group" questionnaire, is **synthetic training content**. Do not attach a real customer questionnaire or real confidential Holcim documents during this lab.
