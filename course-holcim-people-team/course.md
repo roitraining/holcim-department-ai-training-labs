@@ -1,9 +1,5 @@
 <!-- course-title: AI for the Holcim People Team -->
 
-<!-- layout: image-only -->
-![ROI Logo](images/title-page-image.png)
-
----
 <!-- layout: title -->
 ![ROI Logo](images/roi-logo-with-name.png)
 
