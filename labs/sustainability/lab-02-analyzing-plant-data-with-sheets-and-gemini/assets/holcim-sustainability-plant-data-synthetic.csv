@@ -1,0 +1,101 @@
+Plant ID,Country,Region,Plant Type,Reporting Quarter,Cementitious Production (tonnes),Gross CO2 Emissions (tonnes),Specific Net CO2 (kg per tonne cementitious),Thermal Substitution Rate (%),Renewable Electricity (%),Water Withdrawal (m3 per tonne),Transition Plan Published
+HLC-001,France,Europe,Grinding Station,Q1 2025,75358,1327,17.6,N/A,39.4,0.029,Yes
+HLC-001,France,Europe,Grinding Station,Q2 2025,78848,1750,22.2,N/A,40.2,0.032,Yes
+HLC-001,France,Europe,Grinding Station,Q3 2025,81235,1378,17.0,N/A,41.2,0.015,Yes
+HLC-001,France,Europe,Grinding Station,Q4 2025,70318,563,8,N/A,46.2,0.033,Yes
+HLC-002,Germany,Europe,Grinding Station,Q1 2025,55223,1768,32.0,N/A,37.0,0.041,No
+HLC-002,Germany,Europe,Grinding Station,Q2 2025,47169,1207,25.6,N/A,34.3,0.05,No
+HLC-002,Germany,Europe,Grinding Station,Q3 2025,50160,1011,20.2,N/A,36.4,0.076,No
+HLC-002,Germany,Europe,Grinding Station,Q4 2025,48110,1084,22.5,N/A,38.0,0.054,No
+HLC-003,Poland,Europe,Grinding Station,Q1 2025,80899,2340,28.9,N/A,43.6,0.065,No
+HLC-003,Poland,Europe,Grinding Station,Q2 2025,86611,2242,25.9,N/A,48.8,0.046,No
+HLC-003,Poland,Europe,Grinding Station,Q3 2025,85031,2041,24.0,N/A,47.6,0.063,No
+HLC-003,Poland,Europe,Grinding Station,Q4 2025,92358,2136,23.1,N/A,45.4,0.029,No
+HLC-004,Spain,Europe,Integrated Plant,Q1 2025,101037,62451,618.1,22.4,55.1,0.281,No
+HLC-004,Spain,Europe,Integrated Plant,Q2 2025,110942,68467,617.1,23.9,54.6,0.291,No
+HLC-004,Spain,Europe,Integrated Plant,Q3 2025,107464,65861,612.9,26.8,56.4,0.301,No
+HLC-004,Spain,Europe,Integrated Plant,Q4 2025,100793,60796,603.2,26.0,61.3,0.306,No
+HLC-005,Switzerland,Europe,Grinding Station,Q1 2025,96044,1914,19.9,N/A,13.5,0.054,Yes
+HLC-005,Switzerland,Europe,Grinding Station,Q2 2025,98086,1215,12.4,N/A,14.9,0.057,Yes
+HLC-005,Switzerland,Europe,Grinding Station,Q3 2025,87849,1280,14.6,N/A,18.2,0.053,Yes
+HLC-005,Switzerland,Europe,Grinding Station,Q4 2025,86260,690,8,N/A,18.3,0.044,Yes
+HLC-006,United Kingdom,Europe,Integrated Plant,Q1 2025,152459,92909,609.4,17.5,14.9,0.445,Yes
+HLC-006,United Kingdom,Europe,Integrated Plant,Q2 2025,162291,97201,598.9,18.0,17.1,0.441,Yes
+HLC-006,United Kingdom,Europe,Integrated Plant,Q3 2025,159271,95344,598.6,17.7,15.4,0.432,Yes
+HLC-006,United Kingdom,Europe,Integrated Plant,Q4 2025,178490,106124,594.6,21.9,18.0,0.416,Yes
+HLC-007,Italy,Europe,Grinding Station,Q1 2025,82738,3208,38.8,N/A,18.4,0.076,No
+HLC-007,Italy,Europe,Grinding Station,Q2 2025,83649,3406,40.7,N/A,23.6,0.077,No
+HLC-007,Italy,Europe,Grinding Station,Q3 2025,78581,2730,34.7,N/A,25.1,0.06,No
+HLC-007,Italy,Europe,Grinding Station,Q4 2025,76933,2684,34.9,N/A,24.0,0.071,No
+HLC-008,Belgium,Europe,Integrated Plant,Q1 2025,147001,83355,567.0,16.0,22.6,0.382,No
+HLC-008,Belgium,Europe,Integrated Plant,Q2 2025,136733,76514,559.6,17.9,22.5,0.374,No
+HLC-008,Belgium,Europe,Integrated Plant,Q3 2025,158656,89371,563.3,15.9,22.8,0.372,No
+HLC-008,Belgium,Europe,Integrated Plant,Q4 2025,140509,76887,547.2,24.4,28.8,0.386,No
+HLC-009,Romania,Europe,Grinding Station,Q1 2025,42422,446,10.5,N/A,40.8,0.044,No
+HLC-009,Romania,Europe,Grinding Station,Q2 2025,43232,572,13.2,N/A,40.7,0.052,No
+HLC-009,Romania,Europe,Grinding Station,Q3 2025,42209,338,8,N/A,42.7,0.033,No
+HLC-009,Romania,Europe,Grinding Station,Q4 2025,43769,350,8,N/A,45.2,0.05,No
+HLC-010,Brazil,Latin America,Integrated Plant,Q1 2025,174717,109263,625.4,34.2,39.4,0.361,Yes
+HLC-010,Brazil,Latin America,Integrated Plant,Q2 2025,174236,107734,618.3,34.0,36.6,0.39,Yes
+HLC-010,Brazil,Latin America,Integrated Plant,Q3 2025,174148,105719,607.1,38.6,39.5,0.39,Yes
+HLC-010,Brazil,Latin America,Integrated Plant,Q4 2025,154259,94459,612.3,37.9,44.4,0.387,Yes
+HLC-011,Mexico,Latin America,Integrated Plant,Q1 2025,103910,61262,589.6,19.6,12.4,0.434,No
+HLC-011,Mexico,Latin America,Integrated Plant,Q2 2025,103976,60825,585.0,23.2,12.3,0.4,No
+HLC-011,Mexico,Latin America,Integrated Plant,Q3 2025,97054,56904,586.3,22.5,15.4,0.405,No
+HLC-011,Mexico,Latin America,Integrated Plant,Q4 2025,95766,55823,582.9,21.5,19.7,0.41,No
+HLC-012,Argentina,Latin America,Integrated Plant,Q1 2025,143076,82790,578.6,18.9,27.6,0.431,No
+HLC-012,Argentina,Latin America,Integrated Plant,Q2 2025,150603,86214,572.5,20.1,25.4,0.427,No
+HLC-012,Argentina,Latin America,Integrated Plant,Q3 2025,140631,80892,575.2,23.7,29.0,0.411,No
+HLC-012,Argentina,Latin America,Integrated Plant,Q4 2025,144256,83891,581.5,24.8,30.3,0.413,No
+HLC-013,Colombia,Latin America,Integrated Plant,Q1 2025,77923,44733,574.1,23.6,26.9,0.434,Yes
+HLC-013,Colombia,Latin America,Integrated Plant,Q2 2025,72954,42200,578.4,23.7,28.3,0.414,Yes
+HLC-013,Colombia,Latin America,Integrated Plant,Q3 2025,80626,46284,574.1,26.1,35.9,0.44,Yes
+HLC-013,Colombia,Latin America,Integrated Plant,Q4 2025,83169,47138,566.8,30.3,35.1,0.423,Yes
+HLC-014,Ecuador,Latin America,Integrated Plant,Q1 2025,133932,81045,605.1,28.2,22.2,0.376,Yes
+HLC-014,Ecuador,Latin America,Integrated Plant,Q2 2025,140126,84027,599.7,29.1,24.4,0.385,Yes
+HLC-014,Ecuador,Latin America,Integrated Plant,Q3 2025,146323,87225,596.1,31.4,26.5,0.379,Yes
+HLC-014,Ecuador,Latin America,Integrated Plant,Q4 2025,145820,86286,591.7,37.2,25.5,0.357,Yes
+HLC-015,Costa Rica,Latin America,Integrated Plant,Q1 2025,86286,50417,584.3,25.7,33.0,0.334,Yes
+HLC-015,Costa Rica,Latin America,Integrated Plant,Q2 2025,83071,48043,578.3,29.3,32.4,0.359,Yes
+HLC-015,Costa Rica,Latin America,Integrated Plant,Q3 2025,79681,45831,575.2,31.6,32.4,0.355,Yes
+HLC-015,Costa Rica,Latin America,Integrated Plant,Q4 2025,96082,54499,567.2,31.1,34.9,0.334,Yes
+HLC-016,Dominican Republic,Latin America,Grinding Station,Q1 2025,72617,1842,25.4,N/A,22.0,0.032,No
+HLC-016,Dominican Republic,Latin America,Grinding Station,Q2 2025,81474,2073,25.4,N/A,19.6,0.057,No
+HLC-016,Dominican Republic,Latin America,Grinding Station,Q3 2025,80685,1067,13.2,N/A,23.9,0.062,No
+HLC-016,Dominican Republic,Latin America,Grinding Station,Q4 2025,86297,1219,14.1,N/A,20.3,0.045,No
+HLC-017,El Salvador,Latin America,Integrated Plant,Q1 2025,80556,47262,586.7,33.4,51.9,0.432,Yes
+HLC-017,El Salvador,Latin America,Integrated Plant,Q2 2025,85380,49326,577.7,34.4,56.5,0.403,Yes
+HLC-017,El Salvador,Latin America,Integrated Plant,Q3 2025,83410,47816,573.3,31.6,57.8,0.407,Yes
+HLC-017,El Salvador,Latin America,Integrated Plant,Q4 2025,87817,50896,579.6,36.9,53.4,0.438,Yes
+HLC-018,India,"Asia, Middle East and Africa",Integrated Plant,Q1 2025,146460,86686,591.9,29.8,32.9,0.399,No
+HLC-018,India,"Asia, Middle East and Africa",Integrated Plant,Q2 2025,146772,86370,588.5,30.4,31.8,0.385,No
+HLC-018,India,"Asia, Middle East and Africa",Integrated Plant,Q3 2025,132167,77577,587.0,32.5,37.7,0.416,No
+HLC-018,India,"Asia, Middle East and Africa",Integrated Plant,Q4 2025,132420,76926,580.9,31.4,32.1,0.399,No
+HLC-019,Morocco,"Asia, Middle East and Africa",Integrated Plant,Q1 2025,163560,97310,594.9,26.2,35.8,0.301,No
+HLC-019,Morocco,"Asia, Middle East and Africa",Integrated Plant,Q2 2025,169816,100022,589.0,27.9,34.1,0.294,No
+HLC-019,Morocco,"Asia, Middle East and Africa",Integrated Plant,Q3 2025,169050,100123,592.3,28.4,36.5,0.299,No
+HLC-019,Morocco,"Asia, Middle East and Africa",Integrated Plant,Q4 2025,159088,94027,591.0,35.1,40.5,0.319,No
+HLC-020,Nigeria,"Asia, Middle East and Africa",Integrated Plant,Q1 2025,74054,45078,608.7,16.4,11.8,0.317,Yes
+HLC-020,Nigeria,"Asia, Middle East and Africa",Integrated Plant,Q2 2025,80780,49009,606.7,17.4,13.8,0.315,Yes
+HLC-020,Nigeria,"Asia, Middle East and Africa",Integrated Plant,Q3 2025,73028,43420,594.6,20.9,13.7,0.301,Yes
+HLC-020,Nigeria,"Asia, Middle East and Africa",Integrated Plant,Q4 2025,85186,51148,600.4,21.2,14.2,0.291,Yes
+HLC-021,Philippines,"Asia, Middle East and Africa",Integrated Plant,Q1 2025,154490,88369,572.0,15.1,36.6,0.45,Yes
+HLC-021,Philippines,"Asia, Middle East and Africa",Integrated Plant,Q2 2025,166321,95256,572.7,13.3,37.2,0.437,Yes
+HLC-021,Philippines,"Asia, Middle East and Africa",Integrated Plant,Q3 2025,168229,95435,567.3,20.3,40.6,0.446,Yes
+HLC-021,Philippines,"Asia, Middle East and Africa",Integrated Plant,Q4 2025,177185,100482,567.1,17.5,42.6,0.45,Yes
+HLC-022,Indonesia,"Asia, Middle East and Africa",Integrated Plant,Q1 2025,137077,78889,575.5,18.8,47.5,0.413,Yes
+HLC-022,Indonesia,"Asia, Middle East and Africa",Integrated Plant,Q2 2025,140245,79367,565.9,23.1,48.5,0.407,Yes
+HLC-022,Indonesia,"Asia, Middle East and Africa",Integrated Plant,Q3 2025,144808,82456,569.4,23.7,49.2,0.428,Yes
+HLC-022,Indonesia,"Asia, Middle East and Africa",Integrated Plant,Q4 2025,150506,85212,566.2,26.6,50.1,0.4,Yes
+HLC-023,Sri Lanka,"Asia, Middle East and Africa",Grinding Station,Q1 2025,90664,3890,42.9,N/A,22.1,0.042,No
+HLC-023,Sri Lanka,"Asia, Middle East and Africa",Grinding Station,Q2 2025,83155,3308,39.8,N/A,24.4,0.028,No
+HLC-023,Sri Lanka,"Asia, Middle East and Africa",Grinding Station,Q3 2025,78046,3001,38.5,N/A,24.1,0.05,No
+HLC-023,Sri Lanka,"Asia, Middle East and Africa",Grinding Station,Q4 2025,80560,2665,33.1,N/A,31.2,0.06,No
+HLC-024,Lebanon,"Asia, Middle East and Africa",Integrated Plant,Q1 2025,163169,97415,597.0,24.2,30.8,0.447,Yes
+HLC-024,Lebanon,"Asia, Middle East and Africa",Integrated Plant,Q2 2025,177851,106124,596.7,28.9,31.7,0.421,Yes
+HLC-024,Lebanon,"Asia, Middle East and Africa",Integrated Plant,Q3 2025,150738,87722,582.0,30.1,37.1,0.448,Yes
+HLC-024,Lebanon,"Asia, Middle East and Africa",Integrated Plant,Q4 2025,170606,100195,587.3,29.5,34.0,0.444,Yes
+HLC-025,Jordan,"Asia, Middle East and Africa",Integrated Plant,Q1 2025,137954,80285,582.0,19.6,38.8,0.29,No
+HLC-025,Jordan,"Asia, Middle East and Africa",Integrated Plant,Q2 2025,115827,67304,581.1,23.2,38.3,0.291,No
+HLC-025,Jordan,"Asia, Middle East and Africa",Integrated Plant,Q3 2025,131997,75705,573.5,22.0,41.2,0.293,No
+HLC-025,Jordan,"Asia, Middle East and Africa",Integrated Plant,Q4 2025,130276,74634,572.9,27.0,37.7,0.324,No
