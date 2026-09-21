@@ -6,13 +6,14 @@
 
 ## Overview
 
-In this lab, you will build a Gemini Notebook (NotebookLM) ESG Questionnaire Hub for Holcim's Sustainability team. You add internal Holcim sources plus a customer's original ESG questionnaire, research public ESG rating criteria with web sources, draft cited answers in chat, then transfer those answers into a copy of the customer's original questionnaire document.
+In this lab, you will build a Gemini Notebook (NotebookLM) ESG Questionnaire Hub for Holcim's Sustainability team. You add internal Holcim sources plus a customer's original ESG questionnaire, research public ESG rating criteria with web sources, draft cited answers in chat, generate a manager-ready Report, Infographic, and Slide Deck grounded only in Holcim's own sources, then transfer the answers into a copy of the customer's original questionnaire document.
 
 ### You learn how to:
 - Create a Gemini Notebook and add Holcim Sustainability sources, including a customer's original questionnaire.
 - Research EcoVadis and public ESG rating criteria using web sources.
 - Draft grounded, cited answers to customer ESG questionnaire questions in chat.
-- Transfer grounded answers into a copy of the customer's original questionnaire and brief your manager with a Studio output.
+- Convert notes to sources and narrow your selection to Holcim's own content before generating a Report, Infographic, and Slide Deck in Studio.
+- Transfer grounded answers into a copy of the customer's original questionnaire.
 
 ## Scenario
 
@@ -67,13 +68,13 @@ In this task, you use Gemini Notebook's **Search for Web Sources** feature to pu
 1. In the **Search the Web for new sources** tool, enter the following search and run it.
 
 ```text
-EcoVadis sustainability rating methodology environment labor and human rights ethics sustainable procurement
+EcoVadis sustainability rating methodology: environment, labor, and human rights ethics. Sustainable procurement.
 ```
 
 <!-- TODO IMAGE: Screenshot of the Search the Web tool with the EcoVadis query and results listed -->
 ![Searching the web for EcoVadis methodology](images/search-web-esg-sources.png)
 
-2. Review the results, and select **Import** to add one or two relevant results to your notebook.
+2. Review the results, and select **Import** to relevant results to your notebook.
 
 3. Run a second search for the certifications your response pack references, and import the results.
 
@@ -109,8 +110,6 @@ If nothing in the sources answers a question, say the answer needs input from th
 
 4. Examine the results, then click the **Save to note** icon (_the push pin icon_) to save the draft answers in the **Gemini Notebook Studio** on the right.
 
-<!-- TODO IMAGE: Screenshot of chat drafting a cited answer to one questionnaire question -->
-![Chat drafting cited answers](images/chat-draft-answers.png)
 
 5. Ask Gemini to stress-test the draft before you send it anywhere:
 
@@ -120,35 +119,59 @@ Review the draft answers. Flag any answer that is not directly supported by a so
 
 6. Save this review as a note as well.
 
-### Task 4: Transfer grounded answers into the questionnaire and brief your manager
 
-In this task, you place the grounded answers into a copy of the customer's original file, then generate a short Studio briefing for your manager before you send the completed questionnaire back.
+![Chat drafting cited answers](images/chat-draft-answers.png)
 
-1. Open the customer questionnaire source directly (open its Drive link in a new tab).
+### Task 4: Turn your notes into a Report, Infographic, and Slide Deck in Studio
 
-2. Choose **File** | **Make a copy**, and rename the copy, for example `Nordvale Construction Group ESG Questionnaire — Draft Response`.
+In this task, you convert your saved notes into sources, narrow your selected sources to Holcim's own content, and use Studio to produce a Report, an Infographic, and a Slide Deck your manager can review before the questionnaire goes back to the customer.
 
-3. Working section by section, paste each grounded answer from your chat and notes under the matching question in your copy. Keep the source citation in a short bracketed note after each answer for internal review, and remove it before the questionnaire is actually sent to a customer.
+1. In the **Studio** panel on the right side of the notebook, select the action menu next to each saved note (your drafted answers and your gap review), and convert them to sources.
 
-<!-- TODO IMAGE: Screenshot of the duplicated questionnaire with answers filled in under each question -->
-![Answers placed into the questionnaire copy](images/questionnaire-copy-filled.png)
 
-> [!IMPORTANT]
-> This paste-in step is manual by design. Gemini Notebook drafts and grounds the answers; a person still reviews and places them in the customer's original file before it goes out.
+![Converting saved notes to sources](./images/convert-notes-to-sources.png)
 
-4. Back in Gemini Notebook, open **Studio** and generate a short briefing output for your manager, for example a **Report** or an **Audio Overview**, with this description:
+2. In the **Sources** panel, deselect all sources. Then select only the Holcim sources: the four internal Holcim documents (HARP chapter, SD glossary, Annual Report excerpt, ESG Response Pack) and your two converted notes. Leave the customer questionnaire and the web sources unselected.
 
-```text
-Create a short briefing for my manager on the Nordvale Construction Group ESG questionnaire response.
-Cover: which sections are fully grounded in our sources, which answers still need SD team input, and any figure that looks inconsistent between sources.
-Keep it concise and suitable for a 5-minute update before we send the questionnaire back.
-```
+> [!TIP]
+> You can sort the sources by type and the Holcoim ones will be grouped together at the bottom. 
 
-<!-- TODO IMAGE: Screenshot of the generated Studio briefing output -->
-![Studio briefing note for your manager](images/studio-briefing-note.png)
+
+![Only Holcim sources selected](./images/select-holcim-sources-only.png)
 
 > [!NOTE]
-> Studio generation can take a few minutes. You can keep working in chat while it generates.
+> Leaving the customer questionnaire and web sources unselected keeps Studio outputs grounded in Holcim's own facts and drafted answers, not the customer's raw question text or generic web pages.
+
+3. In **Studio**, click generate a **Report**. Choose whatever format you like., 
+
+
+4. Generate an **Infographic** with this description:
+
+```text
+Create a one-page executive summary infographic of our ESG questionnaire readiness, covering Environment, Labor and Human Rights, Ethics, and Sustainable Procurement.
+Highlight our strongest evidence and our biggest remaining gap in each theme.
+Style: clean corporate, deep forest green and sand accents.
+```
+
+5. Click the **Slide Deck** button. Choose **Presenter Slides** and paste the following description:
+
+```text
+Create a short slide deck to brief my manager before we send the completed ESG questionnaire back to Nordvale Construction Group.
+Cover: what the customer asked, how well we can answer today, remaining gaps, and who owns closing each gap.
+Keep it concise and suitable for a 5-minute update.
+```
+
+
+> [!NOTE]
+> Studio generation can take a few minutes each. Start the next one while the previous one generates.
+
+6. Below, is sample output.
+
+(Slide Deck)[https://drive.google.com/file/d/1i8AsX0mRrZV67EQFiX0KazkU1hu7YKN-/view?usp=drive_link]
+
+![Infographic Example](/images/infographic.png)
+
+
 
 ### Bonus Task 5: Rehearse the hub on a second question set
 
@@ -168,6 +191,7 @@ In this lab, you have:
 - Created a Gemini Notebook and added Holcim Sustainability sources, including a customer's original questionnaire.
 - Researched EcoVadis and public ESG rating criteria using web sources.
 - Drafted grounded, cited answers to customer ESG questionnaire questions in chat.
-- Transferred grounded answers into a copy of the customer's original questionnaire and briefed your manager with a Studio output.
+- Converted notes to sources and narrowed your selection to Holcim's own content before generating a Report, Infographic, and Slide Deck in Studio.
+- Transferred grounded answers into a copy of the customer's original questionnaire.
 
 ![ROI Training](./images/roi-logo-with-name.png)
