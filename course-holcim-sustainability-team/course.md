@@ -128,6 +128,8 @@
 
 **Time:** 30 minutes
 
+[Open Lab 1](https://labv.roitraining.com/?lab=https%3A%2F%2Fgithub.com%2Froitraining%2Fholcim-department-ai-training-labs%2Fblob%2Fmain%2Flabs%2Fsustainability%2Flab-01-prompt-engineering-mastery%2Flab.md)
+
 ---
 
 <!-- layout: navigation -->
@@ -174,6 +176,8 @@
 # Lab 2: Analyzing Plant Data with Sheets and Gemini
 
 **Time:** 30 minutes
+
+[Open Lab 2](https://labv.roitraining.com/?lab=https%3A%2F%2Fgithub.com%2Froitraining%2Fholcim-department-ai-training-labs%2Fblob%2Fmain%2Flabs%2Fsustainability%2Flab-02-analyzing-plant-data-with-sheets-and-gemini%2Flab.md)
 
 ---
 
@@ -228,6 +232,8 @@
 # Lab 3: Creating Reusable Sustainability Assistants with Gems
 
 **Time:** 30 minutes
+
+[Open Lab 3](https://labv.roitraining.com/?lab=https%3A%2F%2Fgithub.com%2Froitraining%2Fholcim-department-ai-training-labs%2Fblob%2Fmain%2Flabs%2Fsustainability%2Flab-03-creating-reusable-prompts-with-gems%2Flab.md)
 
 ---
 
@@ -296,6 +302,8 @@
 
 **Time:** 30 minutes
 
+[Open Lab 4](https://labv.roitraining.com/?lab=https%3A%2F%2Fgithub.com%2Froitraining%2Fholcim-department-ai-training-labs%2Fblob%2Fmain%2Flabs%2Fsustainability%2Flab-04-esg-questionnaire-hub-with-gemini-notebook%2Flab.md)
+
 ---
 
 <!-- layout: navigation -->
@@ -342,6 +350,8 @@
 # Lab 5: Apps Script Showcase Challenge
 
 **Time:** 30 minutes
+
+[Open Lab 5](https://labv.roitraining.com/?lab=https%3A%2F%2Fgithub.com%2Froitraining%2Fholcim-department-ai-training-labs%2Fblob%2Fmain%2Flabs%2Fsustainability%2Flab-05-apps-script-showcase-challenge%2Flab.md)
 
 ---
 
