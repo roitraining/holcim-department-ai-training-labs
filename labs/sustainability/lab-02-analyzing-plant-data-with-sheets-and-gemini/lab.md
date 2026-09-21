@@ -37,7 +37,6 @@ In this task, you create a spreadsheet and load the shared Holcim Sustainability
 
 4. Rename the first tab from `Sheet1` to `PlantData`.
 
-<!-- TODO IMAGE: Screenshot of the new sheet renamed to PlantData -->
 ![Create a new Google Sheet](images/create-google-sheet.png)
 
 5. Open the shared CSV in Drive (confirm you can view it):
@@ -49,7 +48,7 @@ In this task, you create a spreadsheet and load the shared Holcim Sustainability
    - Separator type: **Detect automatically** (or **Comma**).
    - Convert text to numbers, dates, and formulas: **Checked**.
 
-<!-- TODO IMAGE: Screenshot of the File > Import dialog with the CSV selected and Replace current sheet chosen -->
+
 ![Import CSV from Drive](images/import-csv-from-drive.png)
 
 7. Confirm row 1 contains these headers (12 columns):
@@ -67,7 +66,7 @@ In this task, you use **Ask Gemini** in Sheets to turn `PlantData` into a cleare
 
 1. Open the `PlantData` sheet and select any cell inside the data.
 
-2. At the top right, click **Ask Gemini** to open the side panel.
+2. At the top right, click **Ask Gemini** to open the side panel, if it is not already open.
 
 ![Ask Gemini panel in Google Sheets](images/gemini-in-sheets-panel.png)
 
@@ -81,7 +80,7 @@ On PlantData, format the data as a clean table:
 Do not delete rows.
 ```
 
-4. Review Gemini's proposal. Apply or insert the suggested formatting when it looks correct.
+4. Review Gemini's proposal. If asked, apply or insert the suggested formatting when it looks correct.
 
 5. Add header filters with Gemini:
 
@@ -311,8 +310,6 @@ function buildRegionChart(region) {
 
 9. Run it again with a different region, and confirm `RegionSummary` refreshes.
 
-> [!IMPORTANT]
-> The demo reads `PlantData` directly. There is no separate raw sheet in this lab because the source file is already a manageable size.
 
 **What this demo teaches**
 
