@@ -33,7 +33,7 @@ In this task, you open the Gems manager and create **Holcim Sustainability Conte
 
 4. Click **New Gem**.
 
-<!-- TODO IMAGE: Screenshot of the Gemini sidebar with Gems highlighted, about to click New Gem -->
+
 ![Gemini sidebar showing Gems](images/gemini-sidebar-gems.png)
 
 5. Set the Gem **Name** to:
@@ -75,7 +75,7 @@ Writing quality example:
 Write strong, specific copy in the good style.
 ```
 
-<!-- TODO IMAGE: Screenshot of the New Gem editor with Name and Instructions filled in -->
+
 ![New Gem editor with instructions](images/content-assistant-gem-editor.png)
 
 7. Optional: click **Use Gemini to re-write instructions** (_the wand icon_) if you want a polished expansion, then edit anything that drifts from the approved facts.
@@ -90,7 +90,7 @@ Write a 2-sentence social caption promoting ECOPact for a LinkedIn post.
 
 10. Click **Save**.
 
-<!-- TODO IMAGE: Preview response from Holcim Sustainability Content Assistant Gem -->
+
 ![Content Assistant Gem preview](images/content-assistant-gem-preview.png)
 
 > [!IMPORTANT]
@@ -138,18 +138,18 @@ Q: How do we define Thermal Substitution Rate, and does it apply to every plant?
 A: Thermal Substitution Rate is the share of kiln thermal energy from alternative fuels instead of fossil fuels. It only applies to Integrated Plants; Grinding Stations do not operate a kiln and report it as not applicable. (SD Glossary: Thermal Substitution Rate)
 ```
 
-4. Scroll down to **Knowledge**, and click **Add files**.
+4. Scroll down to **Knowledge**, and click the **Add files** icon (_the plus sign_).
 
-5. Choose **Drive**, paste the following folder link, and add all three files:
+5. Choose **Add from Drive**, paste the following folder link, dril into the folder, and add all three files.
 
 [https://drive.google.com/drive/folders/19sR6xrg_Fq3z4RwNyn88MT9rh4ExSHTK?usp=sharing](https://drive.google.com/drive/folders/19sR6xrg_Fq3z4RwNyn88MT9rh4ExSHTK?usp=sharing)
 
 <!-- TODO IMAGE: Screenshot of the Knowledge section with all three files attached -->
 ![Year-End Reporting Assistant Knowledge files](images/year-end-gem-knowledge.png)
 
-6. Click **Save**.
+6. Click **Save**, and the start a new chat. 
 
-7. In the **Preview** panel (or start a new chat with the Gem after saving), test with:
+7. Test with your Gem with the following:
 
 ```text
 Do we need to disclose a plant's Specific Net CO2 individually if it is a very small plant?
@@ -186,8 +186,6 @@ In this task, you confirm both Gems are easy to find and run a second request on
    - `Holcim Sustainability Content Assistant`
    - `Holcim Year-End Reporting Assistant`
 
-<!-- TODO IMAGE: Gems list showing both saved Gems -->
-![Both Gems saved and listed](images/saved-gems-list.png)
 
 3. Open **Holcim Sustainability Content Assistant** and send a new request (do not rebuild instructions):
 
