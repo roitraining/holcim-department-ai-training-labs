@@ -2,7 +2,7 @@
 
 ## Time Required
 
-60 minutes
+30 minutes
 
 ## Overview
 
