@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 480" font-family="'Helvetica Neue', Arial, Helvetica, sans-serif">
+  <rect x="0" y="0" width="1200" height="480" fill="#ffffff"/>
+
+  <!-- spokes -->
+  <g stroke="#9aa5b1" stroke-width="3" fill="none">
+    <line x1="600" y1="140" x2="600" y2="80"/>
+    <line x1="700" y1="240" x2="960" y2="240"/>
+    <line x1="600" y1="340" x2="600" y2="400"/>
+    <line x1="500" y1="240" x2="240" y2="240"/>
+  </g>
+
+  <!-- center hub -->
+  <circle cx="600" cy="240" r="100" fill="#041739"/>
+  <text x="600" y="225" text-anchor="middle" fill="#ffffff" font-size="19" font-weight="bold">Your</text>
+  <text x="600" y="250" text-anchor="middle" fill="#ffffff" font-size="19" font-weight="bold">Sustainability</text>
+  <text x="600" y="275" text-anchor="middle" fill="#ffffff" font-size="19" font-weight="bold">Workflow</text>
+
+  <!-- Top: Prompt Engineering -->
+  <g>
+    <rect x="430" y="10" width="340" height="70" rx="12" fill="#0C98CC"/>
+    <text x="600" y="40" text-anchor="middle" fill="#ffffff" font-size="19" font-weight="bold">Prompt Engineering</text>
+    <text x="600" y="63" text-anchor="middle" fill="#eafbff" font-size="14">Role &#183; Task &#183; Steps &#183; Examples</text>
+  </g>
+
+  <!-- Right: Sheets -->
+  <g>
+    <rect x="960" y="170" width="210" height="140" rx="12" fill="#36BDAE"/>
+    <text x="1065" y="215" text-anchor="middle" fill="#ffffff" font-size="19" font-weight="bold">Sheets +</text>
+    <text x="1065" y="240" text-anchor="middle" fill="#ffffff" font-size="19" font-weight="bold">Gemini</text>
+    <text x="1065" y="270" text-anchor="middle" fill="#e3fff7" font-size="14">Format &#183; chart &#183; automate</text>
+  </g>
+
+  <!-- Bottom: Notebook -->
+  <g>
+    <rect x="430" y="400" width="340" height="70" rx="12" fill="#5EBF77"/>
+    <text x="600" y="430" text-anchor="middle" fill="#ffffff" font-size="19" font-weight="bold">Gemini Notebook</text>
+    <text x="600" y="453" text-anchor="middle" fill="#eafff1" font-size="14">Grounded research and ESG answers</text>
+  </g>
+
+  <!-- Left: Gems -->
+  <g>
+    <rect x="30" y="170" width="210" height="140" rx="12" fill="#117DAF"/>
+    <text x="135" y="225" text-anchor="middle" fill="#ffffff" font-size="19" font-weight="bold">Gems</text>
+    <text x="135" y="255" text-anchor="middle" fill="#dff6ff" font-size="14">Save it once,</text>
+    <text x="135" y="273" text-anchor="middle" fill="#dff6ff" font-size="14">reuse every time</text>
+  </g>
+</svg>

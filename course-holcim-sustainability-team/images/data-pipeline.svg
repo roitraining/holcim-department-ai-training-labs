@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 350" font-family="'Helvetica Neue', Arial, Helvetica, sans-serif">
+  <rect x="0" y="0" width="1200" height="350" fill="#ffffff"/>
+
+  <!-- connectors -->
+  <g stroke="#041739" stroke-width="4" fill="none">
+    <line x1="280" y1="220" x2="320" y2="220"/>
+    <line x1="580" y1="220" x2="620" y2="220"/>
+    <line x1="880" y1="220" x2="920" y2="220"/>
+  </g>
+  <g fill="#041739">
+    <polygon points="320,220 302,210 302,230"/>
+    <polygon points="620,220 602,210 602,230"/>
+    <polygon points="920,220 902,210 902,230"/>
+  </g>
+
+  <!-- Stage 1: Plant CSV in Drive -->
+  <g>
+    <rect x="20" y="90" width="260" height="240" rx="14" fill="#eef3f6" stroke="#c7d0d9" stroke-width="2"/>
+    <text x="150" y="135" text-anchor="middle" fill="#041739" font-size="21" font-weight="bold">Plant CSV</text>
+    <text x="150" y="168" text-anchor="middle" fill="#33465a" font-size="16">100 rows</text>
+    <text x="150" y="192" text-anchor="middle" fill="#33465a" font-size="16">12 columns</text>
+    <text x="150" y="264" text-anchor="middle" fill="#6b7c8c" font-size="14" font-style="italic">Shared in Drive,</text>
+    <text x="150" y="284" text-anchor="middle" fill="#6b7c8c" font-size="14" font-style="italic">already this size</text>
+  </g>
+
+  <!-- Stage 2: PlantData -->
+  <g>
+    <rect x="320" y="90" width="260" height="240" rx="14" fill="#041739"/>
+    <text x="450" y="135" text-anchor="middle" fill="#ffffff" font-size="21" font-weight="bold">PlantData</text>
+    <text x="450" y="168" text-anchor="middle" fill="#bfe3ff" font-size="16">Imported directly,</text>
+    <text x="450" y="192" text-anchor="middle" fill="#bfe3ff" font-size="16">no sampling needed</text>
+    <text x="450" y="264" text-anchor="middle" fill="#8fd0ff" font-size="14" font-style="italic">Small, clean,</text>
+    <text x="450" y="284" text-anchor="middle" fill="#8fd0ff" font-size="14" font-style="italic">Gemini-ready</text>
+  </g>
+
+  <!-- Stage 3: Gemini in Sheets -->
+  <g>
+    <rect x="620" y="90" width="260" height="240" rx="14" fill="#0C98CC"/>
+    <text x="750" y="135" text-anchor="middle" fill="#ffffff" font-size="20" font-weight="bold">Gemini in Sheets</text>
+    <text x="750" y="170" text-anchor="middle" fill="#eafbff" font-size="15">Format &#183; Filter</text>
+    <text x="750" y="194" text-anchor="middle" fill="#eafbff" font-size="15">Conditional format</text>
+    <text x="750" y="218" text-anchor="middle" fill="#eafbff" font-size="15">Chart by region</text>
+    <text x="750" y="264" text-anchor="middle" fill="#d3f3ff" font-size="14" font-style="italic">Plain-language asks</text>
+  </g>
+
+  <!-- Stage 4: Apps Script -->
+  <g>
+    <rect x="920" y="90" width="260" height="240" rx="14" fill="#5EBF77"/>
+    <text x="1050" y="135" text-anchor="middle" fill="#ffffff" font-size="20" font-weight="bold">Apps Script</text>
+    <text x="1050" y="170" text-anchor="middle" fill="#eafff1" font-size="15">Custom menu</text>
+    <text x="1050" y="194" text-anchor="middle" fill="#eafff1" font-size="15">Sidebar picker</text>
+    <text x="1050" y="218" text-anchor="middle" fill="#eafff1" font-size="15">One-click region chart</text>
+    <text x="1050" y="264" text-anchor="middle" fill="#d7ffe3" font-size="14" font-style="italic">Self-serve for teammates</text>
+  </g>
+</svg>

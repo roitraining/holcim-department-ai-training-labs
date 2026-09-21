@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 480" font-family="'Helvetica Neue', Arial, Helvetica, sans-serif">
+  <rect x="0" y="0" width="1200" height="480" fill="#ffffff"/>
+
+  <!-- connecting arrows -->
+  <g stroke="#041739" stroke-width="4" fill="none">
+    <line x1="266" y1="260" x2="330" y2="260"/>
+    <line x1="566" y1="260" x2="630" y2="260"/>
+    <line x1="866" y1="260" x2="930" y2="260"/>
+  </g>
+  <g fill="#041739">
+    <polygon points="330,260 312,250 312,270"/>
+    <polygon points="630,260 612,250 612,270"/>
+    <polygon points="930,260 912,250 912,270"/>
+  </g>
+
+  <!-- Card 1: ROLE -->
+  <g>
+    <rect x="40" y="80" width="226" height="360" rx="16" fill="#041739"/>
+    <text x="153" y="140" text-anchor="middle" fill="#ffffff" font-size="34" font-weight="bold">ROLE</text>
+    <text x="153" y="176" text-anchor="middle" fill="#ffffff" fill-opacity="0.85" font-size="18" font-style="italic">Who is the AI?</text>
+    <text x="65" y="228" fill="#bfe3ff" font-size="17">
+      <tspan x="65" dy="0">"You are a Holcim</tspan>
+      <tspan x="65" dy="26">Sustainability</tspan>
+      <tspan x="65" dy="26">product marketing</tspan>
+      <tspan x="65" dy="26">partner."</tspan>
+    </text>
+  </g>
+
+  <!-- Card 2: TASK -->
+  <g>
+    <rect x="340" y="80" width="226" height="360" rx="16" fill="#117DAF"/>
+    <text x="453" y="140" text-anchor="middle" fill="#ffffff" font-size="34" font-weight="bold">TASK</text>
+    <text x="453" y="176" text-anchor="middle" fill="#ffffff" fill-opacity="0.85" font-size="18" font-style="italic">What's the job?</text>
+    <text x="365" y="228" fill="#dff6ff" font-size="17">
+      <tspan x="365" dy="0">"Produce a complete</tspan>
+      <tspan x="365" dy="26">ECOPact factsheet</tspan>
+      <tspan x="365" dy="26">using only these</tspan>
+      <tspan x="365" dy="26">approved facts."</tspan>
+    </text>
+  </g>
+
+  <!-- Card 3: STEPS -->
+  <g>
+    <rect x="640" y="80" width="226" height="360" rx="16" fill="#36BDAE"/>
+    <text x="753" y="140" text-anchor="middle" fill="#ffffff" font-size="34" font-weight="bold">STEPS</text>
+    <text x="753" y="176" text-anchor="middle" fill="#ffffff" fill-opacity="0.85" font-size="18" font-style="italic">What's the process?</text>
+    <text x="665" y="228" fill="#e3fff7" font-size="17">
+      <tspan x="665" dy="0">"List reasons,</tspan>
+      <tspan x="665" dy="26">then objections,</tspan>
+      <tspan x="665" dy="26">then draft the</tspan>
+      <tspan x="665" dy="26">full factsheet."</tspan>
+    </text>
+  </g>
+
+  <!-- Card 4: EXAMPLES -->
+  <g>
+    <rect x="940" y="80" width="226" height="360" rx="16" fill="#7BC04F"/>
+    <text x="1053" y="140" text-anchor="middle" fill="#ffffff" font-size="30" font-weight="bold">EXAMPLES</text>
+    <text x="1053" y="176" text-anchor="middle" fill="#ffffff" fill-opacity="0.85" font-size="18" font-style="italic">What's "good"?</text>
+    <text x="965" y="228" fill="#f0ffe3" font-size="17">
+      <tspan x="965" dy="0">Good: specific,</tspan>
+      <tspan x="965" dy="26">measurable claims.</tspan>
+      <tspan x="965" dy="26">Weak: vague</tspan>
+      <tspan x="965" dy="26">green claims.</tspan>
+    </text>
+  </g>
+</svg>
