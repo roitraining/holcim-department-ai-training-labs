@@ -1,4 +1,4 @@
-# Holcim Department AI Training Labs
+# Holcim Departmental AI Training Courses and Labs
 
 ## People Team Course
 
