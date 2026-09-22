@@ -1,15 +1,5 @@
 <!-- course-title: AI for the Holcim People Team -->
 
-<!-- layout: title -->
-<!-- ![ROI Logo](images/roi-logo-with-name.png)
-
-# AI for the Holcim People Team
-
-## Practical Skills for Everyday HR Work
-
---- -->
-
-
 <!-- layout: full-bleed -->
 ![ROI Logo](images/title-slide.png)
 
