@@ -1,11 +1,16 @@
 <!-- course-title: AI for the Holcim Sustainability Team -->
 
 <!-- layout: title -->
-![ROI Logo](images/roi-logo-with-name.png)
+<!-- ![ROI Logo](images/roi-logo-with-name.png)
 
 # AI for the Holcim Sustainability Team
 
 ## Practical Skills for Everyday Sustainability Work
+
+--- -->
+
+<!-- layout: full-bleed -->
+![ROI Logo](images/title-slide.png)
 
 ---
 
