@@ -10,14 +10,14 @@ In this lab, you will pick one real People-team task from your work and apply te
 
 ### You learn how to:
 - Select a real Holcim People use case that fits the skills from Labs 1–4.
-- Apply at least two prior-lab techniques to produce a useful work artifact.
+- Apply at least two prior lab techniques to produce a useful work artifact.
 - Capture a simple reuse plan so the approach sticks after training.
 
 ## Scenario
 
 ![Holcim Logo](./images/holcim-logo.png)
 
-Training only sticks when it hits Monday morning work. You already practiced prompt engineering, Sheets with Gemini, Gems, and Gemini Notebook briefings. Now you apply those skills to **your** Holcim People priority—hiring, screening, workforce insights, manager briefings, or learning content—without waiting for a perfect scripted scenario.
+Training only sticks when it hits Monday morning work. You already practiced prompt engineering, Sheets with Gemini, Gems, and Gemini Notebook briefings. Now you apply those skills to ***your*** Holcim People priority—hiring, screening, workforce insights, manager briefings, or learning content—without waiting for a perfect scripted scenario.
 
 ## Lab Instructions
 
@@ -37,7 +37,7 @@ Example:
 I need to draft a plant supervisor job posting for Europe by next Thursday.
 ```
 
-2. Choose **at least two** techniques from prior labs:
+2. Choose at least two techniques from prior labs:
 
 | Prior lab | Technique you can reuse |
 | :--- | :--- |
@@ -58,9 +58,9 @@ In this task, you execute your plan and produce something a colleague could revi
 
 1. Open the tools you chose (Gemini app, Sheets, Gems, and/or Gemini Notebook).
 
-2. Spend about **15 minutes** building **one** primary artifact, such as:
+2. Spend about 15 minutes building one primary artifact, such as:
 
-   - A strong job posting or interview guide (Lab 1 / Lab 3)
+   - A strong job posting or interview guide (Lab 1/Lab 3)
    - A cleaned Sheet view or chart for a People metric (Lab 2)
    - A saved Gem for a workflow you repeat weekly (Lab 3)
    - A short Notebook briefing, talking points, infographic, or slide outline (Lab 4)
@@ -92,7 +92,7 @@ Next improvement after class: ...
 
 In this lab, you have:
 - Selected a real Holcim People use case that fits the skills from Labs 1–4.
-- Applied at least two prior-lab techniques to produce a useful work artifact.
+- Applied at least two prior lab techniques to produce a useful work artifact.
 - Captured a simple reuse plan so the approach sticks after training.
 
 ![ROI Training](./images/roi-logo-with-name.png)

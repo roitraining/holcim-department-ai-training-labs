@@ -124,7 +124,7 @@
 
 ---
 
-# Lab 1: Prompt Engineering Mastery
+# Lab 1: Prompt Engineering Mastery with Gemini for Holcim People Teams
 
 **Time:** 30 minutes
 
@@ -174,7 +174,7 @@
 
 ---
 
-# Lab 2: Analyzing Data with Sheets and Gemini
+# Lab 2: Analyzing Holcim Workforce Data with Sheets and Gemini
 
 **Time:** 30 minutes
 
@@ -229,7 +229,7 @@
 
 ---
 
-# Lab 3: Creating Reusable Prompts with Gems
+# Lab 3: Creating Reusable Holcim People Prompts with Gemini Gems
 
 **Time:** 30 minutes
 
@@ -296,7 +296,7 @@
 ---
 
 
-# Lab 4: Labor Market Briefings with Gemini Notebook
+# Lab 4: Preparing Holcim Labor Availability Briefings with Gemini Notebook
 
 **Time:** 30 minutes
 
@@ -345,7 +345,7 @@
 
 ---
 
-# Lab 5: Bring Your Own Use Case
+# Lab 5: Bring Your Own Holcim People Use Case
 
 **Time:** 20 minutes
 

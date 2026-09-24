@@ -1,4 +1,4 @@
-# Create Reusable Holcim People Prompts with Gemini Gems
+# Creating Reusable Holcim People Prompts with Gemini Gems
 
 ## Time Required
 
@@ -6,7 +6,7 @@
 
 ## Overview
 
-In this lab, you will create two reusable **Gemini Gems** for Holcim People work: a job-posting writer and a resume reviewer. You open Gemini, expand the sidebar, open Gems, paste durable instructions, preview each Gem, save it, and run short requests so teammates can reuse the same quality without rebuilding prompts from scratch.
+In this lab, you will create two reusable Gemini Gems for Holcim People work: a job-posting writer and a resume reviewer. You open Gemini, expand the sidebar, open Gems, paste durable instructions, preview each Gem, save it, and run short requests so teammates can reuse the same quality without rebuilding prompts from scratch.
 
 ### You learn how to:
 - Open Gemini Gems from the sidebar and create a new custom Gem.

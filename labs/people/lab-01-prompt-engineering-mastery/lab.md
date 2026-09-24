@@ -28,12 +28,12 @@ In this task, you open the Gemini app in your browser and improve a job-posting 
 
 1. Open [https://gemini.google.com/](https://gemini.google.com/) in Chrome (or your preferred browser) and sign in with your Google account.
 
-2. Start a **new chat** so this exercise has a clean history.
+2. Start a **New chat** so this exercise has a clean history.
 
 <!-- TODO IMAGE: Screenshot of gemini.google.com signed-in home/new chat view -->
 ![Gemini app home](images/gemini-app-home.png)
 
-3. Paste this **simple** prompt and send it:
+3. Paste this simple prompt and press ENTER:
 
 ```text
 Write a job posting for an HR Business Partner at Holcim.
@@ -41,7 +41,7 @@ Write a job posting for an HR Business Partner at Holcim.
 
 4. Skim the result. Note what is generic, missing, or not Holcim-specific (industry, regions, safety culture, sustainable construction).
 
-5. In the **same chat**, send this improved prompt that adds a **Role**:
+5. In the same chat, send this improved prompt that adds a **Role**:
 
 ```text
 You are an experienced Holcim People (HR) communications partner who writes clear, inclusive job postings for industrial and corporate roles in sustainable construction.
@@ -100,9 +100,9 @@ In this task, you add synthetic candidate PDFs from Google Drive into Gemini and
 
 1. Open the shared lab resources folder in Google Drive:
 
-[https://drive.google.com/drive/folders/1DjfQAg4Q7WhfPQOC7YiJLvtxcKTyZuAC](https://drive.google.com/drive/folders/1DjfQAg4Q7WhfPQOC7YiJLvtxcKTyZuAC)
+   [https://drive.google.com/drive/folders/1DjfQAg4Q7WhfPQOC7YiJLvtxcKTyZuAC](https://drive.google.com/drive/folders/1DjfQAg4Q7WhfPQOC7YiJLvtxcKTyZuAC)
 
-2. Open the **resumes** subfolder and confirm you see these **10 synthetic** PDF resumes (demo data only—not real people):
+2. Open the **resumes** subfolder and confirm you see these 10 synthetic PDF resumes (demo data only—not real people):
 
 | File | Candidate |
 | :--- | :--- |
@@ -118,13 +118,13 @@ In this task, you add synthetic candidate PDFs from Google Drive into Gemini and
 | `10-thomas-berger.pdf` | Thomas Berger |
 
 > [!WARNING]
-> These resumes are **synthetic training files**. Do not treat names, emails, or employers as real. Do not add confidential Holcim employee or applicant data during this lab.
+> These resumes are ***synthetic training files***. Do not treat names, emails, or employers as real. Do not add confidential Holcim employee or applicant data during this lab.
 
-3. Start a **new Gemini chat** for resume screening.
+3. Select **New chat** for resume screening.
 
 4. In the Gemini prompt box, click **+** button, and choose **Add from Drive**. 
 
-   In the **Select files** picker, paste the following URL in the search box and hit Enter.
+   In the **Select files** picker, paste the following URL in the search box and press ENTER.
 
 ```
 https://drive.google.com/drive/folders/11tGFsykadg-e4RJGGw-6ZG5R_wujCvrF?usp=drive_link
@@ -133,7 +133,7 @@ https://drive.google.com/drive/folders/11tGFsykadg-e4RJGGw-6ZG5R_wujCvrF?usp=dri
 
 5. Select two PDFs and insert them. Confirm that they appear as attachments on the prompt. 
 
-    Send the following prompt. 
+   Send the following prompt. 
 
 ```text
 Look at these resumes and tell me what you think.
@@ -193,11 +193,11 @@ Example of good formatting:
 - **Rank:** Experienced
 - **Rationale:** Led multi-site safety programs for five years. Clear industrial health and safety evidence without claiming executive scope.
 
-Re-run the review for the currently attached resumes using this format only.
+Rerun the review for the currently attached resumes using this format only.
 ```
 
 
-9. Use **Add from Drive** again to attach **three more** resumes (mix of senior and junior profiles) and send:
+9. Use **Add from Drive** again to attach three more resumes (mix of senior and junior profiles) and send:
 
 ```text
 Review the newly attached resumes with the same schema and rules. Append new candidate blocks only.
@@ -219,26 +219,25 @@ Sort the table by Rank in this order: Exceptional, Experienced, Entry-Level.
 
 ### Task 3: Generate a Holcim Training Days flyer with progressive image prompts
 
-In this task, you use Gemini’s image generation to create a flyer for **Holcim Training Days**, starting simple, then adding the Holcim logo, style direction, and a meta-prompt to refine the image prompt itself.
+In this task, you use Gemini’s image generation to create a flyer for ***Holcim Training Days***, starting simple, then adding the Holcim logo, style direction, and a meta-prompt to refine the image prompt itself.
 
-1. In Gemini, start a **new chat**. Then, select the **create image** tool from the tools menu. 
+1. In Gemini, click **New chat**. Then, select the **Create image** tool from the tools menu. 
 
-2. Send a **simple** image request:
+2. Send a simple image request:
 
 ```text
 Create an image of a flyer for Holcim Training Days.
 ```
 
-> [!Note]
-> it will create something, and it might look good. However, it just made everything up. Let's be more specific.
+> [!Note]: It will create something, and it might look good. However, it just made everything up. Let's be more specific.
 
-3. Create a new chat, and select the create image tool again. 
+3. Create a **New chat** and select the **Create image** tool again. 
 
-4. Copy the Holcim logo below to the clipboard, and past it in the prompt box.  
+4. Copy the Holcim logo below to the clipboard and paste it in the prompt box.  
 
 ![Holcim Logo](./images/holcim-logo.png)
 
-5. Send a stronger prompt that references the logo, and provides event details. 
+5. Send a stronger prompt that references the logo and provides event details. 
 
 ```text
 Create a vertical event flyer image for "Holcim Training Days".
@@ -262,7 +261,7 @@ Visual direction:
 
 ![Flyer One](./images/flyer-1.png)
 
-6. Add **style details** in a follow-up to refine (or regenerate) the flyer:
+6. Add ***style details*** in a follow-up to refine (or regenerate) the flyer:
 
 ```text
 Regenerate the flyer with these style constraints:
@@ -279,7 +278,7 @@ Regenerate the flyer with these style constraints:
 ![Flyer Two](./images/flyer-2.png)
 
 
-7. Practice **meta-prompting for image generation**. Ask Gemini to improve the prompt before making the next image:
+7. Practice meta-prompting for image generation. Ask Gemini to improve the prompt before making the next image:
 
 ```text
 You are an expert prompt engineer for image generation.
@@ -289,7 +288,7 @@ Meta-task:
 2. Write an improved single image prompt (under 180 words) that is more specific about composition, lighting, camera/layout language, and negative constraints.
 ```
 
-7. Copy the improved prompt to the clipboard, create a new chat, and re-run the image generation using it. Don't forget to attach the logo, and select the create image tool. 
+3. Copy the improved prompt to the clipboard, create a new chat, and rerun the image generation using it. Don't forget to attach the logo, and select the create image tool. 
 
 
 ![Flyer Two](./images/flyer-3.png)

@@ -1,4 +1,4 @@
-# Prepare Holcim Labor Availability Briefings with Gemini Notebook
+# Preparing Holcim Labor Availability Briefings with Gemini Notebook
 
 ## Time Required
 
@@ -18,7 +18,7 @@ In this lab, you will build a Gemini Notebook (NotebookLM) research pack for a H
 
 ![Holcim Logo](./images/holcim-logo.png)
 
-You are a Holcim People Business Partner preparing a 30-minute management meeting on **labor availability** across Europe and South America priority markets. Leaders want to know where vacancies are hurting operations, what the external labor market looks like, and what decisions they must make this quarter.
+You are a Holcim People Business Partner preparing a 30-minute management meeting on labor availability across Europe and South America priority markets. Leaders want to know where vacancies are hurting operations, what the external labor market looks like, and what decisions they must make this quarter.
 
 You have two internal synthetic packs (HR staffing guidelines and a labor availability snapshot). You will combine them with public web research in Gemini Notebook, stress-test your narrative in chat, then produce meeting-ready Studio outputs.
 
@@ -31,7 +31,7 @@ In this task, you create the notebook and load Holcim People guidance that will 
 
 1. Open [https://notebooklm.google.com/](https://notebooklm.google.com/) and sign in with your account.
 
-2. On the home page, create a **New notebook**.
+2. On the home page, click **Create new notebook**.
 
 ![Gemini Notebook home page](images/new-notebook.png)
 
@@ -41,7 +41,7 @@ In this task, you create the notebook and load Holcim People guidance that will 
 Holcim People — Labor Availability Briefing
 ```
 
-4. Click **Add sources**, and choose **Drive**. Enter the following URL in the Search box, drill into the folder and add both files. 
+4. Click **Add sources**, and choose **Drive**. Enter the following URL in the Search box, drill into the folder, and add both files. 
 
 ```
 https://drive.google.com/drive/folders/1fc6YBkUAiKz973jy0DJYEBSwb8Vuhq-v?usp=drive_link
@@ -66,7 +66,7 @@ EMEA labor market for skilled trades, manufacturing, and construction workforce
 
 ![Import Web sources](images/import-web-sources.png)
 
-3. Run a second search for South America and add the results as you jsut did. 
+3. Run a second search for South America and add the results as you just did. 
 
 ```text
 South America, Latin America labor market construction manufacturing skilled trades employment
@@ -83,7 +83,7 @@ In this task, you use chat to draft key talking points and anticipate tough ques
 
 1. Ensure all Holcim sources and your web sources are selected.
 
-2. In the Chat in the middle of the page, ask the following to generate **key talking points** for the meeting opener:
+2. In the chat in the middle of the page, ask the following to generate ***key talking points*** for the meeting opener:
 
 ```text
 Prepare key talking points for a 30-minute Holcim People leadership meeting on labor availability.
@@ -102,7 +102,7 @@ Keep it concise and suitable to speak aloud. Cite sources.
 ![Studio Notes](images/studio-note.png)
 
 
-4. Ask for **gotcha questions** leaders or finance partners might raise:
+4. Ask for ***gotcha questions*** leaders or finance partners might raise:
 
 ```text
 List 6 gotcha questions people might ask in this meeting.
@@ -136,7 +136,7 @@ In this task, you use the **Studio** panel to produce meeting artifacts: a one-p
 ![Selected Sources](images/note-selected-sources.png)
 
 
-3. Select the arrow (>) on the right of the **Infographic** card in the __Studio__. In the description, enter the following, and the click __Generate__. 
+3. Select the arrow (>) on the right of the **Infographic** card in the __Studio__. In the description, enter the following and then click __Generate__. 
 
 ```text
 Create a one-page executive summary infographic for Holcim People leaders titled "Labor Availability: Europe and South America".
@@ -150,9 +150,9 @@ Style: clean corporate, deep forest green and sand accents, high readability for
 Do not invent statistics.
 ```
 
-4. While the infographic generates (_it can take a few minutes_), you can create a **Slide Deck** for your upcoming meeting. 
+4. While the infographic generates (_it can take a few minutes_), you can create a Slide Deck for your upcoming meeting. 
 
-  In Studio, open **Slide Deck** customize options by clicking the arrow icon. Choose **Presenter Slides**, and add the following description, and click __Generate__. 
+  In Studio, open the **Slide Deck** customize options by clicking the arrow icon. Choose **Presenter Slides** and add the following description, then click __Generate__. 
 
 ```text
 Create a Holcim People leadership slide deck for a labor availability meeting.
@@ -171,7 +171,7 @@ Use only notebook sources. Do not invent Holcim metrics.
 ```
 
 > [!WARNING]
-> Studio generation can take several minutes. You can keep working in chat. Outputs usually appear in Studio / Outputs when ready.
+> Studio generation can take several minutes. You can keep working in chat. Outputs usually appear in Studio/Outputs when ready.
 
 ![Generating assets](images/generated-assets.png)
 
