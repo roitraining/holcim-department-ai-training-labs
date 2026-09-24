@@ -5,6 +5,7 @@
 
 ---
 
+<!-- layout: panel-right -->
 # Welcome!
 
 - ROI leads the industry in designing and delivering customized technology and management training solutions
@@ -12,7 +13,7 @@
   - Name
   - Background
   - Contact info
-- Let's get started!
+- Let’s get started!
 
 ![Welcome](images/welcome.png)
 
@@ -29,6 +30,7 @@
 
 ---
 
+<!-- layout: panel-left -->
 # Agenda
 
 - Prompt Engineering
@@ -41,6 +43,7 @@
 
 ---
 
+<!-- layout: panel-right -->
 # Who Should Attend
 
 - Holcim Sustainability and Sustainable Development (SD) business partners
@@ -52,6 +55,7 @@
 
 ---
 
+<!-- layout: panel-left -->
 # Prerequisites
 
 - A Google account with access to Gemini, Sheets, and Gemini Notebook (NotebookLM)
@@ -75,7 +79,7 @@
 ---
 
 <!-- layout: navigation -->
-# Today's Sections
+# Today’s Sections
 
 - **Prompt Engineering**
 - Analyzing Plant Data with Sheets and Gemini
@@ -87,9 +91,9 @@
 
 # Why Prompting Is a Skill
 
-- A vague ask gets a vague answer: "write something about ECOPact" returns something generic and un-Holcim
+- A vague ask gets a vague answer: “write something about ECOPact” returns something generic and un-Holcim
 - Prompting is a craft you build in layers, not one perfect sentence
-- Each layer narrows what "good" means before the model writes anything
+- Each layer narrows what “good” means before the model writes anything
 - The payoff: output a Sustainability partner or customer-facing colleague can actually use
 
 
@@ -97,7 +101,7 @@
 
 ---
 <!-- layout: stacked -->
-# The "Role-Task-Steps-Examples" Framework
+# The “Role-Task-Steps-Examples” Framework
 
 ![Prompt engineering framework: Role, Task, Steps, Examples](images/prompt-framework.svg)
 
@@ -107,7 +111,7 @@
 # From Generic to Specific
 
 ### Generic prompt
-- "Write something about ECOPact"
+- “Write something about ECOPact”
 - No audience, no approved facts, no format
 - Reads like generic marketing copy
 - You edit almost every line
@@ -129,7 +133,7 @@
 ---
 
 <!-- layout: navigation -->
-# Today's Sections
+# Today’s Sections
 
 - Prompt Engineering
 - **Analyzing Plant Data with Sheets and Gemini**
@@ -152,13 +156,13 @@
 
 # Right-Sized Data, Real Plant KPIs
 
-- This lab's plant extract is **100 rows and 12 columns**: 25 plants across 4 quarters of FY2025
+- This lab’s plant extract is **100 rows and 12 columns**: 25 plants across 4 quarters of FY2025
 - Gemini in Sheets performs best on smaller, clean tables
 - No sampling step this time: `PlantData` is already Gemini-ready on import
 - A larger extract would need the same working-set strategy used elsewhere in this program
 
 > [!NOTE]
-> Integrated Plants run a kiln and report a Thermal Substitution Rate. Grinding Stations do not, and report far lower direct CO2 — that's why the KPIs vary so much row to row.
+> Integrated Plants run a kiln and report a Thermal Substitution Rate. Grinding Stations do not, and report far lower direct CO2: that’s why the KPIs vary so much row to row.
 
 ---
 
@@ -178,7 +182,7 @@
 ---
 
 <!-- layout: navigation -->
-# Today's Sections
+# Today’s Sections
 
 - Prompt Engineering
 - Analyzing Plant Data with Sheets and Gemini
@@ -190,7 +194,7 @@
 
 # Stop Rewriting the Same Prompt
 
-- Great prompts don't survive the next new chat: Persona, Task, Process, and Examples get retyped from memory
+- Great prompts don’t survive the next new chat: Persona, Task, Process, and Examples get retyped from memory
 - Different teammates end up with different quality, and different citations
 - A year-end clarification answer should look the same, and cite the same source, whether you or a colleague ran it
 - Gems save the instructions, and the reference files, once, so everyone starts from the same standard
@@ -200,7 +204,7 @@
 ---
 
 <!-- layout: stacked -->
-# What's a Gem
+# What’s a Gem
 
 - A Gem is a saved Gemini assistant: instructions live in the Gem, not in your head
 - A Gem can also hold Knowledge files, so it answers grounded in your own documents
@@ -221,7 +225,7 @@
 ### Holcim Year-End Reporting Assistant
 - Persona: SD reporting assistant
 - Knowledge: HARP chapter, SD glossary, Annual Report excerpt, ESG Response Pack
-- Every answer cites its source, or says "Not found in the provided materials"
+- Every answer cites its source, or says “Not found in the provided materials”
 
 ---
 
@@ -234,7 +238,7 @@
 ---
 
 <!-- layout: navigation -->
-# Today's Sections
+# Today’s Sections
 
 - Prompt Engineering
 - Analyzing Plant Data with Sheets and Gemini
@@ -254,7 +258,7 @@
 # From Chat to Grounded Research
 
 - A regular chat can drift or invent details - a Notebook cannot leave its sources
-- You choose what goes in: internal HARP and SD sources, the customer's own questionnaire, and web research
+- You choose what goes in: internal HARP and SD sources, the customer’s own questionnaire, and web research
 - Every answer traces back to a source you selected
 - Built for a questionnaire response you have to stand behind
 
@@ -269,9 +273,9 @@
 
 # Ask Sharper Questions
 
-- Ask Notebook to read the exact questions from the customer's questionnaire, grouped by section
+- Ask Notebook to read the exact questions from the customer’s questionnaire, grouped by section
 - Ask for a cited answer to each question, and flag anything not grounded in a source
-- If sources don't fully answer a question, the Notebook says so: it does not invent a figure
+- If sources don’t fully answer a question, the Notebook says so: it does not invent a figure
 - Save the strongest answers as notes; convert them into Studio sources
 
 
@@ -303,7 +307,7 @@
 ---
 
 <!-- layout: navigation -->
-# Today's Sections
+# Today’s Sections
 
 - Prompt Engineering
 - Analyzing Plant Data with Sheets and Gemini
@@ -315,7 +319,7 @@
 
 # A Real SD Team Challenge
 
-- Holcim's SD team uses a mobile dashboard, the "SD Performance APP," to rank countries by their impact on a Group metric
+- Holcim’s SD team uses a mobile dashboard, the “SD Performance APP,” to rank countries by their impact on a Group metric
 - The whole view is generated with Apps Script, no manual sorting
 - This is the same 1-hour showcase the SD team uses to teach that skill
 - You explore a live spreadsheet, read the brief written into it, and build your own version
@@ -334,7 +338,7 @@
 # Keep Data Safe
 
 - Every exercise today used synthetic or anonymized data: carry that habit forward
-- Do not paste confidential plant emissions, unpublished figures, or a real customer's ESG questionnaire into public AI tools
+- Do not paste confidential plant emissions, unpublished figures, or a real customer’s ESG questionnaire into public AI tools
 - When the ideal input is confidential, substitute a sanitized or synthetic version
 - When in doubt, ask before you paste
 
@@ -390,7 +394,7 @@
 **Why does this course keep the Lab 2 `PlantData` file to just 100 rows and 12 columns instead of importing a full multi-year plant extract?**
 
 - A. Google Sheets cannot import more than 100 rows
-- B. Gemini in Sheets performs best on smaller, clean tables, well under Google's guidance of about 1 million cells
+- B. Gemini in Sheets performs best on smaller, clean tables, well under Google’s guidance of about 1 million cells
 - C. Apps Script cannot read more than 100 rows
 - D. Specific Net CO2 only calculates correctly below 100 rows
 
@@ -400,9 +404,9 @@
 
 **Why does this course keep the Lab 2 `PlantData` file to just 100 rows and 12 columns instead of importing a full multi-year plant extract?**
 
-**Correct: B.** Gemini in Sheets performs best on smaller, clean tables, well under Google's guidance of about 1 million cells
+**Correct: B.** Gemini in Sheets performs best on smaller, clean tables, well under Google’s guidance of about 1 million cells
 
-- A 100-row, 12-column table is tiny compared to Google's roughly 1 million cell guidance
+- A 100-row, 12-column table is tiny compared to Google’s roughly 1 million cell guidance
 - Keeping the working file small keeps Gemini prompts fast and reliable
 - A larger plant extract would need a working-set strategy, the same idea taught elsewhere in this program
 - Apps Script and formulas can still handle much larger ranges when needed
@@ -428,8 +432,8 @@ You have one real Sustainability task you handle every week or month: ECOPact co
 **Which tool fits your recurring Sustainability task, and who else would reuse it?**
 
 ### Strong Answers Mention
-- A specific, recurring task - not a vague "AI will help somewhere"
-- A tool matched to the task's shape (one-off vs. repeatable vs. data-heavy vs. research-heavy)
+- A specific, recurring task - not a vague “AI will help somewhere”
+- A tool matched to the task’s shape (one-off vs. repeatable vs. data-heavy vs. research-heavy)
 - A concrete plan to keep any real plant, customer, or reporting data safe
 
 ### Watch For

@@ -6,6 +6,7 @@
 ---
 
 
+<!-- layout: panel-right -->
 # Welcome!
 
 - ROI leads the industry in designing and delivering customized technology and management training solutions
@@ -13,7 +14,7 @@
   - Name
   - Background
   - Contact info
-- Let's get started!
+- Let’s get started!
 
 ![Welcome](images/welcome.png)
 
@@ -30,6 +31,7 @@
 
 ---
 
+<!-- layout: panel-left -->
 # Agenda
 
 - Prompt Engineering
@@ -42,6 +44,7 @@
 
 ---
 
+<!-- layout: panel-right -->
 # Who Should Attend
 
 - Holcim People Team business partners and generalists
@@ -53,6 +56,7 @@
 
 ---
 
+<!-- layout: panel-left -->
 # Prerequisites
 
 - A Google account with access to Gemini, Sheets, and Gemini Notebook (NotebookLM)
@@ -76,7 +80,7 @@
 ---
 
 <!-- layout: navigation -->
-# Today's Sections
+# Today’s Sections
 
 - **Prompt Engineering**
 - Analyzing Data in Sheets with Gemini
@@ -88,16 +92,16 @@
 
 # Why Prompting Is a Skill
 
-- A vague ask gets a vague answer: "write a job posting" returns something generic and un-Holcim
+- A vague ask gets a vague answer: “write a job posting” returns something generic and un-Holcim
 - Prompting is a craft you build in layers, not one perfect sentence
-- Each layer narrows what "good" means before the model writes anything
+- Each layer narrows what “good” means before the model writes anything
 - The payoff: output a recruiter or hiring manager can actually use
 
 ![Prompting is a skill](images/prompting.png)
 
 ---
 <!-- layout: stacked -->
-# The "Role-Task-Steps-Examples" Framework
+# The “Role-Task-Steps-Examples” Framework
 
 ![Prompt engineering framework: Role, Task, Steps, Examples](images/prompt-framework.svg)
 
@@ -107,7 +111,7 @@
 # From Generic to Specific
 
 ### Generic prompt
-- "Write a job posting for HR Business Partner"
+- “Write a job posting for HR Business Partner”
 - No audience, no region, no tone
 - Reads like it could be any company
 - You edit almost every line
@@ -129,7 +133,7 @@
 ---
 
 <!-- layout: navigation -->
-# Today's Sections
+# Today’s Sections
 
 - Prompt Engineering
 - **Analyzing Data in Sheets with Gemini**
@@ -152,7 +156,7 @@
 
 # Big Data, Small Working Set
 
-- Holcim's workforce extract runs about 100,000 rows across 25 columns
+- Holcim’s workforce extract runs about 100,000 rows across 25 columns
 - Gemini in Sheets performs best on smaller, clean tables
 - The lab samples **500 rows** into a `LabWorkingSet` and freezes it with Paste Special
 - `WorkforceRaw` stays untouched as the full source of record
@@ -179,7 +183,7 @@
 ---
 
 <!-- layout: navigation -->
-# Today's Sections
+# Today’s Sections
 
 - Prompt Engineering
 - Analyzing Data in Sheets with Gemini
@@ -191,7 +195,7 @@
 
 # Stop Rewriting the Same Prompt
 
-- Great prompts don't survive the next new chat: Role, Task, Steps, and Examples get retyped from memory
+- Great prompts don’t survive the next new chat: Role, Task, Steps, and Examples get retyped from memory
 - Different teammates end up with different quality and different formats
 - A resume screen should look the same whether you or a colleague ran it
 - Gems save the instructions once, so everyone starts from the same standard
@@ -201,7 +205,7 @@
 ---
 
 <!-- layout: stacked -->
-# What's a Gem
+# What’s a Gem
 
 - A Gem is a saved Gemini assistant: instructions live in the Gem, not in your head
 - Preview before you save; edit anytime the standard changes
@@ -221,7 +225,7 @@
 ### Holcim Resume Reviewer
 - Persona: Talent Acquisition specialist
 - Fixed Markdown schema: role, region, rank, rationale
-- Never invents a missing fact: writes "Not found"
+- Never invents a missing fact: writes “Not found”
 
 ---
 
@@ -234,7 +238,7 @@
 ---
 
 <!-- layout: navigation -->
-# Today's Sections
+# Today’s Sections
 
 - Prompt Engineering
 - Analyzing Data in Sheets with Gemini
@@ -268,9 +272,9 @@
 
 # Ask Sharper Questions
 
-- Ask for talking points structured the way you'll speak them: situation, context, risk, ask
+- Ask for talking points structured the way you’ll speak them: situation, context, risk, ask
 - Ask for **gotcha questions** leadership might raise, with a source-grounded answer for each
-- If sources don't fully answer a question, the Notebook says so: it does not invent data
+- If sources don’t fully answer a question, the Notebook says so: it does not invent data
 - Save the strongest answers as notes; convert them into Studio sources
 
 ![Using Gemini Notebook](./images/using-notebook.png)
@@ -301,7 +305,7 @@
 ---
 
 <!-- layout: navigation -->
-# Today's Sections
+# Today’s Sections
 
 - Prompt Engineering
 - Analyzing Data in Sheets with Gemini
@@ -388,7 +392,7 @@
 **In Lab 2, why does the course have you build a 500-row `LabWorkingSet` instead of asking Gemini to act on the full ~100,000-row `WorkforceRaw` sheet?**
 
 - A. `WorkforceRaw` is read-only
-- B. Gemini in Sheets performs best on smaller, clean tables, well under Google's guidance of about 1 million cells
+- B. Gemini in Sheets performs best on smaller, clean tables, well under Google’s guidance of about 1 million cells
 - C. Apps Script cannot read more than 500 rows
 - D. FTE totals only calculate correctly below 500 rows
 
@@ -398,7 +402,7 @@
 
 **In Lab 2, why does the course have you build a 500-row `LabWorkingSet` instead of asking Gemini to act on the full ~100,000-row `WorkforceRaw` sheet?**
 
-**Correct: B.** Gemini in Sheets performs best on smaller, clean tables, well under Google's guidance of about 1 million cells
+**Correct: B.** Gemini in Sheets performs best on smaller, clean tables, well under Google’s guidance of about 1 million cells
 
 - A 100,000-row, 25-column sheet is well over 2 million cells
 - Sampling and freezing the set keeps Gemini prompts fast and reliable
@@ -426,8 +430,8 @@ You have one real People Team task you handle every week or month: hiring, scree
 **Which tool fits your recurring People Team task, and who else would reuse it?**
 
 ### Strong Answers Mention
-- A specific, recurring task - not a vague "AI will help somewhere"
-- A tool matched to the task's shape (one-off vs. repeatable vs. data-heavy vs. research-heavy)
+- A specific, recurring task - not a vague “AI will help somewhere”
+- A tool matched to the task’s shape (one-off vs. repeatable vs. data-heavy vs. research-heavy)
 - A concrete plan to keep any real employee or applicant data safe
 
 ### Watch For
