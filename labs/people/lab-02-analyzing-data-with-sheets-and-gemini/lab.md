@@ -57,7 +57,7 @@ In this task, you create a spreadsheet and load the shared Holcim workforce CSV 
 8. Freeze the header row: select row 1, then **View** | **Freeze** | **1 row**.
 
 > [!IMPORTANT]
-> Expect on the order of **~100,000 data rows**. Do not ask Gemini to rewrite or reformat the entire `WorkforceRaw` sheet in one prompt. Use the working subset in the next task.
+> Expect about **~100,000 data rows**. Do not ask Gemini to rewrite or reformat the entire `WorkforceRaw` sheet in one prompt. Use the working subset in the next task.
 
 9. To create a manageable analysis sheet, click **+** to add a sheet and rename it `LabWorkingSet`. In `LabWorkingSet!A1`, enter the following formula, and press ENTER:
 
