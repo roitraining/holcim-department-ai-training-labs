@@ -175,7 +175,7 @@
 
 # Lab 2: Analyzing Plant Data with Sheets and Gemini
 
-**Time:** 30 minutes
+**Time:** 45 minutes
 
 [Open Lab 2](https://labv.roitraining.com/?lab=https%3A%2F%2Fgithub.com%2Froitraining%2Fholcim-department-ai-training-labs%2Fblob%2Fmain%2Flabs%2Fsustainability%2Flab-02-analyzing-plant-data-with-sheets-and-gemini%2Flab.md)
 
