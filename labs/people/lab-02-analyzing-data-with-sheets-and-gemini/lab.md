@@ -2,16 +2,17 @@
 
 ## Time Required
 
-30 minutes
+45 minutes
 
 ## Overview
 
-In this lab, you will import a Holcim People workforce CSV into Google Sheets, use Gemini in Sheets to format and visualize the data, and build a small Apps Script sidebar that charts one region from your working set.
+In this lab, you will import a Holcim People workforce CSV into Google Sheets, use Gemini in Sheets to format and visualize the data, ask focused analysis questions on a working subset, and build a small Apps Script sidebar that charts one region from your working set.
 
 ### You learn how to:
 
 - Create a Google Sheet and import workforce CSV data from Google Drive.
 - Use Gemini in Sheets to format a table, add header filters, apply conditional formatting, and insert a chart.
+- Ask Gemini one question at a time to find blanks, list unique values, locate and look up IDs, and calculate female representation, including questions this file cannot answer.
 - Build a simple Apps Script menu and sidebar that charts one region from a working dataset.
 
 
@@ -20,7 +21,7 @@ In this lab, you will import a Holcim People workforce CSV into Google Sheets, u
 
 ![Holcim Logo](./images/holcim-logo.png)
 
-Holcim’s People team received an anonymized workforce extract for training. The file is large (about 100,000 rows), so you will keep the full import for reference, create a smaller **LabWorkingSet** for AI-assisted analysis, and then ship a simple Apps Script chart builder so colleagues can summarize one region without writing formulas.
+Holcim’s People team received an anonymized workforce extract for training. The file is large (about 100,000 rows), so you will keep the full import for reference, create a smaller **LabWorkingSet** for AI-assisted analysis, and then ship a simple Apps Script chart builder so colleagues can summarize one region without writing formulas. You will also ask Gemini specific questions about blanks, categories, headcount, and representation. Pasting the CSV into a chat and asking for a finished analysis does not work.
 
 > [!NOTE]
 > Gemini in Sheets works best on smaller, clean tables. Google documents more consistent Gemini performance on files below about 1 million cells. That is why this lab uses a working subset for Gemini and Apps Script.
@@ -122,7 +123,152 @@ Insert it into a new sheet.
 > [!TIP]
 > If Gemini cannot act on the full working set, select a smaller visible range first, or ask: `Summarize FTE by Management Region in a new sheet named RegionSummary, then chart that summary.`
 
-### Task 3: Build a simple Apps Script region chart builder
+### Task 3: Ask Gemini focused analysis questions
+
+In this task, you use **Ask Gemini** on `LabWorkingSet` to answer questions a People analyst actually asks. Each prompt names the sheet, the columns, and one result. You check that result before you trust it.
+
+| Question | Sheet Gemini should create or update |
+| --- | --- |
+| Where are the blanks, and what is safe to fill? | `LabWorkingSet` (category blanks only) |
+| Which values are in use (master data)? | `MasterData` |
+| How many people, and how much FTE? | `HeadcountFte` |
+| Which IDs meet several conditions? | `LocatedIds` |
+| What is stored for one ID? | `IdLookup` |
+| What share of headcount is female? | `FemaleShare` |
+
+> [!IMPORTANT]
+> Do not ask Gemini to “analyze this CSV.” On a file this size that prompt fails or invents a story. Stay on `LabWorkingSet`, ask one question per prompt, and read the proposal before you apply it. If a proposal deletes rows, changes User ID, or edits `WorkforceRaw`, cancel it or undo until `LabWorkingSet` again has about 500 data rows.
+>
+> Gemini can count, list, filter, and calculate percentages from columns that are already in the sheet. It cannot reliably invent missing Gender, Date of Birth, User ID, or FTE, and it cannot predict who will leave from this sample.
+
+1. Open the `LabWorkingSet` sheet. If the side panel is closed, click **Ask Gemini**.
+
+2. Find missing or blank values. Paste:
+
+```text
+On LabWorkingSet only, find missing or blank cells.
+For each column, report how many blank cells there are.
+Do not change WorkforceRaw.
+Do not fill or guess any values yet.
+List the columns with the most blanks first.
+```
+
+3. Spot-check one column Gemini calls blank. Turn on the header filter if it is off, filter that column for blanks (empty), and compare the row count with Gemini’s number. If they disagree, tell Gemini what the filter shows and ask it to recount.
+
+4. Fill the safest blank category, and leave identity fields alone. Paste:
+
+```text
+On LabWorkingSet, fill blank cells in the one column that has the most blanks.
+If that column is User ID, Gender, Date Of Birth, FTE, or any date column, do not fill it. Explain why, and instead fill the category column with the most blanks.
+Category columns you may fill: Job Level, Division, Sub Division, Employment Type, Home Designation, Job Classification, Job Function, Employment Status, GRU Name, Management Region.
+Write the exact text Unknown.
+Do not overwrite a cell that already has a value.
+Do not change WorkforceRaw.
+Tell me the column you filled, how many cells changed, and which columns you refused to fill.
+```
+
+> [!WARNING]
+> Reject any proposal that fills Gender, Date of Birth, User ID, or FTE, or that writes anything other than Unknown into a blank category. A blank identity field is a missing fact. Unknown is only a label so a missing category is visible.
+
+5. List the unique values in use. Paste:
+
+```text
+Using LabWorkingSet, create a new sheet named MasterData.
+For each of these columns, list the unique values and how many rows use each value:
+Gender, Job Level, Division, Employment Type, Employment Status, Management Region.
+Sort each list by count, highest first.
+Do not delete or rewrite LabWorkingSet.
+```
+
+6. Open `MasterData`. Confirm each list is a short set of labels, not a different value on every row.
+
+> [!NOTE]
+> This is a master-data check. Near-duplicate labels (for example EU and Europe) will split your charts. A column with a different value on every row, such as User ID, is an identifier, not a category. Copy the exact Gender value that means women. Later prompts must use that spelling, not a synonym.
+
+7. Count people and sum FTE. The FTE by Management Region chart already shows the sum. This step adds a table you can audit, including a headcount next to that sum. Paste:
+
+```text
+Using LabWorkingSet, create a new sheet named HeadcountFte.
+For each Management Region, calculate:
+- Count of User ID (headcount)
+- Sum of FTE
+Sort by Sum of FTE, highest first.
+Do not add a chart. I want the numbers so I can check them.
+```
+
+8. Compare `HeadcountFte` with the FTE by Management Region chart. The region order by FTE should agree. If it does not, tell Gemini and ask it to rebuild `HeadcountFte` from `LabWorkingSet` only.
+
+9. Locate IDs that meet three conditions. In the prompt below, replace `FEMALE_LABEL` with the exact female Gender value from `MasterData`. Paste:
+
+```text
+On LabWorkingSet, list User ID values that meet all of these conditions:
+- Employment Status is Active
+- Management Region is AMEA
+- Gender is FEMALE_LABEL
+Return only User ID, Gender, Job Level, Division, Employment Status, Management Region, and FTE.
+Put the matching rows on a new sheet named LocatedIds.
+If none match, say so and tell me which condition removed everyone.
+Do not change LabWorkingSet.
+```
+
+10. If `LocatedIds` has no data rows, run the prompt again with a Management Region that `MasterData` shows is actually present. Keep Employment Status as Active and Gender as `FEMALE_LABEL`.
+
+11. Look up one person by ID. Copy a User ID from `LocatedIds`. If that sheet is empty, copy any User ID from `LabWorkingSet`. Replace `PASTE_USER_ID` in this prompt, then paste:
+
+```text
+On LabWorkingSet, look up User ID PASTE_USER_ID.
+Return every column for that ID on a new sheet named IdLookup.
+If the ID appears more than once, return every matching row and say how many.
+Do not summarize. Show the stored values.
+Do not change LabWorkingSet.
+```
+
+12. On `LabWorkingSet`, find that same User ID (Ctrl/Cmd + F) and confirm the `IdLookup` row matches the source row.
+
+13. Calculate female representation on three dimensions. Replace `FEMALE_LABEL` again, then paste:
+
+```text
+Using LabWorkingSet, create a new sheet named FemaleShare.
+Calculate the percentage of rows where Gender is FEMALE_LABEL, grouped separately by:
+- Management Region
+- Division
+- Job Level
+For each group show headcount, female headcount, and female percent.
+Use headcount (count of User ID), not sum of FTE.
+Round percents to one decimal place.
+Above the tables, state that these figures come from the 500-row working sample, not the full workforce extract.
+Do not change LabWorkingSet.
+```
+
+14. Check one percent by hand: female headcount divided by headcount for that group. If Gemini used sum of FTE as the denominator, ask it to recalculate with count of User ID.
+
+> [!NOTE]
+> Female percent of headcount and female percent of FTE answer different questions. This lab uses headcount so the denominator is people. When you ask again at work, say which denominator you mean.
+
+15. Ask for an insight the sheets can support, and for the limit Gemini must state. Paste:
+
+```text
+Using only HeadcountFte, FemaleShare, and LabWorkingSet:
+1. Write three short observations. Each observation must cite a number from HeadcountFte or FemaleShare.
+2. Say whether any two numeric columns on LabWorkingSet support a correlation. If FTE is the only reliable number, say that a correlation is not supported.
+3. Answer this: can you predict which employees will leave Holcim? If the sheet has no history you can train on, answer no, and name what data would be required instead.
+Do not create a forecast, a model, or new personal data.
+```
+
+> [!IMPORTANT]
+> Treat a confident forecast as a failed answer. `LabWorkingSet` is a 500-row random sample. Most columns are categories or anonymized codes, not a work history. Use Gemini to build a table you can check. Do not use it to predict attrition, hiring, or promotion.
+
+**Success criteria**
+
+- You can name the columns with blanks, and Gemini did not guess Gender, Date of Birth, User ID, or FTE.
+- `MasterData` lists unique values and counts for the six category columns.
+- `HeadcountFte` has a User ID count and an FTE sum per region, and the FTE order agrees with the region chart.
+- `LocatedIds` lists IDs that match all three conditions, or Gemini explains which condition matched nobody.
+- `IdLookup` matches the source row for the ID you pasted.
+- One `FemaleShare` percent matches female headcount divided by headcount.
+- The written observations cite those tables and decline to predict who will leave.
+
+### Task 4: Build a simple Apps Script region chart builder
 
 In this task, you add a small Apps Script project that shows the core pattern: a custom menu, an HTML sidebar, a server function that reads the sheet, and a chart written back to Sheets.
 
@@ -325,7 +471,7 @@ function buildRegionChart(region) {
 | `buildRegionChart`  | Reads sheet data, writes a summary, inserts a chart |
 
 
-### Bonus Task 4: Extend the Apps Script sidebar with Gemini
+### Bonus Task 5: Extend the Apps Script sidebar with Gemini
 
 Use Gemini to turn your simple region chart builder into a richer People analytics sidebar.
 
@@ -355,6 +501,7 @@ In this lab, you have:
 
 - Created a Google Sheet and imported workforce CSV data from Google Drive.
 - Used Gemini in Sheets to format a table, add header filters, apply conditional formatting, and insert a chart.
+- Asked Gemini one question at a time to find blanks, list unique values, locate and look up IDs, and calculate female representation, including questions this file cannot answer.
 - Built a simple Apps Script menu and sidebar that charts one region from a working dataset.
 
 ![ROI Training](./images/roi-logo-with-name.png)
