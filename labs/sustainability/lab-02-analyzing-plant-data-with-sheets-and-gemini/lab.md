@@ -12,14 +12,14 @@ In this lab, you will import a Holcim Sustainability plant data CSV into Google 
 
 - Create a Google Sheet and import synthetic plant sustainability CSV data from Google Drive.
 - Use Gemini in Sheets to format a table, add header filters, apply conditional formatting, and insert a chart.
-- Ask Gemini one question at a time to find missing values, list unique categories, locate and look up plants, and calculate transition-plan coverage, including questions this file cannot answer.
+- Ask Gemini one question at a time to interpret N/A thermal rates, compare Specific Net CO2 by plant type, and read the quarterly trend without forecasting a future year.
 - Build a simple Apps Script menu and sidebar that charts one region's CO2 emissions by quarter.
 
 ## Scenario
 
 ![Holcim Logo](./images/holcim-logo.png)
 
-Holcim's Sustainability team receives a quarterly plant-level extract covering CO2 emissions, thermal substitution, renewable electricity, and water withdrawal for 25 plants. The file is small enough to work with directly, so you will import it, use Gemini in Sheets to turn it into a clean analytics table, and then ship a simple Apps Script chart builder so colleagues can review one region's emissions trend without writing formulas. You will also ask Gemini specific questions about missing values, plant categories, and transition-plan coverage. Pasting the CSV into a chat and asking for a finished analysis does not work, even on a file this small.
+Holcim's Sustainability team receives a quarterly plant-level extract covering CO2 emissions, thermal substitution, renewable electricity, and water withdrawal for 25 plants. The file is small enough to work with directly, so you will import it, use Gemini in Sheets to turn it into a clean analytics table, and then ship a simple Apps Script chart builder so colleagues can review one region's emissions trend without writing formulas. You will also ask Gemini specific questions about thermal substitution, plant type, and the quarterly CO2 trend. Pasting the CSV into a chat and asking for a finished analysis does not work, even on a file this small.
 
 > [!NOTE]
 > Gemini in Sheets works best on smaller, clean tables. Google documents more consistent Gemini performance on files below about 1 million cells. At 100 rows and 12 columns, this file is already well inside that range, so there is no need to build a smaller working subset first.
@@ -118,137 +118,108 @@ Insert it into a new sheet.
 
 ### Task 3: Ask Gemini focused analysis questions
 
-In this task, you use **Ask Gemini** on `PlantData` to answer questions a Sustainability analyst actually asks. Each prompt names the sheet, the columns, and one result. You check that result before you trust it.
+In this task, you use **Ask Gemini** on `PlantData` to answer three questions this file can actually support. Each prompt names the sheet, the columns, and one result. You check that result before you trust it.
 
 > [!IMPORTANT]
-> Do not ask Gemini to "analyze this CSV." `PlantData` is only 100 rows, so Gemini can read it, but one vague prompt still invents a story. Ask one question per prompt, and read the proposal before you apply it. If a proposal deletes rows, changes Plant ID, or replaces `N/A` with a number, cancel it or undo until `PlantData` again has 100 data rows.
+> Do not ask Gemini to "analyze this CSV." Ask one question per prompt, and read the proposal before you apply it. If a proposal deletes rows, changes Plant ID, or replaces `N/A` with a number, cancel it or undo until `PlantData` again has 100 data rows.
 >
-> Gemini can count, list, filter, and calculate averages from columns that are already in the sheet. It should not invent Specific Net CO2, emissions, or a thermal substitution rate, and it cannot forecast next year's emissions from four quarters of training data.
+> This file has no blank cells. Thermal Substitution Rate (%) stores the text `N/A` on grinding stations because that metric does not apply there. Gemini can average and filter the numbers that are already in the sheet. It cannot forecast next year's emissions from four quarters of training data.
 
 1. Open the `PlantData` sheet. If the side panel is closed, click **Ask Gemini**.
 
-2. Find missing or blank values. Paste:
+2. Find where thermal substitution does not apply. Paste:
 
 ```text
-On PlantData only, find missing or blank cells.
-For each column, report how many blank cells there are.
-Do not fill or guess any values yet.
-List the columns with the most blanks first.
-```
-
-3. Spot-check one column. Filter that column for blanks (empty) and compare the count with Gemini's number. A count of zero blanks matches this file.
-
-4. Ask what the non-numeric thermal values mean, and leave them unchanged. Paste:
-
-```text
-On PlantData, some rows store N/A in Thermal Substitution Rate (%).
-How many rows show N/A, and which Plant Type are they?
-Do not replace N/A with a number, with zero, or with Unknown.
-Do not change any other column.
-Tell me the row count and the Plant Type. If you would have filled those cells, say what you refused to write and why.
-```
-
-5. Confirm the `N/A` rows are **Grinding Station** and that **Integrated Plant** rows contain a number. If Gemini proposes a filled-in rate, reject it.
-
-> [!WARNING]
-> `N/A` means thermal substitution does not apply to that plant type. It is not a blank for Gemini to guess. Reject any proposal that writes a thermal substitution rate, Specific Net CO2, or emissions value that was not already in the cell.
-
-6. List the unique values in use. Paste:
-
-```text
-Using PlantData, create a new sheet named MasterData.
-For each of these columns, list the unique values and how many rows use each value:
-Region, Country, Plant Type, Reporting Quarter, Transition Plan Published.
-Sort each list by count, highest first.
-Do not delete or rewrite PlantData.
-```
-
-7. Open `MasterData`. Confirm each list is a short set of labels. Plant Type should list `Integrated Plant` and `Grinding Station`. Transition Plan Published should list `Yes` and `No`. Reporting Quarter should list `Q1 2025`, `Q2 2025`, `Q3 2025`, and `Q4 2025`.
-
-> [!NOTE]
-> This is a master-data check. Near-duplicate labels (for example Europe and EU) will split your charts. Plant ID is an identifier. Each plant appears on four rows, one per quarter, so a row count is not a plant count.
-
-8. Count plants and average Specific Net CO2. The region chart already shows the average. This step adds a table you can audit, including a plant count that does not treat four quarters as four plants. Paste:
-
-```text
-Using PlantData, create a new sheet named RegionMetrics.
-For each Region, calculate:
-- Count of distinct Plant ID
-- Count of rows
-- Average Specific Net CO2 (kg per tonne cementitious)
-Sort by the average, highest first.
-Do not add a chart. I want the numbers so I can check them.
+On PlantData, Thermal Substitution Rate (%) contains the text N/A.
+How many rows are N/A, and which Plant Type are they?
+Do not replace N/A with a number or with zero.
 Do not change PlantData.
 ```
 
-9. Compare `RegionMetrics` with the Average Specific Net CO2 by Region chart. The region order should agree. Row count for each region should be about four times the distinct plant count. If Gemini counted rows as plants, ask it to count distinct Plant ID.
+3. Filter **Thermal Substitution Rate (%)** for `N/A` and confirm those rows are **Grinding Station**. Integrated Plant rows in that column are numbers.
 
-10. Locate plants that meet several conditions. Paste:
+> [!WARNING]
+> `N/A` is a stored value, not an empty cell and not a rate for Gemini to guess. Leave it as `N/A`. An average of Thermal Substitution Rate (%) that includes those rows is not a real average.
+
+4. Compare Specific Net CO2 by plant type, not only by region. The chart from the previous task averages regions without separating plant types. Paste:
+
+```text
+Using PlantData, create a new sheet named Co2ByPlantType.
+Calculate average Specific Net CO2 (kg per tonne cementitious) for:
+- each Plant Type
+- each combination of Region and Plant Type
+For each group show the row count and the average.
+Round averages to one decimal place.
+Do not add a chart.
+Do not change PlantData.
+```
+
+5. Open `Co2ByPlantType` and compare it with the Average Specific Net CO2 by Region chart.
+
+> [!NOTE]
+> Integrated plants are near 580 to 590 kg in every region. Grinding stations are near 20 to 40 kg. Europe has more grinding-station rows than the other regions, so a region-only average makes Europe look much lower. Split by plant type before you compare regions.
+
+6. Read the quarterly trend for integrated plants only. Paste:
+
+```text
+Using PlantData, create a new sheet named IntegratedTrend.
+Use only rows where Plant Type is Integrated Plant.
+For each Reporting Quarter, calculate:
+- Average Specific Net CO2 (kg per tonne cementitious)
+- Average Thermal Substitution Rate (%)
+Put the quarters in order: Q1 2025, Q2 2025, Q3 2025, Q4 2025.
+Do not include Grinding Station rows.
+Round averages to one decimal place.
+Do not change PlantData.
+```
+
+7. Check the direction on `IntegratedTrend`. Across Q1 to Q4, average Specific Net CO2 should edge down and average Thermal Substitution Rate should rise. If the thermal average is blank or enormous, Gemini included `N/A` rows. Ask it to use Integrated Plant rows only.
+
+8. List the integrated plants that are still high in the last quarter. Paste:
 
 ```text
 On PlantData, list rows that meet all of these conditions:
-- Region is Europe
-- Plant Type is Grinding Station
-- Transition Plan Published is No
+- Plant Type is Integrated Plant
 - Reporting Quarter is Q4 2025
-Return Plant ID, Country, Region, Plant Type, Reporting Quarter, Specific Net CO2 (kg per tonne cementitious), and Transition Plan Published.
-Put the matching rows on a new sheet named LocatedPlants.
-If none match, say so and tell me which condition removed everyone.
+- Specific Net CO2 (kg per tonne cementitious) is greater than 590
+Return Plant ID, Country, Region, Specific Net CO2 (kg per tonne cementitious), Thermal Substitution Rate (%), and Transition Plan Published.
+Put the rows on a new sheet named HighSpecificCo2.
+Sort by Specific Net CO2 (kg per tonne cementitious), highest first.
 Do not change PlantData.
 ```
 
-11. If `LocatedPlants` has no data rows, run the prompt again without the Reporting Quarter condition.
-
-12. Look up one plant by ID. Copy a Plant ID from `LocatedPlants`. If that sheet is empty, copy any Plant ID from `PlantData`. Replace `PASTE_PLANT_ID` in this prompt, then paste:
+9. Look up one of those plants across the year. Copy a Plant ID from `HighSpecificCo2`. Replace `PASTE_PLANT_ID` in this prompt, then paste:
 
 ```text
 On PlantData, look up Plant ID PASTE_PLANT_ID.
-Return every column for that ID on a new sheet named PlantLookup.
-If the ID appears more than once, return every matching row and say how many.
+Return every quarter for that plant on a new sheet named PlantLookup.
+Show Plant ID, Country, Reporting Quarter, Specific Net CO2 (kg per tonne cementitious), and Thermal Substitution Rate (%).
 Do not summarize. Show the stored values.
 Do not change PlantData.
 ```
 
-13. Confirm `PlantLookup` has one row per quarter for that plant, and that one of those rows matches the source row on `PlantData` (Ctrl/Cmd + F).
+10. Confirm `PlantLookup` has four rows, Q1 through Q4, and that the Q4 Specific Net CO2 matches `HighSpecificCo2`.
 
-14. Calculate transition-plan coverage on two dimensions. Paste:
-
-```text
-Using PlantData, create a new sheet named TransitionCoverage.
-Calculate the percentage of plants where Transition Plan Published is Yes, grouped separately by:
-- Region
-- Plant Type
-Count distinct Plant ID, not rows. Each plant appears once per quarter.
-For each group show plant count, count of plants with Yes, and Yes percent.
-Round percents to one decimal place.
-Above the tables, state that these figures come from the synthetic FY2025 training file, not a published Holcim report.
-Do not change PlantData.
-```
-
-15. Check one percent by hand: plants with `Yes` divided by plant count for that group. If Gemini counted quarterly rows instead of distinct Plant ID, ask it to recalculate.
-
-16. Ask for an insight the sheets can support, and for the limit Gemini must state. Paste:
+11. Ask for a short reading of the tables, and for the limit Gemini must state. Paste:
 
 ```text
-Using only RegionMetrics, TransitionCoverage, and PlantData:
-1. Write three short observations. Each observation must cite a number from RegionMetrics or TransitionCoverage.
-2. On Integrated Plant rows only, say whether Specific Net CO2 (kg per tonne cementitious) and Thermal Substitution Rate (%) move together. Ignore rows where Thermal Substitution Rate (%) is N/A.
-3. Answer this: can you forecast each plant's Specific Net CO2 for 2026? If four quarters of synthetic training data are not enough, answer no, and name what data would be required instead.
-Do not create a forecast, a model, or filled-in N/A values.
+Using Co2ByPlantType and IntegratedTrend, write three observations.
+Each observation must cite a number from one of those sheets.
+Then answer: can you forecast each plant's Specific Net CO2 for 2026 from this file?
+If four quarters are not enough history, answer no, and say what you would need instead.
+Do not create a forecast or replace any N/A values.
 ```
 
 > [!IMPORTANT]
-> Treat a 2026 forecast as a failed answer. Four quarters can show a direction. They do not justify a plant-level prediction. Use Gemini to build a table you can check.
+> Treat a 2026 forecast as a failed answer. A year of quarters can show a direction. It does not justify a plant-level prediction.
 
 **Success criteria**
 
-- Gemini reports the blank counts, and it did not replace Thermal Substitution Rate `N/A` with a number.
-- `MasterData` lists the category values, including `Integrated Plant`, `Grinding Station`, `Yes`, and `No`.
-- `RegionMetrics` shows a distinct plant count, a row count, and an average Specific Net CO2 per region, and the average order agrees with the region chart.
-- `LocatedPlants` lists Europe grinding stations with no published transition plan in `Q4 2025`, or Gemini explains which condition matched nobody.
-- `PlantLookup` shows every quarter for the Plant ID you pasted.
-- One `TransitionCoverage` percent matches plants with `Yes` divided by plant count.
-- The written observations cite those tables and decline to forecast 2026 emissions.
+- Thermal Substitution Rate `N/A` is confined to Grinding Station rows, and those cells are still `N/A`.
+- `Co2ByPlantType` separates Integrated Plant from Grinding Station, and the region chart no longer looks like a fair region comparison on its own.
+- `IntegratedTrend` shows Specific Net CO2 easing down and Thermal Substitution Rate rising from Q1 to Q4.
+- `HighSpecificCo2` lists Q4 integrated plants above 590, and `PlantLookup` shows all four quarters for one of those plants.
+- The written observations cite those tables and decline to forecast 2026.
 
 ### Task 4: Build a simple Apps Script region chart builder
 
@@ -483,7 +454,7 @@ In this lab, you have:
 
 - Created a Google Sheet and imported synthetic plant sustainability CSV data from Google Drive.
 - Used Gemini in Sheets to format a table, add header filters, apply conditional formatting, and insert a chart.
-- Asked Gemini one question at a time to find missing values, list unique categories, locate and look up plants, and calculate transition-plan coverage, including questions this file cannot answer.
+- Asked Gemini one question at a time to interpret N/A thermal rates, compare Specific Net CO2 by plant type, and read the quarterly trend without forecasting a future year.
 - Built a simple Apps Script menu and sidebar that charted one region's CO2 emissions by quarter.
 
 ![ROI Training](./images/roi-logo-with-name.png)
