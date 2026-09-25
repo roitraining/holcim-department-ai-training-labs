@@ -127,15 +127,6 @@ Insert it into a new sheet.
 
 In this task, you use **Ask Gemini** on `LabWorkingSet` to answer questions a People analyst actually asks. Each prompt names the sheet, the columns, and one result. You check that result before you trust it.
 
-| Question | Sheet Gemini should create or update |
-| --- | --- |
-| Where are the blanks, and what is safe to fill? | `LabWorkingSet` (category blanks only) |
-| Which values are in use (master data)? | `MasterData` |
-| How many people, and how much FTE? | `HeadcountFte` |
-| Which IDs meet several conditions? | `LocatedIds` |
-| What is stored for one ID? | `IdLookup` |
-| What share of headcount is female? | `FemaleShare` |
-
 > [!IMPORTANT]
 > Do not ask Gemini to “analyze this CSV.” On a file this size that prompt fails or invents a story. Stay on `LabWorkingSet`, ask one question per prompt, and read the proposal before you apply it. If a proposal deletes rows, changes User ID, or edits `WorkforceRaw`, cancel it or undo until `LabWorkingSet` again has about 500 data rows.
 >
@@ -180,10 +171,10 @@ Sort each list by count, highest first.
 Do not delete or rewrite LabWorkingSet.
 ```
 
-6. Open `MasterData`. Confirm each list is a short set of labels, not a different value on every row.
+6. Open `MasterData`. Confirm each list is a short set of labels, not a different value on every row. Gender should list `Male` and `Female`.
 
 > [!NOTE]
-> This is a master-data check. Near-duplicate labels (for example EU and Europe) will split your charts. A column with a different value on every row, such as User ID, is an identifier, not a category. Copy the exact Gender value that means women. Later prompts must use that spelling, not a synonym.
+> This is a master-data check. Near-duplicate labels (for example EU and Europe) will split your charts. A column with a different value on every row, such as User ID, is an identifier, not a category.
 
 7. Count people and sum FTE. The FTE by Management Region chart already shows the sum. This step adds a table you can audit, including a headcount next to that sum. Paste:
 
@@ -198,20 +189,20 @@ Do not add a chart. I want the numbers so I can check them.
 
 8. Compare `HeadcountFte` with the FTE by Management Region chart. The region order by FTE should agree. If it does not, tell Gemini and ask it to rebuild `HeadcountFte` from `LabWorkingSet` only.
 
-9. Locate IDs that meet three conditions. In the prompt below, replace `FEMALE_LABEL` with the exact female Gender value from `MasterData`. Paste:
+9. Locate IDs that meet three conditions. Paste:
 
 ```text
 On LabWorkingSet, list User ID values that meet all of these conditions:
 - Employment Status is Active
 - Management Region is AMEA
-- Gender is FEMALE_LABEL
+- Gender is Female
 Return only User ID, Gender, Job Level, Division, Employment Status, Management Region, and FTE.
 Put the matching rows on a new sheet named LocatedIds.
 If none match, say so and tell me which condition removed everyone.
 Do not change LabWorkingSet.
 ```
 
-10. If `LocatedIds` has no data rows, run the prompt again with a Management Region that `MasterData` shows is actually present. Keep Employment Status as Active and Gender as `FEMALE_LABEL`.
+10. If `LocatedIds` has no data rows, run the prompt again with a Management Region that `MasterData` shows is actually present. Keep Employment Status as Active and Gender as `Female`.
 
 11. Look up one person by ID. Copy a User ID from `LocatedIds`. If that sheet is empty, copy any User ID from `LabWorkingSet`. Replace `PASTE_USER_ID` in this prompt, then paste:
 
@@ -225,11 +216,11 @@ Do not change LabWorkingSet.
 
 12. On `LabWorkingSet`, find that same User ID (Ctrl/Cmd + F) and confirm the `IdLookup` row matches the source row.
 
-13. Calculate female representation on three dimensions. Replace `FEMALE_LABEL` again, then paste:
+13. Calculate female representation on three dimensions. Paste:
 
 ```text
 Using LabWorkingSet, create a new sheet named FemaleShare.
-Calculate the percentage of rows where Gender is FEMALE_LABEL, grouped separately by:
+Calculate the percentage of rows where Gender is Female, grouped separately by:
 - Management Region
 - Division
 - Job Level
