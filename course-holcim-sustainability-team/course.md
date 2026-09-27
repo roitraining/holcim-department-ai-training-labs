@@ -1,4 +1,5 @@
 <!-- course-title: AI for the Holcim Sustainability Team -->
+<!-- course-theme: holcim-theme -->
 
 <!-- layout: full-bleed -->
 ![ROI Logo](images/title-slide.png)
