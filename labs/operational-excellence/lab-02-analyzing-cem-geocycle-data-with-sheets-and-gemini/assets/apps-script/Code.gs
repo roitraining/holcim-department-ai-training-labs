@@ -1,5 +1,5 @@
 /**
- * Holcim Operational Excellence Lab 02 — simple Apps Script demo
+ * Holcim Operational Excellence Lab 02 - simple Apps Script demo
  * Custom menu + HTML sidebar + sheet read/write + chart
  */
 

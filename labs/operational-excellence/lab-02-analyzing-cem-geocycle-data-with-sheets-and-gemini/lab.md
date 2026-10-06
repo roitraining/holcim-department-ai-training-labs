@@ -93,6 +93,9 @@ On SiteData, turn on filters for the header row so I can filter Region, Primary 
 
 7. Add conditional formatting for OE priority sites:
 
+> [!NOTE]
+> In this lab, **OE Priority Site = Yes** means the site needs attention (for example high clinker factor or low thermal substitution). That is why Yes is highlighted in red.
+
 ```text
 On SiteData, apply conditional formatting to the rows based on the OE Priority Site column:
 - Yes = light red fill
@@ -153,7 +156,7 @@ Round averages to one decimal place for percentages and three decimal places for
 Do not change SiteData.
 ```
 
-5. Check direction on `OeQuarterlyTrend`. Across Q1 to Q4, average clinker factor should ease down while thermal substitution and ECOPlanet share generally rise.
+5. Check direction on `OeQuarterlyTrend`. Average clinker factor should ease from Q1 to Q4, and average thermal substitution should rise. ECOPlanet share should end higher in Q4 than Q1 (it may dip in one middle quarter).
 
 6. List OE priority sites in the last quarter. Paste:
 
@@ -180,7 +183,7 @@ Do not create a forecast.
 **Success criteria**
 
 - `ClinkerByCementType` separates CEM I from lower-clinker blends.
-- `OeQuarterlyTrend` shows clinker factor easing and AF / ECOPlanet signals rising from Q1 to Q4.
+- `OeQuarterlyTrend` shows clinker factor easing and thermal substitution rising from Q1 to Q4, with ECOPlanet share higher in Q4 than Q1.
 - `OePriorityQ4` lists Q4 priority sites only.
 - The written observations cite those tables and decline to forecast 2026.
 
@@ -196,7 +199,7 @@ In this task, you add a small Apps Script project that shows the core pattern: a
 
 ```javascript
 /**
- * Holcim Operational Excellence Lab 02 — simple Apps Script demo
+ * Holcim Operational Excellence Lab 02 - simple Apps Script demo
  * Custom menu + HTML sidebar + sheet read/write + chart
  */
 
@@ -395,4 +398,9 @@ Suggest one safe improvement that does not change the sheet names.
 
 ## Congratulations!
 
-You imported synthetic CEM and Geocycle site data, used Gemini in Sheets for formatting and dashboard-style charts, asked focused OE analysis questions, and shipped a small Apps Script region chart builder for average clinker factor.
+In this lab, you have:
+
+- Created a Google Sheet and imported synthetic CEM and Geocycle site CSV data from Google Drive.
+- Used Gemini in Sheets to format a table, add header filters, apply conditional formatting, and insert a chart.
+- Asked Gemini one question at a time to compare clinker factor by cement type, read quarterly trends, and list OE priority sites.
+- Built a simple Apps Script menu and sidebar that charts one region's average clinker factor by quarter.
