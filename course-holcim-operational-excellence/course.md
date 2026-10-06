@@ -19,8 +19,8 @@
 # Course Objectives
 
 - Apply Gemini across everyday Holcim Operational Excellence workflows for CEM and Geocycle
-- Engineer structured prompts that produce Holcim-ready CEM product notes, Geocycle acceptance summaries, and OE infographics
-- Use Gemini in Sheets to format, chart, and dashboard CEM clinker-factor and Geocycle AF performance data
+- Engineer structured prompts that produce Holcim-ready product notes, acceptance summaries, and infographics
+- Use Gemini in Sheets to format, chart, and dashboard performance data
 - Package reusable prompts and grounded reference files into Gemini Gems for CEM and Geocycle workflows
 - Build a Gemini Notebook briefing pack for low-carbon CEM and Geocycle updates
 - Generate multi-slide Holcim-style presentations with Gemini in Google Slides
