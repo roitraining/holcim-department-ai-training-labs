@@ -116,8 +116,7 @@ Insert it into a new sheet.
 
 ![Conditional formatting and chart from Gemini](images/conditional-formatting-chart.png)
 
-> [!TIP]
-> If Gemini cannot act on the full table, select a smaller visible range first, or ask it to summarize average Clinker Factor by Region on a new sheet, then chart that summary.
+
 
 ### Task 3: Ask Gemini focused analysis questions
 
