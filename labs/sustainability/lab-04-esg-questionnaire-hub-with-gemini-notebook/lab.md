@@ -32,7 +32,7 @@ In this task, you create the notebook and load the internal sources plus the cus
 
 1. Open [https://notebooklm.google.com/](https://notebooklm.google.com/) and sign in with your account.
 
-2. On the home page, create a **New notebook**.
+2. On the home page, select **Create new notebook**.
 
 ![Gemini Notebook home page](images/new-notebook.png)
 
@@ -42,7 +42,7 @@ In this task, you create the notebook and load the internal sources plus the cus
 Holcim Sustainability — ESG Questionnaire Hub
 ```
 
-4. Click **Add sources**, and choose **Drive**. Enter the following URL in the Search box, drill into the folder, and add all five files.
+4. Click **Add sources** and choose **Drive**. Enter the following URL in the Search box, drill into the folder, and add all five files.
 
 ```
 https://drive.google.com/drive/u/1/folders/1VlwKZ8-UPqC119fZ8dNu64mLTO7nArzq
@@ -76,9 +76,9 @@ EcoVadis sustainability rating methodology: environment, labor, and human rights
 <!-- TODO IMAGE: Screenshot of the Search the Web tool with the EcoVadis query and results listed -->
 ![Searching the web for EcoVadis methodology](images/search-web-esg-sources.png)
 
-2. Review the results, and select **Import** to relevant results to your notebook.
+2. Review the results and select **Import** to relevant results to your notebook.
 
-3. Run a second search for the certifications your response pack references, and import the results.
+3. Run a second search for the certifications your response pack references and import the results.
 
 ```text
 ISO 14001 environmental management and ISO 45001 occupational health and safety certification overview
