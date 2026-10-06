@@ -68,11 +68,11 @@ Writing quality example:
 - Weak: "Blended cements are greener."
 ```
 
-7. Under **Knowledge**, upload:
+7. Scroll down to **Knowledge**, click the **Add files** icon (the plus sign), choose **Add from Drive**, and add this file:
 
-`assets/holcim-cem-en197-glossary-synthetic.md`
+[https://drive.google.com/file/d/1ZTLRMK2ObpD-7NQzxeZO2MmWxgfY4uHh/view?usp=sharing](https://drive.google.com/file/d/1ZTLRMK2ObpD-7NQzxeZO2MmWxgfY4uHh/view?usp=sharing)
 
-from this lab folder.
+(`holcim-cem-en197-glossary-synthetic.md`)
 
 ![New Gem editor with instructions](images/content-assistant-gem-editor.png)
 
@@ -123,9 +123,11 @@ Process:
 3. Recommend the next data request in one sentence.
 ```
 
-4. Upload as Knowledge:
+4. Under **Knowledge**, choose **Add from Drive**, and add this file:
 
-`assets/holcim-geocycle-acceptance-notes-synthetic.md`
+[https://drive.google.com/file/d/1wupyB1rAJP_sO2jfQnrNPxaU19YmdavN/view?usp=sharing](https://drive.google.com/file/d/1wupyB1rAJP_sO2jfQnrNPxaU19YmdavN/view?usp=sharing)
+
+(`holcim-geocycle-acceptance-notes-synthetic.md`)
 
 5. Preview with:
 

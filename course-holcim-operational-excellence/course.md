@@ -2,7 +2,7 @@
 <!-- course-theme: holcim-theme -->
 
 <!-- layout: full-bleed -->
-![ROI Logo](images/title-slide.png)
+![Title slide](images/title-slide.png)
 ---
 <!-- layout: panel-right -->
 # Welcome!
@@ -235,12 +235,8 @@
 
 - Save chat responses as notes, then convert notes into sources
 - Narrow your sources to your own content before generating outputs
-- Create polished assets
-  - Reports
-  - Infographics
-  - Slide presentations
-  - and more...
-
+- Create polished assets inside Notebook: reports, infographics, and draft slide decks
+- Lab 5 is different: you will use **Gemini inside Google Slides** to build a Holcim-style deck you can edit and present
 
 ![Gemini Notebook Studio](images/notebook-studio.png)
 ---
@@ -259,19 +255,27 @@
 - Gemini Notebook
 - **Holcim-Style Presentations in Slides**
 ---
-# From Insights to a Leadership Deck
+# Gemini in Google Slides
 
-- Gemini in Google Slides can draft a multi-slide deck from a clear brief
-- You stay the editor: Holcim structure, tone, and facts still need your review
+- Open Google Slides and ask Gemini to draft a **multi-slide** deck from a clear brief
+- You stay the editor: structure, tone, and facts still need your review
 - Best when you already have approved talking points from Sheets or Notebook
-- Today you practice prompting for Holcim presentation style, not generic slide filler
+- This is not Notebook Studio: you are building and refining the deck in Slides itself
 
 ![Bring insights to a Holcim-style deck](images/bring-it-to-work.png)
 ---
-<!-- layout: stacked -->
-# Four Tools, One Toolkit
+# Holcim-Style Presentation Constraints
 
-![Four tools converging on your Operational Excellence workflow: Prompt Engineering, Sheets and Gemini, Gems, Gemini Notebook](images/toolkit-recap.svg)
+- Strong titles, sparse bullets (about four per slide), generous whitespace
+- Tell one OE story: CEM clinker factor and Geocycle thermal substitution as related levers
+- Use only approved synthetic facts from the lab brief: no invented KPIs or targets
+- Finish with concrete next actions and short speaker notes you could actually present
+---
+# Lab 5: Creating Holcim-Style Presentations with Gemini in Slides
+
+**Time:** 30 minutes
+
+[Open Lab 5](https://labv.roitraining.com/?lab=https%3A%2F%2Fgithub.com%2Froitraining%2Fholcim-department-ai-training-labs%2Fblob%2Fmain%2Flabs%2Foperational-excellence%2Flab-05-holcim-style-presentations-with-gemini-in-slides%2Flab.md)
 ---
 # Keep Data Safe
 
@@ -282,12 +286,6 @@
 
 > [!WARNING]
 > Real Holcim plant data, unpublished CEM targets, and real Geocycle customer details do not belong in a public AI chat. Anonymize or use a synthetic sample.
----
-# Lab 5: Creating Holcim-Style Presentations with Gemini in Slides
-
-**Time:** 30 minutes
-
-[Open Lab 5](https://labv.roitraining.com/?lab=https%3A%2F%2Fgithub.com%2Froitraining%2Fholcim-department-ai-training-labs%2Fblob%2Fmain%2Flabs%2Foperational-excellence%2Flab-05-holcim-style-presentations-with-gemini-in-slides%2Flab.md)
 ---
 # What You Learned
 

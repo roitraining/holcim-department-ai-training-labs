@@ -42,17 +42,15 @@ In this task, you create the notebook and load the internal sources that will gr
 Holcim OE — Low-Carbon CEM and Geocycle Briefing
 ```
 
-4. Click **Add sources**, and upload (or add from Drive after you upload them) these two files from this lab’s `assets/` folder:
+4. Click **Add sources**, choose **Drive**, and add these two shared files (confirm you can view each link first):
 
-   - `holcim-oe-cem-clinker-factor-brief-synthetic.md`
-   - `holcim-oe-geocycle-af-brief-synthetic.md`
+   - CEM clinker-factor brief: [https://drive.google.com/file/d/1Gxj6nPDWLB33ecD68EoDlfTd4_xLAhGG/view?usp=drive_link](https://drive.google.com/file/d/1Gxj6nPDWLB33ecD68EoDlfTd4_xLAhGG/view?usp=drive_link)
+   - Geocycle AF brief: [https://drive.google.com/file/d/1SAkzt4tigtlLx6KOyxkr08w20XqJkKQw/view?usp=drive_link](https://drive.google.com/file/d/1SAkzt4tigtlLx6KOyxkr08w20XqJkKQw/view?usp=drive_link)
 
 <!-- TODO IMAGE: Screenshot of Add sources with both OE briefs visible -->
 ![Adding the OE CEM and Geocycle briefs](images/add-drive-sources.png)
 
-5. Optional but recommended: also upload a copy of the Lab 02 CSV summary notes, or paste a short exported summary of `OeQuarterlyTrend` as a text source if you completed Lab 02.
-
-6. Wait until the sources appear as ready in the **Sources** panel.
+5. Wait until both sources appear as ready in the **Sources** panel.
 
 ### Task 2: Research public context with web sources
 

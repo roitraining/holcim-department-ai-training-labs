@@ -182,9 +182,7 @@ Style: Holcim-like industrial professional, red and gray accents, minimal text, 
 Include the Holcim wordmark only if you can keep it simple; otherwise omit logos
 ```
 
-6. Optionally attach `images/holcim-logo.png` from this lab folder if your Gemini account accepts image uploads for brand reference.
-
-7. Ask Gemini to refine once:
+6. Ask Gemini to refine once:
 
 ```text
 Tighten the layout: larger title, fewer words per column, equal visual weight for CEM and Geocycle, no invented percentages.

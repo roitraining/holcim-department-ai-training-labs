@@ -40,19 +40,17 @@ In this task, you create a spreadsheet and load the synthetic CEM and Geocycle s
 
 ![Create a new Google Sheet](images/create-google-sheet.png)
 
-5. Locate the lab CSV in this repo (or download it from the course materials package):
+5. Open the shared CSV in Drive (confirm you can view it):
 
-`labs/operational-excellence/lab-02-analyzing-cem-geocycle-data-with-sheets-and-gemini/assets/holcim-oe-cem-geocycle-site-data-synthetic.csv`
+[https://drive.google.com/file/d/1V6GoUmOCxlfn9tCcZxDcsE6UTUNeyYAe/view?usp=sharing](https://drive.google.com/file/d/1V6GoUmOCxlfn9tCcZxDcsE6UTUNeyYAe/view?usp=sharing)
 
-6. In your Sheet, choose **File** | **Import** | **Upload**, select the CSV, then set:
+6. Return to your Sheet. Choose **File** | **Import**, and paste the Drive file link into the search box. Select the file and choose **Insert**. In the Import dialog set the following and click **Import data**.
 
-   - Import location: **Replace current sheet**
-   - Separator type: **Detect automatically** (or **Comma**)
-   - Convert text to numbers, dates, and formulas: **Checked**
+   - Import location: **Replace current sheet**.
+   - Separator type: **Detect automatically** (or **Comma**).
+   - Convert text to numbers, dates, and formulas: **Checked**.
 
-   Click **Import data**.
-
-![Import CSV into Sheets](images/import-csv-from-drive.png)
+![Import CSV from Drive](images/import-csv-from-drive.png)
 
 7. Confirm row 1 contains these headers (12 columns):
 
@@ -194,15 +192,179 @@ In this task, you add a small Apps Script project that shows the core pattern: a
 
 2. Rename the project to `Holcim OE Region Clinker Chart Builder`.
 
-3. Replace any default `Code.gs` content with the contents of:
+3. Replace any default `Code.gs` content with:
 
-`assets/apps-script/Code.gs`
+```javascript
+/**
+ * Holcim Operational Excellence Lab 02 — simple Apps Script demo
+ * Custom menu + HTML sidebar + sheet read/write + chart
+ */
 
-(in this lab folder). The script expects a sheet named `SiteData` and charts **Average Clinker Factor** by quarter for the selected region.
+var SOURCE_SHEET = 'SiteData';
+var OUTPUT_SHEET = 'RegionSummary';
 
-4. Click **+** next to **Files** and add an **HTML** file named `Sidebar` (Apps Script will create `Sidebar.html`). Paste the contents of:
+function onOpen() {
+  SpreadsheetApp.getUi()
+    .createMenu('Holcim Labs')
+    .addItem('Open region chart builder', 'showSidebar')
+    .addToUi();
+}
 
-`assets/apps-script/Sidebar.html`
+function showSidebar() {
+  var html = HtmlService.createHtmlOutputFromFile('Sidebar')
+    .setTitle('Region chart builder')
+    .setWidth(280);
+  SpreadsheetApp.getUi().showSidebar(html);
+}
+
+/** Return sorted unique Region values from SiteData. */
+function getRegions() {
+  var sheet = SpreadsheetApp.getActive().getSheetByName(SOURCE_SHEET);
+  if (!sheet) {
+    throw new Error('Missing sheet: ' + SOURCE_SHEET);
+  }
+  var data = sheet.getDataRange().getDisplayValues();
+  var regionCol = data[0].indexOf('Region');
+  if (regionCol < 0) {
+    throw new Error('Region column not found.');
+  }
+  var seen = {};
+  for (var i = 1; i < data.length; i++) {
+    var value = String(data[i][regionCol] || '').trim();
+    if (value) {
+      seen[value] = true;
+    }
+  }
+  return Object.keys(seen).sort();
+}
+
+/**
+ * Filter SiteData to one region, write average Clinker Factor by Reporting
+ * Quarter, and insert a column chart on RegionSummary.
+ */
+function buildRegionChart(region) {
+  var ss = SpreadsheetApp.getActive();
+  var source = ss.getSheetByName(SOURCE_SHEET);
+  if (!source) {
+    throw new Error('Missing sheet: ' + SOURCE_SHEET);
+  }
+
+  var data = source.getDataRange().getDisplayValues();
+  var headers = data[0];
+  var regionCol = headers.indexOf('Region');
+  var quarterCol = headers.indexOf('Reporting Quarter');
+  var clinkerCol = headers.indexOf('Clinker Factor');
+
+  var sums = {};
+  var counts = {};
+  for (var i = 1; i < data.length; i++) {
+    if (String(data[i][regionCol] || '').trim() !== region) {
+      continue;
+    }
+    var quarter = String(data[i][quarterCol] || 'Unknown').trim() || 'Unknown';
+    var clinker = Number(data[i][clinkerCol]);
+    if (isNaN(clinker)) {
+      continue;
+    }
+    sums[quarter] = (sums[quarter] || 0) + clinker;
+    counts[quarter] = (counts[quarter] || 0) + 1;
+  }
+
+  var out = ss.getSheetByName(OUTPUT_SHEET);
+  if (!out) {
+    out = ss.insertSheet(OUTPUT_SHEET);
+  }
+  out.clear();
+  out.getCharts().forEach(function (chart) {
+    out.removeChart(chart);
+  });
+
+  var rows = [['Reporting Quarter', 'Average Clinker Factor']];
+  Object.keys(sums).sort().forEach(function (quarter) {
+    rows.push([quarter, sums[quarter] / counts[quarter]]);
+  });
+  out.getRange(1, 1, rows.length, 2).setValues(rows);
+  out.getRange(1, 1, 1, 2).setFontWeight('bold');
+
+  if (rows.length > 1) {
+    var chart = out.newChart()
+      .setChartType(Charts.ChartType.COLUMN)
+      .addRange(out.getRange(1, 1, rows.length, 2))
+      .setOption('title', 'Average Clinker Factor by Quarter - ' + region)
+      .setPosition(2, 4, 0, 0)
+      .build();
+    out.insertChart(chart);
+  }
+
+  return {
+    region: region,
+    quarters: rows.length - 1
+  };
+}
+```
+
+4. Click **+** next to **Files** and add an **HTML** file named `Sidebar` (Apps Script will create `Sidebar.html`). Replace its contents with:
+
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <base target="_top" />
+    <style>
+      body { font-family: Arial, sans-serif; font-size: 13px; margin: 12px; color: #202124; }
+      select, button { width: 100%; margin-top: 6px; padding: 8px; box-sizing: border-box; }
+      button { background: #0b3d2e; color: #fff; border: 0; font-weight: 600; cursor: pointer; }
+      #msg { margin-top: 12px; color: #5f6368; }
+      .error { color: #b3261e; }
+    </style>
+  </head>
+  <body>
+    <p>Pick a <strong>Region</strong> from <code>SiteData</code>. Apps Script will write a summary and column chart to <code>RegionSummary</code>.</p>
+
+    <label for="region">Region</label>
+    <select id="region"></select>
+    <button onclick="buildChart()">Build chart</button>
+    <div id="msg">Loading regions…</div>
+
+    <script>
+      function setMsg(text, isError) {
+        var el = document.getElementById('msg');
+        el.className = isError ? 'error' : '';
+        el.textContent = text;
+      }
+
+      google.script.run
+        .withSuccessHandler(function (regions) {
+          var select = document.getElementById('region');
+          regions.forEach(function (region) {
+            var option = document.createElement('option');
+            option.value = region;
+            option.textContent = region;
+            select.appendChild(option);
+          });
+          setMsg('Ready.');
+        })
+        .withFailureHandler(function (err) {
+          setMsg(err.message || String(err), true);
+        })
+        .getRegions();
+
+      function buildChart() {
+        var region = document.getElementById('region').value;
+        setMsg('Building chart for ' + region + '…');
+        google.script.run
+          .withSuccessHandler(function (result) {
+            setMsg('Done. Open the RegionSummary sheet for ' + result.region + '.');
+          })
+          .withFailureHandler(function (err) {
+            setMsg(err.message || String(err), true);
+          })
+          .buildRegionChart(region);
+      }
+    </script>
+  </body>
+</html>
+```
 
 5. Save the project, return to the spreadsheet, and reload the browser tab.
 
