@@ -226,7 +226,7 @@ Visual direction:
 - No invented percentages, fake charts, fake QR codes, or extra logos
 ```
 
-<!-- TODO IMAGE: Screenshot of first structured OE infographic with logo -->
+
 ![OE CEM and Geocycle infographic attempt one](images/oe-cem-geocycle-infographic.png)
 
 6. Add **style details** in a follow-up to refine (or regenerate) the infographic:
@@ -239,6 +239,8 @@ Regenerate the infographic with these style constraints:
 - Aspect: portrait infographic (roughly A4 / letter proportions)
 - Keep all infographic text exactly as specified; prioritize correct spelling
 ```
+![OE CEM and Geocycle infographic attempt one](images/oe-cem-geocycle-infographic-2.png)
+
 
 7. Practice **meta-prompting for image generation**. Ask Gemini to improve the prompt before making the next image:
 
