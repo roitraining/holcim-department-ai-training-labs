@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400" font-family="'Helvetica Neue', Arial, Helvetica, sans-serif">
+  <rect x="0" y="0" width="1200" height="400" fill="#ffffff"/>
+
+  <!-- Column 1: Sources (two stacked boxes) -->
+  <g>
+    <rect x="40" y="50" width="260" height="110" rx="12" fill="#eef3f6" stroke="#c7d0d9" stroke-width="2"/>
+    <text x="170" y="86" text-anchor="middle" fill="#041739" font-size="18" font-weight="bold">Holcim Drive Sources</text>
+    <text x="170" y="112" text-anchor="middle" fill="#33465a" font-size="14">HARP, SD glossary, Annual</text>
+    <text x="170" y="132" text-anchor="middle" fill="#33465a" font-size="14">Report, ESG Response Pack</text>
+
+    <rect x="40" y="240" width="260" height="110" rx="12" fill="#eef3f6" stroke="#c7d0d9" stroke-width="2"/>
+    <text x="170" y="278" text-anchor="middle" fill="#041739" font-size="18" font-weight="bold">Customer + Web</text>
+    <text x="170" y="304" text-anchor="middle" fill="#33465a" font-size="14">The questionnaire itself</text>
+    <text x="170" y="324" text-anchor="middle" fill="#33465a" font-size="14">EcoVadis methodology</text>
+  </g>
+
+  <!-- arrows into notebook -->
+  <g stroke="#041739" stroke-width="4" fill="none">
+    <line x1="300" y1="105" x2="440" y2="150"/>
+    <line x1="300" y1="295" x2="440" y2="250"/>
+  </g>
+  <g fill="#041739">
+    <polygon points="440,150 420.4,152.1 425.3,136.9"/>
+    <polygon points="440,250 425.3,263.1 420.4,247.9"/>
+  </g>
+
+  <!-- Column 2: Notebook chat -->
+  <g>
+    <rect x="440" y="70" width="300" height="260" rx="14" fill="#041739"/>
+    <text x="590" y="130" text-anchor="middle" fill="#ffffff" font-size="22" font-weight="bold">Gemini Notebook</text>
+    <text x="590" y="158" text-anchor="middle" fill="#bfe3ff" font-size="16">Grounded chat</text>
+    <text x="590" y="195" text-anchor="middle" fill="#dff6ff" font-size="15">Read exact questions</text>
+    <text x="590" y="220" text-anchor="middle" fill="#dff6ff" font-size="15">Draft cited answers</text>
+    <text x="590" y="245" text-anchor="middle" fill="#dff6ff" font-size="15">Flag weak evidence</text>
+    <text x="590" y="285" text-anchor="middle" fill="#8fd0ff" font-size="15" font-style="italic">Every answer cites a source</text>
+  </g>
+
+  <!-- arrows into studio -->
+  <g stroke="#041739" stroke-width="4" fill="none">
+    <line x1="740" y1="150" x2="820" y2="105"/>
+    <line x1="740" y1="200" x2="820" y2="200"/>
+    <line x1="740" y1="250" x2="820" y2="295"/>
+  </g>
+  <g fill="#041739">
+    <polygon points="820,105 808.2,120.8 800.4,106.9"/>
+    <polygon points="820,200 805,193 805,207"/>
+    <polygon points="820,295 800.4,293.1 808.2,279.2"/>
+  </g>
+
+  <!-- Column 3: Studio outputs (Report, Infographic, Slide Deck) -->
+  <g>
+    <rect x="820" y="50" width="340" height="78" rx="12" fill="#0C98CC"/>
+    <text x="990" y="83" text-anchor="middle" fill="#ffffff" font-size="18" font-weight="bold">Studio: Report</text>
+    <text x="990" y="107" text-anchor="middle" fill="#eafbff" font-size="14">Sections grounded, sections gapped</text>
+
+    <rect x="820" y="145" width="340" height="78" rx="12" fill="#36BDAE"/>
+    <text x="990" y="178" text-anchor="middle" fill="#ffffff" font-size="18" font-weight="bold">Studio: Infographic</text>
+    <text x="990" y="202" text-anchor="middle" fill="#e3fff7" font-size="14">One-page readiness summary</text>
+
+    <rect x="820" y="240" width="340" height="78" rx="12" fill="#5EBF77"/>
+    <text x="990" y="273" text-anchor="middle" fill="#ffffff" font-size="18" font-weight="bold">Studio: Slide Deck</text>
+    <text x="990" y="297" text-anchor="middle" fill="#eafff1" font-size="14">Manager briefing before it goes out</text>
+  </g>
+</svg>

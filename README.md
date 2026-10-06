@@ -27,3 +27,17 @@
 | [Creating Reusable Prompts with Gems](https://labv.roitraining.com/?lab=https%3A%2F%2Fgithub.com%2Froitraining%2Fholcim-department-ai-training-labs%2Fblob%2Fmain%2Flabs%2Fsustainability%2Flab-03-creating-reusable-prompts-with-gems%2Flab.md) | Package a content-writing prompt into a Gem, and build a second Gem grounded in HARP, SD glossary, and Annual Report Knowledge files to answer year-end reporting questions. |
 | [ESG Questionnaire Hub with Gemini Notebook](https://labv.roitraining.com/?lab=https%3A%2F%2Fgithub.com%2Froitraining%2Fholcim-department-ai-training-labs%2Fblob%2Fmain%2Flabs%2Fsustainability%2Flab-04-esg-questionnaire-hub-with-gemini-notebook%2Flab.md) | Build a Gemini Notebook grounded in Holcim sources and web research to draft cited answers to a customer's ESG questionnaire. |
 | [Apps Script Showcase Challenge](https://labv.roitraining.com/?lab=https%3A%2F%2Fgithub.com%2Froitraining%2Fholcim-department-ai-training-labs%2Fblob%2Fmain%2Flabs%2Fsustainability%2Flab-05-apps-script-showcase-challenge%2Flab.md) | Open a live SD team spreadsheet, and use Gemini to help build an Apps Script tab that ranks and sorts Country/OpCo sustainability data. |
+
+## Operational Excellence Team Course (CEM and Geocycle)
+
+[AI for the Holcim Operational Excellence Team](https://slidesv.roitraining.com/?course=https%3A%2F%2Fgithub.com%2Froitraining%2Fholcim-department-ai-training-labs%2Fblob%2Fmain%2Fcourse-holcim-operational-excellence%2Fcourse.md#slide-1)
+
+## Operational Excellence Team Labs
+
+| Lab | Description |
+| :--- | :--- |
+| [Prompt Engineering Mastery](https://labv.roitraining.com/?lab=https%3A%2F%2Fgithub.com%2Froitraining%2Fholcim-department-ai-training-labs%2Fblob%2Fmain%2Flabs%2Foperational-excellence%2Flab-01-prompt-engineering-mastery%2Flab.md) | Progressively improve Gemini prompts for an ECOPlanet CEM product brief, a Geocycle waste-acceptance summary, and a clinker-factor versus AF infographic. |
+| [Analyzing CEM and Geocycle Data with Sheets and Gemini](https://labv.roitraining.com/?lab=https%3A%2F%2Fgithub.com%2Froitraining%2Fholcim-department-ai-training-labs%2Fblob%2Fmain%2Flabs%2Foperational-excellence%2Flab-02-analyzing-cem-geocycle-data-with-sheets-and-gemini%2Flab.md) | Import a synthetic site CSV into Sheets, use Gemini for formatting and dashboards, analyze clinker factor and thermal substitution, and build an Apps Script region chart sidebar. |
+| [Creating Reusable Prompts with Gems](https://labv.roitraining.com/?lab=https%3A%2F%2Fgithub.com%2Froitraining%2Fholcim-department-ai-training-labs%2Fblob%2Fmain%2Flabs%2Foperational-excellence%2Flab-03-creating-reusable-prompts-with-gems%2Flab.md) | Package a CEM Formulation Helper Gem and a Geocycle Inquiry Assistant Gem with Knowledge files. |
+| [Low-Carbon CEM and Geocycle Briefing with Gemini Notebook](https://labv.roitraining.com/?lab=https%3A%2F%2Fgithub.com%2Froitraining%2Fholcim-department-ai-training-labs%2Fblob%2Fmain%2Flabs%2Foperational-excellence%2Flab-04-low-carbon-cem-geocycle-briefing-with-gemini-notebook%2Flab.md) | Build a Gemini Notebook briefing pack on CEM clinker-factor and Geocycle AF progress, then generate Studio outputs. |
+| [Holcim-Style Presentations with Gemini in Slides](https://labv.roitraining.com/?lab=https%3A%2F%2Fgithub.com%2Froitraining%2Fholcim-department-ai-training-labs%2Fblob%2Fmain%2Flabs%2Foperational-excellence%2Flab-05-holcim-style-presentations-with-gemini-in-slides%2Flab.md) | Generate and refine a multi-slide Holcim-style OE leadership deck with Gemini in Google Slides. |
