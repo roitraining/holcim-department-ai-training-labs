@@ -106,7 +106,7 @@ In this task, you paste a small synthetic plant dataset into Gemini and build a 
 > [!WARNING]
 > The plant data below is **synthetic training data**. Do not treat the plant IDs, figures, or ratings as real Holcim emissions data, and do not add real confidential plant data during this lab.
 
-1. Start a **new Gemini chat** for this exercise.
+1. Start a new Gemini chat for this exercise.
 
 2. Copy the synthetic plant table below, along with the simple prompt underneath it, into the chat and send them together:
 
@@ -193,9 +193,9 @@ Sort the table by Readiness rating in this order: On Track, Needs Data, At Risk.
 
 In this task, you use Gemini's image generation to create a promotional infographic for **ECOPact**, starting simple, then adding the Holcim logo, approved facts, style direction, and a meta-prompt to refine the image prompt itself.
 
-1. In Gemini, start a **new chat**. Then, select the **create image** tool from the tools menu.
+1. In Gemini, select **New chat**. Then, select **Create image** from the tools menu.
 
-2. Send a **simple** image request:
+2. Send a simple image request:
 
 ```text
 Create an infographic promoting ECOPact.
@@ -204,9 +204,9 @@ Create an infographic promoting ECOPact.
 > [!NOTE]
 > It will create something, and it might look good. However, it likely invents its own statistics and layout. Let's be more specific.
 
-3. Create a new chat, and select the create image tool again.
+3. Create a new chat and select the create image tool again.
 
-4. Copy the Holcim logo below to the clipboard, and paste it in the prompt box.
+4. Copy the Holcim logo below to the clipboard and paste it in the prompt box.
 
 ![Holcim Logo](./images/holcim-logo.png)
 
@@ -235,7 +235,7 @@ Visual direction:
 
 ![Infographic One](./images/ecopact-infographic-1.png)
 
-6. Add **style details** in a follow-up to refine (or regenerate) the infographic:
+6. Add style details in a follow-up to refine (or regenerate) the infographic:
 
 ```text
 Regenerate the infographic with these style constraints:
@@ -248,7 +248,7 @@ Regenerate the infographic with these style constraints:
 
 ![Infographic Two](./images/ecopact-infographic-2.png)
 
-7. Practice **meta-prompting for image generation**. Ask Gemini to improve the prompt before making the next image:
+7. Practice meta-prompting for image generation. Ask Gemini to improve the prompt before making the next image:
 
 ```text
 You are an expert prompt engineer for image generation.
@@ -258,7 +258,7 @@ Meta-task:
 2. Write an improved single image prompt (under 180 words) that is more specific about composition, lighting, camera/layout language, and negative constraints.
 ```
 
-8. Copy the improved prompt to the clipboard, create a new chat, and re-run the image generation using it. Don't forget to attach the logo, and select the create image tool.
+8. Copy the improved prompt to the clipboard, create a new chat, and rerun the image generation using it. Don't forget to attach the logo and select the create image tool.
 
 ![Infographic Three](./images/ecopact-infographic-3.png)
 
@@ -269,7 +269,7 @@ Meta-task:
 
 With fewer step-by-step hints, turn what you learned into a short reusable prompt your Sustainability teammates can copy.
 
-1. In a new Gemini chat, ask Gemini to draft a one-page **Prompt Playbook** Markdown snippet that includes:
+1. In a new Gemini chat, ask Gemini to draft a one-page ***Prompt Playbook*** Markdown snippet that includes:
 
 - The Role / Task / Steps / Examples pattern
 - Your best ECOPact factsheet prompt skeleton (with blanks for product name and approved facts)
@@ -278,7 +278,7 @@ With fewer step-by-step hints, turn what you learned into a short reusable promp
 
 2. Edit the playbook so it only references approved or synthetic facts and avoids inventing confidential emissions data.
 
-3. Optional: save the final Markdown into a note your team shares after class.
+3. Optional: Save the final Markdown into a note your team shares after class.
 
 ## Congratulations!
 
