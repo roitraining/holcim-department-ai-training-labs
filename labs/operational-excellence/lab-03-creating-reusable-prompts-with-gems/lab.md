@@ -95,7 +95,7 @@ In two short paragraphs, explain when an OE partner might discuss moving from CE
 
 In this task, you create a second Gem that answers first-pass Geocycle intake questions using synthetic acceptance notes.
 
-1. Click **New Gem**.
+1. Go to Gems, and create another **New Gem**.
 
 2. Set the Gem **Name** to:
 
