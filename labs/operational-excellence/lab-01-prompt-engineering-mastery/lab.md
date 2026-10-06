@@ -6,7 +6,7 @@
 
 ## Overview
 
-In this lab, you will practice structured prompt engineering in Gemini. Using Holcim Operational Excellence scenarios for **CEM** (cement formulations under EN 197-1) and **Geocycle** (alternative fuels and waste co-processing), you progressively improve prompts for a product brief, a waste-acceptance summary, and an OE infographic so outputs become more accurate, consistent, and useful.
+In this lab, you will practice structured prompt engineering in Gemini. Using Holcim Operational Excellence scenarios for **CEM** (cement formulations under EN 197-1) and **Geocycle** (alternative fuels and waste co-processing). You progressively improve prompts for a product brief, a waste-acceptance summary, and an OE infographic so outputs become more accurate, consistent, and useful.
 
 ### You learn how to:
 
@@ -38,7 +38,7 @@ In this task, you open the Gemini app and improve a CEM product brief prompt in 
 Write a product brief for ECOPlanet cement.
 ```
 
-4. Skim the result. Note what is generic, invented, or not Holcim-specific (made-up percentages, no CEM type language, no sense of clinker factor).
+4. Skim the result. Note, the result is likely good, but let's be a little more specific.
 
 5. In the **same chat**, send this improved prompt that adds a **Role**:
 
