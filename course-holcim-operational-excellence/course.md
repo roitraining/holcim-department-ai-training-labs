@@ -317,23 +317,23 @@
 ---
 # Quiz 2 of 3
 
-**Why does this course keep the Lab 2 `SiteData` file to just 100 rows and 12 columns instead of importing a full multi-year plant extract?**
+**What is a practical way to use Gemini in Google Sheets?**
 
-- A. Google Sheets cannot import more than 100 rows
-- B. Gemini in Sheets performs best on smaller, clean tables, well under Google’s guidance of about 1 million cells
-- C. Apps Script cannot read more than 100 rows
-- D. Clinker factor only calculates correctly below 100 rows
+- A. Paste confidential data and trust every answer without checking
+- B. Ask in the side panel, in plain language, for formatting, filters, charts, or focused analysis, then review the proposal before you apply it
+- C. Expect Gemini to replace every formula and Apps Script workflow automatically
+- D. Use it only to rename spreadsheet tabs
 ---
 # Quiz 2: Answer
 
-**Why does this course keep the Lab 2 `SiteData` file to just 100 rows and 12 columns instead of importing a full multi-year plant extract?**
+**What is a practical way to use Gemini in Google Sheets?**
 
-**Correct: B.** Gemini in Sheets performs best on smaller, clean tables, well under Google’s guidance of about 1 million cells
+**Correct: B.** Ask in the side panel, in plain language, for formatting, filters, charts, or focused analysis, then review the proposal before you apply it
 
-- A 100-row, 12-column table is tiny compared to Google’s roughly 1 million cell guidance
-- Keeping the working file small keeps Gemini prompts fast and reliable
-- A larger extract would need a working-set strategy, the same idea taught elsewhere in this program
-- Apps Script and formulas can still handle much larger ranges when needed
+- Gemini works best when you ask for one clear change or question at a time
+- It proposes; you stay the reviewer before anything hits the sheet
+- Strong everyday uses: format a table, add filters, build a chart, interpret a result
+- Confidential data still needs sanitization, and complex automation may still need Apps Script
 ---
 <!-- layout: 2-column -->
 # Quiz 3 of 3: Discussion
