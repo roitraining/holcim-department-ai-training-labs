@@ -1,4 +1,4 @@
-# Prompt Engineering Mastery with Gemini for Holcim Sustainability Teams
+# Prompt Engineering Mastery
 
 ## Time Required
 
