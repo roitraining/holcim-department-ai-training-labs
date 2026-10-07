@@ -1,4 +1,4 @@
-# Analyze Holcim Sustainability Plant Data with Sheets and Gemini
+# Analyzing Plant Data with Sheets and Gemini
 
 ## Time Required
 
