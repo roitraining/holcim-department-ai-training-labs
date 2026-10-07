@@ -189,7 +189,7 @@
 - Knowledge: HARP chapter, SD glossary, Annual Report excerpt, ESG Response Pack
 - Every answer cites its source, or says “Not found in the provided materials”
 ---
-# Lab 3: Creating Reusable Sustainability Assistants with Gems
+# Lab 3: Creating Reusable Sustainability Assistants with Gemini Gems
 
 **Time:** 30 minutes
 
