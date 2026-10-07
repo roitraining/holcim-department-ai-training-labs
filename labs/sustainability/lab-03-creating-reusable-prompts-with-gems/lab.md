@@ -1,4 +1,4 @@
-# Create Reusable Holcim Sustainability Assistants with Gemini Gems
+# Creating Reusable Sustainability Assistants with Gemini Gems
 
 ## Time Required
 
