@@ -10,25 +10,22 @@ In this lab, you will use Gemini in Google Slides to draft a multi-slide Operati
 
 ### You learn how to:
 
-- Open Google Slides and start a deck with Gemini assistance.
+- Open Google Slides and start a blank leadership deck.
 - Prompt Gemini for a multi-slide Holcim-style structure (title, agenda, two lever sections, actions).
-- Refine slides for Holcim look-and-feel cues: clear titles, sparse bullets, red/gray professional tone, no invented KPIs.
+- Refine slides for the Holcim website look: white space, strong titles, the blue-to-green logo, and no invented KPIs.
 - Add speaker notes and a final quality pass before sharing.
 
 ## Scenario
 
 ![Holcim Logo](./images/holcim-logo.png)
 
-Your OE manager wants a short leadership update tomorrow morning: where CEM clinker factor is heading, how Geocycle thermal substitution supports the low-carbon agenda, and what the team should do next. You already have synthetic talking points from Labs 2–4. Gemini in Slides can draft the deck quickly—if you give it Holcim presentation constraints and refuse invented numbers.
-
-> [!NOTE]
-> Google’s Gemini-in-Slides controls can vary by account. If a button label differs slightly, use the nearest “Help me create / Generate slides / Gemini” entry point and keep the same prompting craft.
+Your OE manager wants a short leadership update tomorrow morning: where CEM clinker factor is heading, how Geocycle thermal substitution supports the low-carbon agenda, and what the team should do next. The figures are in a shared Google Drive file you will attach in Task 2. The logo above is the visual reference. Gemini in Slides can draft the deck if you attach both before you send the brief.
 
 ## Lab Instructions
 
-### Task 1: Open Slides and prepare your approved facts
+### Task 1: Open Slides and start a blank deck
 
-In this task, you create a blank presentation and collect only approved synthetic facts to feed Gemini.
+In this task, you create a blank presentation for the leadership update.
 
 1. Open [Google Slides](https://slides.google.com/) and sign in.
 
@@ -40,94 +37,95 @@ In this task, you create a blank presentation and collect only approved syntheti
 Holcim OE Lab 05 — CEM and Geocycle Leadership Update
 ```
 
-<!-- TODO IMAGE: Screenshot of a new blank Google Slides deck renamed for the OE lab -->
-![New blank Google Slides deck](images/new-blank-slides-deck.png)
-
-4. Keep this approved fact block handy (synthetic training facts only):
-
-```text
-Approved synthetic facts for this deck:
-- Topic: Operational Excellence update on CEM and Geocycle
-- CEM: product mix discussion uses EN 197-1 families (CEM I–V); lower clinker factor is a primary lever
-- In the training SiteData sample, average clinker factor eased from Q1 to Q4 2025
-- ECOPlanet volume share and SCM share are discussed as formulation signals, not as proof of a specific market claim
-- Geocycle: thermal substitution rate generally rose across the same quarters in the training sample
-- CEM and Geocycle are related low-carbon levers but are not the same metric
-- Do not invent 2030 targets, country rankings, or customer contract tonnes
-```
-
 ### Task 2: Generate a multi-slide deck with a Holcim-style brief
 
-In this task, you ask Gemini in Slides to create several slides at once from a structured brief.
+In this task, you attach the Holcim logo and the Drive source file, then ask Gemini to create several slides from a structured brief.
 
-1. Open the Gemini / **Help me create** (or equivalent) panel in Slides.
+1. In the toolbar, click the **Ask Gemini** icon. The Gemini chat opens on the right.
 
-<!-- TODO IMAGE: Screenshot of Gemini panel in Google Slides -->
-![Gemini panel in Google Slides](images/gemini-in-slides-panel.png)
+![Gemini chat open beside a blank slide](images/gemini-in-slides-panel.png)
 
-2. Paste this prompt and generate:
+> [!NOTE]
+> The panel title is **Gemini**. You should see **Refine your slide content**, suggestions such as **Create a presentation**, and an **Ask Gemini** box at the bottom.
+
+2. Copy the Holcim logo below and paste it into the **Ask Gemini** box. Do not send yet.
+
+![Holcim logo to paste into Gemini](images/holcim-logo.png)
+
+> [!NOTE]
+> If the image does not paste, save the logo and attach the image in the chat. Leave it attached, and do not send yet.
+
+3. Open the shared facts file and confirm you can view it:
+
+[https://drive.google.com/file/d/1XaIhRj1I7zYbf8-5DSCoSftnzY686PaQ/view?usp=sharing](https://drive.google.com/file/d/1XaIhRj1I7zYbf8-5DSCoSftnzY686PaQ/view?usp=sharing)
+
+4. Return to the Gemini chat. Click the **Add sources** icon (**+**), then click **Add from Drive**. Select `holcim-oe-cem-geocycle-facts.md`. Do not send yet.
+
+![Add a source file from Drive](images/add-facts-from-drive.png)
+
+5. In the **Ask Gemini** box, paste this prompt and send it:
 
 ```text
-Create a 6-slide Holcim-style leadership presentation for Operational Excellence.
+Create a 6-slide Holcim leadership presentation for Operational Excellence.
 
-Holcim presentation style constraints:
-- Clean corporate look: strong slide titles, sparse bullets (max 4 per slide), generous whitespace
-- Professional industrial tone; Holcim red and gray accents if themes allow; avoid playful clip art
-- No stock-photo collage slides
-- No invented statistics; use ONLY the approved synthetic facts I provide
-- Prefer short bullets over paragraphs
-- Include a clear recommended-actions slide
+Use the Holcim logo I pasted and the Drive file I attached.
+- Put the logo on the title slide.
+- Use only figures from the attached file. If a number is not in that file, leave it out.
+- Label 2030 figures as published targets, not as results.
+- Keep clinker factor and thermal substitution rate as separate levers.
+- Keep ECOPlanet (cement) separate from ECOPact (ready-mix).
+
+Holcim look and feel, based on holcim.com:
+- White background and generous whitespace
+- Strong short titles and sparse bullets (max 4 per slide)
+- Dark navy text, with blue-to-green accents taken from the attached logo
+- Do not use a red theme, clip art, icon collages, or stock-photo grids
+- Confident and factual. No hype adjectives.
 
 Slide outline:
-1. Title: Operational Excellence Update — CEM and Geocycle
+1. Title: Operational Excellence Update: CEM and Geocycle
 2. Agenda
-3. CEM lever: clinker factor and product mix (CEM I–V / ECOPlanet)
-4. Geocycle lever: thermal substitution and AF
+3. CEM lever: clinker factor and ECOPlanet
+4. Geocycle lever: thermal substitution
 5. How the two levers work together (and what not to confuse)
-6. Recommended OE actions for the next 30 days
-
-Approved synthetic facts:
-- Topic: Operational Excellence update on CEM and Geocycle
-- CEM: product mix discussion uses EN 197-1 families (CEM I–V); lower clinker factor is a primary lever
-- In the training SiteData sample, average clinker factor eased from Q1 to Q4 2025
-- ECOPlanet volume share and SCM share are discussed as formulation signals, not as proof of a specific market claim
-- Geocycle: thermal substitution rate generally rose across the same quarters in the training sample
-- CEM and Geocycle are related low-carbon levers but are not the same metric
-- Do not invent 2030 targets, country rankings, or customer contract tonnes
+6. Recommended OE actions
 ```
 
-3. Insert / accept the generated slides when the structure matches the outline.
+6. If Gemini asks clarifying questions, answer them from the attached file. If you are given a plan of steps to create the deck, change it if you need to, or approve it.
+
+7. Wait for the slides to finish, then review them. 
 
 <!-- TODO IMAGE: Screenshot of the generated 6-slide deck overview -->
 ![Generated multi-slide OE deck](images/generated-oe-deck-overview.png)
 
 > [!IMPORTANT]
-> If Gemini invents a KPI (for example a “22% reduction” that you did not supply), delete that number before you continue.
+> If Gemini invents a KPI that is not in `holcim-oe-cem-geocycle-facts.md`, delete that number before you continue.
 
 ### Task 3: Refine structure and Holcim look-and-feel
 
 In this task, you use follow-up prompts and manual edits to make the deck presentation-ready.
 
-1. Ask Gemini (in Slides or by selecting a slide and using Gemini) to tighten wording:
+1. In the same Gemini chat, paste this follow-up:
 
 ```text
-Rewrite bullets on slides 3–5 to be shorter and more executive. Keep every factual claim limited to the approved synthetic facts. Remove any hype adjectives.
+Rewrite bullets on slides 3–5 to be shorter and more executive. Keep every factual claim limited to the attached Drive file. Remove any hype adjectives. Keep the white background, dark navy text, and blue-to-green logo treatment.
 ```
 
 2. Manually check each slide:
 
    - One idea per slide
-   - Titles are specific (“CEM: clinker factor and product mix”, not “Overview”)
+   - Titles are specific (“CEM: clinker factor and ECOPlanet”, not “Overview”)
    - No more than four bullets
-   - No decorative text boxes colliding with titles
+   - White space around the title, with the Holcim logo not colliding with text
+   - No red theme and no decorative clip art
 
-3. On the actions slide, ensure next steps are operational, for example:
+3. On the actions slide, keep the next steps operational and grounded in the source file, for example:
 
-   - Validate Q4 priority sites in the regional OE review
-   - Pair CEM product-mix actions with Geocycle AF opportunities where both apply
-   - Keep confidential plant targets out of public AI tools
+   - Report clinker factor and thermal substitution rate as separate KPIs
+   - Tie ECOPlanet to the formulations lever, and Geocycle to the energy lever
+   - Keep unpublished plant targets out of the deck and out of public AI tools
 
-4. Optional: apply a simple theme or brand colors available in your Slides theme gallery that approximate Holcim red/gray. Do not spend the whole lab hunting for a perfect master.
+4. Optional: if the generated theme fights the logo, set the slide background to white and the title text to dark navy. Do not spend the whole lab hunting for a perfect master.
 
 <!-- TODO IMAGE: Screenshot of refined actions slide -->
 ![Refined OE actions slide](images/refined-oe-actions-slide.png)
@@ -136,19 +134,19 @@ Rewrite bullets on slides 3–5 to be shorter and more executive. Keep every fac
 
 1. Open **Speaker notes** on slides 3, 4, and 5.
 
-2. For each, add 2–3 sentences a presenter could say, including one explicit caution not to invent KPIs beyond the training sample.
+2. For each, add 2–3 sentences a presenter could say, including one explicit caution not to invent KPIs beyond the Drive source file.
 
-3. Ask Gemini for help if useful:
+3. If you want help with the wording, paste this into the same Gemini chat:
 
 ```text
-Draft speaker notes for this slide in 3 short sentences for an OE manager audience. Do not add new statistics.
+Draft speaker notes for this slide in 3 short sentences for an OE manager audience. Do not add statistics that are not in the attached Drive file.
 ```
 
 4. Run a final checklist:
 
-   - [ ] Six slides, Holcim-style sparse layout
-   - [ ] CEM and Geocycle both covered
-   - [ ] No invented targets or customer tonnes
+   - [ ] Six slides, white space, navy text, and the Holcim logo
+   - [ ] CEM and Geocycle both covered, as separate levers
+   - [ ] Every figure appears in the Drive source file
    - [ ] Actions slide is concrete
    - [ ] Speaker notes present on the three content slides
 
@@ -162,4 +160,4 @@ Draft speaker notes for this slide in 3 short sentences for an OE manager audien
 
 ## Congratulations!
 
-You generated a multi-slide Holcim-style OE leadership deck with Gemini in Google Slides, refined it against approved synthetic CEM and Geocycle facts, and left with speaker notes you can actually present.
+You generated a multi-slide Holcim leadership deck with Gemini in Google Slides, grounded it in the published CEM and Geocycle source file, and left with speaker notes you can actually present.
