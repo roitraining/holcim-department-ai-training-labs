@@ -59,7 +59,7 @@
 # Five Skills, One Morning
 
 - Five short sections, each pairs a concept with a hands-on lab
-- Same Holcim OE scenarios throughout: CEM formulations, clinker factor, Geocycle AF and waste acceptance
+- Holcim OE scenarios throughout
 - Every exercise uses synthetic or anonymized data: safe to explore
 - By the end, you leave with techniques and artifacts you can reuse Monday
 
@@ -69,8 +69,8 @@
 # Today’s Sections
 
 - **Prompt Engineering**
-- Analyzing CEM and Geocycle Data in Sheets
-- Build Reusable CEM and Geocycle Assistants
+- Analyzing Data in Sheets
+- Build Reusable Assistants
 - Gemini Notebook
 - Holcim-Style Presentations in Slides
 ---
@@ -114,8 +114,8 @@
 # Today’s Sections
 
 - Prompt Engineering
-- **Analyzing CEM and Geocycle Data in Sheets**
-- Build Reusable CEM and Geocycle Assistants
+- **Analyzing Data in Sheets**
+- Build Reusable Assistants
 - Gemini Notebook
 - Holcim-Style Presentations in Slides
 ---
@@ -123,7 +123,7 @@
 
 - Ask Gemini in Sheets for what you want, in plain language: no formulas required
 - Format tables, add header filters, apply conditional formatting, insert charts
-- Gemini proposes the change; you review and apply it
+- Gemini proposes the change; you review and apply
 - Great for OE analysts who know CEM and Geocycle KPIs but not every Sheets function
 
 ![Chat with AI in Sheets](images/sheets-1.png)
@@ -153,8 +153,8 @@
 # Today’s Sections
 
 - Prompt Engineering
-- Analyzing CEM and Geocycle Data in Sheets
-- **Build Reusable CEM and Geocycle Assistants**
+- Analyzing Data in Sheets
+- **Build Reusable Assistants**
 - Gemini Notebook
 - Holcim-Style Presentations in Slides
 ---
@@ -182,7 +182,7 @@
 ### Holcim CEM Formulation Helper
 - Persona: Operational Excellence CEM partner
 - Knowledge: EN 197-1 cement-type glossary and clinker-factor notes
-- Explains CEM I–V trade-offs without inventing plant figures
+- Explains CEM trade-offs without inventing figures
 
 ### Holcim Geocycle Inquiry Assistant
 - Persona: Geocycle customer-facing assistant
@@ -199,8 +199,8 @@
 # Today’s Sections
 
 - Prompt Engineering
-- Analyzing CEM and Geocycle Data in Sheets
-- Build Reusable CEM and Geocycle Assistants
+- Analyzing Data in Sheets
+- Build Reusable Assistants
 - **Gemini Notebook**
 - Holcim-Style Presentations in Slides
 ---
@@ -250,8 +250,8 @@
 # Today’s Sections
 
 - Prompt Engineering
-- Analyzing CEM and Geocycle Data in Sheets
-- Build Reusable CEM and Geocycle Assistants
+- Analyzing Data in Sheets
+- Build Reusable Assistants
 - Gemini Notebook
 - **Holcim-Style Presentations in Slides**
 ---
