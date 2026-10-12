@@ -69,8 +69,8 @@
 # Today’s Sections
 
 - **Prompt Engineering**
-- Analyzing Plant Data with Sheets and Gemini
-- Build Reusable Sustainability Assistants
+- Analyzing Plant Data with Sheets
+- Build Sustainability Assistants
 - Gemini Notebook
 - Apps Script Showcase Challenge
 ---
@@ -114,8 +114,8 @@
 # Today’s Sections
 
 - Prompt Engineering
-- **Analyzing Plant Data with Sheets and Gemini**
-- Build Reusable Sustainability Assistants
+- **Analyzing Plant Data with Sheets**
+- Build Sustainability Assistants
 - Gemini Notebook
 - Apps Script Showcase Challenge
 ---
@@ -123,7 +123,7 @@
 
 - Ask Gemini in Sheets for what you want, in plain language: no formulas required
 - Format tables, add header filters, apply conditional formatting, insert charts
-- Gemini proposes the change; you review and apply it
+- Gemini proposes the change; you review and apply
 - Great for Sustainability analysts who know the data but not every Sheets function
 
 ![Chat with AI in Sheets](images/sheets-1.png)
@@ -153,8 +153,8 @@
 # Today’s Sections
 
 - Prompt Engineering
-- Analyzing Plant Data with Sheets and Gemini
-- **Build Reusable Sustainability Assistants**
+- Analyzing Plant Data with Sheets
+- **Build Sustainability Assistants**
 - Gemini Notebook
 - Apps Script Showcase Challenge
 ---
@@ -199,8 +199,8 @@
 # Today’s Sections
 
 - Prompt Engineering
-- Analyzing Plant Data with Sheets and Gemini
-- Build Reusable Sustainability Assistants
+- Analyzing Plant Data with Sheets
+- Build Sustainability Assistants
 - **Gemini Notebook**
 - Apps Script Showcase Challenge
 ---
@@ -254,8 +254,8 @@
 # Today’s Sections
 
 - Prompt Engineering
-- Analyzing Plant Data with Sheets and Gemini
-- Build Reusable Sustainability Assistants
+- Analyzing Plant Data with Sheets
+- Build Sustainability Assistants
 - Gemini Notebook
 - **Apps Script Showcase Challenge**
 ---
