@@ -13,7 +13,7 @@ In this lab, you will build a Gemini Notebook (NotebookLM) briefing pack for Hol
 - Create a Gemini Notebook and add Holcim OE CEM and Geocycle sources.
 - Research public cement and alternative-fuel context using web sources.
 - Draft grounded, cited leadership talking points in chat.
-- Convert notes to sources and generate an Infographic and Slide Deck in Studio from your own content.
+- Use sources to generate an Infographic and Slide Deck in Studio.
 
 ## Scenario
 
