@@ -64,7 +64,7 @@ EN 197-1 cement types CEM I CEM II CEM III clinker factor supplementary cementit
 
 ![Searching the web for CEM and clinker-factor context](images/search-web-esg-sources.png)
 
-2. Review the results, and **Import** a small number of reputable overviews.
+2. Review the results, and **Import** a number of reputable overviews (or all of them if you prefer).
 
 3. Run a second search:
 
@@ -95,9 +95,9 @@ Create a 6-bullet leadership briefing that covers:
 Cite sources for each bullet. If a figure is not in the sources, say so instead of inventing it.
 ```
 
-3. Save the strongest answer to a note (push pin / save to note).
+3. Review the answer. Save it to a note (push pin / save to note). Notes are saved in the Sources list. click the __Sort sources__ icon and sort them by most recent. You will see your chat answer at the top. 
 
-![Chat talking points saved as a note](images/chat-draft-answers.png)
+![Chat talking points saved as a note](images/note-sources.png)
 
 4. Stress-test the draft:
 
@@ -105,9 +105,8 @@ Cite sources for each bullet. If a figure is not in the sources, say so instead 
 Review the briefing bullets. Flag any bullet that invents a KPI or over-claims carbon performance. Suggest a safer rewrite for each flagged bullet.
 ```
 
-5. Save the cleaned version as a note, then convert important notes into sources if your Notebook UI offers **Convert notes to sources**.
+5. Save the cleaned version as another note. 
 
-![Convert notes to sources](images/convert-notes-to-sources.png)
 
 ### Task 4: Generate Studio outputs from Holcim OE sources only
 
@@ -117,29 +116,32 @@ In this task, you narrow sources and generate visual outputs for the briefing.
 
 ![Select Holcim OE sources only](images/select-holcim-sources-only.png)
 
-2. In **Studio**, generate an **Infographic** titled:
+2. In Gemini Notebook **Studio**,  click the **Infographic** button, then gewnerate then __Generate now__.
 
-```text
-CEM clinker factor and Geocycle AF: two OE levers
+3. Once the image is generated review it. If you want changes, click the __Infographic__ button again, and add instructions before generating it again. 
+
+![Infographic Output](images/infographic.png)
+
+
+3. Click the **Slide Deck** button. Choose __Presenter Slides__. Enter the following prompt to provide instructions to the model and generate the slides. 
+
+```
+Create a 15-minute executive briefing presentation. Use Holcim colors and a "Green Energy" theme. Use the selected sources for data, and do not make up any numbers. Real data only. 
 ```
 
-3. Generate a short **Slide Deck** for a 5-minute OE update.
+4. Review the slide deck. If you want changes, try regeneratiing it with more detailed instructions. 
 
-![Studio infographic and slides](images/studio-report-infographic-slides.png)
+[Example Slide Deck](https://drive.google.com/file/d/1YMuQqev9PT-SLNY93Jknoc--LIvK58qO/view?usp=sharing)
 
-4. Skim both outputs for invented numbers. If you see any, regenerate with a stricter instruction:
 
-```text
-Use only figures present in the selected sources. If a figure is missing, use qualitative language instead of a number.
-```
+### Bonus Task 5: Exploring Gemini Notebook Studio
 
-### Bonus Task 5: Add one web source and refresh one bullet
+1. If you have time, experiment with the other Gemini Notebook Studio features. Try creating an Audio Overview, Mind Map, Quiz, or something else that interests you. Explore the features and add instructions as you see appropriate. 
 
-1. Import one additional web source on calcined clay or slag in blended cements.
+2. Try regenerating outputs with different sources selected. 
 
-2. Ask Notebook to refresh only the product-mix bullet with a citation to that source.
+3. Try asking the Chat different questions, save the chat responses as notes and use those as sources for creating outputs in the Studio. 
 
-3. Save the updated bullet as a note.
 
 ## Congratulations!
 
