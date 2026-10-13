@@ -244,7 +244,7 @@
 
 ![Gemini Notebook Studio](images/notebook-studio.png)
 ---
-# Lab 4: ESG Questionnaire Hub with Gemini Notebook
+# Lab 4: Building a Holcim ESG Questionnaire Hub with Gemini Notebook
 
 **Time:** 30 minutes
 
@@ -283,7 +283,7 @@
 > [!WARNING]
 > Real Holcim plant data, unpublished disclosures, and real customer questionnaires do not belong in a public AI chat. Anonymize or use a synthetic sample.
 ---
-# Lab 5: Apps Script Showcase Challenge
+# Lab 5: Apps Script Showcase Challenge for the Sustainability Team
 
 **Time:** 30 minutes
 
