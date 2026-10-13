@@ -1,4 +1,4 @@
-# Build a Holcim ESG Questionnaire Hub with Gemini Notebook
+# Building a Holcim ESG Questionnaire Hub with Gemini Notebook
 
 ## Time Required
 
