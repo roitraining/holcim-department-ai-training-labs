@@ -19,7 +19,7 @@ In this lab, you will build a Gemini Notebook (NotebookLM) briefing pack for Hol
 
 ![Holcim Logo](./images/holcim-logo.png)
 
-You are preparing a short Operational Excellence update that must cover two related levers: **CEM clinker-factor / product-mix progress** and **Geocycle thermal substitution**. Digging through scattered notes every month wastes time and risks inconsistent stories. A Gemini Notebook keeps the briefing grounded in sources you choose.
+You are preparing a short Operational Excellence update that must cover two related levers: **CEM clinker-factor/product-mix progress** and **Geocycle thermal substitution**. Digging through scattered notes every month wastes time and risks inconsistent stories. A Gemini Notebook keeps the briefing grounded in sources you choose.
 
 > [!WARNING]
 > Every source in this lab is **synthetic training content**. Do not attach real unpublished plant KPIs or real customer waste contracts during this lab.
