@@ -306,6 +306,7 @@ B. It saves the Persona, Task, Process, and Examples once, and can hold Knowledg
 C. It automatically emails the output to OE leadership
 
 D. It removes the need to review AI output before using it
+
 ---
 # Quiz 1: Answer
 
@@ -329,6 +330,7 @@ B. Ask in the side panel, in plain language, for formatting, filters, charts, or
 C. Expect Gemini to replace every formula and Apps Script workflow automatically
 
 D. Use it only to rename spreadsheet tabs
+
 ---
 # Quiz 2: Answer
 
