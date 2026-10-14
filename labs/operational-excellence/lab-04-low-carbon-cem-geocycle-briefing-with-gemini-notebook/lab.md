@@ -95,7 +95,7 @@ Create a 6-bullet leadership briefing that covers:
 Cite sources for each bullet. If a figure is not in the sources, say so instead of inventing it.
 ```
 
-3. Review the answer. Save it to a note (push pin / save to note). Notes are saved in the Sources list. click the __Sort sources__ icon and sort them by most recent. You will see your chat answer at the top. 
+3. Review the answer. Save it to a note (push pin/save to note). Notes are saved in the Sources list. click the __Sort sources__ icon and sort them by most recent. You will see your chat answer at the top. 
 
 ![Chat talking points saved as a note](images/note-sources.png)
 
@@ -116,7 +116,7 @@ In this task, you narrow sources and generate visual outputs for the briefing.
 
 ![Select Holcim OE sources only](images/select-holcim-sources-only.png)
 
-2. In Gemini Notebook **Studio**,  click the **Infographic** button, then gewnerate then __Generate now__.
+2. In Gemini Notebook **Studio**,  click the **Infographic** button, then generate then __Generate now__.
 
 3. Once the image is generated review it. If you want changes, click the __Infographic__ button again, and add instructions before generating it again. 
 
