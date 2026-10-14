@@ -95,7 +95,7 @@ Now regenerate only the key benefits as 5 strong bullets in that style.
 ![ECOPlanet CEM brief prompt progression in Gemini](images/ecoplanet-cem-brief-prompt-progression.png)
 
 > [!IMPORTANT]
-> Keep this as **one multi-turn chat**. The value is watching quality improve as you add Role, Task, Steps, and Examples - not starting over each time.
+> Keep this as **one multi-turn chat**. The value is watching quality improve as you add Role, Task, Steps, and Examples—not starting over each time.
 
 ### Task 2: Draft a Geocycle waste-stream acceptance summary
 
@@ -252,7 +252,7 @@ Meta-task:
 2. Write an improved single image prompt (under 180 words) that is more specific about composition, lighting, layout language, and negative constraints.
 ```
 
-8. Copy the improved prompt to the clipboard, create a new chat, re-select the create image tool, paste the Holcim logo again, and run the improved prompt.
+8. Copy the improved prompt to the clipboard, create a new chat, reselect the create image tool, paste the Holcim logo again, and run the improved prompt.
 
 <!-- TODO IMAGE: Screenshot of the final OE CEM vs Geocycle infographic after meta-prompt -->
 ![OE CEM and Geocycle infographic final](images/oe-cem-geocycle-infographic-final.png)
