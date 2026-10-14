@@ -171,7 +171,7 @@
 # What’s a Gem
 
 - A Gem is a saved Gemini assistant: instructions live in the Gem, not in your head
-- A Gem can also hold Knowledge files, so it answers grounded in your own documents
+- A Gem can also hold Knowledge files, so its answers are grounded in your own documents
 - Preview before you save; edit anytime the standard changes
 
 ![Anatomy of a Gem: Persona, Task, Knowledge, Constraints, Process, Examples](images/gem-anatomy.svg)
@@ -299,10 +299,13 @@
 
 **Why is a Gemini Gem more useful than retyping your prompt every time for the Holcim Operational Excellence team?**
 
-- A. It runs faster than a normal Gemini chat
-- B. It saves the Persona, Task, Process, and Examples once, and can hold Knowledge files, so anyone on the team gets the same grounded quality without rebuilding the prompt
-- C. It automatically emails the output to OE leadership
-- D. It removes the need to review AI output before using it
+A. It runs faster than a normal Gemini chat
+
+B. It saves the Persona, Task, Process, and Examples once, and can hold Knowledge files, so anyone on the team gets the same grounded quality without rebuilding the prompt
+
+C. It automatically emails the output to OE leadership
+
+D. It removes the need to review AI output before using it
 ---
 # Quiz 1: Answer
 
@@ -313,16 +316,19 @@
 - Gems store durable instructions, not just a one-off message
 - The CEM Formulation Helper and Geocycle Inquiry Gems can hold Knowledge files, so answers stay grounded
 - Teammates get consistent quality without knowing the underlying prompt craft
-- You still preview and review output —a Gem does not remove that step
+- You still preview and review output—a Gem does not remove that step
 ---
 # Quiz 2 of 3
 
 **What is a practical way to use Gemini in Google Sheets?**
 
-- A. Paste confidential data and trust every answer without checking
-- B. Ask in the side panel, in plain language, for formatting, filters, charts, or focused analysis, then review the proposal before you apply it
-- C. Expect Gemini to replace every formula and Apps Script workflow automatically
-- D. Use it only to rename spreadsheet tabs
+A. Paste confidential data and trust every answer without checking
+
+B. Ask in the side panel, in plain language, for formatting, filters, charts, or focused analysis, then review the proposal before you apply it
+
+C. Expect Gemini to replace every formula and Apps Script workflow automatically
+
+D. Use it only to rename spreadsheet tabs
 ---
 # Quiz 2: Answer
 
@@ -352,8 +358,8 @@ You have one real Operational Excellence task you handle every week or month: a 
 **Which tool fits your recurring OE task, and who else would reuse it?**
 
 ### Strong Answers Mention
-- A specific, recurring task - not a vague “AI will help somewhere”
-- A tool matched to the task’s shape (one-off vs. repeatable vs. data-heavy vs. research-heavy)
+- A specific, recurring task—not a vague “AI will help somewhere”
+- A tool matched to the task’s shape (one-off vs repeatable vs data-heavy vs research-heavy)
 - A concrete plan to keep any real plant, customer, or formulation data safe
 
 ### Watch For
