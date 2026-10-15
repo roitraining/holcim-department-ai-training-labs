@@ -42,21 +42,15 @@ In this task, you create the notebook and load the internal sources plus the cus
 Holcim Sustainability — ESG Questionnaire Hub
 ```
 
-4. Click **Add sources** and choose **Drive**. Enter the following URL in the Search box, drill into the folder, and add all five files.
+4. Click **Add sources** and choose **Drive**. Add each of these five files:
 
-```
-https://drive.google.com/drive/u/1/folders/1VlwKZ8-UPqC119fZ8dNu64mLTO7nArzq
-```
+- [https://drive.google.com/file/d/1nIHFJleLokIA9ClYtYAubhna6PnkEVjJ/view?usp=drive_link](https://drive.google.com/file/d/1nIHFJleLokIA9ClYtYAubhna6PnkEVjJ/view?usp=drive_link)
+- [https://drive.google.com/file/d/1kWMGZ_XXqOpeT5_s0C7t03nhYOxn2aGT/view?usp=drive_link](https://drive.google.com/file/d/1kWMGZ_XXqOpeT5_s0C7t03nhYOxn2aGT/view?usp=drive_link)
+- [https://drive.google.com/file/d/1BbjAgeGaN_XK-WB_lLh_6iy6Dn12er4O/view?usp=drive_link](https://drive.google.com/file/d/1BbjAgeGaN_XK-WB_lLh_6iy6Dn12er4O/view?usp=drive_link)
+- [https://drive.google.com/file/d/192BOZv-Jn3_SwSUNouyKYsWdP_hC3p_z/view?usp=drive_link](https://drive.google.com/file/d/192BOZv-Jn3_SwSUNouyKYsWdP_hC3p_z/view?usp=drive_link)
+- [https://drive.google.com/file/d/1YBPmRhO3ElxcYFZwD0NHelchoQeOeqC3/view?usp=drive_link](https://drive.google.com/file/d/1YBPmRhO3ElxcYFZwD0NHelchoQeOeqC3/view?usp=drive_link)
 
-You should see:
-   - `holcim-harp-chapter-14-sustainability-disclosures-synthetic.md`
-   - `holcim-sd-definitions-glossary-synthetic.md`
-   - `holcim-annual-report-fy2024-sustainability-excerpt-synthetic.md`
-   - `holcim-group-esg-response-pack-synthetic.md`
-   - `holcim-customer-esg-questionnaire-synthetic` (the customer's original questionnaire)
 
-<!-- TODO IMAGE: Screenshot of the Add sources dialog with the Drive folder link pasted and all five files visible -->
-![Adding the five internal sources from Drive](images/add-drive-sources.png)
 
 5. Wait until all five sources appear as ready in the **Sources** panel.
 
