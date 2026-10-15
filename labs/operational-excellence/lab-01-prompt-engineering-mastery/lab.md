@@ -1,4 +1,4 @@
-# Prompt Engineering Mastery with Gemini for Holcim Operational Excellence
+# Prompt Engineering Mastery
 
 ## Time Required
 
