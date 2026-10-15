@@ -143,7 +143,7 @@
 
 ![Site data pipeline: CSV to SiteData to Gemini in Sheets to Apps Script](images/data-pipeline.svg)
 ---
-# Lab 2: Analyzing CEM and Geocycle Data with Sheets and Gemini
+# Lab 2: Analyzing CEM and Geocycle Performance Data with Sheets and Gemini
 
 **Time:** 45 minutes
 
@@ -240,7 +240,7 @@
 
 ![Gemini Notebook Studio](images/notebook-studio.png)
 ---
-# Lab 4: Low-Carbon CEM and Geocycle Briefing with Gemini Notebook
+# Lab 4: Building a Low-Carbon CEM and Geocycle Briefing with Gemini Notebook
 
 **Time:** 30 minutes
 
