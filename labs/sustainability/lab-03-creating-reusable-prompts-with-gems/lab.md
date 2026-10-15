@@ -140,9 +140,11 @@ A: Thermal Substitution Rate is the share of kiln thermal energy from alternativ
 
 4. Scroll down to **Knowledge**, and click the **Add files** icon (_the plus sign_).
 
-5. Choose **Add from Drive**, paste the following folder link, dril into the folder, and add all three files.
+5. Choose **Add from Drive**, and add each of these three files:
 
-[https://drive.google.com/drive/folders/19sR6xrg_Fq3z4RwNyn88MT9rh4ExSHTK?usp=sharing](https://drive.google.com/drive/folders/19sR6xrg_Fq3z4RwNyn88MT9rh4ExSHTK?usp=sharing)
+- [https://drive.google.com/file/d/12xg6lQk-KxZ7rtpysE1G4KnMXYl_Sd4O/view?usp=drive_link](https://drive.google.com/file/d/12xg6lQk-KxZ7rtpysE1G4KnMXYl_Sd4O/view?usp=drive_link)
+- [https://drive.google.com/file/d/1kCtDd0p9qfDhePaqeMXNmxLvSWkvoiqS/view?usp=drive_link](https://drive.google.com/file/d/1kCtDd0p9qfDhePaqeMXNmxLvSWkvoiqS/view?usp=drive_link)
+- [https://drive.google.com/file/d/135ZPNJ5q7h9qiw5uCCIsW_fmIu6Ajznt/view?usp=drive_link](https://drive.google.com/file/d/135ZPNJ5q7h9qiw5uCCIsW_fmIu6Ajznt/view?usp=drive_link)
 
 <!-- TODO IMAGE: Screenshot of the Knowledge section with all three files attached -->
 ![Year-End Reporting Assistant Knowledge files](images/year-end-gem-knowledge.png)
