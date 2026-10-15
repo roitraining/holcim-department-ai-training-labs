@@ -116,7 +116,7 @@ In this task, you narrow sources and generate visual outputs for the briefing.
 
 ![Select Holcim OE sources only](images/select-holcim-sources-only.png)
 
-2. In Gemini Notebook **Studio**,  click the **Infographic** button, then generate then __Generate now__.
+2. In Gemini Notebook **Studio**,  click the **Infographic** button, then click __Generate now__.
 
 3. Once the image is generated review it. If you want changes, click the __Infographic__ button again, and add instructions before generating it again. 
 
