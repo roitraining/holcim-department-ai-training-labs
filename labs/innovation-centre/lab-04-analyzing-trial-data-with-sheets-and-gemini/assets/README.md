@@ -1,16 +1,16 @@
 # Lab 04 assets
 
-Synthetic trial KPI file plus the glossary Gemini should find from the Sheets side panel.
+Synthetic trial KPI file plus the glossary Gemini searches for from the Sheets side panel. Learners import the CSV with **File → Import → Upload** and upload the glossary PDF to their own Drive (Task 1).
 
-Class Drive folder URL: `TODO` (instructor pastes after upload)
+Drive folder (anyone with the link can view): [innovation-lab-4-assets](https://drive.google.com/drive/folders/1Htz2oQ79mvI__UliypySIkJoJ_muOuMj)
 
-| File | Role in the lab | Drive URL |
-| :--- | :--- | :--- |
-| `hic-lc3-24-trial-kpis.csv` | 100 rows (25 mixes × ages 1, 7, 28, 90), 12 columns | TODO |
-| `hic-trial-glossary.md` | Definitions for document search (Handover ready, spec) | TODO |
-| `hic-trial-glossary.pdf` | Same glossary as PDF if the tenant prefers PDFs | TODO |
+| File | Role in the lab |
+| :--- | :--- |
+| [hic-lc3-24-trial-kpis.csv](https://drive.google.com/file/d/1KDWqWRkoEGnQ50DPJD5Fa-1trIBQB5-M/view) | 100 rows (25 mixes × ages 1, 7, 28, 90), 12 columns |
+| [hic-trial-glossary.pdf](https://drive.google.com/file/d/12NCiX79_M1Qb7Wk9XbtZkQuMlg4oiAfy/view) | Definitions for document search (Handover ready, spec) |
+| [hic-trial-glossary.md](https://drive.google.com/file/d/1C8FPK2SGSSFcfcsFGEtCBnNlNWsPB1nE/view) | Markdown twin (not used in the lab) |
 
-There is no `apps-script/` folder. The finish is a Sheets canvas dashboard.
+All figures are synthetic training content. The Drive copies match the files in this folder. If you change a file here, upload the new version to Drive with **Manage versions** so the link stays the same.
 
 Locked 28-day figures (must match Labs 1, 3, and 5):
 

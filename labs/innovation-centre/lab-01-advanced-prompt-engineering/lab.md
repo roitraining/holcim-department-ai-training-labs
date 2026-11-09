@@ -88,20 +88,17 @@ Keep sentences short. Prefer tables over adjectives. Never write "promising" wit
 
 In this task, you ground Gemini in the protocol, the interim results, and the limitations file, then force a schema so missing fields stay `Not found`.
 
-1. Open the class Drive folder your instructor shared. Confirm these three synthetic PDFs:
+1. Download the three synthetic trial PDFs. For each file in the table, click the link to open it in Google Drive, then click **Download** (the down-arrow icon at the top right of the preview).
 
 | File | What it owns |
 | :--- | :--- |
-| `hic-lc3-24-trial-protocol.pdf` | Methods, ages, spec. No extra result rows. |
-| `hic-lc3-24-interim-results.pdf` | Selected mix results. Numbers live here. |
-| `hic-lc3-24-limitations.pdf` | Caveats, water demand, plant constraints. |
+| [hic-lc3-24-trial-protocol.pdf](https://drive.google.com/file/d/1cvvnx2dI6DQPwGoZpM-M0TLrJEEENZiy/view) | Methods, ages, spec. No extra result rows. |
+| [hic-lc3-24-interim-results.pdf](https://drive.google.com/file/d/17i1fiajvB2RTU0UUhqNmo4w-3rfxvK7V/view) | Selected mix results. Numbers live here. |
+| [hic-lc3-24-limitations.pdf](https://drive.google.com/file/d/1OyLgZjaJZPRJ_yBDajhL7gLKw-48hXWc/view) | Caveats, water demand, plant constraints. |
 
-> [!NOTE]
-> Local copies are in this lab’s `assets/` folder if you need to upload from your computer. Prefer **Add from Drive** when the class folder is available.
+2. In Gemini, start a **new chat**. Click **+** (to the left of the prompt box), choose **Upload files**, and select the three PDFs from your **Downloads** folder.
 
-2. Start a **new chat**. Click **+**, choose **Add from Drive**, and attach all three PDFs.
-
-3. Send a weak first ask:
+3. Wait until all three files appear above the prompt box. Then send a weak first ask:
 
 ```text
 Look at these files and tell me what you think.
@@ -225,7 +222,7 @@ Meta-task:
 
 In this task, you take the trial note from Task 1, stress-test it against the PDFs, then produce three rewrites that share facts and change only voice.
 
-1. Return to the **Task 1 chat** (or start a new chat and attach the three PDFs plus your trial note). Send:
+1. Return to the **Task 1 chat**. Click **+**, choose **Upload files**, and select the same three PDFs from your **Downloads** folder. Then send:
 
 ```text
 Critique the plant-facing trial note against the three attached PDFs.

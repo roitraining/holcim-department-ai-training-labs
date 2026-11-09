@@ -18,7 +18,7 @@ In this lab, you will use Gemini inside Gmail on a plant-handover thread you sen
 
 ![Holcim Logo](./images/holcim-logo.png)
 
-You are coordinating the **HIC-LC3-24** handover to the synthetic Loire Plant. The protocol sits in the class Drive folder. Nobody has a meeting on the calendar yet. You will create the email thread yourself so every learner has the same inbox starting point.
+You are coordinating the **HIC-LC3-24** handover to the synthetic Loire Plant. The protocol and related HIC files will sit in your Drive. Nobody has a meeting on the calendar yet. You will create the email thread yourself so every learner has the same inbox starting point.
 
 > [!WARNING]
 > Do not send unpublished real trial data, partner names, or mix cards. Use the canned body in this lab. Suggested replies can be wrong on technical content. You still click **Send**.
@@ -28,23 +28,39 @@ You are coordinating the **HIC-LC3-24** handover to the synthetic Loire Plant. T
 
 ## Lab Instructions
 
-### Task 1: Send yourself the handover thread and summarize it
+### Task 1: Upload the HIC files, then send and summarize the handover thread
 
-In this task, you create the thread Gemini will summarize. You send the canned message to your own address so the lab does not depend on a pre-seeded mailbox.
+In this task, you put the HIC files in your own Drive so Gemini can find them later. Then you create the thread Gemini will summarize. You send the canned message to your own address so the lab does not depend on a pre-seeded mailbox.
 
-1. Open [https://mail.google.com/](https://mail.google.com/) and sign in with your class account.
+1. Download the four HIC files. For each file in the table, click the link to open it in Google Drive, then click **Download** (the down-arrow icon at the top right of the preview).
 
-2. Click **Compose**.
+| File | What it contains |
+| :--- | :--- |
+| [hic-lc3-24-trial-protocol.pdf](https://drive.google.com/file/d/1REHLF6NeIkN_kON23YtxkcSImcXSPU5o/view) | Test ages and the 28-day spec |
+| [hic-lc3-24-meeting-note.pdf](https://drive.google.com/file/d/1xGOwSrZjPmC4PlSmpopK9J0RzV_7DhI5/view) | Kickoff decisions; the working session is not scheduled |
+| [hic-trial-glossary.pdf](https://drive.google.com/file/d/11iwfKBi8ONKtSBjhWbkGRWnjSf4eWgDm/view) | Definition of handover ready |
+| [hic-lc3-24-handover-checklist.pdf](https://drive.google.com/file/d/1V87d4tNd6qbqUmcljHZzrJsduPKmFDY0/view) | Checklist for the working session |
 
-3. In **To**, enter your own email address.
+2. Open [https://drive.google.com/](https://drive.google.com/). Click **New**, then **New folder**. Name the folder `HIC-LC3-24 handover` and click **Create**.
 
-4. In **Subject**, paste:
+3. Double-click the new folder to open it. Click **New**, then **File upload**, and select the four PDFs from your **Downloads** folder.
+
+> [!NOTE]
+> Drive can take a few minutes to make new files searchable. You upload them now so Gemini can find them in Task 2.
+
+4. Open [https://mail.google.com/](https://mail.google.com/) and sign in with your class account.
+
+5. Click **Compose**.
+
+6. In **To**, enter your own email address.
+
+7. In **Subject**, paste:
 
 ```text
 HIC-LC3-24: plant handover working session
 ```
 
-5. In the message body, paste:
+8. In the message body, paste:
 
 ```text
 Team,
@@ -64,14 +80,14 @@ Thanks,
 HIC binder trial team
 ```
 
-6. Click **Send**. Open the message in your inbox so it is the active thread.
+9. Click **Send**. Open the message in your inbox so it is the active thread.
 
-7. At the top right of Gmail, click **Ask Gemini**.
+10. At the top right of Gmail, click **Ask Gemini**.
 
 <!-- TODO IMAGE: Screenshot of Gmail with Ask Gemini side panel open on the self-sent thread -->
 ![Ask Gemini side panel in Gmail](images/gmail-ask-gemini.png)
 
-8. In the Gemini panel, send:
+11. In the Gemini panel, send:
 
 ```text
 Summarize this thread in five bullets. List the decisions we still need, and quote the Drive file name mentioned in the email. Do not add trial results that are not in the message.
@@ -95,7 +111,7 @@ Search Gmail, Chat, and Drive for HIC-LC3-24. I need the trial protocol, any mee
 
 2. Review what Gemini returns.
 
-3. If Drive results are thin, click **Add source** (or the Drive control in the Gemini panel) and attach `hic-lc3-24-trial-protocol.pdf` from the class Drive folder.
+3. If Drive results are thin, click **Add source** (or the Drive control in the Gemini panel) and attach `hic-lc3-24-trial-protocol.pdf` from your `HIC-LC3-24 handover` folder in Drive.
 
 4. Send a follow-up that uses the file:
 
@@ -110,7 +126,7 @@ Using the HIC-LC3-24 trial protocol, list the test ages and the 28-day spec stre
 > **Fallback if Chat is empty:** that is expected in a training tenant. Complete the search using Drive from this same Gmail panel. Do not switch to a different product unless Gemini in Gmail is unavailable.
 
 > [!NOTE]
-> Files you should be able to find in the class Drive folder: `hic-lc3-24-trial-protocol.pdf`, `hic-lc3-24-meeting-note.pdf`, `hic-trial-glossary.pdf`, `hic-lc3-24-handover-checklist.pdf`. Local copies are in this lab’s `assets/` folder.
+> Gemini should find the four files you uploaded to your `HIC-LC3-24 handover` folder in Task 1. If it finds none, wait a minute and send the prompt again.
 
 ### Task 3: Help me schedule a plant-handover working session
 

@@ -47,11 +47,21 @@ HIC-LC3-24 Innovation Review
 
 In this task, the **Doc** owns the story. You attach it and ask for six slides. You do not attach the Sheet yet.
 
-1. Open the class Drive folder and make a copy of **HIC-LC3-24 Project Update** (Google Doc). If no Drive copy exists yet, create a Google Doc and paste the contents of `assets/hic-project-update-template.md` from this lab.
+1. Click [hic-project-update-template.md](https://drive.google.com/file/d/12cgN2UVmm7JTJp3eknlpShE9x6C5t2k6/view) to open it in Google Drive, then click **Download** (the down-arrow icon at the top right of the preview).
 
-2. In the Gemini in Slides panel, add that Doc as a source (**Add from Drive** or attach files, depending on your tenant).
+2. In a new browser tab, open [https://docs.google.com/](https://docs.google.com/) and click **Blank document**.
 
-3. Send:
+3. Click **File**, then **Open**. Choose the **Upload** tab, click **Browse**, and select `hic-project-update-template.md` from your **Downloads** folder. Docs opens it as a new document.
+
+4. If the title still ends in `.md`, click **File**, then **Save as Google Docs**. Rename the document:
+
+```text
+HIC-LC3-24 Project Update
+```
+
+5. Return to the **HIC-LC3-24 Innovation Review** tab. In the Gemini panel, click **Add sources**, then **Add from Drive**, and select **HIC-LC3-24 Project Update**.
+
+6. Send:
 
 ```text
 Create a 6-slide Holcim Innovation Centre deck for an internal innovation review of HIC-LC3-24.
@@ -75,9 +85,9 @@ Constraints:
 - If a figure is not in the Doc, omit it
 ```
 
-4. If Gemini asks clarifying questions or shows a plan, answer from the Doc. Approve the plan when it matches the six-slide outline.
+7. If Gemini asks clarifying questions or shows a plan, answer from the Doc. Approve the plan when it matches the six-slide outline.
 
-5. Wait for the slides to finish, then skim them. Confirm no megapascal value appeared that is not in the Doc.
+8. Wait for the slides to finish, then skim them. Confirm no megapascal value appeared that is not in the Doc.
 
 <!-- TODO IMAGE: Screenshot of the six-slide deck generated from the project-update Doc -->
 ![Deck generated from the project-update Doc](images/generated-from-doc.png)
@@ -86,13 +96,30 @@ Constraints:
 
 In this task, you keep the outline and **edit** slides with extra references. You do not regenerate the whole deck.
 
-1. Make a copy of **HIC-LC3-24 28-day Results** (Google Sheet) from the class Drive folder. If needed, create a Sheet and import `assets/hic-lc3-28day-results.csv`.
+1. Download both reference files. For each file, click the link to open it in Google Drive, then click **Download**.
 
-2. Open `assets/hic-lc3-brand-constraints.md` (or the Drive copy) so you can attach it as well.
+| File | What it owns |
+| :--- | :--- |
+| [hic-lc3-28day-results.csv](https://drive.google.com/file/d/1I5lJxak57QsvQU4Cf2zc1dvdvDFHmBRv/view) | Every 28-day number you may quote |
+| [hic-lc3-brand-constraints.md](https://drive.google.com/file/d/1eAIfoNN3sTh0eXHR-Er5o3fD7SMLrUDW/view) | Holcim look, number rules, and banned claims |
 
-3. In the **same** Gemini in Slides chat, attach the Sheet and the constraints file.
+2. Open [https://sheets.google.com/](https://sheets.google.com/) and click **Blank spreadsheet**. Click **File**, then **Import**. Choose the **Upload** tab, click **Browse**, and select `hic-lc3-28day-results.csv`. Set **Import location** to **Replace spreadsheet**, then click **Import data**.
 
-4. Send this follow-up. It must say **edit**, not **create**:
+3. Rename the spreadsheet:
+
+```text
+HIC-LC3-24 28-day Results
+```
+
+4. Open [https://docs.google.com/](https://docs.google.com/), click **Blank document**, then click **File**, then **Open**. Choose the **Upload** tab and select `hic-lc3-brand-constraints.md`. If the title still ends in `.md`, click **File**, then **Save as Google Docs**. Rename the document:
+
+```text
+HIC-LC3-24 brand constraints
+```
+
+5. Return to the **HIC-LC3-24 Innovation Review** tab. In the **same** Gemini chat, click **Add sources**, then **Add from Drive**, and select **HIC-LC3-24 28-day Results** and **HIC-LC3-24 brand constraints**.
+
+6. Send this follow-up. It must say **edit**, not **create**:
 
 ```text
 Edit the existing slides. Do not add slides. Do not regenerate the deck.
@@ -111,7 +138,7 @@ If the Sheet and the Doc disagree, keep the Sheet for numbers and the Doc for na
 <!-- TODO IMAGE: Screenshot of Gemini editing existing slides after the Sheet and constraints file were attached -->
 ![Slides edited with Sheet and constraints file](images/edited-with-sheet.png)
 
-5. Manually check each slide:
+7. Manually check each slide:
 
    - One idea per slide
    - Titles are specific (“LC3-50 clears 28-day spec”, not “Results”)
@@ -120,7 +147,7 @@ If the Sheet and the Doc disagree, keep the Sheet for numbers and the Doc for na
    - White background, navy text, and blue and green accents from the logo
    - Every number exists in the Doc or the Sheet
 
-6. Ask Gemini to fix any slide that fails the checklist. Name the slide number in the prompt.
+8. Ask Gemini to fix any slide that fails the checklist. Name the slide number in the prompt.
 
 ### Task 4: Enhance this slide and lock the Holcim look
 
@@ -139,10 +166,6 @@ In this task, you use the visual tool, then you still own the content.
 ```text
 Add a summary slide at the end with the 3 takeaways the review board must remember. Then add a Questions and Answers slide. Still no invented numbers.
 ```
-
-3. If your instructor shared an example finished deck, open it and compare structure, not decoration.
-
-   <!-- TODO DRIVE: paste example deck URL after upload -->
 
 ### Bonus Task 5: Audience rewrite inside the same deck
 

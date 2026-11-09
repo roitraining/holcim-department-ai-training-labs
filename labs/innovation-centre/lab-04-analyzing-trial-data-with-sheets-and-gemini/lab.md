@@ -38,17 +38,32 @@ HIC-LC3-24 Trial KPIs
 
 ![Create a Google Sheet](images/create-google-sheet.png)
 
-2. Import `hic-lc3-24-trial-kpis.csv` from the class Drive folder (**File → Import**). If the folder is not shared yet, upload the copy in this lab’s `assets/` folder.
+2. Click [hic-lc3-24-trial-kpis.csv](https://drive.google.com/file/d/1KDWqWRkoEGnQ50DPJD5Fa-1trIBQB5-M/view) to open it in Google Drive, then click **Download** (the down-arrow icon at the top right of the preview).
 
-![Import CSV from Drive](images/import-csv-from-drive.png)
+3. Return to your spreadsheet. Click **File**, then **Import**. Choose the **Upload** tab, click **Browse**, and select `hic-lc3-24-trial-kpis.csv` from your **Downloads** folder. Set **Import location** to **Insert new sheet(s)**, then click **Import data**.
 
-3. Confirm you have about **100 rows** and **12 columns**, including `Sample_ID`, `Mix_ID`, `Binder_Family`, `Target_Plant`, `Region`, `Age_days`, `Clinker_Factor`, `Calcined_Clay_pct`, `Compressive_Strength_MPa`, `Spec_Strength_MPa`, `Trial_Stage`, and `Handover_Ready`.
+![Import file dialog in Google Sheets](images/import-csv-from-drive.png)
 
-4. Open **Ask Gemini** in Sheets.
+4. Double-click the new tab at the bottom of the screen and rename it:
+
+```text
+TrialData
+```
+
+5. Confirm you have about **100 rows** and **12 columns**, including `Sample_ID`, `Mix_ID`, `Binder_Family`, `Target_Plant`, `Region`, `Age_days`, `Clinker_Factor`, `Calcined_Clay_pct`, `Compressive_Strength_MPa`, `Spec_Strength_MPa`, `Trial_Stage`, and `Handover_Ready`.
+
+6. Download the glossary you search for in Task 3. Click [hic-trial-glossary.pdf](https://drive.google.com/file/d/12NCiX79_M1Qb7Wk9XbtZkQuMlg4oiAfy/view), then click **Download**.
+
+7. Open [https://drive.google.com/](https://drive.google.com/) in a new tab. Click **New**, then **File upload**, and select `hic-trial-glossary.pdf` from your **Downloads** folder.
+
+> [!NOTE]
+> You upload the glossary now because Drive can take a few minutes to make a new file searchable.
+
+8. Return to your spreadsheet and open **Ask Gemini** in Sheets.
 
 ![Gemini in Sheets side panel](images/gemini-in-sheets-panel.png)
 
-5. Send:
+9. Send:
 
 ```text
 Format this sheet for analysis:
@@ -62,7 +77,7 @@ Format this sheet for analysis:
 Do not add or delete rows. Do not invent columns.
 ```
 
-6. Add conditional formatting with a follow-up:
+10. Add conditional formatting with a follow-up:
 
 ```text
 Apply conditional formatting on Handover_Ready: green fill when Yes, pale red fill when No.
@@ -107,7 +122,7 @@ In this task, you add two calculated columns and confirm a definition from Drive
 1. Send:
 
 ```text
-Add two formula columns on the TrialData tab (or the imported tab), starting in the first empty column:
+Add two formula columns on the TrialData tab, starting in the first empty column:
 
 Column M header: Pass_vs_Spec
 Formula: Yes if Compressive_Strength_MPa >= Spec_Strength_MPa, otherwise No.
@@ -130,7 +145,7 @@ Do not overwrite A to L.
 Search Drive for hic-trial-glossary. Using that document, quote the definition of Handover ready and the 28-day spec used in HIC-LC3-24. If you cannot find the file, say so.
 ```
 
-4. If search returns nothing, click **Add source** / **Add from Drive** and attach `hic-trial-glossary.md` or `hic-trial-glossary.pdf` from the class folder (local copy in `assets/`).
+4. If search returns nothing, click **Add sources**, then **Add from Drive**, and select `hic-trial-glossary.pdf` (you uploaded it in Task 1).
 
 5. Send:
 
@@ -148,7 +163,7 @@ Does the Handover_Ready column in this sheet match the glossary definition? List
 
 In this task, you replace the old “make me a chart sheet” finish with an interactive Canvas on the trial tab.
 
-1. Click the tab that holds the 100 rows so Canvas uses that data. Canvas uses **one tab**.
+1. Click the **TrialData** tab so Canvas uses that data. Canvas uses **one tab**.
 
 2. Create a canvas using one of these controls (tenants differ):
 

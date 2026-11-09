@@ -10,30 +10,18 @@ Five labs for the HIC Gemini afternoon. Each folder has `lab.md`, `images/`, and
 | Trial data in Sheets, formulas, and Canvas | `lab-04-analyzing-trial-data-with-sheets-and-gemini/` | 45 minutes |
 | Advanced Gemini Notebook briefing | `lab-05-advanced-binder-trial-briefing-with-gemini-notebook/` | 30 minutes |
 
-## Class Drive folder
+## Class files
 
-Local synthetic files are complete. They are **not** uploaded to Google Drive from this repository (no class Drive credentials in git).
+Every file a learner needs is in a public Google Drive folder (anyone with the link can view). Each `lab.md` links to the individual files at the step where they are needed and tells the learner exactly how to get them into the tool: download, then upload to Gemini, Drive, Docs, Sheets, or NotebookLM. No instructor setup or sharing is needed.
 
-Before class, an instructor should:
+| Lab | Drive folder |
+| :--- | :--- |
+| 1 | [innovation-lab-1-assets](https://drive.google.com/drive/folders/1mtOcmZs-qlAHE8WrxWyLTjLGHlfEdQ_A) |
+| 2 | [innovation-lab-2-assets](https://drive.google.com/drive/folders/1E2tOHYON2iaGByyJHRrCFnnodNWPmg2q) |
+| 3 | [innovation-lab-3-assets](https://drive.google.com/drive/folders/1jG_g5WYyZ8ZBpFXODt9bvRH4IfBUcL-r) |
+| 4 | [innovation-lab-4-assets](https://drive.google.com/drive/folders/1Htz2oQ79mvI__UliypySIkJoJ_muOuMj) |
+| 5 | [innovation-lab-5-assets](https://drive.google.com/drive/folders/1js2KmzN0LCM2xSf_w03DyPA3Hti8X6-N) |
 
-1. Create a shared Drive folder such as `HIC Gemini class files`.
-2. Upload every file listed in each lab’s `assets/README.md`.
-3. Share the folder with the training domain as Viewer (or with each learner).
-4. Paste the folder URL and file URLs into those README tables and, if you want one-click **Add from Drive**, into the lab steps.
-
-Suggested folder layout:
-
-```text
-HIC Gemini class files/
-  lab-01/
-    hic-lc3-24-trial-protocol.pdf
-    hic-lc3-24-interim-results.pdf
-    hic-lc3-24-limitations.pdf
-  lab-02/   (include the protocol again so Gmail search finds it)
-  lab-03/   (convert the project-update Markdown to a Google Doc;
-             convert hic-lc3-28day-results.csv to a Google Sheet)
-  lab-04/
-  lab-05/
-```
+The Drive files match each lab’s `assets/` folder (checked 2026-11-09). If you edit a file in `assets/`, replace the Drive copy with **Manage versions** so the link in `lab.md` keeps working.
 
 All figures are synthetic. Do not replace them with live HIC trial data for the public class.

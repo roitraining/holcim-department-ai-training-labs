@@ -42,15 +42,19 @@ In this task, you load the five files that will ground every later answer.
 HIC-LC3-24 Innovation Review
 ```
 
-4. Click **Add sources** and choose **Drive**. Add each of these five files from the class folder (local copies in `assets/` if you must upload):
+4. Download the five HIC sources. For each file in the table, click the link to open it in Google Drive, then click **Download** (the down-arrow icon at the top right of the preview).
 
-- `hic-lc3-24-trial-brief.md` (or `.pdf`)
-- `hic-lc3-literature-excerpt.md` (or `.pdf`)
-- `hic-loire-plant-handover-note.md` (or `.pdf`)
-- `hic-trial-glossary.md` (or `.pdf`)
-- `hic-innovation-review-agenda.md` (or `.pdf`)
+| File | What it owns |
+| :--- | :--- |
+| [hic-lc3-24-trial-brief.pdf](https://drive.google.com/file/d/1nDdt_QtYdP64pK689VAjSOwZwZLsyv2-/view) | HIC numbers for M01, M12, M13, and M21 |
+| [hic-lc3-literature-excerpt.pdf](https://drive.google.com/file/d/128z5zcbJ0AR8RiNOkeL7ye44xOCH7lSx/view) | Public LC3 themes. Not HIC results |
+| [hic-loire-plant-handover-note.pdf](https://drive.google.com/file/d/1vA6CGOMrW6RB_KIcddDI0DX7eQSBdAjL/view) | Open plant items and quotable HIC numbers |
+| [hic-trial-glossary.pdf](https://drive.google.com/file/d/1MFXSX8ROFzIGA7tp2fKUAlc1BQhC4RDE/view) | Definitions of handover ready and spec |
+| [hic-innovation-review-agenda.pdf](https://drive.google.com/file/d/12VvcI2UumcjFZLWuUgBCWWr2gt0mBjO4/view) | Review-board agenda and evidence rule |
 
-5. Wait until all five sources appear as ready in the **Sources** panel.
+5. In your notebook, click **Add sources**, then **Upload files**. Select the five PDFs from your **Downloads** folder.
+
+6. Wait until all five sources appear as ready in the **Sources** panel.
 
 <!-- TODO IMAGE: Screenshot of the Sources panel with five HIC files ready -->
 ![Five HIC sources ready](images/all-sources-panel.png)
