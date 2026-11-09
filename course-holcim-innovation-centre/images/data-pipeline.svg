@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 360" role="img" aria-label="Jittered CSV cells become an aligned grid with a glowing formula column, then three canvas tiles lift from those cells">
+  <defs>
+    <linearGradient id="pipe-wash" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#1e71d6"/>
+      <stop offset="0.5" stop-color="#6a55e4"/>
+      <stop offset="1" stop-color="#bd35c2"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Jittered import -->
+  <g transform="translate(28,80)">
+    <rect x="6" y="8" width="28" height="18" fill="#495f7a" transform="rotate(-8 20 17)"/>
+    <rect x="40" y="2" width="28" height="18" fill="#082445" transform="rotate(6 54 11)"/>
+    <rect x="72" y="14" width="28" height="18" fill="#495f7a" transform="rotate(-4 86 23)"/>
+    <rect x="10" y="40" width="28" height="18" fill="#082445" transform="rotate(9 24 49)"/>
+    <rect x="44" y="48" width="28" height="18" fill="#1e71d6" transform="rotate(-11 58 57)"/>
+    <rect x="78" y="38" width="28" height="18" fill="#082445" transform="rotate(5 92 47)"/>
+    <rect x="4" y="78" width="28" height="18" fill="#495f7a" transform="rotate(-6 18 87)"/>
+    <rect x="42" y="86" width="28" height="18" fill="#082445" transform="rotate(8 56 95)"/>
+    <rect x="76" y="74" width="28" height="18" fill="#6a55e4" transform="rotate(-7 90 83)"/>
+    <rect x="14" y="116" width="28" height="18" fill="#082445" transform="rotate(4 28 125)"/>
+    <rect x="48" y="122" width="28" height="18" fill="#495f7a" transform="rotate(-9 62 131)"/>
+    <rect x="82" y="110" width="28" height="18" fill="#082445" transform="rotate(7 96 119)"/>
+    <text x="58" y="176" text-anchor="middle" fill="#495f7a" font-family="Inter, system-ui, sans-serif" font-size="14">CSV</text>
+  </g>
+
+  <rect x="190" y="168" width="72" height="8" rx="4" fill="url(#pipe-wash)"/>
+
+  <!-- Aligned grid, last column is the formula -->
+  <g transform="translate(290,72)">
+    <g fill="#082445">
+      <rect x="0" y="0" width="36" height="22"/>
+      <rect x="40" y="0" width="36" height="22"/>
+      <rect x="80" y="0" width="36" height="22"/>
+      <rect x="0" y="28" width="36" height="22"/>
+      <rect x="40" y="28" width="36" height="22"/>
+      <rect x="80" y="28" width="36" height="22"/>
+      <rect x="0" y="56" width="36" height="22"/>
+      <rect x="40" y="56" width="36" height="22"/>
+      <rect x="80" y="56" width="36" height="22"/>
+      <rect x="0" y="84" width="36" height="22"/>
+      <rect x="40" y="84" width="36" height="22"/>
+      <rect x="80" y="84" width="36" height="22"/>
+      <rect x="0" y="112" width="36" height="22"/>
+      <rect x="40" y="112" width="36" height="22"/>
+      <rect x="80" y="112" width="36" height="22"/>
+    </g>
+    <g fill="url(#pipe-wash)">
+      <rect x="120" y="0" width="36" height="22"/>
+      <rect x="120" y="28" width="36" height="22"/>
+      <rect x="120" y="56" width="36" height="22"/>
+      <rect x="120" y="84" width="36" height="22"/>
+      <rect x="120" y="112" width="36" height="22"/>
+    </g>
+    <text x="78" y="160" text-anchor="middle" fill="#495f7a" font-family="Inter, system-ui, sans-serif" font-size="14">formulas</text>
+  </g>
+
+  <rect x="478" y="168" width="72" height="8" rx="4" fill="url(#pipe-wash)"/>
+
+  <!-- Canvas tiles lifted from the formula column -->
+  <g transform="translate(580,56)">
+    <rect x="0" y="24" width="140" height="56" rx="6" fill="#082445"/>
+    <rect x="24" y="96" width="140" height="56" rx="6" fill="#1e71d6"/>
+    <rect x="48" y="168" width="140" height="56" rx="6" fill="#bd35c2"/>
+    <text x="94" y="268" text-anchor="middle" fill="#495f7a" font-family="Inter, system-ui, sans-serif" font-size="14">canvas</text>
+  </g>
+</svg>

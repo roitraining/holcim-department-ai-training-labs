@@ -1,0 +1,108 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 5 0 R >> >> /Contents 4 0 R >>
+endobj
+4 0 obj
+<< /Length 1480 >>
+stream
+BT
+/F1 12 Tf
+16 TL
+54 740 Td
+/F1 16 Tf (HIC-LC3-24 Limitations) Tj
+/F1 11 Tf
+T*
+T*
+(Synthetic training content. Not a real Holcim trial report.) Tj
+T*
+() Tj
+T*
+() Tj
+T*
+(HIC-LC3-24 Limitations and Handover Notes) Tj
+T*
+() Tj
+T*
+(1. Water demand) Tj
+T*
+(LC3 mixes in this synthetic set showed about 8 percent higher water demand than) Tj
+T*
+(the CEM I control at the same water/binder. Acknowledge this before calling a) Tj
+T*
+(mix handover ready.) Tj
+T*
+() Tj
+T*
+(2. Color) Tj
+T*
+(LC3 mortars were a slightly warmer hue than CEM I. Not a spec fail. Do not) Tj
+T*
+(call it a defect in a plant note.) Tj
+T*
+() Tj
+T*
+(3. Plant constraint) Tj
+T*
+(Loire Plant clay calcination capacity in this training story is 80 t/day.) Tj
+T*
+(Silo allocation for calcined clay is not decided.) Tj
+T*
+() Tj
+T*
+(4. Fineness) Tj
+T*
+(Calcined-clay fineness varied between 3800 and 4500 cm2/g in lab batches.) Tj
+T*
+(Protocol target is 4200 cm2/g Blaine.) Tj
+T*
+() Tj
+T*
+(5. Mix M13) Tj
+T*
+(M13 failed the 28-day spec \(41.2 MPa versus 42.5 MPa\). It is not a mix-card) Tj
+T*
+(candidate until recast.) Tj
+T*
+() Tj
+T*
+(6. Banned claims) Tj
+T*
+(Do not claim commercial ECOPlanet or ECOPact equivalence.) Tj
+T*
+(Do not present 90-day pending cubes as finished results.) Tj
+T*
+(Do not invent customer tons or extra plants.) Tj
+T*
+() Tj
+T*
+(7. Open questions for the plant) Tj
+T*
+(- Which mixes stay in the plant-ready set) Tj
+T*
+(- Silo allocation for calcined clay) Tj
+T*
+(- Fineness gate on day one) Tj
+ET
+endstream
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+xref
+0 6
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000115 00000 n 
+0000000241 00000 n 
+0000001773 00000 n 
+trailer << /Size 6 /Root 1 0 R >>
+startxref
+1843
+%%EOF

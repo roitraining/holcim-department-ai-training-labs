@@ -1,0 +1,26 @@
+Sample_ID,Mix_ID,Binder_Family,Target_Plant,Region,Age_days,Clinker_Factor,Calcined_Clay_pct,Compressive_Strength_MPa,Spec_Strength_MPa,Trial_Stage,Handover_Ready
+HIC-LC3-24-M01-A28,M01,CEM I,Loire Plant,Europe,28,0.95,0,52.4,42.5,Lab screening,No
+HIC-LC3-24-M02-A28,M02,CEM I,Aare Plant,Europe,28,0.95,0,51.1,42.5,Lab screening,No
+HIC-LC3-24-M03-A28,M03,CEM I,Ebro Plant,Europe,28,0.95,0,50.6,42.5,Scale-up,No
+HIC-LC3-24-M04-A28,M04,CEM I,Loire Plant,Europe,28,0.94,0,53.0,42.5,Lab screening,No
+HIC-LC3-24-M05-A28,M05,CEM I,Aare Plant,Europe,28,0.95,0,51.8,42.5,Scale-up,No
+HIC-LC3-24-M06-A28,M06,CEM II/A-LL,Ebro Plant,Europe,28,0.74,0,45.1,42.5,Scale-up,No
+HIC-LC3-24-M07-A28,M07,CEM II/A-LL,Loire Plant,Europe,28,0.73,0,46.2,42.5,Plant-ready,Yes
+HIC-LC3-24-M08-A28,M08,CEM II/A-LL,Aare Plant,Europe,28,0.71,0,44.8,42.5,Scale-up,No
+HIC-LC3-24-M09-A28,M09,CEM II/A-LL,Ebro Plant,Europe,28,0.75,0,47.0,42.5,Lab screening,No
+HIC-LC3-24-M10-A28,M10,CEM II/A-LL,Loire Plant,Europe,28,0.72,0,43.9,42.5,Scale-up,No
+HIC-LC3-24-M11-A28,M11,CEM II/A-LL,Aare Plant,Europe,28,0.70,0,42.8,42.5,Lab screening,No
+HIC-LC3-24-M12-A28,M12,LC3-50,Loire Plant,Europe,28,0.52,30,44.8,42.5,Plant-ready,Yes
+HIC-LC3-24-M13-A28,M13,LC3-50,Loire Plant,Europe,28,0.50,31,41.2,42.5,Scale-up,No
+HIC-LC3-24-M14-A28,M14,LC3-50,Ebro Plant,Europe,28,0.53,29,43.6,42.5,Scale-up,No
+HIC-LC3-24-M15-A28,M15,LC3-50,Aare Plant,Europe,28,0.51,30,42.9,42.5,Lab screening,No
+HIC-LC3-24-M16-A28,M16,LC3-50,Ebro Plant,Europe,28,0.49,32,40.4,42.5,Lab screening,No
+HIC-LC3-24-M17-A28,M17,LC3-50,Aare Plant,Europe,28,0.55,28,45.0,42.5,Scale-up,No
+HIC-LC3-24-M18-A28,M18,LC3-50,Loire Plant,Europe,28,0.54,29,45.6,42.5,Scale-up,No
+HIC-LC3-24-M19-A28,M19,LC3-50,Ebro Plant,Europe,28,0.52,30,43.1,42.5,Lab screening,No
+HIC-LC3-24-M20-A28,M20,LC3-35,Aare Plant,Europe,28,0.66,19,46.4,42.5,Scale-up,No
+HIC-LC3-24-M21-A28,M21,LC3-35,Loire Plant,Europe,28,0.65,20,47.1,42.5,Plant-ready,Yes
+HIC-LC3-24-M22-A28,M22,LC3-35,Ebro Plant,Europe,28,0.64,21,45.5,42.5,Lab screening,No
+HIC-LC3-24-M23-A28,M23,LC3-35,Loire Plant,Europe,28,0.67,18,48.0,42.5,Scale-up,No
+HIC-LC3-24-M24-A28,M24,LC3-35,Aare Plant,Europe,28,0.63,22,44.2,42.5,Lab screening,No
+HIC-LC3-24-M25-A28,M25,LC3-35,Ebro Plant,Europe,28,0.68,17,47.6,42.5,Scale-up,No

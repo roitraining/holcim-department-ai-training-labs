@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 360" role="img" aria-label="Four filled HIC source sheets and one outline web sheet compress into Report, Deck, and Audio outputs">
+  <defs>
+    <linearGradient id="cite-band" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#1e71d6"/>
+      <stop offset="0.5" stop-color="#6a55e4"/>
+      <stop offset="1" stop-color="#bd35c2"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Source sheets: four filled, one outline (web off) -->
+  <g transform="translate(36,48)">
+    <rect x="0" y="24" width="72" height="96" fill="#082445"/>
+    <rect x="16" y="12" width="72" height="96" fill="#1e71d6"/>
+    <rect x="32" y="0" width="72" height="96" fill="#6a55e4"/>
+    <rect x="48" y="16" width="72" height="96" fill="#082445"/>
+    <rect x="88" y="40" width="72" height="96" fill="none" stroke="#495f7a" stroke-width="2" stroke-dasharray="6 4"/>
+    <text x="60" y="168" text-anchor="middle" fill="#495f7a" font-family="Inter, system-ui, sans-serif" font-size="14">HIC</text>
+    <text x="124" y="168" text-anchor="middle" fill="#495f7a" font-family="Inter, system-ui, sans-serif" font-size="14">web</text>
+  </g>
+
+  <!-- Citation wash: only from filled sheets -->
+  <rect x="220" y="88" width="160" height="16" rx="8" fill="url(#cite-band)"/>
+  <polygon points="380,96 412,80 412,112" fill="#bd35c2"/>
+
+  <!-- Studio artifacts -->
+  <g transform="translate(448,40)" font-family="Inter, system-ui, sans-serif">
+    <rect x="0" y="16" width="120" height="160" fill="#082445"/>
+    <rect x="16" y="32" width="88" height="8" fill="#ffffff"/>
+    <rect x="16" y="48" width="72" height="6" fill="#1e71d6"/>
+    <rect x="16" y="62" width="80" height="6" fill="#1e71d6"/>
+    <rect x="16" y="76" width="60" height="6" fill="#6a55e4"/>
+    <rect x="16" y="90" width="80" height="6" fill="#1e71d6"/>
+    <text x="60" y="204" text-anchor="middle" fill="#495f7a" font-size="14">Report</text>
+
+    <g transform="translate(148,28)">
+      <rect x="0" y="8" width="100" height="70" fill="#1e71d6"/>
+      <rect x="12" y="28" width="100" height="70" fill="#6a55e4"/>
+      <rect x="24" y="48" width="100" height="70" fill="#bd35c2"/>
+      <text x="74" y="176" text-anchor="middle" fill="#495f7a" font-size="14">Deck</text>
+    </g>
+
+    <g transform="translate(300,56)">
+      <circle cx="48" cy="48" r="48" fill="none" stroke="#bd35c2" stroke-width="8"/>
+      <polygon points="40,28 40,68 72,48" fill="#bd35c2"/>
+      <text x="48" y="148" text-anchor="middle" fill="#495f7a" font-size="14">Audio</text>
+    </g>
+  </g>
+</svg>

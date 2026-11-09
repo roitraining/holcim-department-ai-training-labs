@@ -1,0 +1,110 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 5 0 R >> >> /Contents 4 0 R >>
+endobj
+4 0 obj
+<< /Length 1796 >>
+stream
+BT
+/F1 12 Tf
+16 TL
+54 740 Td
+/F1 16 Tf (HIC-LC3-24 Interim Results) Tj
+/F1 11 Tf
+T*
+T*
+(Synthetic training content. Not a real Holcim trial report.) Tj
+T*
+() Tj
+T*
+() Tj
+T*
+(HIC-LC3-24 Interim Results) Tj
+T*
+() Tj
+T*
+(This file owns mix numbers. If a mix is not listed, write Not found.) Tj
+T*
+(Do not average rows. Do not use typical LC3 values from outside this file.) Tj
+T*
+() Tj
+T*
+(28-day compressive strength \(EN 196-1, synthetic\)) Tj
+T*
+() Tj
+T*
+(Mix M01 | CEM I control | clinker factor 0.95 | calcined clay 0 percent | 52.4 MPa |) Tj
+T*
+(spec 42.5 MPa | Pass) Tj
+T*
+(Mix M02 | CEM I control | clinker factor 0.95 | calcined clay 0 percent | 51.1 MPa |) Tj
+T*
+(spec 42.5 MPa | Pass) Tj
+T*
+(Mix M07 | CEM II/A-LL | clinker factor 0.73 | calcined clay 0 percent | 46.2 MPa | spec) Tj
+T*
+(42.5 MPa | Pass) Tj
+T*
+(Mix M08 | CEM II/A-LL | clinker factor 0.71 | calcined clay 0 percent | 44.8 MPa | spec) Tj
+T*
+(42.5 MPa | Pass) Tj
+T*
+(Mix M12 | LC3-50 | clinker factor 0.52 | calcined clay 30 percent | 44.8 MPa | spec 42.5) Tj
+T*
+(MPa | Pass) Tj
+T*
+(Mix M13 | LC3-50 | clinker factor 0.50 | calcined clay 31 percent | 41.2 MPa | spec 42.5) Tj
+T*
+(MPa | Fail) Tj
+T*
+(Mix M18 | LC3-50 | clinker factor 0.54 | calcined clay 29 percent | 45.6 MPa | spec 42.5) Tj
+T*
+(MPa | Pass) Tj
+T*
+(Mix M21 | LC3-35 | clinker factor 0.65 | calcined clay 20 percent | 47.1 MPa | spec 42.5) Tj
+T*
+(MPa | Pass) Tj
+T*
+() Tj
+T*
+(Other ages in this file) Tj
+T*
+(Mix M12 | 7 days | 31.4 MPa | no 7-day spec in the protocol) Tj
+T*
+(Mix M12 | 1 day | 12.8 MPa | no 1-day spec in the protocol) Tj
+T*
+() Tj
+T*
+(Pending) Tj
+T*
+(90-day cubes for Mix M13 and Mix M18 are still in the fog room. Do not report) Tj
+T*
+(90-day strengths from this file.) Tj
+T*
+() Tj
+T*
+(Target plant for M01, M12, M13, M21: Loire Plant) Tj
+ET
+endstream
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+xref
+0 6
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000115 00000 n 
+0000000241 00000 n 
+0000002089 00000 n 
+trailer << /Size 6 /Root 1 0 R >>
+startxref
+2159
+%%EOF
