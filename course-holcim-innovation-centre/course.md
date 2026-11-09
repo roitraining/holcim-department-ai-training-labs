@@ -347,7 +347,7 @@ A plant manager asks whether mix M13 is ready for handover. Gemini offers a one-
 - Advanced Gemini Notebook
 ---
 <!-- layout: panel-right -->
-# How Gemini Builds a Deck
+# Building Google Slides deck with Gemini
 
 1. Open a new presentation and click **Ask Gemini**
 2. Describe the deck. Add files with **Add sources → Add from Drive**
@@ -459,7 +459,7 @@ Titles state the finding, for example "M12 clears 28-day spec".
 ![Slides from documents](images/slides-from-docs.png)
 ---
 <!-- layout: 2-column -->
-# Holcim-Style Constraints
+# Style Constraints
 
 ### Look
 
