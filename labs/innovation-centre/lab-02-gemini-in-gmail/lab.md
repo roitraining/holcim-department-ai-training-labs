@@ -177,9 +177,6 @@ In this task, you compare a one-click suggested reply with a real handover respo
 
 3. Click a suggested reply so you see what Gemini auto-detected. Read it. It will not be enough for a plant handover.
 
-<!-- TODO IMAGE: Screenshot of Gmail suggested reply chips on the HIC thread -->
-![Suggested replies in Gmail](images/gmail-suggested-reply.png)
-
 > [!NOTE]
 > **Fallback if no chips appear:** skip to Help me write. Suggested replies depend on the message and the tenant. Their absence is not a failed lab.
 
