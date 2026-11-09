@@ -65,14 +65,14 @@ HIC-LC3-24: plant handover working session
 ```text
 Team,
 
-Please find the latest HIC-LC3-24 status for the Loire Plant handover.
+Here is where we stand on the HIC-LC3-24 handover to Loire Plant.
 
 We need a 45-minute working session next week to agree:
 1. Which mixes stay in the plant-ready set
 2. Silo allocation for calcined clay
 3. What the innovation review board will see on Thursday
 
-The trial protocol is in the shared Drive folder: hic-lc3-24-trial-protocol.pdf.
+The trial protocol is in Drive, in the HIC-LC3-24 handover folder: hic-lc3-24-trial-protocol.pdf.
 
 Please reply with your constraints.
 
@@ -80,14 +80,16 @@ Thanks,
 HIC binder trial team
 ```
 
-9. Click **Send**. Open the message in your inbox so it is the active thread.
+9. Do not attach any files. The email only names the protocol. In Task 2, Gemini finds it in your Drive.
 
-10. At the top right of Gmail, click **Ask Gemini**.
+10. Click **Send**. Open the message in your inbox so it is the active thread.
+
+11. At the top right of Gmail, click **Ask Gemini**.
 
 <!-- TODO IMAGE: Screenshot of Gmail with Ask Gemini side panel open on the self-sent thread -->
 ![Ask Gemini side panel in Gmail](images/gmail-ask-gemini.png)
 
-11. In the Gemini panel, send:
+12. In the Gemini panel, send:
 
 ```text
 Summarize this thread in five bullets. List the decisions we still need, and quote the Drive file name mentioned in the email. Do not add trial results that are not in the message.
