@@ -61,7 +61,9 @@ LC3 limestone calcined clay cement compressive strength clinker factor
 <!-- TODO IMAGE: Screenshot of Search the web for LC3 literature -->
 ![Searching the web for LC3 literature](images/search-web-sources.png)
 
-2. Review the results and **Import** two sources you would cite in a review, such as a peer-reviewed paper. Skip pages with no data or methods.
+2. Review the results and **Import** the sources. Note: you can select or de-select sources if you wish. 
+
+3. Some web sources cannot be download and added due to restrictions from the provider. If any fail to import, click the action menu next the their name and remove them. 
 
 ### Task 3: Ask cited questions
 
@@ -86,33 +88,38 @@ How do our 28-day LC3 results compare with the published literature? Keep HIC re
 <!-- TODO IMAGE: Screenshot of a cited chat answer with the Save to note button -->
 ![Cited chat answers](images/chat-cited-answers.png)
 
-5. In **Studio**, open the note and click **Convert to source**. The comparison is now a source that Studio can use.
+5. The comparison is now a source that Studio can use.
 
-<!-- TODO IMAGE: Screenshot of converting a note to a source -->
-![Converting notes to sources](images/convert-notes-to-sources.png)
 
 ### Task 4: Generate the review pack in Studio
 
 In this task, you generate three outputs from all your sources. Each one takes a few minutes, so start the next while the last one runs.
 
-1. In **Studio**, click **Report** and choose **Briefing doc**.
+1. In **Studio**, click **Report** and choose **Document** | **Briefing doc**.
 
-2. Click the edit (pencil) icon on **Infographic**, enter this description, and click **Generate**:
+2. It will take a short time to complete. Click on its icon when it is done and review it. 
+
+3. Click the **Infographic** icon. Enter this description, and click **Generate**:
 
 ```text
 One-page summary of HIC-LC3-24 for the review board: the 28-day spec, which mixes pass, the open plant items, and the decision needed. Label any literature figure as published research, not an HIC result.
 ```
 
-3. Click the edit (pencil) icon on **Slide Deck**, enter this description, and click **Generate**:
+   Below, is a sample infographic already create. Yours will be a little different. Refine the prompt and try again if you like. 
+
+   ![Infographic](images/infographic.png)
+
+4. Click the **Slide Deck** icon, and select **Presenter slides**. Enter this description, and click **Generate**:
 
 ```text
 A five-slide briefing on HIC-LC3-24 for the review board: why the trial exists, the 28-day results, how they compare with the literature, the open plant items, and the decision needed.
 ```
 
-<!-- TODO IMAGE: Screenshot of Studio with Report, Infographic, and Slide Deck generating -->
-![Studio outputs](images/studio-outputs.png)
+5. Open the Slide Deck when it is ready. Check that every HIC strength matches the trial brief, and that literature figures are not presented as HIC results.
 
-4. Open the Slide Deck when it is ready. Check that every HIC strength matches the trial brief, and that literature figures are not presented as HIC results.
+   [Link to Sample Slide Deck](https://drive.google.com/file/d/1gqC9CqYBLddXXTV5kIlljo5z8960J4ca/view?usp=drive_link)
+
+
 
 ## Congratulations!
 
