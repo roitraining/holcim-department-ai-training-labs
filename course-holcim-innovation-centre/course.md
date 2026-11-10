@@ -33,7 +33,7 @@
 - Advanced Prompt Engineering
 - Gemini in Gmail
 - Holcim-Style Presentations in Slides
-- Trial Data in Sheets, Formulas, and Canvas
+- Gemini in Sheets
 - Advanced Gemini Notebook
 
 ![Agenda](images/agenda.png)
@@ -86,7 +86,7 @@ You already work in these tools. Today you make Gemini useful inside them.
 - **Advanced Prompt Engineering**
 - Gemini in Gmail
 - Holcim-Style Presentations in Slides
-- Trial Data in Sheets, Formulas, and Canvas
+- Gemini in Sheets
 - Advanced Gemini Notebook
 ---
 # Do Now: Ask for a Trial Note
@@ -260,7 +260,7 @@ questions if something is missing. Then wait for me.
 - Advanced Prompt Engineering
 - **Gemini in Gmail**
 - Holcim-Style Presentations in Slides
-- Trial Data in Sheets, Formulas, and Canvas
+- Gemini in Sheets
 - Advanced Gemini Notebook
 ---
 # Gemini in Gmail: The Full Toolkit
@@ -343,7 +343,7 @@ A plant manager asks whether mix M13 is ready for handover. Gemini offers a one-
 - Advanced Prompt Engineering
 - Gemini in Gmail
 - **Holcim-Style Presentations in Slides**
-- Trial Data in Sheets, Formulas, and Canvas
+- Gemini in Sheets
 - Advanced Gemini Notebook
 ---
 <!-- layout: panel-right -->
@@ -495,37 +495,36 @@ Titles state the finding, for example "M12 clears 28-day spec".
 - Advanced Prompt Engineering
 - Gemini in Gmail
 - Holcim-Style Presentations in Slides
-- **Trial Data in Sheets, Formulas, and Canvas**
+- **Gemini in Sheets**
 - Advanced Gemini Notebook
 ---
 # Gemini in Sheets: Six Jobs
 
-| Job | How | Check |
+| Job | Where | Try asking |
 | :--- | :--- | :--- |
-| Import | **File → Import** a CSV from Drive or your computer | Row and column counts match the file |
-| Auto-format | Ask Gemini for headers, number formats, filters, and conditional formatting | No rows added, deleted, or reordered |
-| Analyze | One scoped question per prompt | Every Mix_ID it names is in the sheet |
-| Formulas | Ask for a real formula in a named column | Which rows and ages it judges |
-| Search documents | Ask Gemini to find a Drive file from the side panel | Definitions are quoted, not paraphrased |
-| Canvas dashboard | **Insert → Create a canvas** | It shows only what the tab contains |
+| Import | **File → Import**, then **Ask Gemini** | “Describe the columns in this tab and flag any empty cells.” |
+| Auto-format | **Ask Gemini** side panel | “Bold and freeze the header row, turn on filters, and use 1 decimal for numbers.” |
+| Analyze | **Ask Gemini** side panel | “Which three plants had the highest average strength? Show the rows you used.” |
+| Formulas | **Ask Gemini** side panel | “Add a column that flags rows below spec. Use a real formula.” |
+| Search documents | **Ask Gemini** side panel | “Find the latest project update in Drive and summarize the risks.” |
+| Canvas | **Ask Gemini → Tools → Create canvas** | “Build a dashboard with a scorecard per region and a filter by status.” |
 ---
 <!-- layout: 2-column -->
 # Import and Auto-Format
 
 ### Import
 
-- **File → Import**, choose the CSV, then **Insert new sheet(s)**
-- Check the shape: about 100 rows and 12 columns, headers in row 1
-- Class files only. No live LIMS extracts in this room
+- **File → Import**, choose a CSV or Excel file from Drive or your computer
+- Pick **Insert new sheet(s)** to keep the original tab untouched
+- Ask Gemini to describe the columns before you analyze anything
 
 ### Format with one prompt
 
 ```text
-Format this sheet for analysis: freeze and
-bold the header row, auto-size columns,
-2 decimals for Clinker_Factor, 1 decimal
-for the strength columns, turn on filters.
-Do not add or delete rows.
+Format this sheet: freeze and bold the
+header row, auto-size the columns, use
+1 decimal for numbers, and turn on
+filters. Do not add or delete rows.
 ```
 ---
 <!-- layout: 2-column -->
@@ -534,76 +533,53 @@ Do not add or delete rows.
 ### Vague
 
 - “Analyze this data.”
-- You get a generic essay about LC3
+- You get a generic summary of the columns
 - Nothing you can check against a row
 
 ### Scoped
 
-- “Among rows where Age_days is 28, compare average strength for LC3-50 and CEM I. Use only this sheet.”
-- Names the ages, the families, and the source
+- “Compare average strength by binder family. Use only this sheet and show the rows you used.”
+- Names the columns, the grouping, and the source
 - Every number traces back to rows you can filter
 
 <!-- below-columns -->
 
-> [!WARNING]
-> If Gemini names a mix you do not recognize, reply: “Use only rows in this sheet. Quote the Mix_ID values you used.”
+> [!TIP]
+> Follow up in the same chat: “Now show that as a chart.” Gemini keeps the context.
 ---
+<!-- layout: 2-column -->
 # Formulas Gemini Writes
 
-The prompt:
+### Write a formula
 
 ```text
-In column M, add Pass_vs_Spec: Yes if Compressive_Strength_MPa
-is at least Spec_Strength_MPa, otherwise No. Use a real formula
-and fill it down.
+In the next empty column, add Below_Spec:
+Yes if Compressive_Strength_MPa is below
+Spec_Strength_MPa, otherwise No. Use a
+real formula and fill it down.
 ```
-
-What Gemini typically writes in M2:
 
 ```text
-=IF(I2>=J2,"Yes","No")
+=IF(I2<J2,"Yes","No")
 ```
 
-- The formula goes in the cells, not only in the chat. You can read it, and it updates when the data changes
----
-# Do Now: Find the Bug
-
-1. Read the formula Gemini wrote for Pass_vs_Spec (F is Age_days, I is strength, J is spec):
-
-   ```text
-   =IF(I2>=J2,"Yes","No")
-   ```
-
-2. Work out what it shows for each row below
-
-3. Apply the glossary rule: the 42.5 MPa spec applies at **28 days only**. Which result is wrong?
-
-| Mix_ID | Age_days | Strength (MPa) | Spec (MPa) |
-| :--- | :--- | :--- | :--- |
-| M12 | 28 | 44.8 | 42.5 |
-| M13 | 28 | 41.2 | 42.5 |
-| M12 | 7 | 31.4 | 42.5 |
----
-# The Fix: Tell Gemini Which Rows Count
+### Explain a formula
 
 ```text
-=IF(F2<>28,"n/a",IF(I2>=J2,"Yes","No"))
+Explain the formula in cell N2 in plain
+language, one step at a time.
 ```
 
-- The first formula was valid syntax with the wrong logic. Sheets will not warn you
-- Put the rule in the prompt: “Judge only rows where Age_days is 28. Write n/a for other ages.”
-- Spot-check three rows by hand: one pass, one fail, and one row that is not 28-day
-
-> [!IMPORTANT]
-> A wrong formula feeds a confident dashboard. Check the column before you build on it.
+- The formula lives in the cells, so it updates when the data changes
+- Check three rows by hand before you build on the column
 ---
-<!-- layout: panel-right -->
+<!-- layout: default -->
 # Search Documents From the Side Panel
 
-- Definitions live in Drive, not in the CSV
-- Ask: “Search Drive for hic-trial-glossary. Quote the definition of Handover ready.”
-- If search misses, add the file: **Add sources → Add from Drive**
-- Then test the data: “Which Mix_ID values break that definition?”
+- Ask about Drive files without leaving the sheet
+- Name the file: “Find the latest LC3 project update in Drive and list its open risks”
+- If search misses, add the file with **Add sources → Add from Drive**
+- Then connect it to the data: “Which rows in this tab match the risks in that file?”
 
 ![Working in Sheets](images/sheets-1.png)
 ---
@@ -618,41 +594,71 @@ What Gemini typically writes in M2:
 
 ### Canvas
 
-- An interactive dashboard Gemini builds from one tab
-- Scorecards, filters, and lists in one view
-- Stays synced: change the tab, and the canvas updates
+- An interactive view 
+  - Dashboards, Kanban boards, galleries, and calendars
+- Edit data in the canvas, and the tab changes too
 - Refined with follow-up prompts, not rebuilt
 ---
 <!-- layout: panel-right -->
-# Build a Canvas Dashboard
+# Build a Canvas
 
-- Click the tab that holds the data. A canvas reads one tab
-- Click **Insert → Create a canvas**, or **Create canvas** in the Gemini side panel
-- Describe it: pass rate by binder family, a filter by Mix_ID, a handover-ready list
-- Refine with follow-ups, then recheck the whole canvas. One change can move another element
+- Open **Ask Gemini**, click the **Tools** button in the prompt box, and choose **Create canvas**. A check mark shows it is on
+- Then describe what you want in the prompt box
+- Edit data in the canvas, and the spreadsheet changes too
 
 > [!NOTE]
-> Canvas is newer than the rest of Gemini in Sheets. It needs a desktop browser, English, and an eligible account. If it is missing, build a chart and label it a snapshot.
+> Canvas needs data in the tab, English, a computer (not the mobile app), and edit access. It is not available when download, copy, and print are turned off for the file.
 
-![Canvas dashboard](images/canvas-dashboard-metaphor.png)
+![Gemini side panel in Sheets with the Tools menu open and Create canvas selected](images/sheets-gemini-tools-create-canvas.png)
 ---
-# Demo: Build the Handover Dashboard
+# Do Now: Create a Canvas
 
-1. Open the formatted trial tab, with Pass_vs_Spec fixed to judge 28-day rows only
-
-2. Click **Insert → Create a canvas** and send:
+1. Create a new spreadsheet:
 
    ```text
-   Build a plant handover dashboard: 28-day pass rate by Binder_Family, a filter by Binder_Family, and a list of Mix_ID values where Handover_Ready is Yes.
+   https://sheets.new
    ```
 
-3. Change one Handover_Ready cell in the tab, return to the canvas, and show the room that it updated
-
-4. Send one refinement, then check that nothing else moved:
+2. Click cell **A1** and paste this synthetic project list:
 
    ```text
-   Make the pass-rate scorecards larger. Change nothing else.
+   Project,Owner,Region,Status,Stage,Due_Date,Budget_kEUR
+   Low-clinker binder scale-up,A. Martin,Europe,On track,Scale-up,2027-03-31,420
+   Calcined clay fineness study,L. Dubois,Europe,At risk,Lab,2027-01-15,85
+   Recycled aggregate concrete,S. Patel,Asia Pacific,On track,Pilot,2027-06-30,260
+   Carbon-cured block trial,M. Rossi,Europe,Not started,Concept,2027-09-30,150
+   Admixture dosing model,J. Silva,Latin America,On track,Lab,2027-02-28,60
+   3D-printed formwork,K. Nakamura,Asia Pacific,At risk,Pilot,2027-04-30,310
+   Low-carbon mortar range,E. Novak,Europe,Done,Handover,2026-10-31,190
+   Kiln fuel substitution trial,R. Haddad,Middle East Africa,On track,Scale-up,2027-05-31,540
+   Insulating concrete panel,T. Keller,North America,At risk,Pilot,2027-03-15,230
+   Mineral carbonation screening,P. Okafor,Middle East Africa,Not started,Concept,2027-08-31,95
+   Self-healing concrete coating,C. Moreau,Europe,On track,Lab,2027-07-31,120
+   Fly ash replacement study,D. Kim,North America,Done,Handover,2026-09-30,140
    ```
+
+3. If everything lands in column A, select column **A**, then click **Data → Split text to columns**. You should have 7 columns and 13 rows, with headers in row 1
+
+4. Open **Ask Gemini**. In the prompt box, click the **Tools** button (beside the source button) and choose **Create canvas**. Check that it shows a check mark
+
+5. Send this prompt:
+
+   ```text
+   Build a project dashboard from this tab. Add scorecards for total projects,
+   projects at risk, and total budget. Add a bar chart of budget by Region,
+   a filter by Status, and a table of projects sorted by Due_Date.
+   ```
+
+6. Check the scorecards against the tab: 12 projects, 3 at risk, and a total budget of 2,600 kEUR
+
+
+7. Create a new Tab in your Sheet. With that tab active, in the Gemini sidebar, select **Tools → Create canvas** again, and add the following prompt:
+
+   ```text
+   Build a Kanban board that groups projects by Status. Show Owner and Due_Date on each card.
+   ```
+
+8. Drag one card from **At risk** to **On track**. Click the data tab and confirm that the Status cell changed
 ---
 <!-- layout: stacked -->
 # Lab 4: Analyzing Trial Data With Sheets and Gemini
@@ -669,7 +675,7 @@ What Gemini typically writes in M2:
 - Advanced Prompt Engineering
 - Gemini in Gmail
 - Holcim-Style Presentations in Slides
-- Trial Data in Sheets, Formulas, and Canvas
+- Gemini in Sheets
 - **Advanced Gemini Notebook**
 ---
 <!-- layout: panel-right -->

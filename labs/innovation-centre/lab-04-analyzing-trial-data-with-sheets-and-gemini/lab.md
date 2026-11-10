@@ -2,35 +2,34 @@
 
 ## Time Required
 
-45 minutes
+30 minutes
 
 ## Overview
 
-In this lab, you will import a synthetic HIC-LC3-24 trial CSV into Google Sheets, format and filter it with Gemini, ask one analysis question at a time, add formulas Gemini writes and you check, search a related Drive document from the Sheets side panel, and finish with a Sheets canvas dashboard instead of a static chart.
+In this lab, you will use Gemini in Google Sheets to format, analyze, and add formulas to a synthetic trial file, then turn it into a Canvas dashboard.
 
 ### You learn how to:
-- Import a right-sized trial CSV and let Gemini format headers, types, filters, and conditional formatting.
-- Ask focused analysis questions without dumping the whole sheet into one prompt.
-- Have Gemini write formulas for pass/fail and a clinker-factor index, then spot-check them.
-- Search a related Drive document from the Sheets side panel.
-- Create and refine a Canvas dashboard that stays synced with the data tab.
+- Import a CSV and format it with one Gemini prompt.
+- Ask scoped analysis questions and check the answers against the sheet.
+- Have Gemini write and explain formulas, then spot-check them.
+- Create and refine a Canvas dashboard from the data tab.
 
 ## Scenario
 
 ![Holcim Logo](./images/holcim-logo.png)
 
-HIC-LC3-24 has about 100 rows of mix results: binder family, age, clinker factor, strength, spec, and trial stage. The Loire Plant wants to know which mixes are handover-ready. The glossary that defines those terms lives in Drive, not in the CSV. You will finish on a Canvas the review board can filter.
+The HIC-LC3-24 trial file has 100 rows: 25 mixes, each tested at 1, 7, 28, and 90 days. The plant team wants to see which mixes pass the 42.5 MPa spec at 28 days and which are ready for handover.
 
 > [!WARNING]
-> The CSV is **synthetic training data**. Do not upload a live LIMS extract in this lab.
+> The CSV is **synthetic training data**. Do not upload real trial data in this lab.
 
 ## Lab Instructions
 
-### Task 1: Import the CSV and format the working sheet
+### Task 1: Import the CSV and format the sheet
 
-In this task, you get a clean working tab. Formatting first. Analysis second.
+In this task, you import the trial file and format it for analysis.
 
-1. Open [https://sheets.google.com/](https://sheets.google.com/) and create a new spreadsheet named:
+1. Open [https://sheets.new](https://sheets.new) to create a blank spreadsheet. Click **Untitled spreadsheet** at the top left and name it:
 
 ```text
 HIC-LC3-24 Trial KPIs
@@ -50,171 +49,141 @@ HIC-LC3-24 Trial KPIs
 TrialData
 ```
 
-5. Confirm you have about **100 rows** and **12 columns**, including `Sample_ID`, `Mix_ID`, `Binder_Family`, `Target_Plant`, `Region`, `Age_days`, `Clinker_Factor`, `Calcined_Clay_pct`, `Compressive_Strength_MPa`, `Spec_Strength_MPa`, `Trial_Stage`, and `Handover_Ready`.
+5. Confirm the tab has **100 data rows** below the header and **12 columns**, from `Sample_ID` in column A to `Handover_Ready` in column L.
 
-6. Download the glossary you search for in Task 3. Click [hic-trial-glossary.pdf](https://drive.google.com/file/d/12NCiX79_M1Qb7Wk9XbtZkQuMlg4oiAfy/view), then click **Download**.
-
-7. Open [https://drive.google.com/](https://drive.google.com/) in a new tab. Click **New**, then **File upload**, and select `hic-trial-glossary.pdf` from your **Downloads** folder.
-
-> [!NOTE]
-> You upload the glossary now because Drive can take a few minutes to make a new file searchable.
-
-8. Return to your spreadsheet and open **Ask Gemini** in Sheets.
+6. Click **Ask Gemini** at the top right to open the Gemini side panel.
 
 ![Gemini in Sheets side panel](images/gemini-in-sheets-panel.png)
 
-9. Send:
+7. Send:
 
 ```text
 Format this sheet for analysis:
-- Freeze the header row
-- Make headers bold
-- Auto-size columns
-- Set Clinker_Factor as a number with 2 decimal places
-- Set Compressive_Strength_MPa and Spec_Strength_MPa as numbers with 1 decimal place
+- Freeze and bold the header row
+- Auto-size the columns
+- Show Clinker_Factor with 2 decimal places
+- Show Compressive_Strength_MPa and Spec_Strength_MPa with 1 decimal place
 - Turn on filters
-- Apply a light Holcim-friendly header color (navy text, pale sand fill)
-Do not add or delete rows. Do not invent columns.
+- Fill Handover_Ready cells green when Yes
+Do not add, delete, or reorder rows.
 ```
 
-10. Add conditional formatting with a follow-up:
+8. Check the result. If Gemini shows a preview or asks you to confirm, click **Insert** or **Apply**. Confirm that the row count is still 100.
 
-```text
-Apply conditional formatting on Handover_Ready: green fill when Yes, pale red fill when No.
-Apply conditional formatting on Compressive_Strength_MPa when it is below Spec_Strength_MPa.
-```
-
-<!-- TODO IMAGE: Screenshot of the formatted HIC trial sheet with filters and conditional formatting -->
+<!-- TODO IMAGE: Screenshot of the formatted HIC trial sheet with a frozen header, filters, and green Handover_Ready cells -->
 ![Formatted trial data](images/formatted-trial-data.png)
-
-> [!TIP]
-> If Gemini offers a chart in this task, decline it. You want a working grid first. Canvas comes last.
 
 ### Task 2: Analyze one question at a time
 
-In this task, you practice the Sheets habit that prevents hallucinated summaries: one question, then the next.
+In this task, you ask one scoped question per prompt and check each answer against the sheet.
 
 1. Send:
 
 ```text
-Using only this sheet, which binder families have 28-day compressive strength at or above spec? List Mix_ID, Binder_Family, Clinker_Factor, Compressive_Strength_MPa, and Spec_Strength_MPa. Ignore other ages in this answer.
+Using only this sheet, list the Mix_ID values where Age_days is 28 and Compressive_Strength_MPa is below Spec_Strength_MPa.
 ```
 
-2. Read the answer. Then send a **different** question:
+2. Check the answer: **M13** (41.2 MPa) and **M16** (40.4 MPa). To check it yourself, filter **Age_days** to 28 and sort by **Compressive_Strength_MPa**.
+
+3. Send a second question:
 
 ```text
-Among rows where Age_days is 28, how does average compressive strength compare for LC3-50 versus CEM I? Use only this sheet. If a family has no 28-day rows, say so.
+For rows where Age_days is 28, compare the average Compressive_Strength_MPa for LC3-50 and CEM I. Use only this sheet.
 ```
 
-3. Send a third question that a plant would actually ask:
+4. Check the answer: LC3-50 averages about **43.3 MPa** across 8 mixes, and CEM I averages about **51.8 MPa** across 5 mixes.
+
+5. Send a third question:
 
 ```text
-Which mixes are Trial_Stage Plant-ready AND Handover_Ready is Yes? Return Mix_ID, Target_Plant, and Binder_Family. Do not add commentary about typical LC3 performance.
+Which Mix_ID values have Handover_Ready set to Yes? List each Mix_ID once, with its Binder_Family and Target_Plant.
 ```
 
-> [!WARNING]
-> If Gemini cites a mix that is not in the sheet, stop and reply: `Use only rows in this spreadsheet. Quote Mix_ID values you used.`
+6. Check the answer: **M07** (CEM II/A-LL), **M12** (LC3-50), and **M21** (LC3-35), all at Loire Plant.
 
-### Task 3: Add formulas Gemini writes, then search the glossary
+### Task 3: Add formulas Gemini writes
 
-In this task, you add two calculated columns and confirm a definition from Drive so “handover ready” means what the protocol says.
+In this task, you have Gemini add two formula columns, explain one of them, and you check them by hand.
 
 1. Send:
 
 ```text
-Add two formula columns on the TrialData tab, starting in the first empty column:
+On the TrialData tab, add two formula columns, starting in column M:
 
-Column M header: Pass_vs_Spec
-Formula: Yes if Compressive_Strength_MPa >= Spec_Strength_MPa, otherwise No.
+Column M header: Below_Spec_28d
+Yes if Age_days is 28 and Compressive_Strength_MPa is below Spec_Strength_MPa, otherwise No.
 
-Column N header: Clinker_Index
-Formula: (1 - Clinker_Factor) * 100, 1 decimal place, meaning percent clinker replaced.
+Column N header: Clinker_Replaced_pct
+(1 - Clinker_Factor) * 100, rounded to 1 decimal place.
 
-Put real Sheets formulas in the cells, filled down for all data rows. Then explain each formula in one sentence.
-Do not overwrite A to L.
+Put real Sheets formulas in the cells, filled down for every data row. Do not change columns A to L.
 ```
 
-2. Spot-check **three rows** by hand: one CEM I, one LC3-50, one fail versus spec. If a formula is wrong, tell Gemini which cell and what you expected.
+2. Click cell **M2** and read the formula in the formula bar. It should look similar to:
 
-<!-- TODO IMAGE: Screenshot of Pass_vs_Spec and Clinker_Index formula columns -->
+```text
+=IF(AND(F2=28,I2<J2),"Yes","No")
+```
+
+3. Click cell **N2**. The formula should look similar to:
+
+```text
+=ROUND((1-G2)*100,1)
+```
+
+<!-- TODO IMAGE: Screenshot of the Below_Spec_28d and Clinker_Replaced_pct formula columns -->
 ![Formula columns added by Gemini](images/formula-column.png)
 
-3. From the **same** Sheets Gemini panel, search Drive for the glossary:
+4. Ask Gemini to explain a formula:
 
 ```text
-Search Drive for hic-trial-glossary. Using that document, quote the definition of Handover ready and the 28-day spec used in HIC-LC3-24. If you cannot find the file, say so.
+Explain the formula in cell M2 in plain language, one step at a time.
 ```
-
-4. If search returns nothing, click **Add sources**, then **Add from Drive**, and select `hic-trial-glossary.pdf` (you uploaded it in Task 1).
-
-5. Send:
-
-```text
-Does the Handover_Ready column in this sheet match the glossary definition? List Mix_ID values that look inconsistent. Do not change the CSV values unless I ask.
-```
-
-<!-- TODO IMAGE: Screenshot of Gemini in Sheets citing the glossary document -->
-![Document search from Sheets](images/document-search.png)
-
-> [!NOTE]
-> **Fallback if Drive search is missing in Sheets:** open the glossary from Drive yourself, then attach it with Add source. The skill is the same: the sheet does not own the definitions.
 
 ### Task 4: Build a Canvas dashboard
 
-In this task, you replace the old “make me a chart sheet” finish with an interactive Canvas on the trial tab.
+In this task, you turn the TrialData tab into an interactive dashboard and refine it with a follow-up prompt.
 
-1. Click the **TrialData** tab so Canvas uses that data. Canvas uses **one tab**.
+1. Click the **TrialData** tab. A canvas uses the data in one tab.
 
-2. Create a canvas using one of these controls (tenants differ):
+2. In the **Ask Gemini** panel, click the **Tools** button in the prompt box and choose **Create canvas**. A check mark shows that it is selected.
 
-   - Menu bar: **Insert → Create a canvas**
-   - **Tools → Create canvas**
-   - Bottom bar: **Canvas → Create a canvas**
-   - Gemini side panel: look for **Create canvas**
+![Gemini side panel in Sheets with the Tools menu open and Create canvas selected](images/sheets-gemini-tools-create-canvas.png)
 
-<!-- TODO IMAGE: Screenshot of Create a canvas in Google Sheets -->
-![Create a canvas in Sheets](images/sheets-canvas.png)
-
-3. In the Canvas prompt box, send:
+3. Send:
 
 ```text
-Build an interactive dashboard for HIC-LC3-24 plant handover.
-
+Build a trial dashboard from this tab. Use only rows where Age_days is 28.
 Include:
-- Scorecards: count of mixes, count passing 28-day spec, average clinker factor for 28-day rows
-- A filter for Binder_Family and Target_Plant
-- A table or cards of Mix_ID where Age_days is 28 and Pass_vs_Spec is Yes
-- A simple comparison of LC3-50 versus CEM I 28-day strength
-Style: clean, corporate, navy and sand, no neon.
-
-Use only this tab. Do not invent mixes.
+- Scorecards: number of mixes, number below spec, and number with Handover_Ready set to Yes
+- A bar chart of average Compressive_Strength_MPa by Binder_Family
+- A filter by Binder_Family
+- A table of the mixes with Handover_Ready set to Yes
 ```
 
-4. When the canvas appears, use a filter. Confirm a card or scorecard changes.
+4. Check the scorecards against Task 2: **25** mixes, **2** below spec, and **3** ready for handover.
 
-5. Refine with a follow-up instead of rebuilding:
+5. Use the **Binder_Family** filter to select **LC3-50**. Confirm that the scorecards change to 8 mixes, 2 below spec, and 1 ready for handover.
+
+6. Refine the canvas with a follow-up prompt:
 
 ```text
-Add a handover-ready section that lists Mix_ID where Trial_Stage is Plant-ready and Handover_Ready is Yes. Keep the existing scorecards.
+Add a scorecard for the average Clinker_Factor. Change nothing else.
 ```
 
-> [!NOTE]
-> **Fallback if Create a canvas is missing:** in the Gemini panel ask: `Create a chart sheet titled Trial Snapshot with 28-day strength by Binder_Family and a pass/fail summary. Label it as a static snapshot, not a canvas.` Then tell your instructor the Canvas control was not in this tenant.
+7. Check that the new scorecard shows about **0.69** for all mixes, and that the rest of the canvas did not change.
 
 > [!WARNING]
-> Canvas is read-write. If you drag or edit a value in the canvas, you can change the sheet. Spot-check the grid after you click around.
+> If you edit or drag a value in the canvas, you also change the sheet. Check the TrialData tab after you click around.
 
-### Bonus Task 5: Share the canvas, not a screenshot
-
-1. Use **Copy link** on the canvas (top right of the canvas, when shown). Access follows the spreadsheet sharing.
-
-2. Paste the link into a note to yourself. That is what you would send the Loire Plant, not a PNG of a chart.
+> [!NOTE]
+> If **Create canvas** is not in the **Tools** menu, your account does not have Canvas yet. Ask Gemini for a chart of average 28-day strength by Binder_Family instead, and tell your instructor.
 
 ## Congratulations!
 
 In this lab, you have:
 
-- Imported and formatted a synthetic HIC trial CSV with Gemini in Sheets.
-- Analyzed 28-day spec performance one question at a time.
-- Added checked formulas and confirmed a definition from a Drive document.
-- Built (or attempted) a Sheets canvas dashboard as the handover view.
+- Imported a CSV and formatted it with one Gemini prompt.
+- Asked scoped analysis questions and checked the answers against the sheet.
+- Had Gemini write and explain formulas, then spot-checked them.
+- Created and refined a Canvas dashboard from the data tab.
