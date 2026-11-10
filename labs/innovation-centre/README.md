@@ -8,7 +8,7 @@ Five labs for the HIC Gemini afternoon. Each folder has `lab.md`, `images/`, and
 | Gemini in Gmail | `lab-02-gemini-in-gmail/` | 30 minutes |
 | Holcim-style slides from Docs and Sheets | `lab-03-presentations-from-docs-and-sheets/` | 30 minutes |
 | Trial data in Sheets, formulas, and Canvas | `lab-04-analyzing-trial-data-with-sheets-and-gemini/` | 45 minutes |
-| Advanced Gemini Notebook briefing | `lab-05-advanced-binder-trial-briefing-with-gemini-notebook/` | 30 minutes |
+| Binder Trial Briefing with Gemini Notebook | `lab-05-binder-trial-briefing-with-gemini-notebook/` | 25 minutes |
 
 ## Class files
 

@@ -20,12 +20,12 @@
 ---
 # Course Objectives
 
-- Use Gemini across everyday Holcim Innovation Centre work
-- Write advanced prompts grounded in trial files, with no invented results
-- Summarize, search, schedule, and reply with Gemini in Gmail
-- Generate and edit Holcim-style decks from Docs and Sheets
-- Analyze trial data in Sheets and build a Canvas dashboard
-- Build an advanced briefing pack in Gemini Notebook
+- Use Gemini across Workspace to speed up everyday HIC work
+- Write advanced prompts grounded in your sources
+- Summarize, search, schedule, and reply in Gmail
+- Build and edit Holcim-style decks in Slides
+- Analyze data and build a canvas in Sheets
+- Build a cited briefing in Gemini Notebook
 ---
 <!-- layout: panel-left -->
 # Agenda
@@ -34,7 +34,7 @@
 - Gemini in Gmail
 - Holcim-Style Presentations in Slides
 - Gemini in Sheets
-- Advanced Gemini Notebook
+- Gemini Notebook
 
 ![Agenda](images/agenda.png)
 ---
@@ -87,7 +87,7 @@ You already work in these tools. Today you make Gemini useful inside them.
 - Gemini in Gmail
 - Holcim-Style Presentations in Slides
 - Gemini in Sheets
-- Advanced Gemini Notebook
+- Gemini Notebook
 ---
 # Do Now: Ask for a Trial Note
 
@@ -261,7 +261,7 @@ questions if something is missing. Then wait for me.
 - **Gemini in Gmail**
 - Holcim-Style Presentations in Slides
 - Gemini in Sheets
-- Advanced Gemini Notebook
+- Gemini Notebook
 ---
 # Gemini in Gmail: The Full Toolkit
 
@@ -344,7 +344,7 @@ A plant manager asks whether mix M13 is ready for handover. Gemini offers a one-
 - Gemini in Gmail
 - **Holcim-Style Presentations in Slides**
 - Gemini in Sheets
-- Advanced Gemini Notebook
+- Gemini Notebook
 ---
 <!-- layout: panel-right -->
 # Building Google Slides deck with Gemini
@@ -496,7 +496,7 @@ Titles state the finding, for example "M12 clears 28-day spec".
 - Gemini in Gmail
 - Holcim-Style Presentations in Slides
 - **Gemini in Sheets**
-- Advanced Gemini Notebook
+- Gemini Notebook
 ---
 # Gemini in Sheets: Six Jobs
 
@@ -676,165 +676,146 @@ language, one step at a time.
 - Gemini in Gmail
 - Holcim-Style Presentations in Slides
 - Gemini in Sheets
-- **Advanced Gemini Notebook**
+- **Gemini Notebook**
 ---
-<!-- layout: panel-right -->
-# Gemini Notebook 
-
-- A notebook is a set of sources plus a chat that answers only from them
-- Every answer carries citations. Click one to see the exact passage
-- HIC uses: innovation reviews, plant handover, literature plus trial notes
-- Sources on the left, chat in the middle, Studio on the right
+# Gemini Notebook
 
 ![Gemini Notebook](images/notebook.png)
 ---
-# Advanced Use Case: The Innovation Review Pack
+# From Chat to Grounded Research
 
-| Step | Move | Why it matters |
-| :--- | :--- | :--- |
-| 1 | Add five HIC sources: trial brief, literature excerpt, handover note, glossary, review agenda | The notebook knows your trial, not the internet |
-| 2 | Add web sources on LC3 and calcined clay. Keep only the ones you would cite | Outside evidence, chosen on purpose |
-| 3 | Ask decision questions, not “summarize” | Answers to what the board will ask |
-| 4 | Save strong answers as notes. Convert the notes to sources | Reviewed answers become ground truth |
-| 5 | Deselect the web sources, then generate a Report, an Infographic, and a Slide Deck | Only HIC-owned facts leave the room |
-| 6 | Generate an Audio Overview or a Quiz to rehearse | The same sources, reused for prep |
----
-
-<!-- layout: 2-column -->
-# Ask Sharp Questions
-
-### Weak
-
-- “Summarize these files.”
-- “What is LC3?”
-- “Make a report.”
-
-### Sharp
-
-- “Which mixes meet 28-day spec, and which source says so?”
-- “What does Loire Plant still need before handover?”
-- “Where does the literature disagree with our trial? Cite both.”
----
-<!-- layout: panel-left -->
-# Studio Outputs
-
-- **Report**, **Infographic**, and **Slide Deck** make the review pack
-- **Audio Overview**, **Mind Map**, or **Quiz** help a colleague rehearse
-- Each output uses the sources selected when you click it
-- Generation takes minutes. Start the next output while one runs
-
-![Notebook Studio](images/notebook-studio.png)
----
-<!-- layout: 2-column -->
-# Discuss: When Sources Disagree
-
-### Prompt
-
-Suppose a web paper reports a higher 28-day strength for LC3-50 than your trial brief does.
-
-### Discuss
-
-- Which number goes in the board Report?
-- Should the web source stay selected for Studio?
-- How do you show the disagreement honestly?
+- A regular chat can drift or invent details. A notebook answers only from its sources
+- You choose what goes in: HIC trial briefs, handover notes, plus targeted web research
+- Every answer traces back to a source you selected
+- Built for an innovation review you have to stand behind
 ---
 <!-- layout: stacked -->
-# Lab 5: Advanced Binder Trial Briefing With Gemini Notebook
+# Sources In, Insights Out
+
+![Gemini Notebook flow: sources to chat to Studio outputs](images/notebook-flow.svg)
+---
+# Ask Sharper Questions
+
+- Ask the notebook to compare your trial results with the published literature, citing both
+- Ask for cited talking points for a review board, and flag anything not grounded in a source
+- If the sources do not answer a question, the notebook says so. It does not invent a figure
+- Save the strongest answers as notes, then convert them into sources
+
+![Using Gemini Notebook](images/using-notebook.png)
+---
+# Gemini Notebook Studio
+
+- Save chat responses as notes, then convert notes into sources
+- Narrow your sources to your own content before generating outputs
+- Create polished assets inside the notebook: reports, infographics, and draft slide decks
+
+![Gemini Notebook Studio](images/notebook-studio.png)
+---
+<!-- layout: stacked -->
+# Lab 5: Binder Trial Briefing With Gemini Notebook
 
 **Time:** 30 minutes
 
-[Open Lab 5](https://labv.roitraining.com/?lab=https%3A%2F%2Fgithub.com%2Froitraining%2Fholcim-department-ai-training-labs%2Fblob%2Fmain%2Flabs%2Finnovation-centre%2Flab-05-advanced-binder-trial-briefing-with-gemini-notebook%2Flab.md)
+[Open Lab 5](https://labv.roitraining.com/?lab=https%3A%2F%2Fgithub.com%2Froitraining%2Fholcim-department-ai-training-labs%2Fblob%2Fmain%2Flabs%2Finnovation-centre%2Flab-05-binder-trial-briefing-with-gemini-notebook%2Flab.md)
 
 ![Bring it to work](images/bring-it-to-work.png)
 ---
-# What You Can Reuse Tomorrow
+# Try It Tomorrow
 
-| Tool | First move on Monday |
+| Tool | One thing to do with your own work |
 | :--- | :--- |
-| Prompting | Save your constraint stack as a template |
-| Gmail | Summarize your longest thread, then use Help me schedule for the follow-up |
-| Slides | Generate your next review deck from its Doc, with Match presentation style |
-| Sheets | Ask Gemini for one formula, then check three rows by hand |
-| Gemini Notebook | Build one notebook for your next innovation review |
+| Prompting | Rewrite a prompt you use every week with a role, sources, and a constraint stack. Save it |
+| Gmail | Ask Gemini what you missed this week, then use Help me schedule for the follow-up |
+| Slides | Build your next status deck from real sources |
+| Sheets | Open a sheet you already use and build a canvas from it |
+| Gemini Notebook | Put the files for your next review in one notebook. Ask the question the board will ask |
 ---
 # What You Learned
 
-- Used Gemini across everyday Holcim Innovation Centre work
-- Wrote advanced prompts grounded in trial files, with no invented results
-- Summarized, searched, scheduled, and replied with Gemini in Gmail
-- Generated and edited Holcim-style decks from Docs and Sheets
-- Analyzed trial data in Sheets and built a Canvas dashboard
-- Built an advanced briefing pack in Gemini Notebook
+- Used Gemini across Workspace to speed up everyday HIC work
+- Wrote advanced prompts grounded in your sources
+- Summarized, searched, scheduled, and replied in Gmail
+- Built and edited Holcim-style decks in Slides
+- Analyzed data and built a canvas in Sheets
+- Built a cited briefing in Gemini Notebook
 ---
 # Quiz 1 of 3
 
-**A Gemini trial note says mix M12 reached 51.4 MPa at 28 days. The attached results file says 44.8 MPa. What should you do?**
+**You attach the trial protocol and the results PDF and ask Gemini for a table of strength by mix and age. The 90-day results are not in either file. Which line in your prompt best stops Gemini from filling those cells?**
 
-- A. Keep 51.4 MPa, because Gemini may have averaged similar mixes
-- B. Keep 51.4 MPa if it is typical for LC3 mixes
-- C. Replace it with 44.8 MPa and run a critique pass on the rest of the note
-- D. Remove every number from the note so nobody can check it
+- A. “Be accurate and professional.”
+- B. “Write Not found in any empty cell. Do not estimate.”
+- C. “Keep the table under 20 rows.”
+- D. “You are an experienced binder scientist.”
 ---
 # Quiz 1: Answer
 
-**A Gemini trial note says mix M12 reached 51.4 MPa at 28 days. The attached results file says 44.8 MPa. What should you do?**
+**You attach the trial protocol and the results PDF and ask Gemini for a table of strength by mix and age. The 90-day results are not in either file. Which line in your prompt best stops Gemini from filling those cells?**
 
-**Correct: C.** Replace it with 44.8 MPa and run a critique pass on the rest of the note
+**Correct: B.** “Write Not found in any empty cell. Do not estimate.”
 
-- The source file owns the numbers. “Typical” is not evidence
-- One invented number means there may be others. The critique pass finds them
-- Removing every number hides the problem instead of fixing it
+- It tells Gemini what to do when the source is silent, so the gaps stay visible
+- “Be accurate” is a wish, not a rule. Gemini already thinks it is accurate
+- A role and a row limit shape the answer, but neither stops an invented number
 ---
 # Quiz 2 of 3
 
-**Gemini wrote `=IF(I2>=J2,"Yes","No")` for Pass_vs_Spec. Most 7-day rows now show No. What is the best next step?**
+**You ask Gemini in Slides for a six-slide review deck from the project update Doc and the results Sheet. You click Next, and the plan includes a slide called “Projected savings by plant”. Neither file has that data. What do you do?**
 
-- A. Delete the 7-day rows so the column looks right
-- B. Accept it, because 7-day strength is below the 42.5 MPa spec
-- C. Tell Gemini to judge only 28-day rows against spec, then spot-check three rows
-- D. Replace the formula with a chart of strength by age
+- A. Click Approve, then delete the slide after the deck is built
+- B. Delete or rewrite that step in the plan, then click Approve
+- C. Click Approve and add a footnote that the figures are estimates
+- D. Close the panel and start again with a shorter prompt
 ---
 # Quiz 2: Answer
 
-**Gemini wrote `=IF(I2>=J2,"Yes","No")` for Pass_vs_Spec. Most 7-day rows now show No. What is the best next step?**
+**You ask Gemini in Slides for a six-slide review deck from the project update Doc and the results Sheet. You click Next, and the plan includes a slide called “Projected savings by plant”. Neither file has that data. What do you do?**
 
-**Correct: C.** Tell Gemini to judge only 28-day rows against spec, then spot-check three rows
+**Correct: B.** Delete or rewrite that step in the plan, then click Approve
 
-- The 42.5 MPa spec applies at 28 days only, so a 7-day “No” is not a failure
-- Deleting rows throws away trial data that the 7-day trend needs
-- A chart does not fix the logic. A Canvas built on this column would repeat the error
+- The plan is the checkpoint. Fixing it there is cheaper than fixing a finished deck
+- Deleting the slide later is easy to forget, and the invented figures may also appear on other slides
+- A footnote does not make an invented number acceptable
+- Starting over throws away a plan that is mostly right
 ---
 <!-- layout: 2-column -->
 # Quiz 3 of 3: Discussion
 
 ### Prompt
 
-Your director wants an innovation review pack on HIC-LC3-24 by tomorrow morning.
+You lead the HIC-LC3-24 trial. In two weeks you present to the review board. Right now you have:
+
+- A 40-message handover thread with Loire Plant
+- The latest results in a Sheet
+- Three published papers on calcined clay
+- A project update Doc and an approved Holcim deck template
 
 ### Discuss
 
-- Which of today’s tools would you chain together, and in what order?
+- Which of today’s tools would you use for each job, and in what order?
+- Where could two tools do the same job? How do you choose?
 - Where must a person check before anything moves on?
-- What would you never let Gemini send or publish for you?
 ---
 <!-- layout: 2-column -->
 # Quiz 3: Discussion Points
 
-**Your director wants an innovation review pack on HIC-LC3-24 by tomorrow morning.**
+**You present HIC-LC3-24 to the review board in two weeks. You have a long plant thread, a results Sheet, three papers, a project update Doc, and a deck template.**
 
 ### Strong Answers Mention
 
-- Gemini Notebook for cited answers, then Slides generated from the Doc and the results Sheet
-- A check of the plan before approving the deck
-- Every figure checked against the Sheet
-- Help me schedule for a dry run with the trial lead
+- **Gmail:** summarize the thread, search for decisions, and Help me schedule for a dry run
+- **Sheets:** scoped questions, checked formulas, and a Canvas for a live view
+- **Gemini Notebook:** the papers plus the trial brief, with cited answers on where they disagree
+- **Slides:** generate from the Doc and the Sheet with Match presentation style, and read the plan
+- **Gemini chat:** a constraint stack for any written note
 
 ### Watch For
 
-- Generating the deck with web sources still selected
-- Approving the plan without reading it
+- Pasting everything into one chat and hoping
+- Web sources still selected when the Notebook builds the board output
 - A suggested reply used for a technical answer
-- “Gemini checked it, so it is right”
+- Approving the Slides plan without reading it
+- Any number that no one checked against the Sheet
 ---
 <!-- layout: stacked -->
 # Questions and Answers
