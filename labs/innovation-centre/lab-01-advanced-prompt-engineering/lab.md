@@ -9,7 +9,7 @@
 In this lab, you will build an advanced Gemini prompt for a plant-facing Holcim Innovation Centre (HIC) trial note, extract structured facts from synthetic trial PDFs, create a trial infographic with image tools, then run a critique loop and rewrite the same note for three audiences without inventing results.
 
 ### You learn how to:
-- Build a Role-Task-Steps-Examples prompt for an HIC plant-facing trial note.
+- Build a Role, Task, Steps, and Examples prompt for an HIC plant-facing trial note.
 - Extract structured Markdown from multiple trial PDFs without inventing missing fields.
 - Improve Gemini image prompts with the Holcim logo, style constraints, and meta-prompting.
 - Critique a draft against sources, then rewrite it for a scientist, a plant, and an executive reader.
@@ -143,7 +143,7 @@ Reformat using the exact Markdown schema. Do not add extra sections. Do not inve
 
 In this task, you use Gemini’s image generation to create an HIC poster. You start simple, then add the Holcim logo, approved content, style direction, and a meta-prompt.
 
-1. In Gemini, start a **new chat**. Then select the **create image** tool from the tools menu.
+1. In Gemini, start a **new chat**. Then select the **Create image** tool from the tools menu.
 
 2. Send a **simple** image request:
 
@@ -154,7 +154,7 @@ Create an infographic about a Holcim Innovation Centre LC3 trial.
 > [!NOTE]
 > It will create something, and it might look good. It will likely invent statistics and extra logos. That is the point of this step.
 
-3. Create a new chat, and select the create image tool again.
+3. Create a new chat, and select the **Create image** tool again.
 
 4. Copy the Holcim logo below to the clipboard, and paste it in the prompt box.
 
@@ -210,7 +210,7 @@ Meta-task:
 2. Write an improved single image prompt (under 180 words) that is more specific about composition, lighting, layout language, and negative constraints.
 ```
 
-8. Copy the improved prompt to the clipboard, create a new chat, reselect the create image tool, paste the Holcim logo again, and run the improved prompt.
+8. Copy the improved prompt to the clipboard, create a new chat, reselect the **Create image** tool, paste the Holcim logo again, and run the improved prompt.
 
 <!-- TODO IMAGE: Screenshot of the final HIC infographic after meta-prompt -->
 ![HIC LC3 infographic final](images/hic-lc3-infographic-final.png)

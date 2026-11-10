@@ -108,7 +108,7 @@ Try this before we talk about technique.
 3. Read the results.
 ---
 <!-- layout: panel-right -->
-# What is wrong with the previous prompt?
+# What Is Wrong With the Previous Prompt?
 
 - You gave Gemini no file, so every number in that note was invented
 - Fluent text hides the invention. That is the dangerous part
@@ -296,7 +296,6 @@ questions if something is missing. Then wait for me.
 
 ![Help me schedule card in a Gmail draft, showing four suggested meeting times on two days](images/gmail-help-me-schedule-slots.png)
 
-
 ---
 <!-- layout: 2-column -->
 # Suggested Replies Versus Help Me Write
@@ -316,7 +315,7 @@ questions if something is missing. Then wait for me.
 - Still yours to check. No number that is not in the thread
 ---
 <!-- layout: 2-column -->
-# Discuss: What should always happen before a Suggested Reply in sent?
+# Discuss: What Should Always Happen Before a Suggested Reply Is Sent?
 
 ### Prompt
 
@@ -347,7 +346,7 @@ A plant manager asks whether mix M13 is ready for handover. Gemini offers a one-
 - Gemini Notebook
 ---
 <!-- layout: panel-right -->
-# Building Google Slides deck with Gemini
+# Building a Google Slides Deck With Gemini
 
 1. Open a new presentation and click **Ask Gemini**
 2. Describe the deck. Add files with **Add sources → Add from Drive**
@@ -445,13 +444,13 @@ Titles state the finding, for example "M12 clears 28-day spec".
 
 4. Review the slide plan, and then click **Approve**.
 
-5. When the deck is done, scroll through the slides. 
+5. When the deck is done, scroll through the slides.
 ---
 <!-- layout: panel-left -->
 # Edit Slides With Reference Materials
 
 - After the first draft, stay in the same Gemini chat
-- Attach documentation sources and the brand-constraints
+- Attach documentation sources and the brand constraints
 - Say **edit**, not create: “Edit slides 3 and 4 using these files. Do not add slides.”
 - Fix one slide at a time and name the slide number
 - Ask Gemini to replace or edit an image when the picture is wrong
@@ -481,7 +480,7 @@ Titles state the finding, for example "M12 clears 28-day spec".
 > The fastest route to the Holcim look is **Match presentation style** with an approved Holcim template. Prompts then only fix the exceptions.
 ---
 <!-- layout: stacked -->
-# Lab 3: Holcim-Style Presentations using Gemini in Google Slides
+# Lab 3: Holcim-Style Presentations Using Gemini in Google Slides
 
 **Time:** 30 minutes
 
@@ -594,7 +593,7 @@ language, one step at a time.
 
 ### Canvas
 
-- An interactive view 
+- An interactive view
   - Dashboards, Kanban boards, galleries, and calendars
 - Edit data in the canvas, and the tab changes too
 - Refined with follow-up prompts, not rebuilt
@@ -637,9 +636,9 @@ language, one step at a time.
    Fly ash replacement study,D. Kim,North America,Done,Handover,2026-09-30,140
    ```
 
-3. If everything lands in column A, select column **A**, then click **Data → Split text to columns**. You should have 7 columns and 13 rows, with headers in row 1
+3. If everything lands in column A, select column **A**, then click **Data → Split text to columns**. You should have 7 columns and 13 rows, with headers in row 1.
 
-4. Open **Ask Gemini**. In the prompt box, click the **Tools** button (beside the source button) and choose **Create canvas**. Check that it shows a check mark
+4. Open **Ask Gemini**. In the prompt box, click the **Tools** button (beside the source button) and choose **Create canvas**. Check that it shows a check mark.
 
 5. Send this prompt:
 
@@ -649,21 +648,20 @@ language, one step at a time.
    a filter by Status, and a table of projects sorted by Due_Date.
    ```
 
-6. Check the scorecards against the tab: 12 projects, 3 at risk, and a total budget of 2,600 kEUR
+6. Check the scorecards against the tab: 12 projects, 3 at risk, and a total budget of 2,600 kEUR.
 
-
-7. Create a new Tab in your Sheet. With that tab active, in the Gemini sidebar, select **Tools → Create canvas** again, and add the following prompt:
+7. Create a new tab in your Sheet. With that tab active, in the Gemini side panel, select **Tools → Create canvas** again, and add the following prompt:
 
    ```text
    Build a Kanban board that groups projects by Status. Show Owner and Due_Date on each card.
    ```
 
-8. Drag one card from **At risk** to **On track**. Click the data tab and confirm that the Status cell changed
+8. Drag one card from **At risk** to **On track**. Click the data tab and confirm that the Status cell changed.
 ---
 <!-- layout: stacked -->
 # Lab 4: Analyzing Trial Data With Sheets and Gemini
 
-**Time:** 45 minutes
+**Time:** 30 minutes
 
 [Open Lab 4](https://labv.roitraining.com/?lab=https%3A%2F%2Fgithub.com%2Froitraining%2Fholcim-department-ai-training-labs%2Fblob%2Fmain%2Flabs%2Finnovation-centre%2Flab-04-analyzing-trial-data-with-sheets-and-gemini%2Flab.md)
 
@@ -804,7 +802,7 @@ You lead the HIC-LC3-24 trial. In two weeks you present to the review board. Rig
 ### Strong Answers Mention
 
 - **Gmail:** summarize the thread, search for decisions, and Help me schedule for a dry run
-- **Sheets:** scoped questions, checked formulas, and a Canvas for a live view
+- **Sheets:** scoped questions, checked formulas, and a canvas for a live view
 - **Gemini Notebook:** the papers plus the trial brief, with cited answers on where they disagree
 - **Slides:** generate from the Doc and the Sheet with Match presentation style, and read the plan
 - **Gemini chat:** a constraint stack for any written note
@@ -812,7 +810,7 @@ You lead the HIC-LC3-24 trial. In two weeks you present to the review board. Rig
 ### Watch For
 
 - Pasting everything into one chat and hoping
-- Web sources still selected when the Notebook builds the board output
+- Web sources still selected when the notebook builds the board output
 - A suggested reply used for a technical answer
 - Approving the Slides plan without reading it
 - Any number that no one checked against the Sheet

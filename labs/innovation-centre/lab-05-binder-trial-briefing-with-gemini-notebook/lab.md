@@ -1,8 +1,8 @@
-# Binder Trial Briefing with Gemini Notebook
+# Binder Trial Briefing With Gemini Notebook
 
 ## Time Required
 
-25 minutes
+30 minutes
 
 ## Overview
 
@@ -61,9 +61,9 @@ LC3 limestone calcined clay cement compressive strength clinker factor
 <!-- TODO IMAGE: Screenshot of Search the web for LC3 literature -->
 ![Searching the web for LC3 literature](images/search-web-sources.png)
 
-2. Review the results and **Import** the sources. Note: you can select or de-select sources if you wish. 
+2. Review the results and **Import** the sources. Note: you can select or deselect sources if you wish.
 
-3. Some web sources cannot be download and added due to restrictions from the provider. If any fail to import, click the action menu next the their name and remove them. 
+3. Some web sources cannot be downloaded and added due to restrictions from the provider. If any fail to import, click the action menu next to their name and remove them.
 
 ### Task 3: Ask cited questions
 
@@ -90,14 +90,13 @@ How do our 28-day LC3 results compare with the published literature? Keep HIC re
 
 5. The comparison is now a source that Studio can use.
 
-
 ### Task 4: Generate the review pack in Studio
 
 In this task, you generate three outputs from all your sources. Each one takes a few minutes, so start the next while the last one runs.
 
-1. In **Studio**, click **Report** and choose **Document** | **Briefing doc**.
+1. In **Studio**, click **Report** and choose **Document**, then **Briefing doc**.
 
-2. It will take a short time to complete. Click on its icon when it is done and review it. 
+2. It will take a short time to complete. Click on its icon when it is done and review it.
 
 3. Click the **Infographic** icon. Enter this description, and click **Generate**:
 
@@ -105,7 +104,7 @@ In this task, you generate three outputs from all your sources. Each one takes a
 One-page summary of HIC-LC3-24 for the review board: the 28-day spec, which mixes pass, the open plant items, and the decision needed. Label any literature figure as published research, not an HIC result.
 ```
 
-   Below, is a sample infographic already create. Yours will be a little different. Refine the prompt and try again if you like. 
+   Below is a sample infographic that was already created. Yours will be a little different. Refine the prompt and try again if you like.
 
    ![Infographic](images/infographic.png)
 
@@ -118,8 +117,6 @@ A five-slide briefing on HIC-LC3-24 for the review board: why the trial exists, 
 5. Open the Slide Deck when it is ready. Check that every HIC strength matches the trial brief, and that literature figures are not presented as HIC results.
 
    [Link to Sample Slide Deck](https://drive.google.com/file/d/1gqC9CqYBLddXXTV5kIlljo5z8960J4ca/view?usp=drive_link)
-
-
 
 ## Congratulations!
 

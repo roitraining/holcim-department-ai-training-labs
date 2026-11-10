@@ -1,4 +1,4 @@
-# Analyzing HIC Trial Data with Sheets and Gemini
+# Analyzing HIC Trial Data With Sheets and Gemini
 
 ## Time Required
 
@@ -68,7 +68,7 @@ Format this sheet for analysis:
 Do not add, delete, or reorder rows.
 ```
 
-8. Check the result. If Gemini shows a preview or asks you to confirm, click **Approve**. 
+8. Check the result. If Gemini shows a preview or asks you to confirm, click **Approve**.
 
 ![Formatted trial data](images/formatted-trial-data.png)
 
@@ -102,7 +102,7 @@ Which Mix_ID values have Handover_Ready set to Yes? List each Mix_ID once, with 
 
 ### Task 3: Add formulas Gemini writes
 
-In this task, you have Gemini add two formula columns, explain one of them, and you check them by hand.
+In this task, you have Gemini add two formula columns and explain one of them, then you check them by hand.
 
 1. Send:
 
@@ -129,7 +129,6 @@ Put real Sheets formulas in the cells, filled down for every data row. Do not ch
 ```text
 =ROUND((1-G2)*100,1)
 ```
-
 
 4. Ask Gemini to explain a formula:
 
@@ -171,7 +170,6 @@ Add a scorecard for the average Clinker_Factor. Change nothing else.
 7. Check that the new scorecard shows about **0.69** for all mixes, and that the rest of the canvas did not change.
 
 ![Canvas Dashboard](images/canvas-dashboard.png)
-
 
 > [!NOTE]
 > If **Create canvas** is not in the **Tools** menu, your account does not have Canvas yet. Ask Gemini for a chart of average 28-day strength by Binder_Family instead.

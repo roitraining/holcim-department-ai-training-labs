@@ -1,4 +1,4 @@
-# AI for the Holcim Innovation Centre: labs
+# AI for the Holcim Innovation Centre: Labs
 
 Five labs for the HIC Gemini afternoon. Each folder has `lab.md`, `images/`, and `assets/`.
 
@@ -6,9 +6,9 @@ Five labs for the HIC Gemini afternoon. Each folder has `lab.md`, `images/`, and
 | :--- | :--- | :--- |
 | Advanced Prompt Engineering | `lab-01-advanced-prompt-engineering/` | 30 minutes |
 | Gemini in Gmail | `lab-02-gemini-in-gmail/` | 30 minutes |
-| Holcim-style slides from Docs and Sheets | `lab-03-presentations-from-docs-and-sheets/` | 30 minutes |
-| Trial data in Sheets, formulas, and Canvas | `lab-04-analyzing-trial-data-with-sheets-and-gemini/` | 45 minutes |
-| Binder Trial Briefing with Gemini Notebook | `lab-05-binder-trial-briefing-with-gemini-notebook/` | 25 minutes |
+| Holcim-Style Presentations Using Gemini in Google Slides | `lab-03-presentations-from-docs-and-sheets/` | 30 minutes |
+| Analyzing HIC Trial Data With Sheets and Gemini | `lab-04-analyzing-trial-data-with-sheets-and-gemini/` | 30 minutes |
+| Binder Trial Briefing With Gemini Notebook | `lab-05-binder-trial-briefing-with-gemini-notebook/` | 30 minutes |
 
 ## Class files
 
