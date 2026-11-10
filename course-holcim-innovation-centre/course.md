@@ -391,7 +391,7 @@ Titles state the finding, for example "M12 clears 28-day spec".
 ---
 # Demo: Generate a Six-Slide Review Deck
 
-1. Open a blank presentation and click **Ask Gemini**. No attachments are needed
+1. Open a blank presentation and click **Ask Gemini**. No attachments are needed.
 
 2. Send this prompt. The project update and the results are pasted in, so they are the only sources:
 
@@ -441,17 +441,17 @@ Titles state the finding, for example "M12 clears 28-day spec".
    Do not add customers, tonnages, or other plants. Do not average mixes.
    ```
 
-3. Click **Next** and stop at the plan. Show the room its steps and sources
+3. Answer any questions that you are asked, and click **Next**.
 
-4. Delete or fix one step that does not belong, then click **Approve**
+4. Review the slide plan, and then click **Approve**.
 
-5. When the deck is done, check the figures on the results slide against the table in the prompt. Look for an invented 90-day number or an averaged KPI
+5. When the deck is done, scroll through the slides. 
 ---
 <!-- layout: panel-left -->
 # Edit Slides With Reference Materials
 
 - After the first draft, stay in the same Gemini chat
-- Attach the results Sheet and the brand-constraints file
+- Attach documentation sources and the brand-constraints
 - Say **edit**, not create: “Edit slides 3 and 4 using these files. Do not add slides.”
 - Fix one slide at a time and name the slide number
 - Ask Gemini to replace or edit an image when the picture is wrong
@@ -481,7 +481,7 @@ Titles state the finding, for example "M12 clears 28-day spec".
 > The fastest route to the Holcim look is **Match presentation style** with an approved Holcim template. Prompts then only fix the exceptions.
 ---
 <!-- layout: stacked -->
-# Lab 3: Holcim-Style Presentations From Docs and Sheets
+# Lab 3: Holcim-Style Presentations using Gemini in Google Slides
 
 **Time:** 30 minutes
 

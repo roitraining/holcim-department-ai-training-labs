@@ -68,9 +68,8 @@ Format this sheet for analysis:
 Do not add, delete, or reorder rows.
 ```
 
-8. Check the result. If Gemini shows a preview or asks you to confirm, click **Insert** or **Apply**. Confirm that the row count is still 100.
+8. Check the result. If Gemini shows a preview or asks you to confirm, click **Approve**. 
 
-<!-- TODO IMAGE: Screenshot of the formatted HIC trial sheet with a frozen header, filters, and green Handover_Ready cells -->
 ![Formatted trial data](images/formatted-trial-data.png)
 
 ### Task 2: Analyze one question at a time
@@ -131,8 +130,6 @@ Put real Sheets formulas in the cells, filled down for every data row. Do not ch
 =ROUND((1-G2)*100,1)
 ```
 
-<!-- TODO IMAGE: Screenshot of the Below_Spec_28d and Clinker_Replaced_pct formula columns -->
-![Formula columns added by Gemini](images/formula-column.png)
 
 4. Ask Gemini to explain a formula:
 
@@ -173,11 +170,11 @@ Add a scorecard for the average Clinker_Factor. Change nothing else.
 
 7. Check that the new scorecard shows about **0.69** for all mixes, and that the rest of the canvas did not change.
 
-> [!WARNING]
-> If you edit or drag a value in the canvas, you also change the sheet. Check the TrialData tab after you click around.
+![Canvas Dashboard](images/canvas-dashboard.png)
+
 
 > [!NOTE]
-> If **Create canvas** is not in the **Tools** menu, your account does not have Canvas yet. Ask Gemini for a chart of average 28-day strength by Binder_Family instead, and tell your instructor.
+> If **Create canvas** is not in the **Tools** menu, your account does not have Canvas yet. Ask Gemini for a chart of average 28-day strength by Binder_Family instead.
 
 ## Congratulations!
 

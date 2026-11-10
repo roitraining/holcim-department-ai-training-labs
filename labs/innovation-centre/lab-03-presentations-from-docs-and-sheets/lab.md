@@ -1,4 +1,4 @@
-# Holcim-Style Presentations from Docs and Sheets
+# Holcim-Style Presentations using Gemini in Google Slides
 
 ## Time Required
 

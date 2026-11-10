@@ -95,9 +95,6 @@ HIC binder trial team
 Summarize this thread in five bullets. List the decisions we still need, and quote the Drive file name mentioned in the email. Do not add trial results that are not in the message.
 ```
 
-<!-- TODO IMAGE: Screenshot of the Gemini summary of the self-sent HIC-LC3-24 thread -->
-![Gmail Gemini thread summary](images/gmail-summarize-thread.png)
-
 > [!TIP]
 > If Ask Gemini is missing, confirm Gemini is enabled for Gmail in your Workspace account, or use the Gemini app with the thread forwarded to yourself as a last resort.
 
