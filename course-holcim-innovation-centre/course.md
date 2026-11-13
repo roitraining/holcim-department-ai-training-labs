@@ -210,7 +210,6 @@ Write Not found in any empty cell. Do not estimate.
 - “Rewrite this for an executive in five lines. Same facts. Add nothing.”
 - Repeat for a scientist and a plant reader
 ---
-
 <!-- layout: 2-column -->
 # Image Prompts Without Invented Numbers
 
@@ -274,7 +273,6 @@ questions if something is missing. Then wait for me.
 | Suggested replies | Bottom of an email you received | Short replies drafted from the whole thread |
 | Help me schedule | Bottom of a draft or reply | Offer meeting times that fit everyone’s calendar |
 ---
-
 <!-- layout: panel-right -->
 # Search Gmail, Chat, and Drive
 
@@ -284,7 +282,6 @@ questions if something is missing. Then wait for me.
 - Chat results depend on your Workspace setup. If Chat returns nothing, open the Drive file from the answer and keep going
 
 ![Gmail collaboration](images/gmail-collaboration.png)
-
 ---
 # Help Me Schedule
 
@@ -295,7 +292,6 @@ questions if something is missing. Then wait for me.
 - Nothing is booked until a recipient picks a slot
 
 ![Help me schedule card in a Gmail draft, showing four suggested meeting times on two days](images/gmail-help-me-schedule-slots.png)
-
 ---
 <!-- layout: 2-column -->
 # Suggested Replies Versus Help Me Write
@@ -480,7 +476,7 @@ Titles state the finding, for example "M12 clears 28-day spec".
 > The fastest route to the Holcim look is **Match presentation style** with an approved Holcim template. Prompts then only fix the exceptions.
 ---
 <!-- layout: stacked -->
-# Lab 3: Holcim-Style Presentations Using Gemini in Google Slides
+# Lab 3: Holcim-Style Presentations Using Gemini <br>in Google Slides
 
 **Time:** 30 minutes
 
