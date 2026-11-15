@@ -1,0 +1,190 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R 4 0 R] /Count 2 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 7 0 R >> >> /Contents 5 0 R >>
+endobj
+4 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 7 0 R >> >> /Contents 6 0 R >>
+endobj
+5 0 obj
+<< /Length 1460 >>
+stream
+BT
+/F1 12 Tf
+16 TL
+54 740 Td
+/F1 16 Tf (HIC Trial Glossary) Tj
+/F1 11 Tf
+T*
+T*
+(Synthetic training content. Not a real Holcim trial report.) Tj
+T*
+() Tj
+T*
+(HIC trial glossary \(synthetic\)) Tj
+T*
+() Tj
+T*
+() Tj
+T*
+(> Training glossary for Gemini document search. Not a Holcim standard.) Tj
+T*
+() Tj
+T*
+(Clinker factor) Tj
+T*
+() Tj
+T*
+() Tj
+T*
+(The mass fraction of clinker in the binder. A clinker factor of 0.52 means 52 percent) Tj
+T*
+(clinker. Lower is the usual HIC goal in this trial, provided the mix still meets spec.) Tj
+T*
+() Tj
+T*
+(LC3) Tj
+T*
+() Tj
+T*
+() Tj
+T*
+(Limestone calcined clay cement. In this training set, **LC3-50** targets about 50) Tj
+T*
+(percent clinker with calcined clay and limestone. **LC3-35** is a higher-clinker variant) Tj
+T*
+(in the same family.) Tj
+T*
+() Tj
+T*
+(CEM I control) Tj
+T*
+() Tj
+T*
+() Tj
+T*
+(Ordinary Portland-style control mix in this trial. Clinker factor about 0.95. Used only) Tj
+T*
+(as a laboratory benchmark. Not a plant recommendation by itself.) Tj
+T*
+() Tj
+T*
+(CEM II/A-LL) Tj
+T*
+() Tj
+T*
+() Tj
+T*
+(Portland-limestone style blend in this trial. Clinker factor typically about 0.70 to) Tj
+T*
+(0.75 in the synthetic set.) Tj
+T*
+() Tj
+T*
+(Spec strength) Tj
+T*
+() Tj
+T*
+() Tj
+T*
+(For HIC-LC3-24, the 28-day compressive-strength spec is **42.5 MPa** \(CEM 42.5 class\) on) Tj
+T*
+(EN 196-1 mortar cubes. Other ages have no numeric spec in this glossary.) Tj
+T*
+() Tj
+T*
+(Pass versus spec) Tj
+T*
+() Tj
+T*
+() Tj
+ET
+endstream
+endobj
+6 0 obj
+<< /Length 1098 >>
+stream
+BT
+/F1 12 Tf
+16 TL
+54 740 Td
+/F1 16 Tf (A row passes when `Compressive_Strength_MPa` is greater than or equal to) Tj
+/F1 11 Tf
+T*
+T*
+(`Spec_Strength_MPa` at that age. Only 28-day pass/fail is used for handover decisions.) Tj
+T*
+() Tj
+T*
+(Handover ready) Tj
+T*
+() Tj
+T*
+() Tj
+T*
+(`Handover_Ready` is **Yes** only when all of the following are true for the mix:) Tj
+T*
+() Tj
+T*
+(1. `Trial_Stage` is Plant-ready) Tj
+T*
+(2. The mix?s **28-day** compressive strength is at or above 42.5 MPa) Tj
+T*
+(3. The water-demand note in the limitations file has been acknowledged \(higher demand) Tj
+T*
+(than CEM I\)) Tj
+T*
+() Tj
+T*
+(If any item is false, `Handover_Ready` is **No**. Do not treat a 1-day or 7-day pass as) Tj
+T*
+(handover ready.) Tj
+T*
+() Tj
+T*
+(Trial stages) Tj
+T*
+() Tj
+T*
+() Tj
+T*
+(- **Lab screening:** first cubes, not for plant) Tj
+T*
+(- **Scale-up:** extra batches, still HIC-owned) Tj
+T*
+(- **Plant-ready:** mix card may be issued if handover ready is Yes) Tj
+T*
+() Tj
+T*
+(Loire Plant) Tj
+T*
+() Tj
+T*
+() Tj
+T*
+(Synthetic target plant for this training story. Not a real site report.) Tj
+ET
+endstream
+endobj
+7 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+xref
+0 8
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000121 00000 n 
+0000000247 00000 n 
+0000000373 00000 n 
+0000001885 00000 n 
+0000003035 00000 n 
+trailer << /Size 8 /Root 1 0 R >>
+startxref
+3105
+%%EOF

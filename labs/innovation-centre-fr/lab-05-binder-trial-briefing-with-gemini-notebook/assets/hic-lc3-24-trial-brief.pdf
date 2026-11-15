@@ -1,0 +1,146 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R 4 0 R] /Count 2 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 7 0 R >> >> /Contents 5 0 R >>
+endobj
+4 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 7 0 R >> >> /Contents 6 0 R >>
+endobj
+5 0 obj
+<< /Length 1637 >>
+stream
+BT
+/F1 12 Tf
+16 TL
+54 740 Td
+/F1 16 Tf (hic lc3 24 trial brief) Tj
+/F1 11 Tf
+T*
+T*
+(Synthetic training content. Not a real Holcim trial report.) Tj
+T*
+() Tj
+T*
+(HIC-LC3-24 trial brief \(synthetic\)) Tj
+T*
+() Tj
+T*
+() Tj
+T*
+(> Synthetic training content for Gemini Notebook labs. Figures are illustrative only.) Tj
+T*
+() Tj
+T*
+(Purpose) Tj
+T*
+() Tj
+T*
+() Tj
+T*
+(HIC-LC3-24 tests whether an LC3-style calcined-clay limestone binder can meet a **42.5) Tj
+T*
+(MPa** 28-day class at a lower clinker factor than the CEM I control, and whether a) Tj
+T*
+(subset of mixes can move to a plant-ready mix card for the synthetic **Loire Plant**.) Tj
+T*
+() Tj
+T*
+(What this brief may be cited for) Tj
+T*
+() Tj
+T*
+() Tj
+T*
+(- Trial name, purpose, and spec) Tj
+T*
+(- The selected mix results below) Tj
+T*
+(- What is still pending) Tj
+T*
+() Tj
+T*
+(Do not cite this file for literature comparisons. Those live in the literature excerpt.) Tj
+T*
+() Tj
+T*
+(Selected HIC results \(not a full LIMS dump\)) Tj
+T*
+() Tj
+T*
+() Tj
+T*
+(| Mix ID | Binder family | Clinker factor | Age \(days\) | Compressive strength \(MPa\) |) Tj
+T*
+(Versus 42.5 MPa spec |) Tj
+T*
+(| :--- | :--- | ---: | ---: | ---: | :--- |) Tj
+T*
+(| M01 | CEM I control | 0.95 | 28 | 52.4 | Pass |) Tj
+T*
+(| M12 | LC3-50 | 0.52 | 28 | 44.8 | Pass |) Tj
+T*
+(| M12 | LC3-50 | 7 | 31.4 | \(no 7-day spec\) |) Tj
+T*
+(| M13 | LC3-50 | 0.50 | 28 | 41.2 | Fail |) Tj
+T*
+(| M21 | LC3-35 | 0.65 | 28 | 47.1 | Pass |) Tj
+T*
+() Tj
+T*
+(90-day cubes for M13 and M18 are still in the fog room. Do not report 90-day strengths) Tj
+T*
+(from this file.) Tj
+T*
+() Tj
+T*
+(Talking-point rules) Tj
+T*
+() Tj
+T*
+() Tj
+ET
+endstream
+endobj
+6 0 obj
+<< /Length 391 >>
+stream
+BT
+/F1 12 Tf
+16 TL
+54 740 Td
+/F1 16 Tf (1. Cite this brief or the plant-handover note for HIC numbers. Do not invent a 2030) Tj
+/F1 11 Tf
+T*
+T*
+(target.) Tj
+T*
+(2. Separate **HIC trial results** from **published LC3 literature**.) Tj
+T*
+(3. Mix M13 failed 28-day spec. Do not describe the LC3-50 family as universally passing.) Tj
+T*
+(4. Do not claim ECOPlanet or ECOPact equivalence.) Tj
+ET
+endstream
+endobj
+7 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+xref
+0 8
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000121 00000 n 
+0000000247 00000 n 
+0000000373 00000 n 
+0000002062 00000 n 
+0000002504 00000 n 
+trailer << /Size 8 /Root 1 0 R >>
+startxref
+2574
+%%EOF

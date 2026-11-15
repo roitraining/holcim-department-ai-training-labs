@@ -1,0 +1,102 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 5 0 R >> >> /Contents 4 0 R >>
+endobj
+4 0 obj
+<< /Length 1501 >>
+stream
+BT
+/F1 12 Tf
+16 TL
+54 740 Td
+/F1 16 Tf (HIC-LC3-24 Trial Protocol) Tj
+/F1 11 Tf
+T*
+T*
+(Synthetic training content. Not a real Holcim trial report.) Tj
+T*
+() Tj
+T*
+() Tj
+T*
+(HIC-LC3-24 Trial Protocol) Tj
+T*
+() Tj
+T*
+(Owner: Holcim Innovation Centre \(synthetic training\)) Tj
+T*
+(Target plant: Loire Plant \(synthetic\)) Tj
+T*
+(Binder families in scope: CEM I control, CEM II/A-LL, LC3-50, LC3-35) Tj
+T*
+() Tj
+T*
+(1. Objective) Tj
+T*
+(Evaluate whether an LC3-style calcined-clay limestone binder can meet a 42.5 MPa) Tj
+T*
+(28-day class at a lower clinker factor than the CEM I control, and whether a) Tj
+T*
+(subset of mixes can move to a plant-ready mix card for Loire Plant.) Tj
+T*
+() Tj
+T*
+(2. Methods) Tj
+T*
+(- EN 196-1 mortar cubes, 40 mm) Tj
+T*
+(- Water/binder ratio: 0.50) Tj
+T*
+(- Test ages: 1, 7, 28, and 90 days) Tj
+T*
+(- Fineness target for calcined clay: 4200 cm2/g Blaine) Tj
+T*
+(- 28-day spec strength: 42.5 MPa \(CEM 42.5 class\)) Tj
+T*
+(- Other ages have no numeric spec in this protocol) Tj
+T*
+() Tj
+T*
+(3. What this file does not contain) Tj
+T*
+(This protocol has methods and the spec only. It does not contain mix-by-mix) Tj
+T*
+(compressive strengths. Those live in hic-lc3-24-interim-results.pdf.) Tj
+T*
+() Tj
+T*
+(4. Handover rule \(methods view\)) Tj
+T*
+(A mix may be considered for a plant mix card only after 28-day spec is met.) Tj
+T*
+(Do not use 1-day cubes as the handover gate.) Tj
+T*
+() Tj
+T*
+(5. Brand rule) Tj
+T*
+(Do not describe this trial as ECOPlanet or ECOPact.) Tj
+ET
+endstream
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+xref
+0 6
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000115 00000 n 
+0000000241 00000 n 
+0000001794 00000 n 
+trailer << /Size 6 /Root 1 0 R >>
+startxref
+1864
+%%EOF

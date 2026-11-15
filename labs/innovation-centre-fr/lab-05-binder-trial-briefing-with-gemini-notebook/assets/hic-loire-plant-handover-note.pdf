@@ -1,0 +1,140 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R 4 0 R] /Count 2 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 7 0 R >> >> /Contents 5 0 R >>
+endobj
+4 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 7 0 R >> >> /Contents 6 0 R >>
+endobj
+5 0 obj
+<< /Length 1708 >>
+stream
+BT
+/F1 12 Tf
+16 TL
+54 740 Td
+/F1 16 Tf (hic loire plant handover note) Tj
+/F1 11 Tf
+T*
+T*
+(Synthetic training content. Not a real Holcim trial report.) Tj
+T*
+() Tj
+T*
+(Loire Plant handover note \(synthetic\)) Tj
+T*
+() Tj
+T*
+() Tj
+T*
+(> Synthetic plant-facing note for training. Loire Plant is not a real site report.) Tj
+T*
+() Tj
+T*
+(Audience) Tj
+T*
+() Tj
+T*
+() Tj
+T*
+(Loire Plant quality and production, copied to the HIC lab lead.) Tj
+T*
+() Tj
+T*
+(What the plant is being asked to take) Tj
+T*
+() Tj
+T*
+() Tj
+T*
+(A plant-ready mix card for **HIC-LC3-24** mixes that already pass the 28-day spec of) Tj
+T*
+(**42.5 MPa** and sit in Trial_Stage Plant-ready.) Tj
+T*
+() Tj
+T*
+(HIC numbers the plant may quote) Tj
+T*
+() Tj
+T*
+() Tj
+T*
+(From the HIC trial, not from literature:) Tj
+T*
+() Tj
+T*
+(- Mix M12, LC3-50, clinker factor 0.52, 28-day 44.8 MPa, pass) Tj
+T*
+(- Mix M13, LC3-50, clinker factor 0.50, 28-day 41.2 MPa, fail \(not for mix card\)) Tj
+T*
+(- Mix M21, LC3-35, clinker factor 0.65, 28-day 47.1 MPa, pass) Tj
+T*
+(- Mix M01, CEM I control, 28-day 52.4 MPa \(benchmark only, not the handover product\)) Tj
+T*
+() Tj
+T*
+(Open plant items \(must be true before handover ready\)) Tj
+T*
+() Tj
+T*
+() Tj
+T*
+(1. Silo allocation for calcined clay \(capacity cited in the limitations file: 80 t/day\)) Tj
+T*
+(2. Fineness gate versus the protocol target of 4200 cm2/g Blaine) Tj
+T*
+(3. Acknowledgement that LC3 water demand was higher than CEM I in this synthetic set) Tj
+T*
+(\(about 8 percent\)) Tj
+T*
+(4. Quality gates on 28-day spec only; do not use 1-day cubes as the handover gate) Tj
+T*
+() Tj
+T*
+(What the plant should refuse) Tj
+T*
+() Tj
+T*
+() Tj
+T*
+(- Any commercial ECOPlanet label on this mix card) Tj
+ET
+endstream
+endobj
+6 0 obj
+<< /Length 174 >>
+stream
+BT
+/F1 12 Tf
+16 TL
+54 740 Td
+/F1 16 Tf (- Any 90-day number \(still pending for several mixes\)) Tj
+/F1 11 Tf
+T*
+T*
+(- Any literature range presented as a Loire result) Tj
+ET
+endstream
+endobj
+7 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+xref
+0 8
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000121 00000 n 
+0000000247 00000 n 
+0000000373 00000 n 
+0000002133 00000 n 
+0000002358 00000 n 
+trailer << /Size 8 /Root 1 0 R >>
+startxref
+2428
+%%EOF
