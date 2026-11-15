@@ -107,21 +107,19 @@ Try this before we talk about technique.
 
 3. Read the results.
 ---
-<!-- layout: panel-right -->
 # What Is Wrong With the Previous Prompt?
 
-- You gave Gemini no file, so every number in that note was invented
-- Fluent text hides the invention. That is the dangerous part
+- You gave no file, so every number was invented
 - Gemini cannot guess your reader, your sources, or what must stay out
 - The fix is structure, plus sources, plus a rule for what is missing
-
-> [!IMPORTANT]
-> If a number is not in the source, it does not belong in the answer.
+- If a number is not in the source, it does not belong in the answer.
 
 ![Prompt frustration](images/prompt-frustration.png)
+
+
 ---
 <!-- layout: 2-column -->
-# Role, Task, Steps, Examples Is the Floor
+# Role, Task, Steps, and Examples 
 
 ### Weak
 
