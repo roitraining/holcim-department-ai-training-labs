@@ -24,7 +24,7 @@ La revue d’innovation interne de jeudi attend six diapositives sur **HIC-LC3-2
 > Les chiffres du document, du tableau et du fichier de charte sont des **contenus de formation synthétiques**. Si un chiffre ne figure pas dans ces fichiers, ne le mettez pas sur la diapositive.
 
 > [!NOTE]
-> Les fichiers de cours sont en anglais. Les prompts de cet atelier demandent à Gemini de rédiger les diapositives en français.
+> Le document de point d’avancement et le fichier de charte sont en français. Le tableau de résultats (CSV) reste en anglais : ses noms de colonnes servent d’identifiants.
 
 ## Instructions de l’atelier
 
@@ -50,11 +50,11 @@ HIC-LC3-24 Innovation Review
 
 Dans cette tâche, c’est le **document** qui fait foi pour le récit. Vous le joignez et vous demandez six diapositives. Vous ne joignez pas encore le tableau.
 
-1. Cliquez sur [hic-project-update-template.md](https://drive.google.com/file/d/12cgN2UVmm7JTJp3eknlpShE9x6C5t2k6/view) pour l’ouvrir dans Google Drive, puis cliquez sur **Download** (l’icône en forme de flèche vers le bas, en haut à droite de l’aperçu).
+1. Cliquez sur [hic-project-update-template-fr.md](https://drive.google.com/file/d/15alXfcxl95cashM0pyIu3xtelzxS_UMs/view) pour l’ouvrir dans Google Drive, puis cliquez sur **Download** (l’icône en forme de flèche vers le bas, en haut à droite de l’aperçu).
 
 2. Dans un nouvel onglet, ouvrez [https://docs.google.com/](https://docs.google.com/) et cliquez sur **Blank document**.
 
-3. Cliquez sur **File**, puis sur **Open**. Choisissez l’onglet **Upload**, cliquez sur **Browse**, puis sélectionnez `hic-project-update-template.md` dans votre dossier **Downloads**. Docs l’ouvre comme un nouveau document.
+3. Cliquez sur **File**, puis sur **Open**. Choisissez l’onglet **Upload**, cliquez sur **Browse**, puis sélectionnez `hic-project-update-template-fr.md` dans votre dossier **Downloads**. Docs l’ouvre comme un nouveau document.
 
 4. Si le titre se termine encore par `.md`, cliquez sur **File**, puis sur **Save as Google Docs**. Renommez le document :
 
@@ -104,7 +104,7 @@ Dans cette tâche, vous conservez le plan et vous **modifiez** les diapositives 
 | Fichier | Fait foi pour |
 | :--- | :--- |
 | [hic-lc3-28day-results.csv](https://drive.google.com/file/d/1I5lJxak57QsvQU4Cf2zc1dvdvDFHmBRv/view) | Tous les chiffres à 28 jours que vous pouvez citer |
-| [hic-lc3-brand-constraints.md](https://drive.google.com/file/d/1eAIfoNN3sTh0eXHR-Er5o3fD7SMLrUDW/view) | Charte graphique Holcim, règles sur les chiffres et affirmations interdites |
+| [hic-lc3-brand-constraints-fr.md](https://drive.google.com/file/d/1Gpa214YR6U9Q2OHou4pF3avSoO1obYL_/view) | Charte graphique Holcim, règles sur les chiffres et affirmations interdites |
 
 2. Ouvrez [https://sheets.google.com/](https://sheets.google.com/) et cliquez sur **Blank spreadsheet**. Cliquez sur **File**, puis sur **Import**. Choisissez l’onglet **Upload**, cliquez sur **Browse**, puis sélectionnez `hic-lc3-28day-results.csv`. Réglez **Import location** sur **Replace spreadsheet**, puis cliquez sur **Import data**.
 
@@ -117,7 +117,7 @@ Dans cette tâche, vous conservez le plan et vous **modifiez** les diapositives 
 HIC-LC3-24 28-day Results
 ```
 
-4. Ouvrez [https://docs.google.com/](https://docs.google.com/), cliquez sur **Blank document**, puis sur **File** et **Open**. Choisissez l’onglet **Upload** et sélectionnez `hic-lc3-brand-constraints.md`. Si le titre se termine encore par `.md`, cliquez sur **File**, puis sur **Save as Google Docs**. Renommez le document :
+4. Ouvrez [https://docs.google.com/](https://docs.google.com/), cliquez sur **Blank document**, puis sur **File** et **Open**. Choisissez l’onglet **Upload** et sélectionnez `hic-lc3-brand-constraints-fr.md`. Si le titre se termine encore par `.md`, cliquez sur **File**, puis sur **Save as Google Docs**. Renommez le document :
 
 ```text
 HIC-LC3-24 brand constraints

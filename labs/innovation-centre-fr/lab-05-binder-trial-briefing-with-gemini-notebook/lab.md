@@ -24,7 +24,7 @@ Le comité de revue se réunit jeudi. Vous disposez d’une note d’essai et d�
 > Les fichiers du HIC de cet atelier sont des **contenus de formation synthétiques**. N’ajoutez aucun véritable rapport d’essai.
 
 > [!NOTE]
-> Les fichiers de cours sont en anglais : la note d’essai est `hic-lc3-24-trial-brief.pdf` et la note de transfert est `hic-loire-plant-handover-note.pdf`. Les prompts ci-dessous demandent des réponses en français.
+> La note d’essai est `hic-lc3-24-trial-brief-fr.pdf` et la note de transfert est `hic-loire-plant-handover-note-fr.pdf`. Les sources web seront en anglais : c’est pourquoi les prompts ci-dessous demandent des réponses en français.
 
 ## Instructions de l’atelier
 
@@ -44,8 +44,8 @@ HIC-LC3-24 Innovation Review
 
 3. Téléchargez les deux sources du HIC. Cliquez sur chaque lien pour l’ouvrir dans Google Drive, puis cliquez sur **Download** (l’icône en forme de flèche vers le bas, en haut à droite de l’aperçu).
 
-   - [hic-lc3-24-trial-brief.pdf](https://drive.google.com/file/d/1nDdt_QtYdP64pK689VAjSOwZwZLsyv2-/view)
-   - [hic-loire-plant-handover-note.pdf](https://drive.google.com/file/d/1vA6CGOMrW6RB_KIcddDI0DX7eQSBdAjL/view)
+   - [hic-lc3-24-trial-brief-fr.pdf](https://drive.google.com/file/d/1TBxS9Y6O6PFYRstEOFTMUefZCJZsVQkH/view)
+   - [hic-loire-plant-handover-note-fr.pdf](https://drive.google.com/file/d/1GmrbBXQybIpvAEQCHaaZqMFQPkimK_aP/view)
 
 4. Dans votre notebook, cliquez sur **Add sources**, puis sur **Upload files**, et sélectionnez les deux PDF dans votre dossier **Downloads**.
 

@@ -23,9 +23,6 @@ Vous travaillez au Holcim Innovation Centre. L’essai **HIC-LC3-24** porte sur 
 > [!WARNING]
 > Tous les PDF et tous les chiffres de cet atelier sont des **contenus de formation synthétiques**. Ne considérez pas les identifiants de formule, les résistances ou les noms d’usine comme de vrais résultats du HIC. Ne joignez aucune donnée d’essai réelle pendant la formation.
 
-> [!NOTE]
-> Les fichiers de cours sont en anglais. Rédigez vos prompts en français : Gemini lit les sources en anglais et répond en général dans la langue de votre prompt. Si une réponse arrive en anglais, ajoutez « Répondez en français. »
-
 ## Instructions de l’atelier
 
 ### Tâche 1 : Construire une note d’essai destinée à l’usine avec un rôle, une tâche, des étapes et des exemples
@@ -95,9 +92,9 @@ Dans cette tâche, vous ancrez Gemini dans le protocole, les résultats intermé
 
 | Fichier | Fait foi pour |
 | :--- | :--- |
-| [hic-lc3-24-trial-protocol.pdf](https://drive.google.com/file/d/1cvvnx2dI6DQPwGoZpM-M0TLrJEEENZiy/view) | Méthodes, âges, spécification. Aucune ligne de résultat supplémentaire. |
-| [hic-lc3-24-interim-results.pdf](https://drive.google.com/file/d/17i1fiajvB2RTU0UUhqNmo4w-3rfxvK7V/view) | Résultats de formules sélectionnées. C’est ici que se trouvent les chiffres. |
-| [hic-lc3-24-limitations.pdf](https://drive.google.com/file/d/1OyLgZjaJZPRJ_yBDajhL7gLKw-48hXWc/view) | Réserves, demande en eau, contraintes de l’usine. |
+| [hic-lc3-24-trial-protocol-fr.pdf](https://drive.google.com/file/d/1a5ExSrT21nojl9P0PonISmv-ss646Sze/view) | Méthodes, âges, spécification. Aucune ligne de résultat supplémentaire. |
+| [hic-lc3-24-interim-results-fr.pdf](https://drive.google.com/file/d/1xrsLItb6yHSBJ83Ai-it7wd6Mwan9fsC/view) | Résultats de formules sélectionnées. C’est ici que se trouvent les chiffres. |
+| [hic-lc3-24-limitations-fr.pdf](https://drive.google.com/file/d/15JKt6cYVUcnnHjoSBU8KGo2f6rCBAo2O/view) | Réserves, demande en eau, contraintes de l’usine. |
 
 2. Dans Gemini, démarrez une nouvelle conversation (**New chat**). Cliquez sur **+** (à gauche de la zone de prompt), choisissez **Upload files**, puis sélectionnez les trois PDF dans votre dossier **Downloads**.
 
@@ -127,9 +124,9 @@ Pour chaque formule qui figure dans le fichier des résultats intermédiaires, p
 - **Fichier source du chiffre :**
 
 Règles :
-- Les résistances et les facteurs de clinker ne peuvent provenir que de hic-lc3-24-interim-results.pdf.
-- Les méthodes et la spécification ne peuvent provenir que de hic-lc3-24-trial-protocol.pdf.
-- Les limites ne peuvent provenir que de hic-lc3-24-limitations.pdf.
+- Les résistances et les facteurs de clinker ne peuvent provenir que de hic-lc3-24-interim-results-fr.pdf.
+- Les méthodes et la spécification ne peuvent provenir que de hic-lc3-24-trial-protocol-fr.pdf.
+- Les limites ne peuvent provenir que de hic-lc3-24-limitations-fr.pdf.
 - Si un champ ne figure pas dans les fichiers, écrivez Non trouvé. Ne calculez pas de moyenne, ne devinez pas et n'utilisez pas de valeurs LC3 typiques issues de vos données d'entraînement.
 ```
 
@@ -261,7 +258,7 @@ Règles :
 3. Parcourez les trois versions. Vérifiez que la version Direction n’a pas glissé une nouvelle valeur en mégapascals.
 
 > [!WARNING]
-> Si une réécriture introduit une résistance, un facteur de clinker ou une date qui ne figure ni dans `hic-lc3-24-interim-results.pdf` ni dans la spécification du protocole, rejetez la phrase. Gemini n’est pas un second laboratoire.
+> Si une réécriture introduit une résistance, un facteur de clinker ou une date qui ne figure ni dans `hic-lc3-24-interim-results-fr.pdf` ni dans la spécification du protocole, rejetez la phrase. Gemini n’est pas un second laboratoire.
 
 ### Tâche bonus 5 : Enregistrer un modèle de prompt réutilisable pour le HIC
 

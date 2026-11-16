@@ -12,7 +12,7 @@ Cinq ateliers pour l’après-midi Gemini du HIC. Chaque dossier contient `lab.m
 
 ## Fichiers de cours
 
-Les fichiers de cours sont **en anglais** : ce sont les mêmes que ceux de la version anglaise des ateliers. Les consignes et les prompts sont en français, et les prompts demandent à Gemini de répondre en français lorsque c’est utile.
+Les fichiers de cours sont **en français** (suffixe `-fr`), sauf les deux fichiers CSV des ateliers 3 et 4, qui restent en anglais : leurs noms de colonnes et leurs valeurs servent d’identifiants dans les prompts.
 
 Tous les fichiers nécessaires se trouvent dans un dossier Google Drive public (toute personne disposant du lien peut le consulter). Chaque `lab.md` renvoie vers chaque fichier à l’étape où il est nécessaire, et indique précisément comment l’utiliser : le télécharger, puis l’importer dans Gemini, Drive, Docs, Sheets ou NotebookLM. Aucune préparation ni aucun partage par le formateur n’est nécessaire.
 
@@ -24,6 +24,6 @@ Tous les fichiers nécessaires se trouvent dans un dossier Google Drive public (
 | 4 | [innovation-lab-4-assets](https://drive.google.com/drive/folders/1Htz2oQ79mvI__UliypySIkJoJ_muOuMj) |
 | 5 | [innovation-lab-5-assets](https://drive.google.com/drive/folders/1js2KmzN0LCM2xSf_w03DyPA3Hti8X6-N) |
 
-Les fichiers Drive correspondent au dossier `assets/` de chaque atelier, qui reprend les fichiers anglais de `labs/innovation-centre/`. Si vous modifiez un fichier dans `assets/`, remplacez la copie Drive avec **Manage versions** pour que le lien dans `lab.md` reste valide.
+Les fichiers Drive correspondent au dossier `assets/` de chaque atelier, Les PDF en français sont générés à partir des fichiers `-fr.md` du même dossier. Si vous modifiez un fichier dans `assets/`, remplacez la copie Drive avec **Manage versions** pour que le lien dans `lab.md` reste valide.
 
 Tous les chiffres sont synthétiques. Ne les remplacez pas par de vraies données d’essai du HIC pour une formation publique.

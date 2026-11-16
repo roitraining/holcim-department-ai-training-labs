@@ -26,9 +26,6 @@ Vous coordonnez le transfert de **HIC-LC3-24** vers l’usine synthétique Loire
 > [!NOTE]
 > Les libellés de Gemini dans Gmail évoluent. Si un nom de commande ci-dessous ne correspond pas à votre environnement, utilisez la solution de repli indiquée à l’étape. Ne bloquez pas l’atelier à chercher une capture d’écran identique.
 
-> [!NOTE]
-> Les fichiers de cours sont en anglais. Gemini les trouve et les lit sans difficulté ; vos prompts et vos e-mails restent en français.
-
 ## Instructions de l’atelier
 
 ### Tâche 1 : Importer les fichiers du HIC, puis envoyer et résumer le fil de transfert
@@ -39,10 +36,10 @@ Dans cette tâche, vous placez les fichiers du HIC dans votre propre Drive pour 
 
 | Fichier | Contenu |
 | :--- | :--- |
-| [hic-lc3-24-trial-protocol.pdf](https://drive.google.com/file/d/1REHLF6NeIkN_kON23YtxkcSImcXSPU5o/view) | Âges d’essai et spécification à 28 jours |
-| [hic-lc3-24-meeting-note.pdf](https://drive.google.com/file/d/1xGOwSrZjPmC4PlSmpopK9J0RzV_7DhI5/view) | Décisions de la réunion de lancement ; la séance de travail n’est pas encore planifiée |
-| [hic-trial-glossary.pdf](https://drive.google.com/file/d/11iwfKBi8ONKtSBjhWbkGRWnjSf4eWgDm/view) | Définition de « prêt pour le transfert » |
-| [hic-lc3-24-handover-checklist.pdf](https://drive.google.com/file/d/1V87d4tNd6qbqUmcljHZzrJsduPKmFDY0/view) | Liste de contrôle pour la séance de travail |
+| [hic-lc3-24-trial-protocol-fr.pdf](https://drive.google.com/file/d/1aNfIvtbc-Kb2ymDNvLuOA3i3RM48o-MI/view) | Âges d’essai et spécification à 28 jours |
+| [hic-lc3-24-meeting-note-fr.pdf](https://drive.google.com/file/d/12MxzzB71TKpY-_9zP08k6JPGm8mVuyuD/view) | Décisions de la réunion de lancement ; la séance de travail n’est pas encore planifiée |
+| [hic-trial-glossary-fr.pdf](https://drive.google.com/file/d/1bN0DSBfUgZ0xuAIGFnLzH4odQGmcMy7_/view) | Définition de « prêt pour le transfert » |
+| [hic-lc3-24-handover-checklist-fr.pdf](https://drive.google.com/file/d/1CVMrnH3owVk5X22zmEfMxaVN0UNgSxNu/view) | Liste de contrôle pour la séance de travail |
 
 2. Ouvrez [https://drive.google.com/](https://drive.google.com/). Cliquez sur **New**, puis sur **New folder**. Nommez le dossier `HIC-LC3-24 handover` et cliquez sur **Create**.
 
@@ -75,7 +72,7 @@ Nous avons besoin d'une séance de travail de 45 minutes la semaine prochaine po
 2. L'attribution du silo d'argile calcinée
 3. Ce que le comité de revue d'innovation verra jeudi
 
-Le protocole d'essai se trouve dans Drive, dans le dossier HIC-LC3-24 handover : hic-lc3-24-trial-protocol.pdf.
+Le protocole d'essai se trouve dans Drive, dans le dossier HIC-LC3-24 handover : hic-lc3-24-trial-protocol-fr.pdf.
 
 Merci de me faire part de vos contraintes en réponse.
 
@@ -113,7 +110,7 @@ Recherchez HIC-LC3-24 dans Gmail, Chat et Drive. J'ai besoin du protocole d'essa
 
 2. Examinez les résultats renvoyés par Gemini.
 
-3. Si les résultats Drive sont maigres, cliquez sur **Add source** (ou sur la commande Drive du panneau Gemini) et joignez `hic-lc3-24-trial-protocol.pdf` depuis votre dossier `HIC-LC3-24 handover` dans Drive.
+3. Si les résultats Drive sont maigres, cliquez sur **Add source** (ou sur la commande Drive du panneau Gemini) et joignez `hic-lc3-24-trial-protocol-fr.pdf` depuis votre dossier `HIC-LC3-24 handover` dans Drive.
 
 4. Envoyez une question de suivi qui s’appuie sur ce fichier :
 
@@ -188,7 +185,7 @@ Ton : concis, destiné à l'usine, sans marketing.
 Incluez :
 - Un accusé de réception des trois points de l'ordre du jour
 - La proposition de séance de travail de 45 minutes (reprenez les créneaux Help me schedule s'ils figurent dans le brouillon)
-- Une demande de consulter hic-lc3-24-trial-protocol.pdf avant la réunion
+- Une demande de consulter hic-lc3-24-trial-protocol-fr.pdf avant la réunion
 - Une phrase précisant que nous ne discuterons pas de chiffres non publiés absents des fichiers partagés
 N'ajoutez ni résistance à la compression ni facteur de clinker.
 120 mots maximum.
