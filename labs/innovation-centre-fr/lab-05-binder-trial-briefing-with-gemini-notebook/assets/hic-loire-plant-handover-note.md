@@ -1,33 +1,33 @@
-# Note de transfert Loire Plant (synthétique)
+# Loire Plant handover note (synthetic)
 
-> Note synthétique destinée à l’usine, pour la formation. Loire Plant n’est pas un rapport de site réel.
+> Synthetic plant-facing note for training. Loire Plant is not a real site report.
 
-## Public
+## Audience
 
-Qualité et production de Loire Plant, en copie au responsable de laboratoire du HIC.
+Loire Plant quality and production, copied to the HIC lab lead.
 
-## Ce que l’on demande à l’usine de prendre
+## What the plant is being asked to take
 
-Une fiche formule prête pour l’usine pour les formules **HIC-LC3-24** qui passent déjà la spec à 28 jours de **42.5 MPa** et dont le Trial_Stage vaut Plant-ready.
+A plant-ready mix card for **HIC-LC3-24** mixes that already pass the 28-day spec of **42.5 MPa** and sit in Trial_Stage Plant-ready.
 
-## Chiffres HIC que l’usine peut citer
+## HIC numbers the plant may quote
 
-Issus de l’essai HIC, pas de la littérature :
+From the HIC trial, not from literature:
 
-- Formule M12, LC3-50, facteur de clinker 0.52, 28 jours 44.8 MPa, réussite
-- Formule M13, LC3-50, facteur de clinker 0.50, 28 jours 41.2 MPa, échec (pas pour la fiche formule)
-- Formule M21, LC3-35, facteur de clinker 0.65, 28 jours 47.1 MPa, réussite
-- Formule M01, témoin CEM I, 28 jours 52.4 MPa (référence seulement, pas le produit de transfert)
+- Mix M12, LC3-50, clinker factor 0.52, 28-day 44.8 MPa, pass
+- Mix M13, LC3-50, clinker factor 0.50, 28-day 41.2 MPa, fail (not for mix card)
+- Mix M21, LC3-35, clinker factor 0.65, 28-day 47.1 MPa, pass
+- Mix M01, CEM I control, 28-day 52.4 MPa (benchmark only, not the handover product)
 
-## Points usine ouverts (doivent être vrais avant le transfert prêt)
+## Open plant items (must be true before handover ready)
 
-1. Attribution du silo pour l’argile calcinée (capacité citée dans le fichier de limites : 80 t/jour)
-2. Seuil de finesse par rapport à la cible du protocole de 4200 cm2/g Blaine
-3. Prise en compte du fait que la demande en eau du LC3 était plus haute que le CEM I dans ce jeu synthétique (environ 8 pour cent)
-4. Portes qualité sur la spec à 28 jours seulement ; n’utilisez pas les cubes à 1 jour comme porte de transfert
+1. Silo allocation for calcined clay (capacity cited in the limitations file: 80 t/day)
+2. Fineness gate versus the protocol target of 4200 cm2/g Blaine
+3. Acknowledgement that LC3 water demand was higher than CEM I in this synthetic set (about 8 percent)
+4. Quality gates on 28-day spec only; do not use 1-day cubes as the handover gate
 
-## Ce que l’usine doit refuser
+## What the plant should refuse
 
-- Toute étiquette commerciale ECOPlanet sur cette fiche formule
-- Tout chiffre à 90 jours (encore en attente pour plusieurs formules)
-- Toute fourchette de littérature présentée comme un résultat Loire
+- Any commercial ECOPlanet label on this mix card
+- Any 90-day number (still pending for several mixes)
+- Any literature range presented as a Loire result

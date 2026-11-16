@@ -1,26 +1,26 @@
-# Ordre du jour de la revue d’innovation HIC (synthétique)
+# HIC innovation review agenda (synthetic)
 
-**Réunion :** revue d’innovation interne HIC-LC3-24  
-**Durée :** 30 minutes  
-**Décision demandée aujourd’hui :** quelles formules restent dans l’ensemble prêt pour l’usine de Loire Plant
+**Meeting:** HIC-LC3-24 internal innovation review  
+**Length:** 30 minutes  
+**Decision needed today:** which mixes stay in the Loire Plant plant-ready set
 
-## Ordre du jour
+## Agenda
 
-1. **Objet de l’essai** (3 min)  
-   Un liant de style LC3 peut-il atteindre 42.5 MPa à 28 jours avec un facteur de clinker plus bas que le CEM I ?
+1. **Purpose of the trial** (3 min)  
+   Can an LC3-style binder meet 42.5 MPa at 28 days at a lower clinker factor than CEM I?
 
-2. **Ce que les fichiers HIC montrent vraiment** (8 min)  
-   Ne citez que M01, M12, M13 et M21 depuis la note d’essai. N’ajoutez pas de formules.
+2. **What the HIC files actually show** (8 min)  
+   Quote only M01, M12, M13, and M21 from the trial brief. Do not add mixes.
 
-3. **Là où la littérature contredit ou avertit** (5 min)  
-   Résistance au jeune âge et demande en eau. Gardez la littérature séparée des chiffres HIC.
+3. **Where literature disagrees or warns** (5 min)  
+   Early-age strength and water demand. Keep literature separate from HIC numbers.
 
-4. **Points usine ouverts** (7 min)  
-   Silos, finesse, prise en compte de la demande en eau, cubes à 90 jours encore en attente.
+4. **Open plant items** (7 min)  
+   Silos, fineness, water-demand acknowledgement, 90-day cubes still pending.
 
-5. **Décision** (7 min)  
-   Garder M12 dans l’ensemble prêt pour l’usine ? Refondre ou abandonner M13 ? M21 est-il une voie de repli ?
+5. **Decision** (7 min)  
+   Keep M12 in plant-ready? Recast or drop M13? Is M21 an alternate path?
 
-## Règle de preuve pour chaque argument
+## Evidence rule for every talking point
 
-Si le point de l’ordre du jour a besoin d’un chiffre et que ce chiffre n’est pas dans un fichier HIC, écrivez **Donnée manquante**. N’empruntez pas une fourchette de la littérature pour avoir l’air prêt.
+If the agenda item needs a number and the number is not in an HIC file, write **Needs data**. Do not borrow a literature range to look prepared.

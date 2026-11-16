@@ -1,51 +1,51 @@
-# Point d’avancement HIC-LC3-24
+# HIC-LC3-24 Project Update
 
-> Modèle de formation synthétique pour Gemini dans Slides. Pas un vrai rapport d’essai Holcim.
+> Synthetic training template for Gemini in Slides. Not a real Holcim trial report.
 
-**Projet :** liant HIC-LC3-24 à faible taux de clinker et à argile calcinée  
-**Responsable :** Holcim Innovation Centre (synthétique)  
-**Usine cible :** Loire Plant (synthétique)  
-**Revue :** revue d’innovation interne  
-**Période couverte :** fenêtre de formation d’octobre 2026
+**Project:** HIC-LC3-24 low-clinker calcined-clay binder  
+**Owner:** Holcim Innovation Centre (synthetic)  
+**Target plant:** Loire Plant (synthetic)  
+**Review:** Internal innovation review  
+**Period covered:** October 2026 training window
 
-## Statut
+## Status
 
-HIC-LC3-24 est en montée en échelle. L’essai teste si un liant de style LC3 peut atteindre une classe de 42.5 MPa à 28 jours avec un facteur de clinker plus bas que le témoin CEM I, avec une fiche formule prête pour l’usine comme livrable de transfert.
+HIC-LC3-24 is in scale-up. The trial tests whether an LC3-style binder can meet a 42.5 MPa 28-day class at a lower clinker factor than the CEM I control, with a plant-ready mix card as the handover artifact.
 
-Résultats à 28 jours déjà dans le Sheet compagnon (n’en inventez pas d’autres) :
+Selected 28-day results already in the companion Sheet (do not invent others):
 
-- Formule M01, témoin CEM I, facteur de clinker 0.95, 52.4 MPa, réussite par rapport à la spec de 42.5 MPa
-- Formule M12, LC3-50, facteur de clinker 0.52, 44.8 MPa, réussite
-- Formule M13, LC3-50, facteur de clinker 0.50, 41.2 MPa, échec
-- Formule M21, LC3-35, facteur de clinker 0.65, 47.1 MPa, réussite
+- Mix M01, CEM I control, clinker factor 0.95, 52.4 MPa, pass versus 42.5 MPa spec
+- Mix M12, LC3-50, clinker factor 0.52, 44.8 MPa, pass
+- Mix M13, LC3-50, clinker factor 0.50, 41.2 MPa, fail
+- Mix M21, LC3-35, clinker factor 0.65, 47.1 MPa, pass
 
-Les résultats à 90 jours sont en attente pour huit formules. Ne présentez pas les âges en attente comme terminés.
+90-day results are pending for eight mixes. Do not present pending ages as complete.
 
-## Cette période
+## This period
 
-- Spec à 28 jours verrouillée à 42.5 MPa (classe CEM 42.5) dans le protocole d’essai
-- Formule M13 signalée sous la spec à 28 jours
-- Conversation usine ouverte sur l’attribution du silo d’argile calcinée
+- Locked the 28-day spec at 42.5 MPa (CEM 42.5 class) in the trial protocol
+- Flagged Mix M13 as below spec at 28 days
+- Opened the plant conversation on calcined-clay silo allocation
 
-## Risques
+## Risks
 
-- La demande en eau du LC3 est plus haute que le CEM I dans ce jeu synthétique (voir le fichier de limites : environ 8 pour cent)
-- La capacité de calcination d’argile de Loire Plant est indiquée à 80 t/jour dans le fichier de limites
-- La finesse de l’argile calcinée a varié ; la cible du protocole est 4200 cm2/g Blaine
-- Aucune allégation commerciale ECOPlanet ou ECOPact n’est dans le périmètre de cette revue
+- LC3 water demand is higher than CEM I in this synthetic set (see limitations file: about 8 percent)
+- Loire Plant clay calcination capacity is listed as 80 t/day in the limitations file
+- Fineness of calcined clay has varied; the protocol target is 4200 cm2/g Blaine
+- No commercial ECOPlanet or ECOPact claim is in scope for this review
 
-## Demande au comité de revue
+## Ask of the review board
 
-Décider si la formule M12 (LC3-50, 44.8 MPa à 28 jours, facteur de clinker 0.52) reste dans l’ensemble prêt pour l’usine à Loire, et si la formule M13 est refondue ou abandonnée.
+Decide whether Mix M12 (LC3-50, 44.8 MPa at 28 days, clinker factor 0.52) stays in the plant-ready set for Loire, and whether Mix M13 is recast or dropped.
 
-## 30 prochains jours
+## Next 30 days
 
-1. Terminer les cubes à 90 jours encore en chambre humide
-2. Convenir de l’attribution des silos et d’un seuil de finesse avec Loire Plant
-3. Émettre une fiche formule seulement pour les formules qui passent la spec à 28 jours et sont à l’étape Plant-ready
+1. Finish 90-day cubes still in the fog room
+2. Agree silo allocation and fineness gate with Loire Plant
+3. Issue a mix card only for mixes that pass 28-day spec and sit in Plant-ready stage
 
-## Règles pour les diapositives générées depuis ce Doc
+## Rules for slides generated from this Doc
 
-- Citez un chiffre seulement s’il apparaît dans ce Doc ou dans le Sheet compagnon à 28 jours
-- Marquez le travail à 90 jours comme en attente
-- N’ajoutez pas de tonnes clients, de fiches formule non publiées ni d’usines en plus
+- Quote a figure only if it appears in this Doc or in the companion 28-day Sheet
+- Label 90-day work as pending
+- Do not add customer tons, unpublished mix cards, or extra plants

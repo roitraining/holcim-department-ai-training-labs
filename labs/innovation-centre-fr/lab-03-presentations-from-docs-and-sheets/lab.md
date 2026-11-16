@@ -1,186 +1,192 @@
-# Présentations au style Holcim avec Gemini dans Google Slides
+# Présentations conformes à la charte Holcim avec Gemini dans Google Slides
 
-## Temps requis
+## Durée
 
 30 minutes
 
-## Présentation
+## Vue d’ensemble
 
-Dans ce labo, vous générez une présentation de revue d’innovation au style Holcim avec Gemini dans Google Slides. Vous partez d’une présentation vide, vous ancrez le premier brouillon dans un modèle Doc de point d’avancement, puis vous modifiez les diapositives existantes avec un Sheet de résultats d’essai et un fichier de contraintes de marque. Vous terminez avec Enhance this slide et une liste de contrôle qualité.
+Dans cet atelier, vous allez générer avec Gemini dans Google Slides une présentation de revue d’innovation conforme à la charte Holcim. Vous partirez d’une présentation vierge, vous ancrerez le premier jet dans un modèle de point d’avancement (Google Docs), puis vous modifierez les diapositives existantes à l’aide d’un tableau Google Sheets de résultats d’essai et d’un fichier de charte graphique. Vous terminerez avec Enhance this slide et une liste de contrôle qualité.
 
-### Vous apprendrez à :
-- Générer une présentation de plusieurs diapositives à partir d’un modèle Doc de point d’avancement.
-- Modifier des diapositives existantes avec un Google Sheet de résultats d’essai et un fichier de référence supplémentaire.
-- Appliquer le look Holcim avec des prompts de suivi et Enhance this slide.
-- Refuser les KPI inventés qui n’apparaissent pas dans les fichiers joints.
+### Vous allez apprendre à :
+- Générer une présentation de plusieurs diapositives à partir d’un modèle de point d’avancement dans Google Docs.
+- Modifier des diapositives existantes à l’aide d’un tableau Google Sheets de résultats d’essai et d’un fichier de référence supplémentaire.
+- Appliquer la charte graphique Holcim avec des prompts de suivi et Enhance this slide.
+- Refuser les KPI inventés qui ne figurent pas dans les fichiers joints.
 
-## Scénario
+## Mise en situation
 
 ![Logo Holcim](./images/holcim-logo.png)
 
-La revue d’innovation interne de jeudi a besoin de six diapositives sur **HIC-LC3-24**. Le récit est déjà dans un Doc de point d’avancement. Les preuves à 28 jours sont dans un Sheet. Un court fichier de contraintes de marque liste ce qui ne doit jamais apparaître sur une diapositive. Vous ne taperez pas la présentation à partir d’un plan vide dans votre tête.
+La revue d’innovation interne de jeudi attend six diapositives sur **HIC-LC3-24**. Le récit se trouve déjà dans un document de point d’avancement. Les résultats à 28 jours sont dans un tableau Google Sheets. Un court fichier de charte graphique liste ce qui ne doit jamais figurer sur une diapositive. Inutile de rédiger la présentation en partant de zéro.
 
 > [!WARNING]
-> Les chiffres du Doc, du Sheet et du fichier de contraintes sont un **contenu de formation synthétique**. Si un chiffre n’est pas dans ces fichiers, laissez-le hors de la diapositive.
+> Les chiffres du document, du tableau et du fichier de charte sont des **contenus de formation synthétiques**. Si un chiffre ne figure pas dans ces fichiers, ne le mettez pas sur la diapositive.
 
-## Instructions du labo
+> [!NOTE]
+> Les fichiers de cours sont en anglais. Les prompts de cet atelier demandent à Gemini de rédiger les diapositives en français.
 
-### Tâche 1 : Créer une présentation vide et ouvrir Gemini dans Slides
+## Instructions de l’atelier
 
-Dans cette tâche, vous préparez une présentation vide pour que Gemini construise le plan avec vous, au lieu de lutter contre un modèle restant.
+### Tâche 1 : Créer une présentation vierge et ouvrir Gemini dans Slides
 
-1. Ouvrez [https://slides.google.com/](https://slides.google.com/) et créez une présentation **Blank**.
+Dans cette tâche, vous préparez une présentation vierge pour que Gemini construise le plan avec vous, plutôt que de partir d’un modèle existant qu’il faudrait défaire.
 
-2. Renommez-la :
+1. Ouvrez [https://slides.google.com/](https://slides.google.com/) et créez une présentation vierge (**Blank**).
+
+2. Renommez-la :
 
 ```text
 HIC-LC3-24 Innovation Review
 ```
 
-3. Ouvrez **Ask Gemini** dans Slides (bouton étincelle, en général en haut à droite).
+3. Ouvrez **Ask Gemini** dans Slides (bouton en forme d’étincelle, en général en haut à droite).
 
 ![Panneau latéral Gemini dans Slides](images/gemini-in-slides-panel.png)
 
-4. Si Gemini propose un thème, choisissez un fond blanc propre. Vous verrouillerez les couleurs Holcim dans la tâche 3.
+4. Si Gemini propose un thème, choisissez un fond blanc épuré. Vous appliquerez les couleurs Holcim à la tâche 3.
 
-### Tâche 2 : Générer la première présentation depuis le Doc de point d’avancement
+### Tâche 2 : Générer la première version à partir du document de point d’avancement
 
-Dans cette tâche, le **Doc** porte le récit. Vous le joignez et vous demandez six diapositives. Vous ne joignez pas encore le Sheet.
+Dans cette tâche, c’est le **document** qui fait foi pour le récit. Vous le joignez et vous demandez six diapositives. Vous ne joignez pas encore le tableau.
 
-1. Cliquez sur [hic-project-update-template.md](https://drive.google.com/file/d/12cgN2UVmm7JTJp3eknlpShE9x6C5t2k6/view) pour l’ouvrir dans Google Drive, puis cliquez sur **Download** (l’icône flèche vers le bas en haut à droite de l’aperçu).
+1. Cliquez sur [hic-project-update-template.md](https://drive.google.com/file/d/12cgN2UVmm7JTJp3eknlpShE9x6C5t2k6/view) pour l’ouvrir dans Google Drive, puis cliquez sur **Download** (l’icône en forme de flèche vers le bas, en haut à droite de l’aperçu).
 
 2. Dans un nouvel onglet, ouvrez [https://docs.google.com/](https://docs.google.com/) et cliquez sur **Blank document**.
 
-3. Cliquez sur **File**, puis **Open**. Choisissez l’onglet **Upload**, cliquez sur **Browse**, et sélectionnez `hic-project-update-template.md` dans votre dossier **Downloads**. Docs l’ouvre comme un nouveau document.
+3. Cliquez sur **File**, puis sur **Open**. Choisissez l’onglet **Upload**, cliquez sur **Browse**, puis sélectionnez `hic-project-update-template.md` dans votre dossier **Downloads**. Docs l’ouvre comme un nouveau document.
 
-4. Si le titre se termine encore par `.md`, cliquez sur **File**, puis **Save as Google Docs**. Renommez le document :
+4. Si le titre se termine encore par `.md`, cliquez sur **File**, puis sur **Save as Google Docs**. Renommez le document :
 
 ```text
 HIC-LC3-24 Project Update
 ```
 
-5. Revenez à l’onglet **HIC-LC3-24 Innovation Review**. Dans le panneau Gemini, cliquez sur **Add sources**, puis **Add from Drive**, et sélectionnez **HIC-LC3-24 Project Update**.
+5. Revenez à l’onglet **HIC-LC3-24 Innovation Review**. Dans le panneau Gemini, cliquez sur **Add sources**, puis sur **Add from Drive**, et sélectionnez **HIC-LC3-24 Project Update**.
 
-6. Envoyez :
+6. Envoyez :
 
 ```text
-Créez une présentation de 6 diapositives du Holcim Innovation Centre pour une revue d'innovation interne de HIC-LC3-24.
+Créez une présentation de 6 diapositives du Holcim Innovation Centre pour une revue d'innovation interne de HIC-LC3-24. Rédigez les diapositives et les notes de l'orateur en français.
 
-Utilisez UNIQUEMENT le Google Doc joint comme source du récit. N'inventez pas de résistances, de facteurs de clinker, de dates ni de noms d'usine.
+Utilisez UNIQUEMENT le document Google Docs joint comme source du récit. N'inventez ni résistance, ni facteur de clinker, ni date, ni nom d'usine.
 
 Plan des diapositives :
-1. Titre : HIC-LC3-24 vers le transfert à Loire Plant
-2. Pourquoi cet essai existe
-3. Statut de cette période
-4. Risques et points usine ouverts
+1. Titre : HIC-LC3-24, vers le transfert à Loire Plant
+2. Pourquoi cet essai
+3. Avancement de la période
+4. Risques et points ouverts avec l'usine
 5. La demande au comité de revue
 6. Les 30 prochains jours
 
 Contraintes :
 - Une idée par diapositive
-- Les titres nomment le constat, pas Aperçu
-- Pas plus de quatre puces par diapositive
+- Les titres énoncent le constat, pas "Vue d'ensemble"
+- Quatre éléments de liste maximum par diapositive
 - Fond blanc, texte bleu marine
-- Ajoutez des notes d'orateur sur chaque diapositive
-- Si un chiffre n'est pas dans le Doc, omettez-le
+- Ajoutez des notes de l'orateur sur chaque diapositive
+- Si un chiffre ne figure pas dans le document, omettez-le
 ```
 
-7. Si Gemini pose des questions de clarification ou montre un plan, répondez à partir du Doc. Cliquez sur **Approve** quand le plan correspond aux six diapositives.
+7. Si Gemini pose des questions de clarification ou affiche un plan, répondez à partir du document. Cliquez sur **Approve** lorsque le plan correspond aux six diapositives prévues.
 
-8. Attendez la fin des diapositives, puis parcourez-les. Vérifiez qu’aucune valeur en mégapascals absente du Doc n’est apparue.
+8. Attendez la fin de la génération, puis parcourez les diapositives. Vérifiez qu’aucune valeur en mégapascals absente du document n’est apparue.
 
 <!-- TODO IMAGE: Screenshot of the six-slide deck generated from the project-update Doc -->
-![Présentation générée depuis le Doc de point d’avancement](images/generated-from-doc.png)
+![Présentation générée à partir du document de point d’avancement](images/generated-from-doc.png)
 
-### Tâche 3 : Modifier les diapositives existantes avec le Sheet d’essai et le fichier de contraintes
+### Tâche 3 : Modifier les diapositives existantes à l’aide du tableau d’essai et du fichier de charte
 
-Dans cette tâche, vous gardez le plan et vous **modifiez** les diapositives avec des références supplémentaires. Vous ne régénérez pas toute la présentation.
+Dans cette tâche, vous conservez le plan et vous **modifiez** les diapositives à l’aide de références supplémentaires. Vous ne régénérez pas toute la présentation.
 
 1. Téléchargez les deux fichiers de référence. Pour chaque fichier, cliquez sur le lien pour l’ouvrir dans Google Drive, puis cliquez sur **Download**.
 
-| Fichier | Ce qu’il porte |
+| Fichier | Fait foi pour |
 | :--- | :--- |
-| [hic-lc3-28day-results.csv](https://drive.google.com/file/d/1I5lJxak57QsvQU4Cf2zc1dvdvDFHmBRv/view) | Chaque chiffre à 28 jours que vous pouvez citer |
-| [hic-lc3-brand-constraints.md](https://drive.google.com/file/d/1eAIfoNN3sTh0eXHR-Er5o3fD7SMLrUDW/view) | Look Holcim, règles de chiffres et allégations interdites |
+| [hic-lc3-28day-results.csv](https://drive.google.com/file/d/1I5lJxak57QsvQU4Cf2zc1dvdvDFHmBRv/view) | Tous les chiffres à 28 jours que vous pouvez citer |
+| [hic-lc3-brand-constraints.md](https://drive.google.com/file/d/1eAIfoNN3sTh0eXHR-Er5o3fD7SMLrUDW/view) | Charte graphique Holcim, règles sur les chiffres et affirmations interdites |
 
-2. Ouvrez [https://sheets.google.com/](https://sheets.google.com/) et cliquez sur **Blank spreadsheet**. Cliquez sur **File**, puis **Import**. Choisissez l’onglet **Upload**, cliquez sur **Browse**, et sélectionnez `hic-lc3-28day-results.csv`. Réglez **Import location** sur **Replace spreadsheet**, puis cliquez sur **Import data**.
+2. Ouvrez [https://sheets.google.com/](https://sheets.google.com/) et cliquez sur **Blank spreadsheet**. Cliquez sur **File**, puis sur **Import**. Choisissez l’onglet **Upload**, cliquez sur **Browse**, puis sélectionnez `hic-lc3-28day-results.csv`. Réglez **Import location** sur **Replace spreadsheet**, puis cliquez sur **Import data**.
 
-3. Renommez la feuille de calcul :
+> [!NOTE]
+> **Si les nombres s’importent mal :** le fichier CSV utilise le point décimal (`52.4`). Si votre feuille de calcul utilise les paramètres régionaux français, les valeurs peuvent s’importer comme du texte (alignées à gauche) au lieu de nombres (alignés à droite). Dans ce cas, cliquez sur **File**, puis sur **Settings**, réglez **Locale** sur **United States**, cliquez sur **Save settings**, puis importez de nouveau le fichier.
+
+3. Renommez la feuille de calcul :
 
 ```text
 HIC-LC3-24 28-day Results
 ```
 
-4. Ouvrez [https://docs.google.com/](https://docs.google.com/), cliquez sur **Blank document**, puis cliquez sur **File**, puis **Open**. Choisissez l’onglet **Upload** et sélectionnez `hic-lc3-brand-constraints.md`. Si le titre se termine encore par `.md`, cliquez sur **File**, puis **Save as Google Docs**. Renommez le document :
+4. Ouvrez [https://docs.google.com/](https://docs.google.com/), cliquez sur **Blank document**, puis sur **File** et **Open**. Choisissez l’onglet **Upload** et sélectionnez `hic-lc3-brand-constraints.md`. Si le titre se termine encore par `.md`, cliquez sur **File**, puis sur **Save as Google Docs**. Renommez le document :
 
 ```text
 HIC-LC3-24 brand constraints
 ```
 
-5. Revenez à l’onglet **HIC-LC3-24 Innovation Review**. Dans la **même** conversation Gemini, cliquez sur **Add sources**, puis **Add from Drive**, et sélectionnez **HIC-LC3-24 28-day Results** et **HIC-LC3-24 brand constraints**.
+5. Revenez à l’onglet **HIC-LC3-24 Innovation Review**. Dans la **même** conversation Gemini, cliquez sur **Add sources**, puis sur **Add from Drive**, et sélectionnez **HIC-LC3-24 28-day Results** et **HIC-LC3-24 brand constraints**.
 
-6. Envoyez ce suivi. Il doit dire **modifiez**, pas **créez** :
+6. Envoyez ce message de suivi. Il doit dire **modifiez**, et non **créez** :
 
 ```text
-Modifiez les diapositives existantes. N'ajoutez pas de diapositives. Ne régénérez pas la présentation.
+Modifiez les diapositives existantes. N'ajoutez pas de diapositives. Ne régénérez pas la présentation. Gardez le texte en français.
 
-Utilisez le Google Sheet joint seulement pour les diapositives qui parlent des résultats (en général les diapositives 3 et 5) :
-- Vous pouvez citer la résistance à la compression à 28 jours, le facteur de clinker, et la réussite ou l'échec seulement si la valeur apparaît dans le Sheet.
-- Ne moyennez pas les formules en un nouveau KPI.
+Utilisez le tableau Google Sheets joint uniquement pour les diapositives qui présentent des résultats (probablement les diapositives 3 et 5) :
+- Vous pouvez citer la résistance à la compression à 28 jours, le facteur de clinker et la conformité à la spécification uniquement si la valeur figure dans le tableau.
+- Ne calculez pas de moyenne entre formules pour créer un nouveau KPI.
 
-Utilisez le fichier de contraintes de marque joint pour chaque diapositive :
-- Suivez ses règles de couleur et de logo.
-- Suivez sa liste d'allégations interdites.
+Utilisez le fichier de charte graphique joint pour chaque diapositive :
+- Respectez ses règles de couleur et de logo.
+- Respectez sa liste d'affirmations interdites.
 
-Si le Sheet et le Doc se contredisent, gardez le Sheet pour les chiffres et le Doc pour le récit, et ajoutez une note d'orateur indiquant qu'il faut les réconcilier.
+Si le tableau et le document se contredisent, gardez le tableau pour les chiffres et le document pour le récit, et ajoutez une note de l'orateur signalant qu'il faut les réconcilier.
 ```
 
 <!-- TODO IMAGE: Screenshot of Gemini editing existing slides after the Sheet and constraints file were attached -->
-![Diapositives modifiées avec le Sheet et le fichier de contraintes](images/edited-with-sheet.png)
+![Diapositives modifiées à l’aide du tableau et du fichier de charte](images/edited-with-sheet.png)
 
-7. Vérifiez chaque diapositive à la main :
+7. Vérifiez chaque diapositive à la main :
 
    - Une idée par diapositive
-   - Les titres sont précis (« LC3-50 passe la spec à 28 jours », pas « Résultats »)
-   - Pas plus de quatre puces
-   - De l’espace blanc autour du titre, le logo Holcim ne collisionne pas avec le texte
-   - Fond blanc, texte bleu marine, et accents bleu et vert du logo
-   - Chaque chiffre existe dans le Doc ou le Sheet
+   - Des titres précis (« LC3-50 conforme à la spécification à 28 jours », et non « Résultats »)
+   - Quatre éléments de liste maximum
+   - De l’espace autour du titre, et un logo Holcim qui ne chevauche pas le texte
+   - Fond blanc, texte bleu marine, accents bleu et vert du logo
+   - Chaque chiffre figure dans le document ou dans le tableau
 
-8. Demandez à Gemini de corriger toute diapositive qui échoue à la liste. Nommez le numéro de diapositive dans le prompt.
+8. Demandez à Gemini de corriger toute diapositive qui ne respecte pas cette liste. Indiquez le numéro de la diapositive dans le prompt.
 
-### Tâche 4 : Enhance this slide et verrouiller le look Holcim
+### Tâche 4 : Utiliser Enhance this slide et verrouiller le style Holcim
 
-Dans cette tâche, vous utilisez l’outil visuel, puis le contenu reste le vôtre.
+Dans cette tâche, vous utilisez l’outil visuel, mais le contenu reste sous votre responsabilité.
 
-1. Sélectionnez une diapositive de résultats. Cliquez sur **Enhance this slide**. Si le changement vous convient, cliquez sur **Replace**. Sinon, annulez.
+1. Sélectionnez une diapositive de résultats. Cliquez sur **Enhance this slide**. Si la modification vous convient, cliquez sur **Replace**. Sinon, annulez.
 
 <!-- TODO IMAGE: Screenshot of Enhance this slide on an HIC results slide -->
 ![Enhance this slide](images/enhance-this-slide.png)
 
 > [!NOTE]
-> Si le bouton a un libellé légèrement différent (par exemple **Enhance**), utilisez ce contrôle. S’il manque, sautez cette étape et utilisez un prompt de suivi : `Restylez cette diapositive : fond blanc, texte bleu marine, plus d'espace blanc, logo dans le coin.`
+> Si le bouton porte un libellé légèrement différent (par exemple **Enhance**), utilisez cette commande. S’il n’apparaît pas, passez cette étape et envoyez ce prompt de suivi : `Remettez en forme cette diapositive : fond blanc, texte bleu marine, plus d'espace, logo dans un coin.`
 
-2. Envoyez un dernier suivi :
-
-```text
-Ajoutez une diapositive de synthèse à la fin avec les 3 points que le comité de revue doit retenir. Puis ajoutez une diapositive Questions et réponses. Toujours aucun chiffre inventé.
-```
-
-### Tâche bonus 5 : Réécriture de public dans la même présentation
-
-1. Dans la même conversation Gemini, envoyez :
+2. Envoyez un dernier message de suivi :
 
 ```text
-Réécrivez les notes d'orateur de la diapositive 5 pour un responsable d'usine : silos, finesse, portes qualité. Ne changez pas les puces de la diapositive. N'ajoutez pas de chiffres.
+Ajoutez à la fin une diapositive de synthèse avec les 3 points que le comité de revue doit retenir. Ajoutez ensuite une diapositive Questions et réponses. Toujours aucun chiffre inventé.
 ```
 
-2. Vérifiez que les puces à l’écran n’ont pas pris de nouveaux chiffres venus de la réécriture des notes.
+### Tâche bonus 5 : Réécrire pour un autre public dans la même présentation
 
-## Félicitations !
+1. Dans la même conversation Gemini, envoyez :
 
-Dans ce labo, vous avez :
+```text
+Réécrivez les notes de l'orateur de la diapositive 5 pour un directeur d'usine : silos, finesse, jalons qualité. Ne modifiez pas les éléments de liste de la diapositive. N'ajoutez aucun chiffre.
+```
 
-- Généré une présentation de revue d’innovation Holcim de plusieurs diapositives à partir d’un modèle Google Doc.
-- Modifié des diapositives existantes avec un Sheet de résultats d’essai et un fichier de contraintes de marque.
-- Utilisé Enhance this slide et une liste de contrôle qualité sans ajouter de KPI inventés.
+2. Vérifiez que les éléments de liste affichés sur la diapositive n’ont pas récupéré de nouveaux chiffres lors de la réécriture des notes.
+
+## Félicitations !
+
+Dans cet atelier, vous avez :
+
+- Généré une présentation de revue d’innovation Holcim de plusieurs diapositives à partir d’un modèle Google Docs.
+- Modifié des diapositives existantes à l’aide d’un tableau Google Sheets de résultats d’essai et d’un fichier de charte graphique.
+- Utilisé Enhance this slide et une liste de contrôle qualité, sans ajouter de KPI inventés.

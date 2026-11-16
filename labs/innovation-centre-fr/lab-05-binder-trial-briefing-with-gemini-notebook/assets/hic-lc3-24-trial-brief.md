@@ -1,34 +1,34 @@
-# Note d’essai HIC-LC3-24 (synthétique)
+# HIC-LC3-24 trial brief (synthetic)
 
-> Contenu de formation synthétique pour les labos Gemini Notebook. Les chiffres sont seulement illustratifs.
+> Synthetic training content for Gemini Notebook labs. Figures are illustrative only.
 
-## Objet
+## Purpose
 
-HIC-LC3-24 teste si un liant calcaire à argile calcinée de style LC3 peut atteindre une classe de **42.5 MPa** à 28 jours avec un facteur de clinker plus bas que le témoin CEM I, et si un sous-ensemble de formules peut passer à une fiche formule prête pour l’usine pour **Loire Plant** synthétique.
+HIC-LC3-24 tests whether an LC3-style calcined-clay limestone binder can meet a **42.5 MPa** 28-day class at a lower clinker factor than the CEM I control, and whether a subset of mixes can move to a plant-ready mix card for the synthetic **Loire Plant**.
 
-## Ce pour quoi cette note peut être citée
+## What this brief may be cited for
 
-- Nom de l’essai, objet et spec
-- Les résultats de formules sélectionnés ci-dessous
-- Ce qui est encore en attente
+- Trial name, purpose, and spec
+- The selected mix results below
+- What is still pending
 
-Ne citez pas ce fichier pour des comparaisons avec la littérature. Elles sont dans l’extrait de littérature.
+Do not cite this file for literature comparisons. Those live in the literature excerpt.
 
-## Résultats HIC sélectionnés (pas un export LIMS complet)
+## Selected HIC results (not a full LIMS dump)
 
-| Identifiant | Famille de liant | Facteur de clinker | Âge (jours) | Résistance à la compression (MPa) | Par rapport à la spec de 42.5 MPa |
+| Mix ID | Binder family | Clinker factor | Age (days) | Compressive strength (MPa) | Versus 42.5 MPa spec |
 | :--- | :--- | ---: | ---: | ---: | :--- |
-| M01 | Témoin CEM I | 0.95 | 28 | 52.4 | Réussi |
-| M12 | LC3-50 | 0.52 | 28 | 44.8 | Réussi |
-| M12 | LC3-50 | 7 | 31.4 | (pas de spec à 7 jours) |
-| M13 | LC3-50 | 0.50 | 28 | 41.2 | Échec |
-| M21 | LC3-35 | 0.65 | 28 | 47.1 | Réussi |
+| M01 | CEM I control | 0.95 | 28 | 52.4 | Pass |
+| M12 | LC3-50 | 0.52 | 28 | 44.8 | Pass |
+| M12 | LC3-50 | 0.52 | 7 | 31.4 | (no 7-day spec) |
+| M13 | LC3-50 | 0.50 | 28 | 41.2 | Fail |
+| M21 | LC3-35 | 0.65 | 28 | 47.1 | Pass |
 
-Les cubes à 90 jours de M13 et M18 sont encore en chambre humide. Ne rapportez pas de résistances à 90 jours depuis ce fichier.
+90-day cubes for M13 and M18 are still in the fog room. Do not report 90-day strengths from this file.
 
-## Règles d’argument
+## Talking-point rules
 
-1. Citez cette note ou la note de transfert usine pour les chiffres HIC. N’inventez pas une cible 2030.
-2. Séparez les **résultats d’essai HIC** de la **littérature LC3 publiée**.
-3. La formule M13 a échoué à la spec à 28 jours. Ne décrivez pas la famille LC3-50 comme réussissant partout.
-4. Ne revendiquez pas une équivalence ECOPlanet ou ECOPact.
+1. Cite this brief or the plant-handover note for HIC numbers. Do not invent a 2030 target.
+2. Separate **HIC trial results** from **published LC3 literature**.
+3. Mix M13 failed 28-day spec. Do not describe the LC3-50 family as universally passing.
+4. Do not claim ECOPlanet or ECOPact equivalence.

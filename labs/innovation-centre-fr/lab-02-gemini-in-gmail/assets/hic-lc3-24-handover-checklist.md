@@ -1,21 +1,21 @@
-# Liste de contrôle de transfert HIC-LC3-24 (synthétique)
+# HIC-LC3-24 handover checklist (synthetic)
 
-Utilisez ce fichier quand Gemini dans Gmail cherche dans Drive des documents de transfert usine.
+Use this file when Gemini in Gmail searches Drive for plant-handover materials.
 
-## Avant la séance de travail
+## Before the working session
 
-- [ ] Protocole ouvert : `hic-lc3-24-trial-protocol.pdf`
-- [ ] Glossaire ouvert : `hic-trial-glossary.pdf`
-- [ ] Spec à 28 jours confirmée : 42.5 MPa
-- [ ] Formule M13 (échec à 28 jours) signalée comme hors fiche formule
+- [ ] Protocol opened: `hic-lc3-24-trial-protocol.pdf`
+- [ ] Glossary opened: `hic-trial-glossary.pdf`
+- [ ] 28-day spec confirmed: 42.5 MPa
+- [ ] Mix M13 (fail at 28 days) flagged as not for mix card
 
-## Pendant la séance de travail
+## During the working session
 
-- [ ] Ensemble prêt pour l’usine convenu
-- [ ] Attribution du silo d’argile calcinée discutée
-- [ ] Responsables du dossier pour le comité de revue d’innovation nommés
+- [ ] Plant-ready set agreed
+- [ ] Calcined-clay silo allocation discussed
+- [ ] Innovation review board pack owners named
 
-## Après
+## After
 
-- [ ] Invitation d’agenda envoyée (Help me schedule ou manuelle)
-- [ ] Chiffres non publiés non collés dans d’autres fils d’e-mail
+- [ ] Calendar invite sent (Help me schedule or manual)
+- [ ] Unpublished numbers not pasted into extra email threads

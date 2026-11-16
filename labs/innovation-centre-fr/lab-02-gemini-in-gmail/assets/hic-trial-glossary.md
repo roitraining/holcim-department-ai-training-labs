@@ -1,47 +1,47 @@
-# Glossaire d’essai HIC (synthétique)
+# HIC trial glossary (synthetic)
 
-> Glossaire de formation pour la recherche de documents Gemini. Pas une norme Holcim.
+> Training glossary for Gemini document search. Not a Holcim standard.
 
-## Facteur de clinker
+## Clinker factor
 
-La fraction massique de clinker dans le liant. Un facteur de clinker de 0.52 signifie 52 pour cent de clinker. Plus bas est l’objectif habituel du HIC dans cet essai, à condition que la formule respecte encore la spec.
+The mass fraction of clinker in the binder. A clinker factor of 0.52 means 52 percent clinker. Lower is the usual HIC goal in this trial, provided the mix still meets spec.
 
 ## LC3
 
-Ciment d’argile calcinée et de calcaire. Dans ce jeu de formation, **LC3-50** vise environ 50 pour cent de clinker avec de l’argile calcinée et du calcaire. **LC3-35** est une variante à plus fort taux de clinker de la même famille.
+Limestone calcined clay cement. In this training set, **LC3-50** targets about 50 percent clinker with calcined clay and limestone. **LC3-35** is a higher-clinker variant in the same family.
 
-## Témoin CEM I
+## CEM I control
 
-Formule témoin de style Portland ordinaire dans cet essai. Facteur de clinker d’environ 0.95. Utilisée seulement comme référence de laboratoire. Pas une recommandation d’usine à elle seule.
+Ordinary Portland-style control mix in this trial. Clinker factor about 0.95. Used only as a laboratory benchmark. Not a plant recommendation by itself.
 
 ## CEM II/A-LL
 
-Mélange de style Portland-calcaire dans cet essai. Facteur de clinker en général d’environ 0.70 à 0.75 dans le jeu synthétique.
+Portland-limestone style blend in this trial. Clinker factor typically about 0.70 to 0.75 in the synthetic set.
 
-## Résistance de spec
+## Spec strength
 
-Pour HIC-LC3-24, la spec de résistance à la compression à 28 jours est **42.5 MPa** (classe CEM 42.5) sur des cubes de mortier EN 196-1. Les autres âges n’ont pas de spec chiffrée dans ce glossaire.
+For HIC-LC3-24, the 28-day compressive-strength spec is **42.5 MPa** (CEM 42.5 class) on EN 196-1 mortar cubes. Other ages have no numeric spec in this glossary.
 
-## Réussite par rapport à la spec
+## Pass versus spec
 
-Une ligne réussit quand `Compressive_Strength_MPa` est supérieur ou égal à `Spec_Strength_MPa` à cet âge. Seule la réussite ou l’échec à 28 jours sert aux décisions de transfert.
+A row passes when `Compressive_Strength_MPa` is greater than or equal to `Spec_Strength_MPa` at that age. Only 28-day pass/fail is used for handover decisions.
 
-## Prêt pour le transfert
+## Handover ready
 
-`Handover_Ready` vaut **Yes** seulement quand tout ce qui suit est vrai pour la formule :
+`Handover_Ready` is **Yes** only when all of the following are true for the mix:
 
-1. `Trial_Stage` vaut Plant-ready
-2. La résistance à la compression à **28 jours** de la formule est au moins de 42.5 MPa
-3. La note de demande en eau du fichier de limites a été prise en compte (demande plus haute que le CEM I)
+1. `Trial_Stage` is Plant-ready
+2. The mix’s **28-day** compressive strength is at or above 42.5 MPa
+3. The water-demand note in the limitations file has been acknowledged (higher demand than CEM I)
 
-Si un point est faux, `Handover_Ready` vaut **No**. Ne traitez pas une réussite à 1 jour ou à 7 jours comme un transfert prêt.
+If any item is false, `Handover_Ready` is **No**. Do not treat a 1-day or 7-day pass as handover ready.
 
-## Étapes d’essai
+## Trial stages
 
-- **Lab screening :** premiers cubes, pas pour l’usine
-- **Scale-up :** lots supplémentaires, encore sous la responsabilité du HIC
-- **Plant-ready :** une fiche formule peut être émise si prêt pour le transfert vaut Yes
+- **Lab screening:** first cubes, not for plant
+- **Scale-up:** extra batches, still HIC-owned
+- **Plant-ready:** mix card may be issued if handover ready is Yes
 
 ## Loire Plant
 
-Usine cible synthétique de cette histoire de formation. Pas un rapport de site réel.
+Synthetic target plant for this training story. Not a real site report.

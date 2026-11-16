@@ -103,7 +103,7 @@ Essayez ceci avant d’aborder la technique.
 
    ```text
    Rédigez une courte note sur notre essai de liant LC3
-   pour l’équipe de l’usine.
+   pour l'équipe de l'usine.
    ```
 
 3. Lisez la réponse.
@@ -125,8 +125,8 @@ Essayez ceci avant d’aborder la technique.
 ### Prompt faible
 
 ```text
-Rédigez une note d’essai sur le LC3
-pour l’usine.
+Rédigez une note d'essai sur le LC3
+pour l'usine.
 ```
 
 - Ni lecteur, ni source, ni limites
@@ -136,13 +136,13 @@ pour l’usine.
 
 ```text
 Rôle : vous êtes scientifique des liants
-au HIC et vous écrivez pour l’équipe
+au HIC et vous écrivez pour l'équipe
 qualité de Loire Plant.
-Tâche : rédigez une note d’une page
+Tâche : rédigez une note d'une page
 sur HIC-LC3-24.
 Étapes : utilisez uniquement le protocole
 et les résultats joints. Sections : Objet,
-Besoins de l’usine, Méthodes et résultats,
+Besoins de l'usine, Méthodes et résultats,
 Questions ouvertes.
 Exemple de ton : "M12 dépasse 42,5 MPa
 à 28 jours. Cubes à 90 jours en attente."
@@ -190,7 +190,7 @@ Utilisez les trois PDF joints :
 - hic-lc3-24-limitations.pdf fait foi pour les réserves
 Pour chaque formule, renvoyez un tableau Markdown :
 Formule | Âge (jours) | Résistance (MPa) | Spéc. (MPa) | Fichier source
-Écrivez Non trouvé dans chaque cellule vide. N’estimez pas.
+Écrivez Non trouvé dans chaque cellule vide. N'estimez pas.
 ```
 
 > [!TIP]
@@ -237,10 +237,10 @@ Formule | Âge (jours) | Résistance (MPa) | Spéc. (MPa) | Fichier source
 # Méta-prompting : laissez Gemini écrire le prompt
 
 ```text
-Je veux une infographie sur HIC-LC3-24 pour l’équipe
+Je veux une infographie sur HIC-LC3-24 pour l'équipe
 qualité de Loire Plant. Avant de créer une image,
 réécrivez mon prompt pour le rendre plus clair et plus
-précis. Si des informations manquent, posez-moi jusqu’à
+précis. Si des informations manquent, posez-moi jusqu'à
 trois questions. Puis attendez mes réponses.
 ```
 
@@ -379,11 +379,11 @@ Un responsable d’usine demande si la formule M13 est prête pour le transfert.
 
 ```text
 Créez une présentation de revue de six diapositives pour le
-comité d’innovation du HIC.
-Utilisez @HIC-LC3-24 Project Update pour l’ordre des
+comité d'innovation du HIC.
+Utilisez @HIC-LC3-24 Project Update pour l'ordre des
 diapositives et le récit.
 Utilisez @HIC-LC3-24 28-day Results pour tous les chiffres.
-Si un chiffre ne figure pas dans ces fichiers, ne l’affichez pas.
+Si un chiffre ne figure pas dans ces fichiers, ne l'affichez pas.
 Les titres énoncent le constat, par exemple
 "M12 dépasse la spécification à 28 jours".
 ```
@@ -400,8 +400,8 @@ Les titres énoncent le constat, par exemple
    ```text
    Créez une présentation de revue de six diapositives pour le
    comité de revue du Holcim Innovation Centre.
-   Utilisez uniquement le point d’avancement et les résultats
-   ci-dessous. Si un chiffre n’y figure pas, ne l’affichez pas.
+   Utilisez uniquement le point d'avancement et les résultats
+   ci-dessous. Si un chiffre n'y figure pas, ne l'affichez pas.
    Les titres énoncent le constat, par exemple
    "M12 dépasse la spécification à 28 jours".
 
@@ -409,40 +409,40 @@ Les titres énoncent le constat, par exemple
    1. Titre : HIC-LC3-24, vers le transfert à Loire Plant
    2. Pourquoi cet essai
    3. Résultats à 28 jours
-   4. Risques et points ouverts avec l’usine
+   4. Risques et points ouverts avec l'usine
    5. La demande au comité de revue
    6. Les 30 prochains jours
 
-   POINT D’AVANCEMENT (données de formation synthétiques)
+   POINT D'AVANCEMENT (données de formation synthétiques)
    Projet : HIC-LC3-24, liant à faible teneur en clinker,
-   à base d’argile calcinée (LC3)
+   à base d'argile calcinée (LC3)
    Usine cible : Loire Plant
    Objectif : atteindre la spécification de 42,5 MPa à 28 jours
    (classe CEM 42,5) avec un facteur de clinker inférieur à celui
    du témoin CEM I, et transférer une fiche formule prête pour
-   l’usine.
-   Étape : passage à l’échelle. Résultats à 90 jours en attente
+   l'usine.
+   Étape : passage à l'échelle. Résultats à 90 jours en attente
    pour huit formules.
    Cette période :
    - Spécification à 28 jours fixée à 42,5 MPa dans le protocole
-     d’essai
+     d'essai
    - Formule M13 signalée sous la spécification à 28 jours
-   - Échanges engagés avec l’usine sur l’attribution du silo
-     d’argile calcinée
+   - Échanges engagés avec l'usine sur l'attribution du silo
+     d'argile calcinée
    Risques :
    - Demande en eau du LC3 environ 8 % plus élevée que celle
      du CEM I
-   - Capacité de calcination d’argile de Loire Plant : 80 t/jour
-   - Finesse de l’argile calcinée variable ; cible : 4 200 cm2/g
+   - Capacité de calcination d'argile de Loire Plant : 80 t/jour
+   - Finesse de l'argile calcinée variable ; cible : 4 200 cm2/g
      Blaine
    Demande au comité : garder M12 parmi les formules prêtes pour
    Loire Plant ? Reformuler ou abandonner M13 ?
    30 prochains jours :
    1. Terminer les cubes à 90 jours
-   2. Convenir avec Loire Plant de l’attribution des silos et
-      d’un seuil de finesse
-   3. N’émettre de fiches formule que pour les formules conformes
-      à 28 jours et prêtes pour l’usine
+   2. Convenir avec Loire Plant de l'attribution des silos et
+      d'un seuil de finesse
+   3. N'émettre de fiches formule que pour les formules conformes
+      à 28 jours et prêtes pour l'usine
 
    RÉSULTATS À 28 JOURS (spécification : 42,5 MPa)
    Formule | Liant | Facteur de clinker | Résistance (MPa) | Résultat
@@ -452,7 +452,7 @@ Les titres énoncent le constat, par exemple
    M21 | LC3-35 | 0,65 | 47,1 | Conforme
 
    Règles : indiquer les travaux à 90 jours comme en attente.
-   Ne pas mentionner ECOPlanet ni ECOPact. N’ajouter ni clients,
+   Ne pas mentionner ECOPlanet ni ECOPact. N'ajouter ni clients,
    ni tonnages, ni autres usines. Ne pas calculer de moyennes
    entre formules.
    ```
@@ -538,10 +538,10 @@ Les titres énoncent le constat, par exemple
 
 ```text
 Formatez cette feuille de calcul :
-figez la ligne d’en-tête et mettez-la
+figez la ligne d'en-tête et mettez-la
 en gras, ajustez la largeur des colonnes,
 affichez les nombres avec une décimale
-et activez les filtres. N’ajoutez ni ne
+et activez les filtres. N'ajoutez ni ne
 supprimez aucune ligne.
 ```
 ---
@@ -575,7 +575,7 @@ Dans la première colonne vide, ajoutez
 Below_Spec : Yes si
 Compressive_Strength_MPa est inférieur à
 Spec_Strength_MPa, sinon No. Utilisez une
-formule et recopiez-la jusqu’à la dernière
+formule et recopiez-la jusqu'à la dernière
 ligne de données.
 ```
 

@@ -1,38 +1,38 @@
-# Contraintes de marque et de contenu HIC-LC3-24
+# HIC-LC3-24 brand and content constraints
 
-Utilisez ce fichier quand vous modifiez des diapositives. Si une règle ici entre en conflit avec le goût visuel de Gemini, ce fichier l’emporte.
+Use this file when editing slides. If a rule here conflicts with Gemini’s visual taste, this file wins.
 
-## Aspect
+## Look
 
-- Fond blanc
-- Texte bleu marine
-- Accents bleu et vert pris dans le logo Holcim, plus un sable chaud si besoin
-- Logo Holcim dans un coin, sans collision avec le titre
-- Pas plus de quatre puces par diapositive
-- Une idée par diapositive
-- Les titres nomment le constat (exemple : « M12 passe la spec à 28 jours »), pas « Aperçu »
+- White background
+- Navy text
+- Blue and green accents taken from the Holcim logo, plus warm sand if needed
+- Holcim logo in a corner, not colliding with the title
+- No more than four bullets per slide
+- One idea per slide
+- Titles name the finding (example: “M12 clears 28-day spec”), not “Overview”
 
-## Chiffres
+## Numbers
 
-- Citez un chiffre seulement s’il apparaît dans le Doc de point d’avancement ou dans le Sheet de résultats à 28 jours
-- La spec à 28 jours est 42.5 MPa
-- La résistance à 28 jours de la formule M12 est 44.8 MPa ; facteur de clinker 0.52
-- La résistance à 28 jours de la formule M13 est 41.2 MPa ; facteur de clinker 0.50
-- La résistance à 28 jours de la formule M01 est 52.4 MPa ; facteur de clinker 0.95
-- La résistance à 28 jours de la formule M21 est 47.1 MPa ; facteur de clinker 0.65
-- Si un chiffre n’est pas dans ces fichiers, omettez-le
-- Marquez les cubes à 90 jours en attente comme en attente, pas comme des résultats
+- Quote a figure only if it appears in the project-update Doc or the 28-day results Sheet
+- 28-day spec is 42.5 MPa
+- Mix M12 28-day strength is 44.8 MPa; clinker factor 0.52
+- Mix M13 28-day strength is 41.2 MPa; clinker factor 0.50
+- Mix M01 28-day strength is 52.4 MPa; clinker factor 0.95
+- Mix M21 28-day strength is 47.1 MPa; clinker factor 0.65
+- If a number is not in those files, omit it
+- Label pending 90-day cubes as pending, not as results
 
-## Allégations interdites
+## Banned claims
 
-- Ne dites pas que HIC-LC3-24 est ECOPlanet ou ECOPact
-- Ne dites pas que l’essai est déjà en production commerciale à Loire Plant
-- N’inventez pas de noms de clients, de tonnes contractuelles ni d’usines en plus
-- Ne moyennez pas les formules en un nouveau KPI
-- Ne présentez pas des valeurs de la littérature comme des résultats d’essai du HIC
+- Do not say HIC-LC3-24 is ECOPlanet or ECOPact
+- Do not say the trial is already in commercial production at Loire Plant
+- Do not invent customer names, contract tons, or extra plants
+- Do not average mixes into a new KPI
+- Do not present literature values as HIC trial results
 
-## Voix
+## Voice
 
-- Destinée à l’usine, phrases courtes
-- Séparez les méthodes des résultats
-- Contenu de formation synthétique : le pied de page ou les notes d’orateur peuvent le dire
+- Plant-facing, short sentences
+- Separate methods from results
+- Synthetic training content: footer or speaker notes may say so

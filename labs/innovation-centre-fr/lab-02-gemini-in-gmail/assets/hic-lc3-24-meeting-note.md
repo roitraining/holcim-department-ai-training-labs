@@ -1,21 +1,21 @@
-# Note de réunion HIC-LC3-24 (synthétique)
+# HIC-LC3-24 meeting note (synthetic)
 
-**Date :** 3 novembre 2026 (date de formation)  
-**Participants :** responsable de laboratoire du HIC, qualité Loire Plant (rôles synthétiques)  
-**Objet :** Lancement de la séance de travail de transfert usine
+**Date:** 3 November 2026 (training date)  
+**Attendees:** HIC lab lead, Loire Plant quality (synthetic roles)  
+**Subject:** Kickoff of plant-handover working session
 
-## Décisions
+## Decisions
 
-- Une séance de travail de 45 minutes est encore nécessaire. Elle n’est pas encore à l’agenda.
-- Le nom de fichier du protocole à joindre dans la recherche Gmail est `hic-lc3-24-trial-protocol.pdf`.
-- Ordre du jour de cette séance : formules prêtes pour l’usine, attribution du silo d’argile calcinée, dossier du comité de revue d’innovation.
+- A 45-minute working session is still needed. It is not on the calendar yet.
+- The protocol file name to attach in Gmail search is `hic-lc3-24-trial-protocol.pdf`.
+- Agenda for that session: plant-ready mixes, calcined-clay silo allocation, innovation review board pack.
 
-## Non décidé
+## Not decided
 
-- Quelles formules restent dans l’ensemble prêt pour l’usine
-- L’attribution du silo
-- Qui présente au comité de revue
+- Which mixes stay in the plant-ready set
+- Silo allocation
+- Who presents to the review board
 
-## Ne citez pas cette note pour les résistances
+## Do not cite this note for strengths
 
-Cette note n’a pas de tableau de résistance à la compression, volontairement. Les chiffres sont dans le PDF de résultats intermédiaires et dans la note d’essai.
+This note has no compressive-strength table on purpose. Numbers live in the interim results PDF and the trial brief.

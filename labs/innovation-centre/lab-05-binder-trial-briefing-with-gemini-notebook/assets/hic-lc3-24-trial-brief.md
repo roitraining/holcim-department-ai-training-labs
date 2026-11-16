@@ -20,7 +20,7 @@ Do not cite this file for literature comparisons. Those live in the literature e
 | :--- | :--- | ---: | ---: | ---: | :--- |
 | M01 | CEM I control | 0.95 | 28 | 52.4 | Pass |
 | M12 | LC3-50 | 0.52 | 28 | 44.8 | Pass |
-| M12 | LC3-50 | 7 | 31.4 | (no 7-day spec) |
+| M12 | LC3-50 | 0.52 | 7 | 31.4 | (no 7-day spec) |
 | M13 | LC3-50 | 0.50 | 28 | 41.2 | Fail |
 | M21 | LC3-35 | 0.65 | 28 | 47.1 | Pass |
 
