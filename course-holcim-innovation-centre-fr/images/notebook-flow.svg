@@ -31,7 +31,7 @@
   <g>
     <rect x="40" y="50" width="260" height="110" rx="12" fill="#eef3f6" stroke="#c7d0d9" stroke-width="2"/>
     <text class="heading" x="170" y="86" text-anchor="middle" fill="#041739" font-size="18">Sources Drive du HIC</text>
-    <text class="body" x="170" y="112" text-anchor="middle" fill="#33465a" font-size="14">Note d'essai, transfert,</text>
+    <text class="body" x="170" y="112" text-anchor="middle" fill="#33465a" font-size="14">Note d’essai, transfert,</text>
     <text class="body" x="170" y="132" text-anchor="middle" fill="#33465a" font-size="14">glossaire, ordre du jour</text>
 
     <rect x="40" y="240" width="260" height="110" rx="12" fill="#eef3f6" stroke="#c7d0d9" stroke-width="2"/>
@@ -54,10 +54,10 @@
   <g>
     <rect x="440" y="70" width="300" height="260" rx="14" fill="#041739"/>
     <text class="heading" x="590" y="130" text-anchor="middle" fill="#ffffff" font-size="22">Gemini Notebook</text>
-    <text class="body" x="590" y="158" text-anchor="middle" fill="#bfe3ff" font-size="16">Chat ancré</text>
-    <text class="body" x="590" y="195" text-anchor="middle" fill="#dff6ff" font-size="15">Questions de décision</text>
-    <text class="body" x="590" y="220" text-anchor="middle" fill="#dff6ff" font-size="15">Réponses citées</text>
-    <text class="body" x="590" y="245" text-anchor="middle" fill="#dff6ff" font-size="15">Preuves faibles signalées</text>
+    <text class="body" x="590" y="158" text-anchor="middle" fill="#bfe3ff" font-size="16">Chat ancré dans les sources</text>
+    <text class="body" x="590" y="195" text-anchor="middle" fill="#dff6ff" font-size="15">Questions orientées décision</text>
+    <text class="body" x="590" y="220" text-anchor="middle" fill="#dff6ff" font-size="15">Réponses sourcées</text>
+    <text class="body" x="590" y="245" text-anchor="middle" fill="#dff6ff" font-size="15">Preuves insuffisantes signalées</text>
     <text class="body" x="590" y="285" text-anchor="middle" fill="#8fd0ff" font-size="15" font-style="italic">Chaque réponse cite une source</text>
   </g>
 
@@ -76,15 +76,15 @@
   <!-- Column 3: Studio outputs (Report, Infographic, Slide Deck) -->
   <g>
     <rect x="820" y="50" width="340" height="78" rx="12" fill="#0C98CC"/>
-    <text class="heading" x="990" y="83" text-anchor="middle" fill="#ffffff" font-size="18">Studio : rapport</text>
-    <text class="body" x="990" y="107" text-anchor="middle" fill="#eafbff" font-size="14">Statut, manques marqués</text>
+    <text class="heading" x="990" y="83" text-anchor="middle" fill="#ffffff" font-size="18">Studio : rapport</text>
+    <text class="body" x="990" y="107" text-anchor="middle" fill="#eafbff" font-size="14">Statut, lacunes identifiées</text>
 
     <rect x="820" y="145" width="340" height="78" rx="12" fill="#36BDAE"/>
-    <text class="heading" x="990" y="178" text-anchor="middle" fill="#ffffff" font-size="18">Studio : infographie</text>
-    <text class="body" x="990" y="202" text-anchor="middle" fill="#e3fff7" font-size="14">Synthèse d'essai, une page</text>
+    <text class="heading" x="990" y="178" text-anchor="middle" fill="#ffffff" font-size="18">Studio : infographie</text>
+    <text class="body" x="990" y="202" text-anchor="middle" fill="#e3fff7" font-size="14">Synthèse d’essai, une page</text>
 
     <rect x="820" y="240" width="340" height="78" rx="12" fill="#5EBF77"/>
-    <text class="heading" x="990" y="273" text-anchor="middle" fill="#ffffff" font-size="18">Studio : présentation</text>
+    <text class="heading" x="990" y="273" text-anchor="middle" fill="#ffffff" font-size="18">Studio : présentation</text>
     <text class="body" x="990" y="297" text-anchor="middle" fill="#eafff1" font-size="14">Note pour le comité de revue</text>
   </g>
 </svg>
